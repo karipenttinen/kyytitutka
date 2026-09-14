@@ -50,22 +50,46 @@ async function fetchTrains() {
 }
 
 // ---------- 2. BUSSIT (Digitransit GraphQL, vaatii DIGITRANSIT_API_KEY) ----------
-// PARAS ARVAUS, EI VIELÄ VARMISTETTU AJAMALLA: ainoa riippumattomasti löytyvä
-// viite Tampereen linja-autoasemalle on "Matkahuolto:37958" (löytyi hakukoneen
-// itsenäisesti indeksoimana, kuvauksella "Tampere, linja-autoasema - Pysäkki").
-// Ei ole vahvistettu, että tämä täsmää Digitransitin GraphQL-rajapinnan gtfsId:hen.
+// Kiinteä pysäkkitunnus ("Matkahuolto:37958") ei toiminut - Digitransit palautti
+// "ei löytynyt", vaikka sama tunnus on todistetusti Matkahuollon OMAN reittioppaan
+// käyttämä viite. Nämä kaksi järjestelmää eivät siis jaa samaa numerointia.
 //
-// Jos ensimmäinen ajo epäonnistuu virheeseen "Pysäkkiä ... ei löytynyt", tunnus
-// on väärä - silloin oikea tapa selvittää se on Digitransitin GraphiQL-selain
-// (https://api.digitransit.fi/graphiql/finland) kyselyllä:
-//   { stopsByRadius(lat: 61.4980, lon: 23.7610, radius: 500) {
-//       edges { node { stop { gtfsId name } } } } }
-//
-// Koska Tampereen linja-autoasema on nimenomaan kaukoliikenteen pääteasema (Koiviston
-// Auto, Paunu, Express Bus, Onnibus ym. - ei paikallisia Nysse-linjoja), kaikkien
-// sinne saapuvien vuorojen pitäisi jo olla kaukoliikennettä. Erillistä reittien
-// nimi-/tunnussuodatusta ei siis pitäisi tarvita.
-const TAMPERE_BUS_STOP_ID = 'Matkahuolto:37958';
+// Sen sijaan että arvattaisiin lisää tunnuksia, tämä hakee pysäkit DYNAAMISESTI
+// koordinaattien perusteella joka ajolla, ja kirjoittaa AINA lokiin (console.error)
+// kaikki löytyneet pysäkit nimineen ja tunnuksineen - riippumatta siitä osuuko
+// nimihaku "linja-autoasema" kohdalleen. Näin oikea tunnus näkyy suoraan Actionin
+// lokista, eikä GraphiQL-selainta tarvita ollenkaan.
+
+async function discoverNearbyStops() {
+  const query = `{
+    stopsByRadius(lat: 61.4980, lon: 23.7700, radius: 1000) {
+      edges { node { stop { gtfsId name } } }
+    }
+  }`;
+  const res = await fetch('https://api.digitransit.fi/routing/v2/finland/gtfs/v1', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'digitransit-subscription-key': process.env.DIGITRANSIT_API_KEY,
+    },
+    body: JSON.stringify({ query }),
+    signal: AbortSignal.timeout(30000),
+  });
+  if (!res.ok) throw new Error(`Digitransit HTTP ${res.status} (pysäkkihaku)`);
+  const json = await res.json();
+  if (json.errors?.length) throw new Error('Digitransit (pysäkkihaku): ' + json.errors.map((e) => e.message).join('; '));
+
+  const seen = new Set();
+  const stops = [];
+  for (const edge of json.data?.stopsByRadius?.edges || []) {
+    const stop = edge.node.stop;
+    if (stop?.gtfsId && !seen.has(stop.gtfsId)) {
+      seen.add(stop.gtfsId);
+      stops.push(stop);
+    }
+  }
+  return stops;
+}
 
 function busArrivalsFromRows(stopId, rows, now) {
   const result = [];
@@ -95,14 +119,9 @@ function busArrivalsFromRows(stopId, rows, now) {
   return result;
 }
 
-async function fetchBuses() {
-  if (!process.env.DIGITRANSIT_API_KEY) {
-    console.error('Bussit ohitettu: DIGITRANSIT_API_KEY puuttuu.');
-    return [];
-  }
-  const now = Math.floor(Date.now() / 1000);
+async function fetchStoptimesForStop(stopId, now) {
   const query = `{
-    stop(id: ${JSON.stringify(TAMPERE_BUS_STOP_ID)}) {
+    stop(id: ${JSON.stringify(stopId)}) {
       stoptimesWithoutPatterns(numberOfDepartures: 100, startTime: ${now - 300}, timeRange: 86700) {
         scheduledArrival
         realtimeArrival
@@ -117,7 +136,6 @@ async function fetchBuses() {
       }
     }
   }`;
-
   const res = await fetch('https://api.digitransit.fi/routing/v2/finland/gtfs/v1', {
     method: 'POST',
     headers: {
@@ -127,12 +145,36 @@ async function fetchBuses() {
     body: JSON.stringify({ query }),
     signal: AbortSignal.timeout(30000),
   });
-  if (!res.ok) throw new Error(`Digitransit HTTP ${res.status}`);
+  if (!res.ok) throw new Error(`Digitransit HTTP ${res.status} (${stopId})`);
   const json = await res.json();
-  if (json.errors?.length) throw new Error('Digitransit: ' + json.errors.map((e) => e.message).join('; '));
-  if (!json.data?.stop) throw new Error(`Pysäkkiä ${TAMPERE_BUS_STOP_ID} ei löytynyt - tarkista tunnus GraphiQL-selaimella.`);
+  if (json.errors?.length) throw new Error(`Digitransit (${stopId}): ` + json.errors.map((e) => e.message).join('; '));
+  return json.data?.stop?.stoptimesWithoutPatterns || [];
+}
 
-  return busArrivalsFromRows(TAMPERE_BUS_STOP_ID, json.data.stop.stoptimesWithoutPatterns || [], now);
+async function fetchBuses() {
+  if (!process.env.DIGITRANSIT_API_KEY) {
+    console.error('Bussit ohitettu: DIGITRANSIT_API_KEY puuttuu.');
+    return [];
+  }
+
+  const allStops = await discoverNearbyStops();
+  console.error(`Bussit: löytyi ${allStops.length} pysäkkiä 1 km säteellä keskustasta:`);
+  allStops.forEach((s) => console.error(`  ${s.gtfsId} :: ${s.name}`));
+
+  const candidates = allStops.filter((s) => /linja-?autoasema/i.test(s.name || ''));
+  if (candidates.length === 0) {
+    console.error(
+      'Bussit ohitettu: yksikään löytynyt pysäkki ei täsmännyt nimellä "linja-autoasema" - katso yllä oleva lista ja kerro mitä siinä lukee.'
+    );
+    return [];
+  }
+  console.error('Näistä käytetään: ' + candidates.map((s) => `${s.gtfsId} (${s.name})`).join(', '));
+
+  const now = Math.floor(Date.now() / 1000);
+  const batches = await Promise.all(
+    candidates.map(async (stop) => busArrivalsFromRows(stop.gtfsId, await fetchStoptimesForStop(stop.gtfsId, now), now))
+  );
+  return batches.flat().sort((a, b) => a.time - b.time);
 }
 
 // ---------- 3. LENNOT (OpenSky ADS-B, vaatii OPENSKY_CLIENT_ID/SECRET) ----------
