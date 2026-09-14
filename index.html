@@ -3,88 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kyytitutka</title>
+<title>Kyytitutka – Kunnon Taksi</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
   * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Manrope', sans-serif; }
-  body { background: #0D1017; color: #EDEFF3; }
-  .wrap { max-width: 480px; margin: 0 auto; padding-bottom: 40px; }
+  body { background: #09090B; color: #F2F2ED; }
+  .wrap { max-width: 480px; margin: 0 auto; padding-bottom: 40px; position: relative; overflow: hidden; }
   .mono { font-family: 'JetBrains Mono', monospace; }
 
-  .header { padding: 20px 16px 12px; display: flex; align-items: center; justify-content: space-between; }
-  .brand { display: flex; align-items: center; gap: 10px; }
-  .radar { position: relative; width: 34px; height: 34px; flex-shrink: 0; }
-  .ring1 { position: absolute; inset: 0; border-radius: 999px; border: 1px solid rgba(232,169,77,0.4); }
-  .ring2 { position: absolute; inset: 5px; border-radius: 999px; border: 1px solid rgba(232,169,77,0.25); }
-  .sweep { position: absolute; inset: 0; border-radius: 999px; overflow: hidden; }
-  .sweep-fill { position: absolute; inset: 0; background: conic-gradient(from 0deg, rgba(232,169,77,0.7), transparent 30%); }
-  @media (prefers-reduced-motion: no-preference) { .sweep { animation: spin 4s linear infinite; } }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .dot { position: absolute; top: 50%; left: 50%; width: 5px; height: 5px; margin: -2.5px 0 0 -2.5px; border-radius: 999px; background: #E8A94D; }
-  .title { font-weight: 800; font-size: 18px; }
-  .subtitle { color: #6B7286; font-size: 11.5px; }
-  .clock { color: #E8A94D; font-size: 15px; }
+  .glow {
+    position: absolute; top: -140px; left: 50%; transform: translateX(-50%);
+    width: 460px; height: 340px; pointer-events: none; z-index: 0;
+    background: radial-gradient(ellipse at center, rgba(255,244,84,0.13) 0%, rgba(255,244,84,0) 70%);
+  }
 
-  .hero { margin: 4px 16px 16px; padding: 16px; border-radius: 14px; background: #161A24; border: 1px solid #262B38; }
-  .hero-eta { color: #6B7286; font-size: 12px; margin-bottom: 8px; }
-  .hero-row { display: flex; align-items: flex-start; gap: 12px; }
-  .hero-icon { font-size: 20px; }
-  .hero-title { font-weight: 700; font-size: 17px; color: #F5F6F8; }
-  .hero-detail { color: #9CA2B4; font-size: 13.5px; margin-top: 2px; }
-  .hero-meta { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; }
-  .loc { display: flex; align-items: center; gap: 4px; color: #6B7286; font-size: 12.5px; }
+  .header { position: relative; z-index: 1; padding: 24px 16px 16px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { display: flex; align-items: center; gap: 13px; }
+  .brand-logo { width: 50px; height: 50px; flex-shrink: 0; filter: drop-shadow(0 3px 10px rgba(0,0,0,0.55)); }
+  .title { font-family: 'Archivo', sans-serif; font-weight: 900; font-size: 21px; letter-spacing: -0.3px; }
+  .subtitle { color: #8C8C91; font-size: 11.5px; margin-top: 2px; font-weight: 500; }
+  .clock { color: #FFF454; font-size: 15px; }
 
-  .stat { padding: 0 16px 14px; color: #6B7286; font-size: 12.5px; }
+  .stripe {
+    height: 4px; margin: 0 16px 18px; border-radius: 999px; opacity: 0.4; position: relative; z-index: 1;
+    background: repeating-linear-gradient(120deg, #FFF454 0px, #FFF454 9px, transparent 9px, transparent 18px);
+  }
 
-  .tabs { display: flex; gap: 6px; padding: 0 16px 16px; overflow-x: auto; }
-  .tab { padding: 9px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; white-space: nowrap; border: 1px solid #262B38; color: #8A90A3; background: transparent; }
-  .tab.active { border-color: rgba(232,169,77,0.5); color: #E8A94D; background: rgba(232,169,77,0.08); }
+  .hero {
+    position: relative; z-index: 1; margin: 0 16px 18px; padding: 20px 20px 17px 22px;
+    background: linear-gradient(160deg, #1D1D22 0%, #100F11 100%);
+    border: 1px solid #2C2C31;
+    box-shadow: 0 14px 34px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 22px), calc(100% - 22px) 100%, 0 100%);
+  }
+  .hero::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: #FFF454; }
+  .hero-eta { color: #8C8C91; font-size: 11.5px; margin-bottom: 10px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; }
+  .hero-top { display: flex; align-items: flex-end; gap: 16px; }
+  .hero-count { display: flex; align-items: baseline; gap: 5px; line-height: 1; flex-shrink: 0; }
+  .hero-num { font-family: 'JetBrains Mono', monospace; font-size: 44px; font-weight: 700; color: #FFF454; letter-spacing: -1.5px; }
+  .hero-num.small { font-size: 26px; }
+  .hero-unit { font-size: 11.5px; font-weight: 700; color: #FFF454; opacity: 0.75; letter-spacing: 0.4px; }
+  .hero-info { flex: 1; min-width: 0; padding-bottom: 2px; }
+  .hero-icon-row { display: flex; align-items: center; gap: 7px; }
+  .hero-icon { font-size: 17px; }
+  .hero-title { font-weight: 800; font-size: 16.5px; color: #FBFBF8; }
+  .hero-detail { color: #A6A6AB; font-size: 13px; margin-top: 3px; line-height: 1.42; }
+  .hero-meta { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; }
+  .loc { display: flex; align-items: center; gap: 4px; color: #86868B; font-size: 12px; }
 
-  .band-label { padding: 10px 16px 6px; font-size: 12px; font-weight: 700; }
-  .list { border-top: 1px solid #20242F; }
-  .row { display: flex; align-items: flex-start; gap: 12px; padding: 12px 16px; border-bottom: 1px solid #20242F; }
-  .row.soon { background: rgba(232,169,77,0.06); }
-  .row-time { min-width: 46px; font-size: 13px; padding-top: 2px; color: #6B7286; }
-  .row.soon .row-time, .row.soon .row-icon { color: #E8A94D; }
-  .row-icon { padding-top: 2px; font-size: 15px; color: #6B7286; }
+  .stat { position: relative; z-index: 1; padding: 0 16px 14px; color: #86868B; font-size: 12.5px; }
+
+  .tabs { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 0 16px 18px; }
+  .tab {
+    width: 100%; padding: 10px 12px; border-radius: 999px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.1px;
+    white-space: nowrap; border: 1px solid #232327; color: #8F8F94; background: #131315; text-align: center;
+  }
+  .tab.active {
+    border-color: #FFF454; color: #0A0A0B; background: #FFF454;
+    box-shadow: 0 4px 14px rgba(255,244,84,0.25);
+  }
+
+  .band-label { padding: 12px 16px 7px; font-size: 11.5px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; }
+  .list { border-top: 1px solid #1C1C20; }
+  .row { display: flex; align-items: flex-start; gap: 12px; padding: 13px 16px 13px 14px; border-bottom: 1px solid #1C1C20; border-left: 3px solid transparent; }
+  .row.soon { background: rgba(255,244,84,0.055); border-left-color: #FFF454; }
+  .row-time { min-width: 46px; font-size: 13px; padding-top: 2px; color: #86868B; font-weight: 500; }
+  .row.soon .row-time, .row.soon .row-icon { color: #FFF454; }
+  .row-icon { padding-top: 2px; font-size: 15px; color: #86868B; }
   .row-body { flex: 1; min-width: 0; }
-  .row-title { font-weight: 600; font-size: 14.5px; }
-  .row-detail { color: #8A90A3; font-size: 13px; margin-top: 1px; }
-  .row-loc { display: flex; align-items: center; gap: 4px; color: #5C6272; font-size: 12px; margin-top: 4px; }
+  .row-title { font-weight: 700; font-size: 14.5px; color: #F2F2ED; }
+  .row-detail { color: #9E9EA3; font-size: 13px; margin-top: 1px; line-height: 1.4; }
+  .row-loc { display: flex; align-items: center; gap: 4px; color: #6C6C71; font-size: 12px; margin-top: 4px; }
   .bars { display: flex; align-items: center; gap: 2px; padding-top: 4px; }
-  .bar { width: 4px; border-radius: 999px; background: #252A38; }
-  .bar.on { background: #E8A94D; }
+  .bar { width: 4px; border-radius: 999px; background: #232327; }
+  .bar.on { background: #FFF454; }
 
-  .empty { padding: 32px 16px; color: #6B7286; font-size: 13.5px; text-align: center; }
-  .footer-note { margin: 24px 16px 0; padding: 12px 14px; border-radius: 12px; border: 1px dashed #2A3040; color: #5C6272; font-size: 12.5px; line-height: 1.5; }
+  .empty { padding: 32px 16px; color: #86868B; font-size: 13.5px; text-align: center; }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <div class="glow"></div>
   <div class="header">
     <div class="brand">
-      <div class="radar">
-        <div class="ring1"></div>
-        <div class="ring2"></div>
-        <div class="sweep"><div class="sweep-fill"></div></div>
-        <div class="dot"></div>
-      </div>
+      <img src="logo.png" alt="Kunnon Taksi" class="brand-logo">
       <div>
-        <div class="title">Kyytitutka</div>
-        <div class="subtitle" id="subtitle">Tampere · live-data</div>
+        <div class="title">KYYTITUTKA</div>
+        <div class="subtitle" id="subtitle">Kunnon Taksi · Tampere</div>
       </div>
     </div>
     <div class="clock mono" id="clock">--.--.--</div>
   </div>
+  <div class="stripe"></div>
 
   <div id="hero-slot"></div>
   <div class="stat" id="stat-line"></div>
   <div class="tabs" id="tabs"></div>
   <div id="list-slot"><div class="empty">Ladataan…</div></div>
-
-  <div class="footer-note">
-    Data päivittyy taustalla n. 15 min välein GitHub Actionin kautta. Jos lista näyttää tyhjältä pitkään, tarkista että Action on ehtinyt ajaa ainakin kerran ja että data.json löytyy samasta kansiosta kuin tämä sivu.
-  </div>
 </div>
 
 <script>
@@ -119,7 +134,7 @@ function getBand(delta) {
 }
 const BAND_ORDER = ['nyt', 'pian', 'tunti', 'myohemmin'];
 const BAND_LABEL = { nyt: 'Saapuu juuri nyt', pian: 'Saapuu pian', tunti: 'Seuraavan tunnin aikana', myohemmin: 'Myöhemmin' };
-const BAND_COLOR = { nyt: '#E8A94D', pian: '#E8A94D', tunti: '#9CA2B4', myohemmin: '#6B7286' };
+const BAND_COLOR = { nyt: '#FFF454', pian: '#FFF454', tunti: '#9B9BA0', myohemmin: '#6C6C71' };
 
 let rawData = [];
 let filter = 'kaikki';
@@ -163,17 +178,24 @@ function render() {
 
   document.getElementById('hero-slot').innerHTML = hero ? `
     <div class="hero">
-      <div class="hero-eta">${hero.delta <= 0 ? 'Tapahtuu juuri nyt' : Math.round(hero.delta / 60) + ' min kuluttua'}</div>
-      <div class="hero-row">
-        <div class="hero-icon">${TYPE_META[hero.type]?.icon || '•'}</div>
-        <div style="flex:1">
-          <div class="hero-title">${esc(hero.title)}</div>
-          <div class="hero-detail">${esc(hero.detail)}</div>
-          <div class="hero-meta">
-            <div class="loc">📍 ${esc(hero.location)}</div>
-            ${bars(hero.demand)}
-          </div>
+      <div class="hero-eta">${hero.delta <= 0 ? 'Tapahtuu juuri nyt' : 'Saapuu pian'}</div>
+      <div class="hero-top">
+        <div class="hero-count">
+          ${hero.delta <= 0
+            ? `<span class="hero-num small">NYT</span>`
+            : `<span class="hero-num">${Math.round(hero.delta / 60)}</span><span class="hero-unit">MIN</span>`}
         </div>
+        <div class="hero-info">
+          <div class="hero-icon-row">
+            <span class="hero-icon">${TYPE_META[hero.type]?.icon || '•'}</span>
+            <span class="hero-title">${esc(hero.title)}</span>
+          </div>
+          <div class="hero-detail">${esc(hero.detail)}</div>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <div class="loc">📍 ${esc(hero.location)}</div>
+        ${bars(hero.demand)}
       </div>
     </div>` : '';
 
@@ -216,7 +238,7 @@ async function loadData() {
     const res = await fetch('./data.json?_=' + Date.now());
     if (res.ok) {
       rawData = await res.json();
-      document.getElementById('subtitle').textContent = 'Tampere · live-data';
+      document.getElementById('subtitle').textContent = 'Kunnon Taksi · Tampere';
     } else {
       document.getElementById('subtitle').textContent = 'data.json ei löytynyt vielä';
     }
