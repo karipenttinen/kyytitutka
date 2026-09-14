@@ -9,18 +9,10 @@
   },
   {
     "type": "juna",
-    "time": 1789408225,
+    "time": 1789408260,
     "title": "IC56",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789408419,
-    "title": "IC149",
-    "detail": "Saapuu",
-    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -32,8 +24,16 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1789408511,
+    "title": "IC149",
+    "detail": "Saapuu",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
     "type": "bussi",
-    "time": 1789408745,
+    "time": 1789408754,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
