@@ -1,21 +1,5 @@
 [
   {
-    "type": "bussi",
-    "time": 1789407720,
-    "title": "90",
-    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1789408260,
-    "title": "IC56",
-    "detail": "Saapuu",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1789408436,
     "title": "IC148",
@@ -25,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789408511,
+    "time": 1789408476,
     "title": "IC149",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 3",
@@ -33,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789408754,
+    "time": 1789408679,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
@@ -97,9 +81,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789413780,
+    "time": 1789413790,
     "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "detail": "Lähtöpaikka: Vesilahti",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -318,6 +302,14 @@
     "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789447740,
+    "title": "IC42",
+    "detail": "Saapuu",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
