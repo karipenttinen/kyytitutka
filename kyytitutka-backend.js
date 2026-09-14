@@ -209,6 +209,34 @@ async function fetchBuses() {
   console.error('Näistä käytetään: ' + candidates.map((s) => `${s.gtfsId} (${s.name})`).join(', '));
 
   const now = Math.floor(Date.now() / 1000);
+
+  // Laajempi kertaluonteinen diagnostiikka: haetaan V130/Vantaa KAIKILTA 1 km
+  // säteen sisällä löytyneiltä pysäkeiltä (ei vain niiltä 7:ltä joita normaalisti
+  // käytetään), koska se saattaa saapua jollekin muulle, nimeltään toisenlaiselle
+  // pysäkille jonka nimisuodatus hylkäsi. Tämä TUPLAA API-kutsujen määrän tällä
+  // ajolla - poistetaan kun asia on selvinnyt.
+  const muutStops = allStops.filter((s) => !candidates.some((c) => c.gtfsId === s.gtfsId));
+  const muutRows = await Promise.all(
+    muutStops.map(async (stop) => ({ stop, rows: await fetchStoptimesForStop(stop.gtfsId, now) }))
+  );
+  let vantaaMuualla = false;
+  for (const { stop, rows } of muutRows) {
+    for (const r of rows) {
+      const routeName = r.trip?.route?.shortName || r.trip?.route?.longName || '';
+      const origin = r.trip?.pattern?.stops?.[0]?.name || '';
+      if (/v130/i.test(routeName) || /vantaa/i.test(origin) || /vantaa/i.test(routeName)) {
+        vantaaMuualla = true;
+        console.error(
+          `Bussit: LÖYTYI V130/Vantaa MUULTA (ei-linja-autoasema-nimiseltä) pysäkiltä ${stop.gtfsId} (${stop.name}): ` +
+            `reitti="${routeName}", lähtö="${origin}"`
+        );
+      }
+    }
+  }
+  if (!vantaaMuualla) {
+    console.error(`Bussit: ei V130/Vantaa-osumaa myöskään niillä ${muutStops.length} muulla 1 km säteen pysäkillä.`);
+  }
+
   const rowsPerStop = await Promise.all(
     candidates.map(async (stop) => ({ stop, rows: await fetchStoptimesForStop(stop.gtfsId, now) }))
   );
