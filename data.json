@@ -1,35 +1,11 @@
 [
   {
-    "type": "juna",
-    "time": 1789411560,
-    "title": "IC931",
-    "detail": "Saapuu",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "bussi",
-    "time": 1789411702,
+    "time": 1789411860,
     "title": "90",
-    "detail": "Lähtöpaikka: Terälahden koulu",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1789411860,
-    "title": "S28",
-    "detail": "Saapuu",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789411980,
-    "title": "IC183",
-    "detail": "Saapuu",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
   },
   {
     "type": "juna",
@@ -41,23 +17,15 @@
   },
   {
     "type": "bussi",
-    "time": 1789412347,
+    "time": 1789412518,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
-    "type": "bussi",
-    "time": 1789413790,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1789414260,
+    "time": 1789414157,
     "title": "PYO265",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 3",
@@ -129,14 +97,6 @@
   },
   {
     "type": "bussi",
-    "time": 1789442820,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789443000,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
@@ -148,14 +108,6 @@
     "time": 1789443510,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789443600,
-    "title": "95",
-    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -225,14 +177,6 @@
   },
   {
     "type": "bussi",
-    "time": 1789446540,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789446600,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
@@ -268,14 +212,6 @@
     "time": 1789447500,
     "title": "60U",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789447680,
-    "title": "95",
-    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -336,6 +272,14 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1789449840,
+    "title": "S30",
+    "detail": "Saapuu",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1789450200,
     "title": "141",
@@ -352,6 +296,14 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1789450920,
+    "title": "IC905",
+    "detail": "Saapuu",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1789450920,
     "title": "60",
@@ -360,20 +312,12 @@
     "demand": 1
   },
   {
-    "type": "bussi",
-    "time": 1789451280,
-    "title": "95",
-    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789451700,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
+    "type": "juna",
+    "time": 1789451340,
+    "title": "IC150",
+    "detail": "Saapuu",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -425,14 +369,6 @@
   },
   {
     "type": "bussi",
-    "time": 1789454700,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789455600,
     "title": "43U",
     "detail": "Lähtöpaikka: Koivulinna P (aikatauluaika)",
@@ -444,14 +380,6 @@
     "time": 1789455690,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789456020,
-    "title": "95",
-    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -513,14 +441,6 @@
   },
   {
     "type": "bussi",
-    "time": 1789461840,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789462890,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
@@ -553,25 +473,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789465440,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789466490,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789466820,
-    "title": "95",
-    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -617,14 +521,6 @@
   },
   {
     "type": "bussi",
-    "time": 1789470420,
-    "title": "95",
-    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789470780,
     "title": "55",
     "detail": "Lähtöpaikka: Narva (aikatauluaika)",
@@ -657,25 +553,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789473300,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789473720,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789474020,
-    "title": "95",
-    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -745,25 +625,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789478580,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789478700,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789478880,
-    "title": "95",
-    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -785,14 +649,6 @@
   },
   {
     "type": "bussi",
-    "time": 1789480380,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789481100,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
@@ -804,14 +660,6 @@
     "time": 1789481400,
     "title": "43U",
     "detail": "Lähtöpaikka: Koivulinna P (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789481520,
-    "title": "95",
-    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -849,25 +697,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789483860,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789484610,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789485000,
-    "title": "95",
-    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -884,14 +716,6 @@
     "time": 1789486350,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789487220,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -921,25 +745,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789489140,
-    "title": "95",
-    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789489920,
     "title": "90",
     "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789490040,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -961,14 +769,6 @@
   },
   {
     "type": "bussi",
-    "time": 1789493640,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789494120,
     "title": "90",
     "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
@@ -985,9 +785,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789496640,
-    "title": "55",
-    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "time": 1789498260,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   }
