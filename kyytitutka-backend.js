@@ -311,15 +311,28 @@ function parseFlightSection(bodyText, sectionTag) {
     airport: xmlTag(block, 'h_apt'),
     flightNumber: xmlTag(block, 'fltnr'),
     sdt: xmlTag(block, 'sdt'),
+    estd: xmlTag(block, 'est_d'),
+    actd: xmlTag(block, 'act_d'),
     place: xmlTag(block, 'route_n_fi_1') || xmlTag(block, 'route_n_1') || xmlTag(block, 'route_1'),
     status: xmlTag(block, 'prt_f') || xmlTag(block, 'prt'),
   }));
 }
 
 function finaviaToSignal(f, isDeparture, now) {
-  const time = f.sdt ? Math.floor(Date.parse(f.sdt) / 1000) : null;
+  // act_d (toteutunut) > est_d (arvioitu) > sdt (muuttumaton aikataulu) - näin
+  // myöhästymiset/aikaistumiset näkyvät, sdt yksinään ei koskaan päivity.
+  const bestIso = f.actd || f.estd || f.sdt;
+  const time = bestIso ? Math.floor(Date.parse(bestIso) / 1000) : null;
   if (!f.flightNumber || !Number.isFinite(time)) return null;
   if (time <= now - 300 || time >= now + 86400 * 2) return null;
+
+  let poikkeama = '';
+  const sdtTime = f.sdt ? Math.floor(Date.parse(f.sdt) / 1000) : null;
+  if (Number.isFinite(sdtTime) && Math.abs(time - sdtTime) >= 300) {
+    const erotusMin = Math.round((time - sdtTime) / 60);
+    poikkeama = erotusMin > 0 ? ` (myöhässä ${erotusMin} min)` : ` (${Math.abs(erotusMin)} min etuajassa)`;
+  }
+
   const suunta = isDeparture
     ? f.place
       ? `Aikataulun mukaan lähtee, määränpää ${f.place}`
@@ -331,7 +344,7 @@ function finaviaToSignal(f, isDeparture, now) {
     type: 'lento',
     time,
     title: f.flightNumber,
-    detail: suunta + (f.status ? ` · ${f.status}` : ''),
+    detail: suunta + poikkeama + (f.status ? ` · ${f.status}` : ''),
     location: 'Lentoasema, Pirkkala',
     demand: 2,
   };
@@ -374,18 +387,6 @@ async function fetchFinaviaSchedule() {
     `Finavia: <arr> ${arrRecords.length} lentoa (asemat: ${arrAsemat.join(', ') || '-'}), ` +
       `<dep> ${depRecords.length} lentoa (asemat: ${depAsemat.join(', ') || '-'})`
   );
-
-  // Diagnostiikka: kirjataan yhden TMP-saapumisen KOKO rivi useana lyhyenä
-  // rivinä, jotta nähdään onko sdt:n lisäksi jokin toteutunutta/arvioitua
-  // aikaa kuvaava kenttä (esim. myöhästymistä varten) - sdt näyttää vain
-  // muuttumattoman aikataulun mukaisen ajan.
-  const tmpArrExample = arrRecords.find((f) => f.airport === 'TMP');
-  if (tmpArrExample) {
-    console.error(`Finavia: TMP-saapumisen (${tmpArrExample.flightNumber}) kaikki kentät:`);
-    for (let i = 0; i < tmpArrExample.raw.length; i += 200) {
-      console.error('  ' + tmpArrExample.raw.slice(i, i + 200));
-    }
-  }
 
   const now = Math.floor(Date.now() / 1000);
   const saapuvat = arrRecords
