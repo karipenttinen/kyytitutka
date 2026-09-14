@@ -241,28 +241,27 @@ async function fetchFlights() {
 }
 
 // ---------- 3b. LENNOT - AIKATAULUTIETO (Finavia, vaatii FINAVIA_API_KEY) ----------
-// TÄMÄ ON ENSIMMÄINEN KOEYRITYS, EI VAHVISTETTU TOIMIVAKSI. En ole nähnyt Finavian
-// tarkkaa rajapintadokumentaatiota, joten sekä URL-polku että tunnistautumisotsikko
-// ovat parhaita arvauksia:
-//   - URL: apiportal.finavia.fi näyttää Azure API Management -pohjaiselta, joten
-//     kokeillaan tyypillistä rakennetta api.finavia.fi/flights/public/v0/flights/{asema}
-//   - Otsikko: Azure APIM käyttää tyypillisesti nimeä "Ocp-Apim-Subscription-Key"
-// Jos tämä epäonnistuu, HTTP-tila ja koko vastaus kirjataan lokiin sellaisenaan,
-// samaan tapaan kuin bussipysäkkien ja tapahtumien kohdalla aiemmin - se kertoo
-// suoraan mikä arvauksesta oli väärin.
+// Osoite VAHVISTETTU suoraan käyttäjän Finavia-portaalin Try It -konsolista
+// (200 OK): http://apigw.finavia.fi/flights/public/v0/flights - huomaa http,
+// ei https, ja ettei polussa ole lentoasemakohtaista osaa. Otsikon nimi
+// "app_key" vahvistettu samasta konsolista aiemmin.
 //
 // Tarkoituksella oma, erillinen funktio eikä osa OpenSky-hakua: nämä kaksi
 // täydentävät toisiaan (Finavia = aikataulu etukäteen, OpenSky = fyysinen
 // varmistus juuri ennen laskeutumista), eikä niitä ole vielä yhdistetty
 // keskenään - sama lento voi siis näkyä listassa kahteen kertaan lähestyessään
 // kenttää. Tämä voidaan siistiä myöhemmin kun nähdään miltä oikea data näyttää.
+//
+// Ei vielä tiedetä miten Tampereen lennot tunnistetaan vastauksesta - haetaan
+// siis kaikki asemat ja kirjataan ensimmäinen kohde lokiin, jotta oikea
+// suodatuskenttä selviää siitä.
 async function fetchFinaviaSchedule() {
   if (!process.env.FINAVIA_API_KEY) {
     console.error('Finavia ohitettu: FINAVIA_API_KEY puuttuu.');
     return [];
   }
 
-  const url = 'https://api.finavia.fi/flights/public/v0/flights/TMP';
+  const url = 'http://apigw.finavia.fi/flights/public/v0/flights';
   let res;
   try {
     res = await fetch(url, {
@@ -289,10 +288,19 @@ async function fetchFinaviaSchedule() {
   }
 
   const flights = Array.isArray(json) ? json : json.flights || json.data || json.results || [];
-  console.error(`Finavia: löytyi ${flights.length} lentoa. Ensimmäinen: ` + JSON.stringify(flights[0] || {}).slice(0, 500));
+  console.error(
+    `Finavia: löytyi ${flights.length} lentoa yhteensä (kaikki asemat). Ensimmäinen: ` +
+      JSON.stringify(flights[0] || {}).slice(0, 600)
+  );
 
+  // TARKISTA: kenttänimet aseman tunnistamiseksi ja saapumisajalle ovat vielä
+  // arvauksia. Yllä oleva lokirivi kertoo mitä kenttiä pitäisi oikeasti käyttää.
   const now = Math.floor(Date.now() / 1000);
   return flights
+    .filter((f) => {
+      const airport = f.airport || f.arrApId || f.arrivalAirport || f.apCode || '';
+      return String(airport).toUpperCase().includes('TMP') || String(airport).toUpperCase().includes('TAMPERE');
+    })
     .map((f) => {
       const flightNumber = f.flightNumber || f.flight_number || f.flightId || f.iataFlightNumber || f.callSign;
       const origin = f.origin || f.departureAirport || f.depApName || f.from;
