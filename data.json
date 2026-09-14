@@ -1,23 +1,7 @@
 [
   {
-    "type": "juna",
-    "time": 1789405079,
-    "title": "IC29",
-    "detail": "Saapuu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
-    "time": 1789405247,
-    "title": "60",
-    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789406845,
+    "time": 1789407062,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -50,17 +34,17 @@
   {
     "type": "juna",
     "time": 1789408381,
-    "title": "IC149",
+    "title": "IC148",
     "detail": "Saapuu",
-    "location": "Rautatieasema · raide 3",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1789408417,
-    "title": "IC148",
+    "time": 1789408381,
+    "title": "IC149",
     "detail": "Saapuu",
-    "location": "Rautatieasema · raide 4",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -326,6 +310,14 @@
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789447500,
+    "title": "IC462",
+    "detail": "Saapuu",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -972,6 +964,14 @@
     "time": 1789490040,
     "title": "55",
     "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789491540,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   }
