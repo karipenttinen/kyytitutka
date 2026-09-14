@@ -235,31 +235,37 @@ async function fetchFlights() {
     }));
 }
 
-// ---------- 4. TAPAHTUMAT (Tampereen LinkedEvents, ei avainta) ----------
+// ---------- 4. TAPAHTUMAT (Visit Tampere API, ei avainta) ----------
+// linkedevents.tampere.fi osoittautui rikkinäiseksi (ei toiminut edes tavallisessa
+// selaimessa), joten vaihdettu Visit Tampereen omaan rajapintaan. Osoite on
+// vahvistettu suoraan Tampereen kaupungin dataportaalista (data.tampere.fi).
+// Vastauksen TARKKAA kenttärakennetta ei ole nähty, joten alla kokeillaan
+// muutamaa todennäköistä kenttänimeä ja kirjataan ensimmäinen kohde lokiin -
+// jos arvaus osuu väärin, oikeat kentät näkyvät suoraan Actionin lokista.
 async function fetchEvents() {
-  // Helsingin aikavyöhykkeen päivämäärä - UTC-päivämäärä näyttäisi väärää
-  // päivää muutaman tunnin ajan joka yö, koska Suomi on UTC:n edellä.
-  const today = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Helsinki' }).format(new Date());
-  const tomorrow = new Date(Date.parse(today + 'T12:00:00Z') + 86400000).toISOString().slice(0, 10);
-  const url = `https://linkedevents.tampere.fi/v1/event/?start=${today}&end=${tomorrow}&sort=start_time&include=location`;
-
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`LinkedEvents virhe: ${res.status}`);
+  const res = await fetch('https://visittampere.fi/api/v1/event', { signal: AbortSignal.timeout(30000) });
+  if (!res.ok) throw new Error(`VisitTampere virhe: ${res.status}`);
   const json = await res.json();
 
-  return (json.data || [])
-    .filter((e) => e.name?.fi && e.end_time)
-    .map((e) => ({
-      type: 'tapahtuma',
-      time: Math.floor(Date.parse(e.end_time) / 1000),
-      title: e.name.fi,
-      detail: 'Tapahtuma päättyy',
-      location: e.location?.name?.fi || 'Tampere',
-      demand: 2,
-    }));
-  // HUOM: listaa KAIKKI tapahtumat - kannattaa myöhemmin suodattaa vain isoimmat
-  // (esim. tunnettujen isojen paikkojen mukaan), koska rajapinta sisältää myös
-  // pienet harrastetapahtumat.
+  const items = Array.isArray(json) ? json : json.data || json.results || json.items || [];
+  console.error(`Tapahtumat: rajapinta palautti ${items.length} kohdetta.`);
+  if (items[0]) {
+    console.error('Tapahtumat: esimerkki ensimmäisestä kohteesta: ' + JSON.stringify(items[0]).slice(0, 500));
+  }
+
+  const now = Math.floor(Date.now() / 1000);
+  return items
+    .map((e) => {
+      const title = e.name?.fi || e.name || e.title?.fi || e.title;
+      const endRaw = e.end_time || e.endTime || e.end_date || e.endDate;
+      const time = endRaw ? Math.floor(Date.parse(endRaw) / 1000) : null;
+      const location = e.location?.name?.fi || e.location?.name || e.location || e.venue || 'Tampere';
+      if (!title || !Number.isFinite(time)) return null;
+      return { type: 'tapahtuma', time, title, detail: 'Tapahtuma päättyy', location, demand: 2 };
+    })
+    .filter(Boolean)
+    .filter((e) => e.time > now - 300);
+  // HUOM: listaa KAIKKI tapahtumat - kannattaa myöhemmin suodattaa vain isoimmat.
 }
 
 // ---------- KOKOA KAIKKI YHTEEN ----------
