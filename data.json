@@ -34,17 +34,17 @@
   {
     "type": "juna",
     "time": 1789408381,
-    "title": "IC148",
+    "title": "IC149",
     "detail": "Saapuu",
-    "location": "Rautatieasema · raide 4",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1789408381,
-    "title": "IC149",
+    "time": 1789408414,
+    "title": "IC148",
     "detail": "Saapuu",
-    "location": "Rautatieasema · raide 3",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
