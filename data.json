@@ -1,27 +1,59 @@
 [
   {
-    "type": "juna",
-    "time": 1789401221,
-    "title": "IC54",
-    "detail": "Saapuu",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
+    "type": "bussi",
+    "time": 1789401600,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789401600,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789402288,
+    "title": "42",
+    "detail": "Lähtöpaikka: Kuhmoinen MH",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "juna",
-    "time": 1789401679,
-    "title": "IC49",
-    "detail": "Saapuu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789402245,
+    "time": 1789402295,
     "title": "IC177",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 3",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1789402458,
+    "title": "95",
+    "detail": "Lähtöpaikka: Orivesi",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789403365,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789403671,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "juna",
@@ -80,6 +112,38 @@
     "demand": 2
   },
   {
+    "type": "bussi",
+    "time": 1789405113,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789406832,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789407279,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789407632,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "juna",
     "time": 1789408255,
     "title": "IC148",
@@ -104,6 +168,22 @@
     "demand": 2
   },
   {
+    "type": "bussi",
+    "time": 1789408680,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789410240,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "juna",
     "time": 1789411560,
     "title": "IC931",
@@ -120,6 +200,14 @@
     "demand": 2
   },
   {
+    "type": "bussi",
+    "time": 1789411860,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "juna",
     "time": 1789411980,
     "title": "IC183",
@@ -134,6 +222,22 @@
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 2",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1789412280,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789413780,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "juna",
@@ -158,5 +262,733 @@
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 1",
     "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789419180,
+    "title": "IC187",
+    "detail": "Saapuu",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789426500,
+    "title": "PYO273",
+    "detail": "Saapuu",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1789441890,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789442820,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789443000,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789443510,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789443600,
+    "title": "95",
+    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789444080,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789444500,
+    "title": "43U",
+    "detail": "Lähtöpaikka: Koivulinna P (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789444710,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789446060,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789446540,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789446600,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789447290,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789447500,
+    "title": "60U",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789447680,
+    "title": "95",
+    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789447860,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789448490,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789449000,
+    "title": "43U",
+    "detail": "Lähtöpaikka: Koivulinna P (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789449720,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789450200,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789450200,
+    "title": "55",
+    "detail": "Lähtöpaikka: Narva (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789450920,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789451280,
+    "title": "95",
+    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789451700,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789452000,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789452120,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789452600,
+    "title": "42",
+    "detail": "Lähtöpaikka: Kuhmoinen MH (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789453800,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789453800,
+    "title": "43U",
+    "detail": "Lähtöpaikka: Koivulinna P (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789453920,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789454700,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789455600,
+    "title": "43U",
+    "detail": "Lähtöpaikka: Koivulinna P (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789455690,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789456020,
+    "title": "95",
+    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789456140,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789457490,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789458780,
+    "title": "55",
+    "detail": "Lähtöpaikka: Narva (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789459200,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789459290,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789460280,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789461090,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789461840,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789462890,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789464480,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789464600,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789464690,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789465440,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789466490,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789466820,
+    "title": "95",
+    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789467900,
+    "title": "43U",
+    "detail": "Lähtöpaikka: Koivulinna P (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789468290,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789468680,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789470000,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789470090,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789470420,
+    "title": "95",
+    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789470780,
+    "title": "55",
+    "detail": "Lähtöpaikka: Narva (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789471290,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789472490,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789472940,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789473300,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789473720,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789474020,
+    "title": "95",
+    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789474440,
+    "title": "42",
+    "detail": "Lähtöpaikka: Kuhmoinen MH (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789475010,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789475400,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789475400,
+    "title": "43U",
+    "detail": "Lähtöpaikka: Koivulinna P (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789476210,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789476960,
+    "title": "55",
+    "detail": "Lähtöpaikka: Narva (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789477410,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789477440,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789478580,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789478700,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789478880,
+    "title": "95",
+    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789479000,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789479900,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789480380,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789481100,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789481400,
+    "title": "43U",
+    "detail": "Lähtöpaikka: Koivulinna P (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789481520,
+    "title": "95",
+    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789481640,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789482600,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789482870,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789483860,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789484610,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789485000,
+    "title": "95",
+    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789485780,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789486350,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789487220,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789488000,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789488000,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   }
 ]
