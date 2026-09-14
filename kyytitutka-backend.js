@@ -284,7 +284,15 @@ async function fetchFinaviaSchedule() {
   try {
     json = JSON.parse(bodyText);
   } catch {
-    console.error('Finavia: vastaus ei ollut JSON:ia. Alku: ' + bodyText.slice(0, 300));
+    // XML, ei JSON (Finavia palauttaa <flights><dep>...</dep><arr>...</arr></flights>).
+    // Kirjataan <arr>-osio (saapuvat - <dep> eli lähtevät on jo nähty) useana
+    // lyhyenä rivinä, jotta mikään yksittäinen rivi ei katkea lokinäkymässä.
+    const arrIndex = bodyText.indexOf('<arr');
+    const snippet = arrIndex >= 0 ? bodyText.slice(arrIndex, arrIndex + 1200) : bodyText.slice(0, 1200);
+    console.error(`Finavia: XML, ei JSON. <arr>-osio ${arrIndex >= 0 ? 'löytyi' : 'EI löytynyt - näytetään alusta'}:`);
+    for (let i = 0; i < snippet.length; i += 200) {
+      console.error('  ' + snippet.slice(i, i + 200));
+    }
     return [];
   }
 
