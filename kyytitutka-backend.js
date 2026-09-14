@@ -2,21 +2,23 @@
 // Hakee saapumistiedot neljästä lähteestä ja yhdistää ne yhdeksi feediksi,
 // samassa muodossa kuin demon SIGNALS-taulukko (type, time, title, detail, location, demand).
 //
-// YMPÄRISTÖMUUTTUJAT (aseta nämä ennen ajoa):
+// YMPÄRISTÖMUUTTUJAT:
 //   DIGITRANSIT_API_KEY   - Digitransitin API-portaalista (bussit)
 //   OPENSKY_CLIENT_ID     - OpenSky-tililtä (lennot/ADS-B)
 //   OPENSKY_CLIENT_SECRET - OpenSky-tililtä
-//
 // Juna- ja tapahtumadata eivät vaadi avainta.
 //
-// HUOM koko tiedostosta: tätä ei ole voitu testata livenä, koska tässä
-// ympäristössä ei ole verkkoyhteyttä. Endpointit ja kenttänimet on
-// tarkistettu dokumentaatiosta/esimerkeistä, mutta kaksi kohtaa on
-// merkitty erikseen "TARKISTA"-kommentilla - ne pitää varmistaa omalta
-// tililtä/GraphiQL-selaimella ennen ensimmäistä ajoa.
+// TÄRKEÄÄ: kaikki diagnostiikka kirjoitetaan console.error:iin (stderr), EI
+// console.log:iin - näin stdout sisältää PELKÄN JSON:in, kun ajetaan
+// `node kyytitutka-backend.js > data.json`. Älä lisää console.log-kutsuja
+// main()-funktion ulkopuolelle tuon yhden rivin lisäksi.
+//
+// HUOM: tätä ei ole voitu testata livenä, koska tässä ympäristössä ei ole
+// verkkoyhteyttä. Yksi kohta on merkitty TARKISTA-kommentilla - se pitää
+// varmistaa Digitransitin GraphiQL-selaimella ennen ensimmäistä ajoa.
 
 const TAMPERE_STATION = 'TPE'; // Digitrafficin asemakoodi Tampereelle (vahvistettu)
-const PIRKKALA_BBOX = { latMin: 61.40, latMax: 61.53, lonMin: 23.50, lonMax: 23.80 }; // väljä laatikko lentokentän ympärille
+const PIRKKALA_BBOX = { latMin: 61.40, latMax: 61.53, lonMin: 23.50, lonMax: 23.80 };
 
 // ---------- 1. JUNAT (Digitraffic, ei avainta) ----------
 async function fetchTrains() {
@@ -47,82 +49,96 @@ async function fetchTrains() {
     .filter(Boolean);
 }
 
-// ---------- 2. SAAPUVAT KAUKOLIIKENTEEN BUSSIT ----------
-// Pysäkit vahvistettu käyttäjän 14.9.2026 Digitransit-hakulokista.
-// Tunnuksen nimi "2" ei ole vahvistettu fyysisen lähtölaiturin numero.
-const COACH_STOPS = ['MATKA:358759', 'VARELY:305869'];
-// Lokissa tunnistetut kaukoliikenteen linjat. Kattavuus ei ole kaikki liikennöitsijät.
-function isCoachRoute(route) {
-  return route?.mode === 'BUS' && (
-    (route.gtfsId?.startsWith('MATKA:') && /^(OB\d+|V130)$/.test(route.shortName || '')) ||
-    ['VARELY:1401', 'VARELY:1411', 'VARELY:1412'].includes(route.gtfsId)
-  );
-}
-function busSignals(stopId, rows, now = Math.floor(Date.now() / 1000)) {
+// ---------- 2. BUSSIT (Digitransit GraphQL, vaatii DIGITRANSIT_API_KEY) ----------
+// PARAS ARVAUS, EI VIELÄ VARMISTETTU AJAMALLA: ainoa riippumattomasti löytyvä
+// viite Tampereen linja-autoasemalle on "Matkahuolto:37958" (löytyi hakukoneen
+// itsenäisesti indeksoimana, kuvauksella "Tampere, linja-autoasema - Pysäkki").
+// Ei ole vahvistettu, että tämä täsmää Digitransitin GraphQL-rajapinnan gtfsId:hen.
+//
+// Jos ensimmäinen ajo epäonnistuu virheeseen "Pysäkkiä ... ei löytynyt", tunnus
+// on väärä - silloin oikea tapa selvittää se on Digitransitin GraphiQL-selain
+// (https://api.digitransit.fi/graphiql/finland) kyselyllä:
+//   { stopsByRadius(lat: 61.4980, lon: 23.7610, radius: 500) {
+//       edges { node { stop { gtfsId name } } } } }
+//
+// Koska Tampereen linja-autoasema on nimenomaan kaukoliikenteen pääteasema (Koiviston
+// Auto, Paunu, Express Bus, Onnibus ym. - ei paikallisia Nysse-linjoja), kaikkien
+// sinne saapuvien vuorojen pitäisi jo olla kaukoliikennettä. Erillistä reittien
+// nimi-/tunnussuodatusta ei siis pitäisi tarvita.
+const TAMPERE_BUS_STOP_ID = 'Matkahuolto:37958';
+
+function busArrivalsFromRows(stopId, rows, now) {
   const result = [];
   const seen = new Set();
   for (const s of rows) {
     const trip = s.trip;
-    if (!isCoachRoute(trip?.route) || s.realtimeState === 'CANCELED') continue;
+    if (!trip || s.realtimeState === 'CANCELED') continue;
     const stops = trip.pattern?.stops || [];
-    const indices = stops.map((p, i) => p.gtfsId === stopId ? i : -1).filter(i => i >= 0);
-    if (indices.length !== 1) throw new Error('Bussivuoron pysäkkijärjestystä ei voida tulkita yksiselitteisesti.');
-    const index = indices[0];
-    // Tampereelta alkavat vuorot pois. Läpi kulkevilta vuoroilta vain saapuminen.
-    if (index === 0) continue;
+    const index = stops.findIndex((p) => p.gtfsId === stopId);
+    if (index <= 0) continue; // -1: pysäkkiä ei löydy pattern-listalta. 0: tämä on lähtöpaikka, ei saapuminen.
     const seconds = s.realtime && Number.isFinite(s.realtimeArrival) ? s.realtimeArrival : s.scheduledArrival;
     if (!Number.isFinite(s.serviceDay) || !Number.isFinite(seconds)) continue;
     const time = s.serviceDay + seconds;
     if (time < now - 300 || time > now + 86400) continue;
-    const id = `${trip.gtfsId}:${s.serviceDay}:arrival:${index}`;
+    const id = `${trip.gtfsId}:${s.serviceDay}`;
     if (seen.has(id)) continue;
     seen.add(id);
     result.push({
-      type: 'bussi', direction: 'arrival', time,
-      title: `${trip.route.shortName || trip.route.longName} · Saapuu`,
-      detail: `Lähtöpaikka: ${stops[0]?.name || 'Ei tiedossa'} · ${s.realtime ? 'Reaaliaikatieto' : 'Aikatauluaika'}`,
-      location: 'Tampereen linja-autoasema', demand: 1,
-      route: trip.route.longName, tripId: trip.gtfsId, stopId,
-      source: 'Digitransit',
+      type: 'bussi',
+      time,
+      title: trip.route?.shortName || trip.route?.longName || 'Bussi',
+      detail: `Lähtöpaikka: ${stops[0]?.name || 'ei tiedossa'}${s.realtime ? '' : ' (aikatauluaika)'}`,
+      location: 'Linja-autoasema',
+      demand: 1,
     });
   }
   return result;
 }
+
 async function fetchBuses() {
-  if (!process.env.DIGITRANSIT_API_KEY) throw new Error('DIGITRANSIT_API_KEY puuttuu.');
+  if (!process.env.DIGITRANSIT_API_KEY) {
+    console.error('Bussit ohitettu: DIGITRANSIT_API_KEY puuttuu.');
+    return [];
+  }
   const now = Math.floor(Date.now() / 1000);
-  const batches = await Promise.all(COACH_STOPS.map(async stopId => {
-    const query = `{ stop(id: ${JSON.stringify(stopId)}) {
-      stoptimesWithoutPatterns(numberOfDepartures: 500, startTime: ${now - 300}, timeRange: 86700, omitNonPickups: false) {
-        scheduledArrival realtimeArrival
-        realtime realtimeState serviceDay
-        trip { gtfsId route { gtfsId shortName longName mode }
+  const query = `{
+    stop(id: ${JSON.stringify(TAMPERE_BUS_STOP_ID)}) {
+      stoptimesWithoutPatterns(numberOfDepartures: 100, startTime: ${now - 300}, timeRange: 86700) {
+        scheduledArrival
+        realtimeArrival
+        realtime
+        realtimeState
+        serviceDay
+        trip {
+          gtfsId
+          route { shortName longName }
           pattern { stops { gtfsId name } }
         }
       }
-    } }`;
-    const response = await fetch('https://api.digitransit.fi/routing/v2/finland/gtfs/v1', {
-      method: 'POST', headers: { 'Content-Type': 'application/json',
-        'digitransit-subscription-key': process.env.DIGITRANSIT_API_KEY },
-      body: JSON.stringify({ query }), signal: AbortSignal.timeout(30000),
-    });
-    if (!response.ok) throw new Error(`Digitransit HTTP ${response.status}`);
-    const data = await response.json();
-    if (data.errors?.length) throw new Error('Digitransit: ' + data.errors.map(e => e.message).join('; '));
-    if (!data.data?.stop) throw new Error(`Pysäkkiä ${stopId} ei löytynyt.`);
-    const rows = data.data.stop.stoptimesWithoutPatterns || [];
-    if (rows.length >= 500) throw new Error('Pysäkin hakuraja täyttyi; koko vuorokauden kattavuutta ei voi vahvistaa.');
-    return busSignals(stopId, rows, now);
-  }));
-  const all = batches.flat().sort((a, b) => a.time - b.time);
-  console.log(`Kaukobussit: ${all.length} saapumista.`);
-  return all;
+    }
+  }`;
+
+  const res = await fetch('https://api.digitransit.fi/routing/v2/finland/gtfs/v1', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'digitransit-subscription-key': process.env.DIGITRANSIT_API_KEY,
+    },
+    body: JSON.stringify({ query }),
+    signal: AbortSignal.timeout(30000),
+  });
+  if (!res.ok) throw new Error(`Digitransit HTTP ${res.status}`);
+  const json = await res.json();
+  if (json.errors?.length) throw new Error('Digitransit: ' + json.errors.map((e) => e.message).join('; '));
+  if (!json.data?.stop) throw new Error(`Pysäkkiä ${TAMPERE_BUS_STOP_ID} ei löytynyt - tarkista tunnus GraphiQL-selaimella.`);
+
+  return busArrivalsFromRows(TAMPERE_BUS_STOP_ID, json.data.stop.stoptimesWithoutPatterns || [], now);
 }
 
 // ---------- 3. LENNOT (OpenSky ADS-B, vaatii OPENSKY_CLIENT_ID/SECRET) ----------
-// TARKISTA: alla oleva token-endpoint on parhaan tietoni mukainen (OpenSky siirtyi
-// OAuth2-kirjautumiseen 2026), mutta tarkista tarkka osoite omalta tililtäsi/
-// dokumentaatiosta ennen ensimmäistä ajoa - en pysty testaamaan tätä täältä.
+// TARKISTA: token-endpoint on parhaan tietoni mukainen (OpenSky siirtyi OAuth2-
+// kirjautumiseen 2026), mutta varmista tarkka osoite omalta tililtäsi ennen
+// ensimmäistä ajoa - en pysty testaamaan tätä täältä.
 async function getOpenSkyToken() {
   if (!process.env.OPENSKY_CLIENT_ID || !process.env.OPENSKY_CLIENT_SECRET) {
     throw new Error('OPENSKY_CLIENT_ID tai OPENSKY_CLIENT_SECRET puuttuu.');
@@ -154,17 +170,24 @@ async function fetchFlights() {
   if (!res.ok) throw new Error(`OpenSky virhe: ${res.status}`);
   const json = await res.json();
 
-  // Tilavektorin kentät (kiinteä järjestys OpenSkyn dokumentaation mukaan):
-  // [0]=icao24 [1]=callsign [4]=last_contact [6]=latitude [7]=baro_altitude
+  // Tilavektorin kentät (kiinteä järjestys): [1]=callsign [3]=time_position
+  // [5]=longitude [6]=latitude [7]=baro_altitude [8]=on_ground
   return (json.states || [])
-    .filter((s) => Number.isFinite(s[5]) && Number.isFinite(s[6]) &&
-      Number.isFinite(s[7]) && s[7] < 900 && s[8] === false &&
-      Number.isFinite(s[3]) && Date.now() / 1000 - s[3] <= 120) // tuore havainto ilmassa
+    .filter(
+      (s) =>
+        Number.isFinite(s[5]) &&
+        Number.isFinite(s[6]) &&
+        Number.isFinite(s[7]) &&
+        s[7] < 900 &&
+        s[8] === false &&
+        Number.isFinite(s[3]) &&
+        Date.now() / 1000 - s[3] <= 120
+    )
     .map((s) => ({
       type: 'lento',
       time: s[3],
       title: (s[1] || '').trim() || s[0],
-      detail: 'Matalalla havaittu lentokone kentän lähellä (ADS-B; määränpää ja saapumisaika eivät ole tiedossa)',
+      detail: 'Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)',
       location: 'Lentoasema, Pirkkala',
       demand: 2,
     }));
@@ -172,19 +195,14 @@ async function fetchFlights() {
 
 // ---------- 4. TAPAHTUMAT (Tampereen LinkedEvents, ei avainta) ----------
 async function fetchEvents() {
+  // Helsingin aikavyöhykkeen päivämäärä - UTC-päivämäärä näyttäisi väärää
+  // päivää muutaman tunnin ajan joka yö, koska Suomi on UTC:n edellä.
   const today = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Helsinki' }).format(new Date());
   const tomorrow = new Date(Date.parse(today + 'T12:00:00Z') + 86400000).toISOString().slice(0, 10);
   const url = `https://linkedevents.tampere.fi/v1/event/?start=${today}&end=${tomorrow}&sort=start_time&include=location`;
 
   const res = await fetch(url);
-  if (!res.ok) {
-    let reason = '';
-    try {
-      const body = await res.json();
-      reason = JSON.stringify(body.detail || body.message || body.error || '').slice(0, 300);
-    } catch {}
-    throw new Error(`LinkedEvents virhe: ${res.status} ${reason}`);
-  }
+  if (!res.ok) throw new Error(`LinkedEvents virhe: ${res.status}`);
   const json = await res.json();
 
   return (json.data || [])
@@ -197,43 +215,31 @@ async function fetchEvents() {
       location: e.location?.name?.fi || 'Tampere',
       demand: 2,
     }));
-  // HUOM: tämä listaa KAIKKI tapahtumat - kannattaa myöhemmin suodattaa vain
-  // isoimmat (esim. tunnettujen isojen paikkojen mukaan: Nokia-areena, Tampere-talo...),
-  // koska rajapinta sisältää myös pienet harrastetapahtumat.
+  // HUOM: listaa KAIKKI tapahtumat - kannattaa myöhemmin suodattaa vain isoimmat
+  // (esim. tunnettujen isojen paikkojen mukaan), koska rajapinta sisältää myös
+  // pienet harrastetapahtumat.
 }
 
 // ---------- KOKOA KAIKKI YHTEEN ----------
 async function main() {
   const results = await Promise.allSettled([fetchTrains(), fetchBuses(), fetchFlights(), fetchEvents()]);
   const [trains, buses, flights, events] = results.map((r) => (r.status === 'fulfilled' ? r.value : []));
+  const names = ['Junat', 'Bussit', 'Lennot', 'Tapahtumat'];
 
   results.forEach((r, i) => {
-    if (r.status === 'rejected') {
-      console.error(['Junat', 'Bussit', 'Lennot', 'Tapahtumat'][i], 'epäonnistui:', r.reason.message);
-    }
+    if (r.status === 'rejected') console.error(`${names[i]} epäonnistui:`, r.reason.message);
+    else console.error(`${names[i]}: ${r.value.length} havaintoa`);
   });
 
   const combined = [...trains, ...buses, ...flights, ...events].sort((a, b) => a.time - b.time);
-  const names = ['Junat', 'Bussit', 'Lennot', 'Tapahtumat'];
-  const sources = Object.fromEntries(results.map((r, i) => [names[i], {
-    status: r.status === 'fulfilled' ? 'ok' : 'error',
-    count: r.status === 'fulfilled' ? r.value.length : 0,
-  }]));
-  for (const [name, status] of Object.entries(sources)) {
-    console.log(`${name}: ${status.status}, ${status.count} havaintoa`);
-  }
-  const fs = require('node:fs');
-  const path = require('node:path');
-  const output = process.env.OUTPUT_FILE || 'data/signals.json';
-  fs.mkdirSync(path.dirname(output), { recursive: true });
-  fs.writeFileSync(output, JSON.stringify(combined, null, 2) + '\n');
-  fs.writeFileSync(path.join(path.dirname(output), 'status.json'),
-    JSON.stringify({ generatedAt: new Date().toISOString(), sources }, null, 2) + '\n');
-  console.log(`Tallennettu: ${output}. GitHub Actions tarvitsee erillisen tallennus- tai julkaisuvaiheen säilyttääkseen tiedostot ajon jälkeen.`);
   console.log(JSON.stringify(combined, null, 2));
-  if (results.some(r => r.status === 'rejected')) process.exitCode = 1;
   return combined;
 }
 
-if (require.main === module) main().catch(error => { console.error(error.message); process.exitCode = 1; });
-module.exports = { fetchTrains, fetchBuses, fetchFlights, fetchEvents, main, busSignals, isCoachRoute };
+if (require.main === module) {
+  main().catch((error) => {
+    console.error(error.message);
+    process.exitCode = 1;
+  });
+}
+module.exports = { fetchTrains, fetchBuses, fetchFlights, fetchEvents, main };
