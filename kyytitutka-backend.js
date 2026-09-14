@@ -241,10 +241,11 @@ async function fetchFlights() {
 }
 
 // ---------- 3b. LENNOT - AIKATAULUTIETO (Finavia, vaatii FINAVIA_API_KEY) ----------
-// Osoite VAHVISTETTU suoraan käyttäjän Finavia-portaalin Try It -konsolista
-// (200 OK): http://apigw.finavia.fi/flights/public/v0/flights - huomaa http,
-// ei https, ja ettei polussa ole lentoasemakohtaista osaa. Otsikon nimi
-// "app_key" vahvistettu samasta konsolista aiemmin.
+// Polku ja otsikko VAHVISTETTU käyttäjän Finavia-portaalin Try It -konsolista
+// (200 OK): apigw.finavia.fi/flights/public/v0/flights, otsikko "app_key".
+// Konsoli näytti http://, mutta se epäonnistui GitHub Actionsista "fetch failed"
+// -virheellä - todennäköisesti Actions-ympäristö sallii vain https-portin (443)
+// eikä http:tä (80). Kokeillaan siis https:// samalla polulla.
 //
 // Tarkoituksella oma, erillinen funktio eikä osa OpenSky-hakua: nämä kaksi
 // täydentävät toisiaan (Finavia = aikataulu etukäteen, OpenSky = fyysinen
@@ -261,7 +262,7 @@ async function fetchFinaviaSchedule() {
     return [];
   }
 
-  const url = 'http://apigw.finavia.fi/flights/public/v0/flights';
+  const url = 'https://apigw.finavia.fi/flights/public/v0/flights';
   let res;
   try {
     res = await fetch(url, {
