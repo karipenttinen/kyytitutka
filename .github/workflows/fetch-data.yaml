@@ -1,0 +1,38 @@
+name: Kyytitutka - hae saapumistiedot
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # joka 15. minuutti
+  workflow_dispatch:          # sallii "Run workflow" -napin manuaalista testausta varten
+
+permissions:
+  contents: write            # jotta workflow voi tallentaa data.json:n takaisin repoon
+
+concurrency:
+  group: kyytitutka-fetch
+  cancel-in-progress: false  # ei keskeytetä kesken olevaa ajoa, odotetaan sen valmistumista
+
+jobs:
+  hae-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5        # varmuuden vuoksi, ettei ajo voi jäädä ikuisesti jumiin
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: node kyytitutka-backend.js > data.json
+        env:
+          DIGITRANSIT_API_KEY: ${{ secrets.DIGITRANSIT_API_KEY }}
+          OPENSKY_CLIENT_ID: ${{ secrets.OPENSKY_CLIENT_ID }}
+          OPENSKY_CLIENT_SECRET: ${{ secrets.OPENSKY_CLIENT_SECRET }}
+
+      - name: Tallenna data.json takaisin repoon
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git commit -m "Päivitä saapumistiedot" || echo "Ei muutoksia"
+          git push
