@@ -1,7 +1,7 @@
 [
   {
     "type": "bussi",
-    "time": 1789410270,
+    "time": 1789410297,
     "title": "55",
     "detail": "Lähtöpaikka: Vesilahti",
     "location": "Linja-autoasema",
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789411860,
+    "time": 1789411793,
     "title": "S28",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 1",
