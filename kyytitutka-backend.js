@@ -213,22 +213,32 @@ async function fetchBuses() {
 
   // Yleinen korjaus MATKA:358759-tyyppisiin tapauksiin: pelkällä numerolla
   // nimetyt pysäkit (kuten Helsinki-Vantaan V130-yhteyden laituri "2") eivät
-  // täsmää nimihakuun mitenkään, joten otetaan lisäksi mukaan KAIKKI pysäkit
-  // jotka ovat lähellä (200m sisällä) jotain jo nimellä löytynyttä linja-
-  // autoaseman pysäkkiä - riippumatta niiden omasta nimestä. Tämä löytää
-  // vastaavat tapaukset automaattisesti jatkossa ilman käsin lisättäviä tunnuksia.
-  const referenssi = nimellaLoytyneet.find((s) => Number.isFinite(s.lat) && Number.isFinite(s.lon));
+  // täsmää nimihakuun mitenkään, joten otetaan lisäksi mukaan pysäkit jotka
+  // ovat lähellä nimellä löytyneiden pysäkkien KESKIPISTETTÄ - riippumatta
+  // niiden omasta nimestä. 200m osoittautui liian avokätiseksi (nappasi mukaan
+  // "Sorin aukio" ja "Ratina", jotka ovat eri paikkoja) - tiukennettu 90m:iin,
+  // ja lisäksi suljettu nimellä pois tunnetut väärät osumat varmuuden vuoksi.
+  const VARMASTI_MUU_PAIKKA = ['sorin aukio', 'ratina'];
+  const kelvolliset = nimellaLoytyneet.filter((s) => Number.isFinite(s.lat) && Number.isFinite(s.lon));
   let candidates = nimellaLoytyneet;
-  if (referenssi) {
+  if (kelvolliset.length > 0) {
+    const keskiLat = kelvolliset.reduce((sum, s) => sum + s.lat, 0) / kelvolliset.length;
+    const keskiLon = kelvolliset.reduce((sum, s) => sum + s.lon, 0) / kelvolliset.length;
     const muutLahella = allStops.filter((s) => {
       if (nimellaLoytyneet.some((n) => n.gtfsId === s.gtfsId)) return false;
       if (!Number.isFinite(s.lat) || !Number.isFinite(s.lon)) return false;
-      return etaisyysMetreina(referenssi.lat, referenssi.lon, s.lat, s.lon) <= 200;
+      if (VARMASTI_MUU_PAIKKA.some((p) => (s.name || '').toLowerCase().includes(p))) return false;
+      return etaisyysMetreina(keskiLat, keskiLon, s.lat, s.lon) <= 90;
     });
     if (muutLahella.length > 0) {
       console.error(
-        `Bussit: nimihaun lisäksi ${muutLahella.length} pysäkkiä 200m säteellä pysäkistä ${referenssi.gtfsId} (nimestä riippumatta): ` +
-          muutLahella.map((s) => `${s.gtfsId} (${s.name})`).join(', ')
+        `Bussit: nimihaun lisäksi ${muutLahella.length} pysäkkiä 90m säteellä keskipisteestä (nimestä riippumatta): ` +
+          muutLahella
+            .map(
+              (s) =>
+                `${s.gtfsId} (${s.name}, ${Math.round(etaisyysMetreina(keskiLat, keskiLon, s.lat, s.lon))}m)`
+            )
+            .join(', ')
       );
     }
     candidates = [...nimellaLoytyneet, ...muutLahella];
