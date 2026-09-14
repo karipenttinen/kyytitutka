@@ -88,7 +88,7 @@ async function fetchTrains() {
 async function discoverNearbyStops() {
   const query = `{
     stopsByRadius(lat: 61.4980, lon: 23.7700, radius: 1000) {
-      edges { node { stop { gtfsId name } } }
+      edges { node { stop { gtfsId name lat lon } } }
     }
   }`;
   const res = await fetch('https://api.digitransit.fi/routing/v2/finland/gtfs/v1', {
@@ -114,6 +114,16 @@ async function discoverNearbyStops() {
     }
   }
   return stops;
+}
+
+function etaisyysMetreina(lat1, lon1, lat2, lon2) {
+  const R = 6371000;
+  const toRad = (d) => (d * Math.PI) / 180;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a =
+    Math.sin(dLat / 2) ** 2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
 // Tampereen lähikunnat, jotka suodatetaan pois bussihausta - näiden liikenne
@@ -199,7 +209,31 @@ async function fetchBuses() {
   console.error(`Bussit: löytyi ${allStops.length} pysäkkiä 1 km säteellä keskustasta:`);
   allStops.forEach((s) => console.error(`  ${s.gtfsId} :: ${s.name}`));
 
-  const candidates = allStops.filter((s) => /linja-?autoasema/i.test(s.name || ''));
+  const nimellaLoytyneet = allStops.filter((s) => /linja-?autoasema/i.test(s.name || ''));
+
+  // Yleinen korjaus MATKA:358759-tyyppisiin tapauksiin: pelkällä numerolla
+  // nimetyt pysäkit (kuten Helsinki-Vantaan V130-yhteyden laituri "2") eivät
+  // täsmää nimihakuun mitenkään, joten otetaan lisäksi mukaan KAIKKI pysäkit
+  // jotka ovat lähellä (200m sisällä) jotain jo nimellä löytynyttä linja-
+  // autoaseman pysäkkiä - riippumatta niiden omasta nimestä. Tämä löytää
+  // vastaavat tapaukset automaattisesti jatkossa ilman käsin lisättäviä tunnuksia.
+  const referenssi = nimellaLoytyneet.find((s) => Number.isFinite(s.lat) && Number.isFinite(s.lon));
+  let candidates = nimellaLoytyneet;
+  if (referenssi) {
+    const muutLahella = allStops.filter((s) => {
+      if (nimellaLoytyneet.some((n) => n.gtfsId === s.gtfsId)) return false;
+      if (!Number.isFinite(s.lat) || !Number.isFinite(s.lon)) return false;
+      return etaisyysMetreina(referenssi.lat, referenssi.lon, s.lat, s.lon) <= 200;
+    });
+    if (muutLahella.length > 0) {
+      console.error(
+        `Bussit: nimihaun lisäksi ${muutLahella.length} pysäkkiä 200m säteellä pysäkistä ${referenssi.gtfsId} (nimestä riippumatta): ` +
+          muutLahella.map((s) => `${s.gtfsId} (${s.name})`).join(', ')
+      );
+    }
+    candidates = [...nimellaLoytyneet, ...muutLahella];
+  }
+
   if (candidates.length === 0) {
     console.error(
       'Bussit ohitettu: yksikään löytynyt pysäkki ei täsmännyt nimellä "linja-autoasema" - katso yllä oleva lista ja kerro mitä siinä lukee.'
@@ -209,94 +243,9 @@ async function fetchBuses() {
   console.error('Näistä käytetään: ' + candidates.map((s) => `${s.gtfsId} (${s.name})`).join(', '));
 
   const now = Math.floor(Date.now() / 1000);
-
-  // Laajempi kertaluonteinen diagnostiikka: haetaan V130/Vantaa KAIKILTA 1 km
-  // säteen sisällä löytyneiltä pysäkeiltä (ei vain niiltä 7:ltä joita normaalisti
-  // käytetään), koska se saattaa saapua jollekin muulle, nimeltään toisenlaiselle
-  // pysäkille jonka nimisuodatus hylkäsi. Tämä TUPLAA API-kutsujen määrän tällä
-  // ajolla - poistetaan kun asia on selvinnyt.
-  const muutStops = allStops.filter((s) => !candidates.some((c) => c.gtfsId === s.gtfsId));
-  const muutRows = await Promise.all(
-    muutStops.map(async (stop) => ({ stop, rows: await fetchStoptimesForStop(stop.gtfsId, now) }))
-  );
-  let vantaaMuualla = false;
-  for (const { stop, rows } of muutRows) {
-    for (const r of rows) {
-      const routeName = r.trip?.route?.shortName || r.trip?.route?.longName || '';
-      const origin = r.trip?.pattern?.stops?.[0]?.name || '';
-      if (/v130/i.test(routeName) || /vantaa/i.test(origin) || /vantaa/i.test(routeName)) {
-        vantaaMuualla = true;
-        console.error(
-          `Bussit: LÖYTYI V130/Vantaa MUULTA (ei-linja-autoasema-nimiseltä) pysäkiltä ${stop.gtfsId} (${stop.name}): ` +
-            `reitti="${routeName}", lähtö="${origin}"`
-        );
-      }
-    }
-  }
-  if (!vantaaMuualla) {
-    console.error(`Bussit: ei V130/Vantaa-osumaa myöskään niillä ${muutStops.length} muulla 1 km säteen pysäkillä.`);
-  }
-
   const rowsPerStop = await Promise.all(
     candidates.map(async (stop) => ({ stop, rows: await fetchStoptimesForStop(stop.gtfsId, now) }))
   );
-
-  // Diagnostiikka: etsitään V130 (tai mikä tahansa Vantaa-yhteys) raakadatasta
-  // ennen mitään suodatusta - näin nähdään putoaako se pois jo pysäkinvalinnassa
-  // (ei löydy täältä ollenkaan) vai vasta saapumis-/lähikuntasuodatuksessa.
-  let vantaaLoytyi = false;
-  for (const { stop, rows } of rowsPerStop) {
-    for (const r of rows) {
-      const routeName = r.trip?.route?.shortName || r.trip?.route?.longName || '';
-      const origin = r.trip?.pattern?.stops?.[0]?.name || '';
-      if (/v130/i.test(routeName) || /vantaa/i.test(origin) || /vantaa/i.test(routeName)) {
-        vantaaLoytyi = true;
-        console.error(
-          `Bussit: LÖYTYI V130/Vantaa-osuma pysäkillä ${stop.gtfsId} (${stop.name}): ` +
-            `reitti="${routeName}", lähtöpaikka="${origin}", realtimeState=${r.realtimeState}`
-        );
-      }
-    }
-  }
-  if (!vantaaLoytyi) {
-    console.error('Bussit: ei yhtään V130- tai Vantaa-osumaa raakadatassa millään haetulla pysäkillä.');
-  }
-
-  // Diagnostiikka: näytetään KAIKKI raa'an datan saapumiset seuraavan 8 tunnin
-  // sisällä millä tahansa reittitunnuksella, jotta nähdään onko siellä mitään
-  // ylipäätään - riippumatta täsmääkö nimi tai lähikuntasuodatus. Ikkuna on
-  // suhteessa nykyhetkeen (ei kiinteä kellonaika), jotta aikavyöhyke ei voi
-  // mennä väärin GitHub Actionsin UTC-palvelimella - näyttöaika muunnetaan
-  // Suomen aikaan vasta lopuksi Intl:n avulla.
-  function helsinkiKello(unixSec) {
-    return new Intl.DateTimeFormat('fi-FI', {
-      timeZone: 'Europe/Helsinki', hour: '2-digit', minute: '2-digit', hour12: false,
-    }).format(new Date(unixSec * 1000));
-  }
-  const kaikkiSaapumiset = [];
-  for (const { stop, rows } of rowsPerStop) {
-    for (const r of rows) {
-      const t = r.serviceDay + (r.realtime && Number.isFinite(r.realtimeArrival) ? r.realtimeArrival : r.scheduledArrival);
-      if (t >= now && t <= now + 8 * 3600) {
-        kaikkiSaapumiset.push({
-          t,
-          routeName: r.trip?.route?.shortName || r.trip?.route?.longName || '(nimetön)',
-          origin: r.trip?.pattern?.stops?.[0]?.name || '?',
-          stopId: stop.gtfsId,
-          tila: r.realtimeState,
-        });
-      }
-    }
-  }
-  kaikkiSaapumiset.sort((a, b) => a.t - b.t);
-  console.error(`Bussit: kaikki raa'an datan saapumiset seuraavan 8 tunnin sisällä (${kaikkiSaapumiset.length} kpl, Suomen aikaa):`);
-  if (kaikkiSaapumiset.length === 0) {
-    console.error('  (ei yhtään)');
-  } else {
-    kaikkiSaapumiset.forEach((s) => {
-      console.error(`  ${helsinkiKello(s.t)} reitti="${s.routeName}" lähtö="${s.origin}" pysäkki=${s.stopId} tila=${s.tila}`);
-    });
-  }
 
   const batches = rowsPerStop.map(({ stop, rows }) => busArrivalsFromRows(stop.gtfsId, rows, now));
   return batches.flat().sort((a, b) => a.time - b.time);
