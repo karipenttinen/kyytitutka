@@ -47,55 +47,80 @@ async function fetchTrains() {
     .filter(Boolean);
 }
 
-// ---------- 2. BUSSIT (Digitransit GraphQL, vaatii DIGITRANSIT_API_KEY) ----------
-// TARKISTA: tämä pysäkin GTFS-id pitää hakea itse Digitransitin GraphiQL-selaimesta,
-// esim. kyselyllä `{ stopsByRadius(lat:61.4978, lon:23.7749, radius:300) { edges { node { stop { gtfsId name } } } } }`
-// Tampereen linja-autoaseman koordinaateilla. En pysty hakemaan tätä itse tästä ympäristöstä.
-const TAMPERE_BUS_STOP_ID = process.env.TAMPERE_BUS_STOP_ID?.trim() || 'TARKISTA_GTFS_ID';
-
-async function fetchBuses() {
-  if (TAMPERE_BUS_STOP_ID === 'TARKISTA_GTFS_ID') {
-    console.warn('Bussit ohitettu: TAMPERE_BUS_STOP_ID puuttuu vielä.');
-    throw new Error('Määritä TAMPERE_BUS_STOP_ID ympäristömuuttujaksi; API-avain ei yksin riitä.');
+// ---------- 2. KAUKOLIIKENTEEN BUSSIT ----------
+// Pysäkit vahvistettu käyttäjän 14.9.2026 Digitransit-hakulokista.
+// Tunnuksen nimi "2" ei ole vahvistettu fyysisen lähtölaiturin numero.
+const COACH_STOPS = ['MATKA:358759', 'VARELY:305869'];
+// Lokissa tunnistetut kaukoliikenteen linjat. Kattavuus ei ole kaikki liikennöitsijät.
+function isCoachRoute(route) {
+  return route?.mode === 'BUS' && (
+    (route.gtfsId?.startsWith('MATKA:') && /^(OB\d+|V130)$/.test(route.shortName || '')) ||
+    ['VARELY:1401', 'VARELY:1411', 'VARELY:1412'].includes(route.gtfsId)
+  );
+}
+function busSignals(stopId, rows, now = Math.floor(Date.now() / 1000)) {
+  const result = [];
+  const seen = new Set();
+  for (const s of rows) {
+    const trip = s.trip;
+    if (!isCoachRoute(trip?.route) || s.realtimeState === 'CANCELED') continue;
+    const stops = trip.pattern?.stops || [];
+    const indices = stops.map((p, i) => p.gtfsId === stopId ? i : -1).filter(i => i >= 0);
+    if (indices.length !== 1) throw new Error('Bussivuoron pysäkkijärjestystä ei voida tulkita yksiselitteisesti.');
+    const index = indices[0];
+    const add = (direction, scheduled, realtime, endpoint) => {
+      const seconds = s.realtime && Number.isFinite(realtime) ? realtime : scheduled;
+      if (!Number.isFinite(s.serviceDay) || !Number.isFinite(seconds)) return;
+      const time = s.serviceDay + seconds;
+      if (time < now - 300 || time > now + 86400) return;
+      const id = `${trip.gtfsId}:${s.serviceDay}:${direction}:${index}`;
+      if (seen.has(id)) return;
+      seen.add(id);
+      result.push({
+        type: 'bussi', direction, time,
+        title: `${trip.route.shortName || trip.route.longName} · ${direction === 'arrival' ? 'Saapuu' : 'Lähtee'}`,
+        detail: `${direction === 'arrival' ? 'Lähtöpaikka' : 'Määränpää'}: ${endpoint || 'Ei tiedossa'} · ${s.realtime ? 'Reaaliaikatieto' : 'Aikatauluaika'}`,
+        location: 'Tampereen linja-autoasema', demand: 1,
+        route: trip.route.longName, tripId: trip.gtfsId, stopId,
+        source: 'Digitransit',
+      });
+    };
+    // Ensimmäisellä pysäkillä vain lähtö, viimeisellä vain saapuminen.
+    // Läpi kulkevalle vuorolle molemmat omilla kellonajoillaan.
+    if (index > 0) add('arrival', s.scheduledArrival, s.realtimeArrival, stops[0]?.name);
+    if (index < stops.length - 1) add('departure', s.scheduledDeparture, s.realtimeDeparture, s.headsign || stops.at(-1)?.name);
   }
+  return result;
+}
+async function fetchBuses() {
   if (!process.env.DIGITRANSIT_API_KEY) throw new Error('DIGITRANSIT_API_KEY puuttuu.');
-
-  const query = `{
-    stop(id: ${JSON.stringify(TAMPERE_BUS_STOP_ID)}) {
-      name
-      stoptimesWithoutPatterns(numberOfDepartures: 20) {
-        scheduledArrival
-        realtimeArrival
-        realtime
-        serviceDay
-        headsign
-        trip { route { shortName longName } }
+  const now = Math.floor(Date.now() / 1000);
+  const batches = await Promise.all(COACH_STOPS.map(async stopId => {
+    const query = `{ stop(id: ${JSON.stringify(stopId)}) {
+      stoptimesWithoutPatterns(numberOfDepartures: 500, startTime: ${now - 300}, timeRange: 86700, omitNonPickups: false) {
+        scheduledArrival realtimeArrival scheduledDeparture realtimeDeparture
+        realtime realtimeState serviceDay headsign
+        trip { gtfsId route { gtfsId shortName longName mode }
+          pattern { stops { gtfsId name } }
+        }
       }
-    }
-  }`;
-
-  const res = await fetch('https://api.digitransit.fi/routing/v2/finland/gtfs/v1', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'digitransit-subscription-key': process.env.DIGITRANSIT_API_KEY,
-    },
-    body: JSON.stringify({ query }),
-  });
-  if (!res.ok) throw new Error(`Digitransit virhe: ${res.status}`);
-  const json = await res.json();
-  if (json.errors?.length) throw new Error('Digitransit GraphQL: ' + json.errors.map(e => e.message).join('; '));
-  if (!json.data?.stop) throw new Error('Digitransit ei löytänyt määritettyä pysäkkiä.');
-  const stoptimes = json.data.stop.stoptimesWithoutPatterns || [];
-
-  return stoptimes.map((s) => ({
-    type: 'bussi',
-    time: s.serviceDay + (s.realtime ? s.realtimeArrival : s.scheduledArrival),
-    title: s.trip.route.shortName || s.trip.route.longName,
-    detail: `Saapuu, määränpää ${s.headsign}`,
-    location: 'Linja-autoasema',
-    demand: 1,
+    } }`;
+    const response = await fetch('https://api.digitransit.fi/routing/v2/finland/gtfs/v1', {
+      method: 'POST', headers: { 'Content-Type': 'application/json',
+        'digitransit-subscription-key': process.env.DIGITRANSIT_API_KEY },
+      body: JSON.stringify({ query }), signal: AbortSignal.timeout(30000),
+    });
+    if (!response.ok) throw new Error(`Digitransit HTTP ${response.status}`);
+    const data = await response.json();
+    if (data.errors?.length) throw new Error('Digitransit: ' + data.errors.map(e => e.message).join('; '));
+    if (!data.data?.stop) throw new Error(`Pysäkkiä ${stopId} ei löytynyt.`);
+    const rows = data.data.stop.stoptimesWithoutPatterns || [];
+    if (rows.length >= 500) throw new Error('Pysäkin hakuraja täyttyi; koko vuorokauden kattavuutta ei voi vahvistaa.');
+    return busSignals(stopId, rows, now);
   }));
+  const all = batches.flat().sort((a, b) => a.time - b.time);
+  console.log(`Kaukobussit: ${all.filter(x => x.direction === 'arrival').length} saapumista ja ${all.filter(x => x.direction === 'departure').length} lähtöä.`);
+  return all;
 }
 
 // ---------- 3. LENNOT (OpenSky ADS-B, vaatii OPENSKY_CLIENT_ID/SECRET) ----------
@@ -215,4 +240,4 @@ async function main() {
 }
 
 if (require.main === module) main().catch(error => { console.error(error.message); process.exitCode = 1; });
-module.exports = { fetchTrains, fetchBuses, fetchFlights, fetchEvents, main };
+module.exports = { fetchTrains, fetchBuses, fetchFlights, fetchEvents, main, busSignals, isCoachRoute };
