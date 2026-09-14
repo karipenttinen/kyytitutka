@@ -2,21 +2,54 @@ name: Kyytitutka - hae saapumistiedot
 
 on:
   schedule:
-    - cron: '*/15 * * * *'   # joka 15. minuutti - sopii mukavasti ilmaiseen kuukausikiintiöön
-  workflow_dispatch:          # sallii myös "Run workflow" -napin manuaalista testausta varten
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kyytitutka-fetch-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   hae-data:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
+      - name: Nouda projektin tiedostot
+        uses: actions/checkout@v6
         with:
-          node-version: '20'
+          persist-credentials: false
 
-      - run: node kyytitutka-backend.js
+      - name: Valmistele Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      # Käytä tämän kanssa korjattua kyytitutka-backend.js-tiedostoa.
+      - name: Hae saapumistiedot
+        id: fetch
+        run: node kyytitutka-backend.js
         env:
           DIGITRANSIT_API_KEY: ${{ secrets.DIGITRANSIT_API_KEY }}
           OPENSKY_CLIENT_ID: ${{ secrets.OPENSKY_CLIENT_ID }}
           OPENSKY_CLIENT_SECRET: ${{ secrets.OPENSKY_CLIENT_SECRET }}
+          # Settings -> Secrets and variables -> Actions -> Variables
+          # -> New repository variable. Arvoksi vahvistettu GTFS-pysäkkitunnus.
+          TAMPERE_BUS_STOP_ID: ${{ vars.TAMPERE_BUS_STOP_ID }}
+          OUTPUT_FILE: ${{ runner.temp }}/kyytitutka/data/signals.json
+
+      # Säilytä osittaisetkin tulokset, vaikka jokin lähde epäonnistuu.
+      # Epäonnistunut haku pitää silti koko ajon tilan punaisena.
+      - name: Säilytä tulokset ladattavana pakettina
+        if: ${{ always() && steps.fetch.outcome != 'skipped' }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: kyytitutka-data-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/kyytitutka/data/signals.json
+            ${{ runner.temp }}/kyytitutka/data/status.json
+          if-no-files-found: error
+          retention-days: 7
