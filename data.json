@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1789413739,
-    "title": "PYO265",
-    "detail": "Saapuu",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1789415925,
     "title": "PYO933",
     "detail": "Saapuu",
@@ -301,6 +293,14 @@
     "title": "S44",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789451580,
+    "title": "IC155",
+    "detail": "Saapuu",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
