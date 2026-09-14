@@ -96,6 +96,17 @@ async function discoverNearbyStops() {
   return stops;
 }
 
+// Tampereen lähikunnat, jotka suodatetaan pois bussihausta - näiden liikenne
+// on seutuliikennettä, ei kaukoliikennettä, vaikka saapuisikin samalle
+// linja-autoasemalle. Tämä on maantieteelliseen päättelyyn perustuva lista,
+// ei mikään virallinen luokitus - täydennä tai muokkaa vapaasti tarpeen mukaan.
+const TAMPEREEN_LAHIKUNNAT = ['orivesi', 'nokia', 'ylöjärvi', 'kangasala', 'lempäälä', 'pirkkala', 'vesilahti'];
+
+function onLahiliikennetta(originName) {
+  const n = String(originName || '').toLowerCase();
+  return TAMPEREEN_LAHIKUNNAT.some((kunta) => n.includes(kunta));
+}
+
 function busArrivalsFromRows(stopId, rows, now) {
   const result = [];
   const seen = new Set();
@@ -105,6 +116,8 @@ function busArrivalsFromRows(stopId, rows, now) {
     const stops = trip.pattern?.stops || [];
     const index = stops.findIndex((p) => p.gtfsId === stopId);
     if (index <= 0) continue; // -1: pysäkkiä ei löydy pattern-listalta. 0: tämä on lähtöpaikka, ei saapuminen.
+    const origin = stops[0]?.name || 'ei tiedossa';
+    if (onLahiliikennetta(origin)) continue; // seutuliikennettä (esim. Orivesi), ei kaukoliikennettä
     const seconds = s.realtime && Number.isFinite(s.realtimeArrival) ? s.realtimeArrival : s.scheduledArrival;
     if (!Number.isFinite(s.serviceDay) || !Number.isFinite(seconds)) continue;
     const time = s.serviceDay + seconds;
@@ -116,7 +129,7 @@ function busArrivalsFromRows(stopId, rows, now) {
       type: 'bussi',
       time,
       title: trip.route?.shortName || trip.route?.longName || 'Bussi',
-      detail: `Lähtöpaikka: ${stops[0]?.name || 'ei tiedossa'}${s.realtime ? '' : ' (aikatauluaika)'}`,
+      detail: `Lähtöpaikka: ${origin}${s.realtime ? '' : ' (aikatauluaika)'}`,
       location: 'Linja-autoasema',
       demand: 1,
     });
