@@ -47,7 +47,7 @@ async function fetchTrains() {
     .filter(Boolean);
 }
 
-// ---------- 2. KAUKOLIIKENTEEN BUSSIT ----------
+// ---------- 2. SAAPUVAT KAUKOLIIKENTEEN BUSSIT ----------
 // Pysäkit vahvistettu käyttäjän 14.9.2026 Digitransit-hakulokista.
 // Tunnuksen nimi "2" ei ole vahvistettu fyysisen lähtölaiturin numero.
 const COACH_STOPS = ['MATKA:358759', 'VARELY:305869'];
@@ -68,27 +68,23 @@ function busSignals(stopId, rows, now = Math.floor(Date.now() / 1000)) {
     const indices = stops.map((p, i) => p.gtfsId === stopId ? i : -1).filter(i => i >= 0);
     if (indices.length !== 1) throw new Error('Bussivuoron pysäkkijärjestystä ei voida tulkita yksiselitteisesti.');
     const index = indices[0];
-    const add = (direction, scheduled, realtime, endpoint) => {
-      const seconds = s.realtime && Number.isFinite(realtime) ? realtime : scheduled;
-      if (!Number.isFinite(s.serviceDay) || !Number.isFinite(seconds)) return;
-      const time = s.serviceDay + seconds;
-      if (time < now - 300 || time > now + 86400) return;
-      const id = `${trip.gtfsId}:${s.serviceDay}:${direction}:${index}`;
-      if (seen.has(id)) return;
-      seen.add(id);
-      result.push({
-        type: 'bussi', direction, time,
-        title: `${trip.route.shortName || trip.route.longName} · ${direction === 'arrival' ? 'Saapuu' : 'Lähtee'}`,
-        detail: `${direction === 'arrival' ? 'Lähtöpaikka' : 'Määränpää'}: ${endpoint || 'Ei tiedossa'} · ${s.realtime ? 'Reaaliaikatieto' : 'Aikatauluaika'}`,
-        location: 'Tampereen linja-autoasema', demand: 1,
-        route: trip.route.longName, tripId: trip.gtfsId, stopId,
-        source: 'Digitransit',
-      });
-    };
-    // Ensimmäisellä pysäkillä vain lähtö, viimeisellä vain saapuminen.
-    // Läpi kulkevalle vuorolle molemmat omilla kellonajoillaan.
-    if (index > 0) add('arrival', s.scheduledArrival, s.realtimeArrival, stops[0]?.name);
-    if (index < stops.length - 1) add('departure', s.scheduledDeparture, s.realtimeDeparture, s.headsign || stops.at(-1)?.name);
+    // Tampereelta alkavat vuorot pois. Läpi kulkevilta vuoroilta vain saapuminen.
+    if (index === 0) continue;
+    const seconds = s.realtime && Number.isFinite(s.realtimeArrival) ? s.realtimeArrival : s.scheduledArrival;
+    if (!Number.isFinite(s.serviceDay) || !Number.isFinite(seconds)) continue;
+    const time = s.serviceDay + seconds;
+    if (time < now - 300 || time > now + 86400) continue;
+    const id = `${trip.gtfsId}:${s.serviceDay}:arrival:${index}`;
+    if (seen.has(id)) continue;
+    seen.add(id);
+    result.push({
+      type: 'bussi', direction: 'arrival', time,
+      title: `${trip.route.shortName || trip.route.longName} · Saapuu`,
+      detail: `Lähtöpaikka: ${stops[0]?.name || 'Ei tiedossa'} · ${s.realtime ? 'Reaaliaikatieto' : 'Aikatauluaika'}`,
+      location: 'Tampereen linja-autoasema', demand: 1,
+      route: trip.route.longName, tripId: trip.gtfsId, stopId,
+      source: 'Digitransit',
+    });
   }
   return result;
 }
@@ -98,8 +94,8 @@ async function fetchBuses() {
   const batches = await Promise.all(COACH_STOPS.map(async stopId => {
     const query = `{ stop(id: ${JSON.stringify(stopId)}) {
       stoptimesWithoutPatterns(numberOfDepartures: 500, startTime: ${now - 300}, timeRange: 86700, omitNonPickups: false) {
-        scheduledArrival realtimeArrival scheduledDeparture realtimeDeparture
-        realtime realtimeState serviceDay headsign
+        scheduledArrival realtimeArrival
+        realtime realtimeState serviceDay
         trip { gtfsId route { gtfsId shortName longName mode }
           pattern { stops { gtfsId name } }
         }
@@ -119,7 +115,7 @@ async function fetchBuses() {
     return busSignals(stopId, rows, now);
   }));
   const all = batches.flat().sort((a, b) => a.time - b.time);
-  console.log(`Kaukobussit: ${all.filter(x => x.direction === 'arrival').length} saapumista ja ${all.filter(x => x.direction === 'departure').length} lähtöä.`);
+  console.log(`Kaukobussit: ${all.length} saapumista.`);
   return all;
 }
 
