@@ -17,6 +17,12 @@
     background: radial-gradient(ellipse at center, rgba(255,244,84,0.13) 0%, rgba(255,244,84,0) 70%);
   }
 
+  .watermark {
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 340px; height: 340px; object-fit: contain;
+    opacity: 0.05; z-index: 0; pointer-events: none;
+  }
+
   .header { position: relative; z-index: 1; padding: 24px 16px 16px; display: flex; align-items: center; justify-content: space-between; }
   .brand { display: flex; align-items: center; gap: 13px; }
   .brand-logo { width: 50px; height: 50px; flex-shrink: 0; filter: drop-shadow(0 3px 10px rgba(0,0,0,0.55)); }
@@ -30,25 +36,23 @@
   }
 
   .hero {
-    position: relative; z-index: 1; margin: 0 16px 18px; padding: 20px 20px 17px 22px;
+    position: relative; z-index: 1; margin: 0 16px 18px; padding: 6px 20px 8px 22px;
     background: linear-gradient(160deg, #1D1D22 0%, #100F11 100%);
     border: 1px solid #2C2C31;
     box-shadow: 0 14px 34px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 22px), calc(100% - 22px) 100%, 0 100%);
   }
   .hero::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: #FFF454; }
-  .hero-eta { color: #8C8C91; font-size: 11.5px; margin-bottom: 10px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; }
-  .hero-top { display: flex; align-items: flex-end; gap: 16px; }
-  .hero-count { display: flex; align-items: baseline; gap: 5px; line-height: 1; flex-shrink: 0; }
-  .hero-num { font-family: 'JetBrains Mono', monospace; font-size: 44px; font-weight: 700; color: #FFF454; letter-spacing: -1.5px; }
-  .hero-num.small { font-size: 26px; }
-  .hero-unit { font-size: 11.5px; font-weight: 700; color: #FFF454; opacity: 0.75; letter-spacing: 0.4px; }
-  .hero-info { flex: 1; min-width: 0; padding-bottom: 2px; }
+  .hero-eta { color: #8C8C91; font-size: 11.5px; margin: 12px 0 2px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; }
+  .hero-item { display: flex; align-items: center; gap: 14px; padding: 11px 0; border-top: 1px solid #232327; }
+  .hero-item:first-of-type { border-top: none; }
+  .hero-num { font-family: 'JetBrains Mono', monospace; font-size: 23px; font-weight: 700; color: #FFF454; letter-spacing: -0.5px; min-width: 48px; flex-shrink: 0; }
+  .hero-num .unit { font-size: 10px; font-weight: 700; opacity: 0.7; margin-left: 2px; }
+  .hero-info { flex: 1; min-width: 0; }
   .hero-icon-row { display: flex; align-items: center; gap: 7px; }
-  .hero-icon { font-size: 17px; }
-  .hero-title { font-weight: 800; font-size: 16.5px; color: #FBFBF8; }
-  .hero-detail { color: #A6A6AB; font-size: 13px; margin-top: 3px; line-height: 1.42; }
-  .hero-meta { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; }
+  .hero-icon { font-size: 15px; }
+  .hero-title { font-weight: 800; font-size: 15px; color: #FBFBF8; }
+  .hero-detail { color: #A6A6AB; font-size: 12.5px; margin-top: 2px; line-height: 1.35; }
   .loc { display: flex; align-items: center; gap: 4px; color: #86868B; font-size: 12px; }
 
   .stat { position: relative; z-index: 1; padding: 0 16px 14px; color: #86868B; font-size: 12.5px; }
@@ -67,16 +71,13 @@
   .list { border-top: 1px solid #1C1C20; }
   .row { display: flex; align-items: flex-start; gap: 12px; padding: 13px 16px 13px 14px; border-bottom: 1px solid #1C1C20; border-left: 3px solid transparent; }
   .row.soon { background: rgba(255,244,84,0.055); border-left-color: #FFF454; }
-  .row-time { min-width: 46px; font-size: 13px; padding-top: 2px; color: #86868B; font-weight: 500; }
+  .row-time { min-width: 54px; font-size: 16px; padding-top: 1px; color: #86868B; font-weight: 600; }
   .row.soon .row-time, .row.soon .row-icon { color: #FFF454; }
-  .row-icon { padding-top: 2px; font-size: 15px; color: #86868B; }
+  .row-icon { padding-top: 3px; font-size: 15px; color: #86868B; }
   .row-body { flex: 1; min-width: 0; }
   .row-title { font-weight: 700; font-size: 14.5px; color: #F2F2ED; }
   .row-detail { color: #9E9EA3; font-size: 13px; margin-top: 1px; line-height: 1.4; }
   .row-loc { display: flex; align-items: center; gap: 4px; color: #6C6C71; font-size: 12px; margin-top: 4px; }
-  .bars { display: flex; align-items: center; gap: 2px; padding-top: 4px; }
-  .bar { width: 4px; border-radius: 999px; background: #232327; }
-  .bar.on { background: #FFF454; }
 
   .empty { padding: 32px 16px; color: #86868B; font-size: 13.5px; text-align: center; }
 </style>
@@ -84,6 +85,7 @@
 <body>
 <div class="wrap">
   <div class="glow"></div>
+  <img src="logo.png" alt="" class="watermark">
   <div class="header">
     <div class="brand">
       <img src="logo.png" alt="Kunnon Taksi" class="brand-logo">
@@ -150,12 +152,6 @@ function fmtTime(unixSec) {
   return String(d.getHours()).padStart(2, '0') + '.' + String(d.getMinutes()).padStart(2, '0');
 }
 
-function bars(level) {
-  return '<div class="bars">' + [1, 2, 3].map((i) =>
-    `<div class="bar ${i <= level ? 'on' : ''}" style="height:${4 + i * 2}px"></div>`
-  ).join('') + '</div>';
-}
-
 function render() {
   const now = Math.floor(Date.now() / 1000);
   document.getElementById('clock').textContent = new Date().toTimeString().slice(0, 8).replace(/:/g, '.');
@@ -165,8 +161,8 @@ function render() {
     .filter((s) => getBand(s.delta) !== null);
 
   const filtered = withDelta.filter((s) => matchesFilter(s.type, filter)).sort((a, b) => a.delta - b.delta);
-  const hero = filtered[0];
-  const rest = hero ? filtered.slice(1) : [];
+  const heroItems = filtered.slice(0, 3);
+  const rest = filtered.slice(3);
 
   document.getElementById('stat-line').textContent =
     withDelta.filter((s) => s.delta <= 4500).length + ' saapumista seuraavan tunnin aikana';
@@ -176,35 +172,34 @@ function render() {
   ).join('');
   document.querySelectorAll('.tab').forEach((b) => (b.onclick = () => { filter = b.dataset.f; render(); }));
 
-  document.getElementById('hero-slot').innerHTML = hero ? `
-    <div class="hero">
-      <div class="hero-eta">${hero.delta <= 0 ? 'Tapahtuu juuri nyt' : 'Saapuu pian'}</div>
-      <div class="hero-top">
-        <div class="hero-count">
-          ${hero.delta <= 0
-            ? `<span class="hero-num small">NYT</span>`
-            : `<span class="hero-num">${Math.round(hero.delta / 60)}</span><span class="hero-unit">MIN</span>`}
-        </div>
-        <div class="hero-info">
-          <div class="hero-icon-row">
-            <span class="hero-icon">${TYPE_META[hero.type]?.icon || '•'}</span>
-            <span class="hero-title">${esc(hero.title)}</span>
-          </div>
-          <div class="hero-detail">${esc(hero.detail)}</div>
-        </div>
-      </div>
-      <div class="hero-meta">
-        <div class="loc">📍 ${esc(hero.location)}</div>
-        ${bars(hero.demand)}
-      </div>
-    </div>` : '';
+  document.getElementById('hero-slot').innerHTML = heroItems.length
+    ? `<div class="hero">
+        <div class="hero-eta">Seuraavat saapumiset</div>
+        ${heroItems
+          .map(
+            (item) => `
+          <div class="hero-item">
+            <div class="hero-num">${item.delta <= 0 ? 'NYT' : Math.round(item.delta / 60) + '<span class="unit">min</span>'}</div>
+            <div class="hero-info">
+              <div class="hero-icon-row">
+                <span class="hero-icon">${TYPE_META[item.type]?.icon || '•'}</span>
+                <span class="hero-title">${esc(item.title)}</span>
+              </div>
+              <div class="hero-detail">${esc(item.detail)}</div>
+              <div class="loc">📍 ${esc(item.location)}</div>
+            </div>
+          </div>`
+          )
+          .join('')}
+      </div>`
+    : '';
 
   const grouped = BAND_ORDER.map((band) => ({ band, items: rest.filter((s) => getBand(s.delta) === band) })).filter(
     (g) => g.items.length > 0
   );
 
   const listSlot = document.getElementById('list-slot');
-  if (grouped.length === 0 && !hero) {
+  if (grouped.length === 0 && !heroItems.length) {
     listSlot.innerHTML = '<div class="empty">Ei näkyviä saapumisia juuri nyt tällä suodattimella.</div>';
   } else {
     listSlot.innerHTML = grouped
@@ -223,7 +218,6 @@ function render() {
               <div class="row-detail">${esc(s.detail)}</div>
               <div class="row-loc">📍 ${esc(s.location)}</div>
             </div>
-            ${bars(s.demand)}
           </div>`
           )
           .join('')}
