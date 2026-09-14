@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1789419201,
-    "title": "IC187",
-    "detail": "Saapuu",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
     "type": "lento",
     "time": 1789422600,
     "title": "BT357",
@@ -350,6 +342,14 @@
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789454340,
+    "title": "IC476",
+    "detail": "Saapuu",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
   },
   {
     "type": "bussi",
