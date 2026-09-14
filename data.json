@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789408680,
-    "title": "60",
-    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789410270,
     "title": "55",
     "detail": "Lähtöpaikka: Vesilahti",
@@ -101,6 +93,14 @@
     "title": "IC187",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789422600,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -830,6 +830,14 @@
     "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1789481700,
+    "title": "BT526",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
