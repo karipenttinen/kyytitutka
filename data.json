@@ -1,9 +1,9 @@
 [
   {
     "type": "bussi",
-    "time": 1789408610,
+    "time": 1789408680,
     "title": "60",
-    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -972,6 +972,14 @@
     "time": 1789494120,
     "title": "90",
     "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789495080,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   }
