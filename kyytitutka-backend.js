@@ -241,28 +241,42 @@ async function fetchFlights() {
 }
 
 // ---------- 3b. LENNOT - AIKATAULUTIETO (Finavia, vaatii FINAVIA_API_KEY) ----------
-// Polku ja otsikko VAHVISTETTU käyttäjän Finavia-portaalin Try It -konsolista
-// (200 OK): apigw.finavia.fi/flights/public/v0/flights, otsikko "app_key".
-// Konsoli näytti http://, mutta se epäonnistui GitHub Actionsista "fetch failed"
-// -virheellä - todennäköisesti Actions-ympäristö sallii vain https-portin (443)
-// eikä http:tä (80). Kokeillaan siis https:// samalla polulla.
+// Polku ja otsikko VAHVISTETTU käyttäjän Finavia-portaalin Try It -konsolista:
+// apigw.finavia.fi/flights/public/v0/flights, otsikko "app_key", https (http
+// ei toimi GitHub Actionsista). Vastaus on XML, ei JSON - Node.js:ssä ei ole
+// XML-jäsennintä valmiina, joten alla käytetään yksinkertaisia regexejä.
+//
+// Yhden lennon rakenne <arr><body><flight>...</flight></body></arr> sisältä
+// VAHVISTETTU suoraan käyttäjän lokista:
+//   <h_apt>HEL</h_apt>          - kohdeasema (ilman parametria oletuksena Helsinki!)
+//   <fltnr>AY964</fltnr>        - lennon numero
+//   <sdt>2026-09-14T06:15:00Z</sdt>  - aikataulun mukainen aika (ISO, UTC)
+//   <route_1>CPH</route_1> / <route_n_1>Copenhagen</route_n_1> / <route_n_fi_1>Kööpenhamina</route_n_fi_1>
+//                               - lähtöpaikka (koodi / englanniksi / suomeksi)
+//   <prt>Landed</prt> / <prt_f>Laskeutunut</prt_f>  - tila (englanniksi / suomeksi)
+//
+// TARKISTA: koska ilman parametria vastaus oli Helsinki, Tampereen valintaan
+// tarvitaan jokin kyselyparametri - "apt=TMP" on paras arvaus kenttänimestä
+// h_apt päätellen, ei vahvistettu. Koodi kirjaa lokiin kaikki löytyneet
+// h_apt-arvot, joten näemme heti osuiko arvaus kohdalleen.
 //
 // Tarkoituksella oma, erillinen funktio eikä osa OpenSky-hakua: nämä kaksi
 // täydentävät toisiaan (Finavia = aikataulu etukäteen, OpenSky = fyysinen
 // varmistus juuri ennen laskeutumista), eikä niitä ole vielä yhdistetty
 // keskenään - sama lento voi siis näkyä listassa kahteen kertaan lähestyessään
-// kenttää. Tämä voidaan siistiä myöhemmin kun nähdään miltä oikea data näyttää.
-//
-// Ei vielä tiedetä miten Tampereen lennot tunnistetaan vastauksesta - haetaan
-// siis kaikki asemat ja kirjataan ensimmäinen kohde lokiin, jotta oikea
-// suodatuskenttä selviää siitä.
+// kenttää.
+function xmlTag(block, name) {
+  const m = block.match(new RegExp(`<${name}>([^<]*)</${name}>`));
+  return m ? m[1] : null;
+}
+
 async function fetchFinaviaSchedule() {
   if (!process.env.FINAVIA_API_KEY) {
     console.error('Finavia ohitettu: FINAVIA_API_KEY puuttuu.');
     return [];
   }
 
-  const url = 'https://apigw.finavia.fi/flights/public/v0/flights';
+  const url = 'https://apigw.finavia.fi/flights/public/v0/flights?apt=TMP';
   let res;
   try {
     res = await fetch(url, {
@@ -280,47 +294,39 @@ async function fetchFinaviaSchedule() {
     return [];
   }
 
-  let json;
-  try {
-    json = JSON.parse(bodyText);
-  } catch {
-    // XML, ei JSON (Finavia palauttaa <flights><dep>...</dep><arr>...</arr></flights>).
-    // Kirjataan <arr>-osio (saapuvat - <dep> eli lähtevät on jo nähty) useana
-    // lyhyenä rivinä, jotta mikään yksittäinen rivi ei katkea lokinäkymässä.
-    const arrIndex = bodyText.indexOf('<arr');
-    const snippet = arrIndex >= 0 ? bodyText.slice(arrIndex, arrIndex + 1200) : bodyText.slice(0, 1200);
-    console.error(`Finavia: XML, ei JSON. <arr>-osio ${arrIndex >= 0 ? 'löytyi' : 'EI löytynyt - näytetään alusta'}:`);
-    for (let i = 0; i < snippet.length; i += 200) {
-      console.error('  ' + snippet.slice(i, i + 200));
-    }
+  const arrMatch = bodyText.match(/<arr>([\s\S]*?)<\/arr>/);
+  if (!arrMatch) {
+    console.error('Finavia: <arr>-osiota ei löytynyt vastauksesta. Alku: ' + bodyText.slice(0, 300));
     return [];
   }
+  const flightBlocks = [...arrMatch[1].matchAll(/<flight>([\s\S]*?)<\/flight>/g)].map((m) => m[1]);
 
-  const flights = Array.isArray(json) ? json : json.flights || json.data || json.results || [];
+  const parsed = flightBlocks.map((block) => ({
+    airport: xmlTag(block, 'h_apt'),
+    flightNumber: xmlTag(block, 'fltnr'),
+    sdt: xmlTag(block, 'sdt'),
+    origin: xmlTag(block, 'route_n_fi_1') || xmlTag(block, 'route_n_1') || xmlTag(block, 'route_1'),
+    status: xmlTag(block, 'prt_f') || xmlTag(block, 'prt'),
+  }));
+
+  const airportsFound = [...new Set(parsed.map((f) => f.airport))];
   console.error(
-    `Finavia: löytyi ${flights.length} lentoa yhteensä (kaikki asemat). Ensimmäinen: ` +
-      JSON.stringify(flights[0] || {}).slice(0, 600)
+    `Finavia: <arr>-osiosta löytyi ${parsed.length} lentoa. Asemat vastauksessa: ${airportsFound.join(', ') || '(ei yhtään)'}`
   );
 
-  // TARKISTA: kenttänimet aseman tunnistamiseksi ja saapumisajalle ovat vielä
-  // arvauksia. Yllä oleva lokirivi kertoo mitä kenttiä pitäisi oikeasti käyttää.
   const now = Math.floor(Date.now() / 1000);
-  return flights
-    .filter((f) => {
-      const airport = f.airport || f.arrApId || f.arrivalAirport || f.apCode || '';
-      return String(airport).toUpperCase().includes('TMP') || String(airport).toUpperCase().includes('TAMPERE');
-    })
+  return parsed
+    .filter((f) => f.airport === 'TMP')
     .map((f) => {
-      const flightNumber = f.flightNumber || f.flight_number || f.flightId || f.iataFlightNumber || f.callSign;
-      const origin = f.origin || f.departureAirport || f.depApName || f.from;
-      const timeRaw = f.estimatedTime || f.scheduleTime || f.scheduledTime || f.eta;
-      const time = timeRaw ? Math.floor(Date.parse(timeRaw) / 1000) : null;
-      if (!flightNumber || !Number.isFinite(time)) return null;
+      const time = f.sdt ? Math.floor(Date.parse(f.sdt) / 1000) : null;
+      if (!f.flightNumber || !Number.isFinite(time)) return null;
       return {
         type: 'lento',
         time,
-        title: flightNumber,
-        detail: origin ? `Aikataulun mukaan saapuu, lähtöpaikka ${origin}` : 'Aikataulun mukaan saapuu',
+        title: f.flightNumber,
+        detail:
+          (f.origin ? `Aikataulun mukaan saapuu, lähtöpaikka ${f.origin}` : 'Aikataulun mukaan saapuu') +
+          (f.status ? ` · ${f.status}` : ''),
         location: 'Lentoasema, Pirkkala',
         demand: 2,
       };
