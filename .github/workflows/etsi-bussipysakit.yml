@@ -1,0 +1,61 @@
+name: Kyytitutka - etsi kaukoliikenteen pysakit
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  etsi-pysakit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Etsi Tampereen linja-autoaseman pysakit ja reitit
+        env:
+          DIGITRANSIT_API_KEY: ${{ secrets.DIGITRANSIT_API_KEY }}
+        shell: bash
+        run: |
+          node <<'JS'
+          async function main() {
+            const key = process.env.DIGITRANSIT_API_KEY;
+            if (!key) throw new Error('DIGITRANSIT_API_KEY puuttuu GitHubin Secrets-asetuksista.');
+            const endpoint = 'https://api.digitransit.fi/routing/v2/finland/gtfs/v1';
+            async function query(query) {
+              const response = await fetch(endpoint, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'digitransit-subscription-key': key },
+                body: JSON.stringify({ query }),
+                signal: AbortSignal.timeout(30000),
+              });
+              if (!response.ok) throw new Error(`Digitransit HTTP ${response.status}`);
+              const result = await response.json();
+              if (result.errors?.length) throw new Error(JSON.stringify(result.errors.map(e => e.message)));
+              return result.data;
+            }
+            const data = await query(`{ stops(name: "linja-autoasema") { gtfsId name lat lon } }`);
+            const stops = data.stops.filter(s => s.lat > 61.48 && s.lat < 61.51 && s.lon > 23.74 && s.lon < 23.79);
+            console.log(`Tampereen linja-autoaseman alueelta loytyi ${stops.length} pysakkia.`);
+            console.log('Tama on tarkistuslista; kaukoliikenteen reitit valitaan tulosten perusteella.');
+            for (const stop of stops) {
+              const detail = await query(`{ stop(id: ${JSON.stringify(stop.gtfsId)}) {
+                patterns { headsign route { gtfsId shortName longName mode } }
+              } }`);
+              const routes = new Map();
+              for (const p of detail.stop?.patterns || []) {
+                if (p.route?.mode !== 'BUS') continue;
+                const id = p.route.gtfsId + ':' + p.headsign;
+                routes.set(id, { routeId: p.route.gtfsId, line: p.route.shortName,
+                  name: p.route.longName, destination: p.headsign });
+              }
+              console.log(JSON.stringify({ ...stop, routes: [...routes.values()] }, null, 2));
+            }
+            if (!stops.length) throw new Error('Pysakkeja ei loytynyt nimella. Tarvitaan sijaintiin perustuva jatkohaku.');
+          }
+          main().catch(error => { console.error(error.message); process.exitCode = 1; });
+          JS
