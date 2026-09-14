@@ -1,31 +1,7 @@
 [
   {
-    "type": "bussi",
-    "time": 1789401600,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789401600,
-    "title": "60",
-    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789402288,
-    "title": "42",
-    "detail": "Lähtöpaikka: Kuhmoinen MH",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1789402295,
+    "time": 1789402199,
     "title": "IC177",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 3",
@@ -33,7 +9,15 @@
   },
   {
     "type": "bussi",
-    "time": 1789402458,
+    "time": 1789402232,
+    "title": "42",
+    "detail": "Lähtöpaikka: Kuhmoinen MH",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789402568,
     "title": "95",
     "detail": "Lähtöpaikka: Orivesi",
     "location": "Linja-autoasema",
@@ -41,7 +25,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789403365,
+    "time": 1789403370,
     "title": "90",
     "detail": "Lähtöpaikka: Terälahden koulu",
     "location": "Linja-autoasema",
@@ -161,7 +145,7 @@
   },
   {
     "type": "juna",
-    "time": 1789408380,
+    "time": 1789408381,
     "title": "IC149",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 3",
