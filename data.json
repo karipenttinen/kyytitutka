@@ -1,31 +1,15 @@
 [
   {
-    "type": "juna",
-    "time": 1789402199,
-    "title": "IC177",
-    "detail": "Saapuu",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "bussi",
-    "time": 1789402232,
-    "title": "42",
-    "detail": "Lähtöpaikka: Kuhmoinen MH",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789402568,
+    "time": 1789402740,
     "title": "95",
-    "detail": "Lähtöpaikka: Orivesi",
+    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "bussi",
-    "time": 1789403370,
+    "time": 1789403410,
     "title": "90",
     "detail": "Lähtöpaikka: Terälahden koulu",
     "location": "Linja-autoasema",
@@ -33,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789403671,
+    "time": 1789403673,
     "title": "55",
     "detail": "Lähtöpaikka: Vesilahti",
     "location": "Linja-autoasema",
@@ -153,9 +137,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789408680,
+    "time": 1789408661,
     "title": "60",
-    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -259,6 +243,14 @@
     "type": "juna",
     "time": 1789426500,
     "title": "PYO273",
+    "detail": "Saapuu",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789429800,
+    "title": "PYO266",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 1",
     "demand": 2
@@ -972,6 +964,22 @@
     "time": 1789488000,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789488840,
+    "title": "42",
+    "detail": "Lähtöpaikka: Kuhmoinen MH (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789489140,
+    "title": "95",
+    "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   }
