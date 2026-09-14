@@ -209,9 +209,32 @@ async function fetchBuses() {
   console.error('Näistä käytetään: ' + candidates.map((s) => `${s.gtfsId} (${s.name})`).join(', '));
 
   const now = Math.floor(Date.now() / 1000);
-  const batches = await Promise.all(
-    candidates.map(async (stop) => busArrivalsFromRows(stop.gtfsId, await fetchStoptimesForStop(stop.gtfsId, now), now))
+  const rowsPerStop = await Promise.all(
+    candidates.map(async (stop) => ({ stop, rows: await fetchStoptimesForStop(stop.gtfsId, now) }))
   );
+
+  // Diagnostiikka: etsitään V130 (tai mikä tahansa Vantaa-yhteys) raakadatasta
+  // ennen mitään suodatusta - näin nähdään putoaako se pois jo pysäkinvalinnassa
+  // (ei löydy täältä ollenkaan) vai vasta saapumis-/lähikuntasuodatuksessa.
+  let vantaaLoytyi = false;
+  for (const { stop, rows } of rowsPerStop) {
+    for (const r of rows) {
+      const routeName = r.trip?.route?.shortName || r.trip?.route?.longName || '';
+      const origin = r.trip?.pattern?.stops?.[0]?.name || '';
+      if (/v130/i.test(routeName) || /vantaa/i.test(origin) || /vantaa/i.test(routeName)) {
+        vantaaLoytyi = true;
+        console.error(
+          `Bussit: LÖYTYI V130/Vantaa-osuma pysäkillä ${stop.gtfsId} (${stop.name}): ` +
+            `reitti="${routeName}", lähtöpaikka="${origin}", realtimeState=${r.realtimeState}`
+        );
+      }
+    }
+  }
+  if (!vantaaLoytyi) {
+    console.error('Bussit: ei yhtään V130- tai Vantaa-osumaa raakadatassa millään haetulla pysäkillä.');
+  }
+
+  const batches = rowsPerStop.map(({ stop, rows }) => busArrivalsFromRows(stop.gtfsId, rows, now));
   return batches.flat().sort((a, b) => a.time - b.time);
 }
 
