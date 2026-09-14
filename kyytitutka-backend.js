@@ -307,6 +307,7 @@ function parseFlightSection(bodyText, sectionTag) {
   if (!match) return null;
   const blocks = [...match[1].matchAll(/<flight>([\s\S]*?)<\/flight>/g)].map((m) => m[1]);
   return blocks.map((block) => ({
+    raw: block,
     airport: xmlTag(block, 'h_apt'),
     flightNumber: xmlTag(block, 'fltnr'),
     sdt: xmlTag(block, 'sdt'),
@@ -373,6 +374,18 @@ async function fetchFinaviaSchedule() {
     `Finavia: <arr> ${arrRecords.length} lentoa (asemat: ${arrAsemat.join(', ') || '-'}), ` +
       `<dep> ${depRecords.length} lentoa (asemat: ${depAsemat.join(', ') || '-'})`
   );
+
+  // Diagnostiikka: kirjataan yhden TMP-saapumisen KOKO rivi useana lyhyenä
+  // rivinä, jotta nähdään onko sdt:n lisäksi jokin toteutunutta/arvioitua
+  // aikaa kuvaava kenttä (esim. myöhästymistä varten) - sdt näyttää vain
+  // muuttumattoman aikataulun mukaisen ajan.
+  const tmpArrExample = arrRecords.find((f) => f.airport === 'TMP');
+  if (tmpArrExample) {
+    console.error(`Finavia: TMP-saapumisen (${tmpArrExample.flightNumber}) kaikki kentät:`);
+    for (let i = 0; i < tmpArrExample.raw.length; i += 200) {
+      console.error('  ' + tmpArrExample.raw.slice(i, i + 200));
+    }
+  }
 
   const now = Math.floor(Date.now() / 1000);
   const saapuvat = arrRecords
