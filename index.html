@@ -27,9 +27,9 @@
   .brand { display: flex; align-items: center; gap: 13px; }
   .brand-logo { width: 50px; height: 50px; flex-shrink: 0; filter: drop-shadow(0 3px 10px rgba(0,0,0,0.55)); }
   .title { font-family: 'Archivo', sans-serif; font-weight: 900; font-size: 21px; letter-spacing: -0.3px; }
-  .subtitle { color: #AFAFB5; font-size: 11.5px; margin-top: 2px; font-weight: 500; }
+  .subtitle { color: #C7C7CD; font-size: 13px; margin-top: 2px; font-weight: 500; }
   .clock { color: #FFF454; font-size: 15px; text-align: right; }
-  .date-line { color: #AFAFB5; font-size: 12.5px; margin-top: 1px; font-weight: 600; text-align: right; }
+  .date-line { color: #C7C7CD; font-size: 13.5px; margin-top: 1px; font-weight: 600; text-align: right; }
 
   .stripe {
     height: 4px; margin: 0 16px 18px; border-radius: 999px; opacity: 0.4; position: relative; z-index: 1;
@@ -44,7 +44,7 @@
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 22px), calc(100% - 22px) 100%, 0 100%);
   }
   .hero::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: #FFF454; }
-  .hero-eta { color: #AFAFB5; font-size: 11.5px; margin: 12px 0 2px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; }
+  .hero-eta { color: #C7C7CD; font-size: 12.5px; margin: 12px 0 3px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; }
   .hero-item { display: flex; align-items: center; gap: 14px; padding: 11px 0; border-top: 1px solid #232327; }
   .hero-item:first-of-type { border-top: none; }
   .hero-num { font-family: 'JetBrains Mono', monospace; font-size: 23px; font-weight: 700; color: #FFF454; letter-spacing: -0.5px; min-width: 48px; flex-shrink: 0; }
@@ -55,15 +55,15 @@
   .hero-icon-row { display: flex; align-items: center; gap: 7px; }
   .hero-icon { font-size: 15px; }
   .hero-title { font-weight: 800; font-size: 15px; color: #FBFBF8; }
-  .hero-detail { color: #C7C7CC; font-size: 12.5px; margin-top: 2px; line-height: 1.35; }
-  .loc { display: flex; align-items: center; gap: 4px; color: #A5A5AB; font-size: 12px; }
+  .hero-detail { color: #DADADE; font-size: 14px; margin-top: 3px; line-height: 1.4; }
+  .loc { display: flex; align-items: center; gap: 4px; color: #C0C0C6; font-size: 13.5px; }
 
-  .stat { position: relative; z-index: 1; padding: 0 16px 14px; color: #A5A5AB; font-size: 12.5px; }
+  .stat { position: relative; z-index: 1; padding: 0 16px 14px; color: #C0C0C6; font-size: 14px; }
 
   .tabs { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 0 16px 18px; }
   .tab {
     width: 100%; padding: 10px 12px; border-radius: 999px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.1px;
-    white-space: nowrap; border: 1px solid #232327; color: #ABABB1; background: #131315; text-align: center;
+    white-space: nowrap; border: 1px solid #232327; color: #C7C7CD; background: #131315; text-align: center;
   }
   .tab.active {
     border-color: #FFF454; color: #0A0A0B; background: #FFF454;
@@ -76,13 +76,13 @@
   .row.soon { background: rgba(255,244,84,0.055); border-left-color: #FFF454; }
   .row-time { min-width: 54px; font-size: 16px; padding-top: 1px; color: #FFF454; font-weight: 600; }
   .row.soon .row-icon { color: #FFF454; }
-  .row-icon { padding-top: 3px; font-size: 15px; color: #A5A5AB; }
+  .row-icon { padding-top: 3px; font-size: 16px; color: #C0C0C6; }
   .row-body { flex: 1; min-width: 0; }
   .row-title { font-weight: 700; font-size: 14.5px; color: #F2F2ED; }
-  .row-detail { color: #C7C7CC; font-size: 13px; margin-top: 1px; line-height: 1.4; }
-  .row-loc { display: flex; align-items: center; gap: 4px; color: #9B9BA1; font-size: 12px; margin-top: 4px; }
+  .row-detail { color: #DADADE; font-size: 14.5px; margin-top: 2px; line-height: 1.4; }
+  .row-loc { display: flex; align-items: center; gap: 4px; color: #B5B5BB; font-size: 13px; margin-top: 4px; }
 
-  .empty { padding: 32px 16px; color: #A5A5AB; font-size: 13.5px; text-align: center; }
+  .empty { padding: 32px 16px; color: #C0C0C6; font-size: 15px; text-align: center; }
 </style>
 </head>
 <body>
