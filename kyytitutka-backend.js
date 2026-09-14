@@ -51,16 +51,17 @@ async function fetchTrains() {
 // TARKISTA: tämä pysäkin GTFS-id pitää hakea itse Digitransitin GraphiQL-selaimesta,
 // esim. kyselyllä `{ stopsByRadius(lat:61.4978, lon:23.7749, radius:300) { edges { node { stop { gtfsId name } } } } }`
 // Tampereen linja-autoaseman koordinaateilla. En pysty hakemaan tätä itse tästä ympäristöstä.
-const TAMPERE_BUS_STOP_ID = 'TARKISTA_GTFS_ID';
+const TAMPERE_BUS_STOP_ID = process.env.TAMPERE_BUS_STOP_ID?.trim() || 'TARKISTA_GTFS_ID';
 
 async function fetchBuses() {
   if (TAMPERE_BUS_STOP_ID === 'TARKISTA_GTFS_ID') {
     console.warn('Bussit ohitettu: TAMPERE_BUS_STOP_ID puuttuu vielä.');
-    return [];
+    throw new Error('Määritä TAMPERE_BUS_STOP_ID ympäristömuuttujaksi; API-avain ei yksin riitä.');
   }
+  if (!process.env.DIGITRANSIT_API_KEY) throw new Error('DIGITRANSIT_API_KEY puuttuu.');
 
   const query = `{
-    stop(id: "${TAMPERE_BUS_STOP_ID}") {
+    stop(id: ${JSON.stringify(TAMPERE_BUS_STOP_ID)}) {
       name
       stoptimesWithoutPatterns(numberOfDepartures: 20) {
         scheduledArrival
@@ -83,7 +84,9 @@ async function fetchBuses() {
   });
   if (!res.ok) throw new Error(`Digitransit virhe: ${res.status}`);
   const json = await res.json();
-  const stoptimes = json.data?.stop?.stoptimesWithoutPatterns || [];
+  if (json.errors?.length) throw new Error('Digitransit GraphQL: ' + json.errors.map(e => e.message).join('; '));
+  if (!json.data?.stop) throw new Error('Digitransit ei löytänyt määritettyä pysäkkiä.');
+  const stoptimes = json.data.stop.stoptimesWithoutPatterns || [];
 
   return stoptimes.map((s) => ({
     type: 'bussi',
@@ -100,6 +103,9 @@ async function fetchBuses() {
 // OAuth2-kirjautumiseen 2026), mutta tarkista tarkka osoite omalta tililtäsi/
 // dokumentaatiosta ennen ensimmäistä ajoa - en pysty testaamaan tätä täältä.
 async function getOpenSkyToken() {
+  if (!process.env.OPENSKY_CLIENT_ID || !process.env.OPENSKY_CLIENT_SECRET) {
+    throw new Error('OPENSKY_CLIENT_ID tai OPENSKY_CLIENT_SECRET puuttuu.');
+  }
   const res = await fetch(
     'https://auth.opensky-network.org/auth/realms/opensky-network/protocol/openid-connect/token',
     {
@@ -114,6 +120,7 @@ async function getOpenSkyToken() {
   );
   if (!res.ok) throw new Error(`OpenSky-kirjautuminen epäonnistui: ${res.status}`);
   const json = await res.json();
+  if (!json.access_token) throw new Error('OpenSky ei palauttanut access_token-arvoa.');
   return json.access_token;
 }
 
@@ -129,12 +136,14 @@ async function fetchFlights() {
   // Tilavektorin kentät (kiinteä järjestys OpenSkyn dokumentaation mukaan):
   // [0]=icao24 [1]=callsign [4]=last_contact [6]=latitude [7]=baro_altitude
   return (json.states || [])
-    .filter((s) => s[6] !== null && s[7] !== null && s[7] < 900) // sijainti tiedossa + matala korkeus = lähestyy
+    .filter((s) => Number.isFinite(s[5]) && Number.isFinite(s[6]) &&
+      Number.isFinite(s[7]) && s[7] < 900 && s[8] === false &&
+      Number.isFinite(s[3]) && Date.now() / 1000 - s[3] <= 120) // tuore havainto ilmassa
     .map((s) => ({
       type: 'lento',
-      time: s[4],
+      time: s[3],
       title: (s[1] || '').trim() || s[0],
-      detail: 'Lähestyy Tampere-Pirkkalaa (ADS-B, ei vielä virallista laskeutumisvahvistusta)',
+      detail: 'Matalalla havaittu lentokone kentän lähellä (ADS-B; määränpää ja saapumisaika eivät ole tiedossa)',
       location: 'Lentoasema, Pirkkala',
       demand: 2,
     }));
@@ -142,11 +151,19 @@ async function fetchFlights() {
 
 // ---------- 4. TAPAHTUMAT (Tampereen LinkedEvents, ei avainta) ----------
 async function fetchEvents() {
-  const today = new Date().toISOString().split('T')[0];
-  const url = `http://linkedevents.tampere.fi/v1/event/?start=${today}&end=${today}&sort=start_time`;
+  const today = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Helsinki' }).format(new Date());
+  const tomorrow = new Date(Date.parse(today + 'T12:00:00Z') + 86400000).toISOString().slice(0, 10);
+  const url = `https://linkedevents.tampere.fi/v1/event/?start=${today}&end=${tomorrow}&sort=start_time&include=location`;
 
   const res = await fetch(url);
-  if (!res.ok) throw new Error(`LinkedEvents virhe: ${res.status}`);
+  if (!res.ok) {
+    let reason = '';
+    try {
+      const body = await res.json();
+      reason = JSON.stringify(body.detail || body.message || body.error || '').slice(0, 300);
+    } catch {}
+    throw new Error(`LinkedEvents virhe: ${res.status} ${reason}`);
+  }
   const json = await res.json();
 
   return (json.data || [])
@@ -176,8 +193,26 @@ async function main() {
   });
 
   const combined = [...trains, ...buses, ...flights, ...events].sort((a, b) => a.time - b.time);
+  const names = ['Junat', 'Bussit', 'Lennot', 'Tapahtumat'];
+  const sources = Object.fromEntries(results.map((r, i) => [names[i], {
+    status: r.status === 'fulfilled' ? 'ok' : 'error',
+    count: r.status === 'fulfilled' ? r.value.length : 0,
+  }]));
+  for (const [name, status] of Object.entries(sources)) {
+    console.log(`${name}: ${status.status}, ${status.count} havaintoa`);
+  }
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const output = process.env.OUTPUT_FILE || 'data/signals.json';
+  fs.mkdirSync(path.dirname(output), { recursive: true });
+  fs.writeFileSync(output, JSON.stringify(combined, null, 2) + '\n');
+  fs.writeFileSync(path.join(path.dirname(output), 'status.json'),
+    JSON.stringify({ generatedAt: new Date().toISOString(), sources }, null, 2) + '\n');
+  console.log(`Tallennettu: ${output}. GitHub Actions tarvitsee erillisen tallennus- tai julkaisuvaiheen säilyttääkseen tiedostot ajon jälkeen.`);
   console.log(JSON.stringify(combined, null, 2));
+  if (results.some(r => r.status === 'rejected')) process.exitCode = 1;
   return combined;
 }
 
-main();
+if (require.main === module) main().catch(error => { console.error(error.message); process.exitCode = 1; });
+module.exports = { fetchTrains, fetchBuses, fetchFlights, fetchEvents, main };
