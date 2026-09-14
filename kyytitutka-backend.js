@@ -234,6 +234,42 @@ async function fetchBuses() {
     console.error('Bussit: ei yhtään V130- tai Vantaa-osumaa raakadatassa millään haetulla pysäkillä.');
   }
 
+  // Diagnostiikka: näytetään KAIKKI raa'an datan saapumiset seuraavan 8 tunnin
+  // sisällä millä tahansa reittitunnuksella, jotta nähdään onko siellä mitään
+  // ylipäätään - riippumatta täsmääkö nimi tai lähikuntasuodatus. Ikkuna on
+  // suhteessa nykyhetkeen (ei kiinteä kellonaika), jotta aikavyöhyke ei voi
+  // mennä väärin GitHub Actionsin UTC-palvelimella - näyttöaika muunnetaan
+  // Suomen aikaan vasta lopuksi Intl:n avulla.
+  function helsinkiKello(unixSec) {
+    return new Intl.DateTimeFormat('fi-FI', {
+      timeZone: 'Europe/Helsinki', hour: '2-digit', minute: '2-digit', hour12: false,
+    }).format(new Date(unixSec * 1000));
+  }
+  const kaikkiSaapumiset = [];
+  for (const { stop, rows } of rowsPerStop) {
+    for (const r of rows) {
+      const t = r.serviceDay + (r.realtime && Number.isFinite(r.realtimeArrival) ? r.realtimeArrival : r.scheduledArrival);
+      if (t >= now && t <= now + 8 * 3600) {
+        kaikkiSaapumiset.push({
+          t,
+          routeName: r.trip?.route?.shortName || r.trip?.route?.longName || '(nimetön)',
+          origin: r.trip?.pattern?.stops?.[0]?.name || '?',
+          stopId: stop.gtfsId,
+          tila: r.realtimeState,
+        });
+      }
+    }
+  }
+  kaikkiSaapumiset.sort((a, b) => a.t - b.t);
+  console.error(`Bussit: kaikki raa'an datan saapumiset seuraavan 8 tunnin sisällä (${kaikkiSaapumiset.length} kpl, Suomen aikaa):`);
+  if (kaikkiSaapumiset.length === 0) {
+    console.error('  (ei yhtään)');
+  } else {
+    kaikkiSaapumiset.forEach((s) => {
+      console.error(`  ${helsinkiKello(s.t)} reitti="${s.routeName}" lähtö="${s.origin}" pysäkki=${s.stopId} tila=${s.tila}`);
+    });
+  }
+
   const batches = rowsPerStop.map(({ stop, rows }) => busArrivalsFromRows(stop.gtfsId, rows, now));
   return batches.flat().sort((a, b) => a.time - b.time);
 }
