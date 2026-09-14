@@ -38,11 +38,15 @@ jobs:
               if (result.errors?.length) throw new Error(JSON.stringify(result.errors.map(e => e.message)));
               return result.data;
             }
-            const data = await query(`{ stops(name: "linja-autoasema") { gtfsId name lat lon } }`);
-            const stops = data.stops.filter(s => s.lat > 61.48 && s.lat < 61.51 && s.lon > 23.74 && s.lon < 23.79);
-            console.log(`Tampereen linja-autoaseman alueelta loytyi ${stops.length} pysakkia.`);
+            const data = await query(`{ stops { gtfsId name lat lon } }`);
+            const stops = data.stops.filter(s => s.lat > 61.489 && s.lat < 61.499 && s.lon > 23.760 && s.lon < 23.780);
+            console.log('Kaikki alueen pysakit: ' + JSON.stringify(stops));
+            console.log(`Laaja haku: ${data.stops.length} pysakkia koko aineistossa, ${stops.length} aseman ymparistossa.`);
+            const feeds = {};
+            for (const s of data.stops) { const feed = s.gtfsId.split(':')[0]; feeds[feed] = (feeds[feed] || 0) + 1; }
+            console.log('Aineistot ja pysakkimaarat: ' + JSON.stringify(feeds));
             console.log('Tama on tarkistuslista; kaukoliikenteen reitit valitaan tulosten perusteella.');
-            for (const stop of stops) {
+            for (const stop of stops.filter(s => !s.gtfsId.startsWith('tampere:'))) {
               const detail = await query(`{ stop(id: ${JSON.stringify(stop.gtfsId)}) {
                 patterns { headsign route { gtfsId shortName longName mode } }
               } }`);
@@ -55,7 +59,9 @@ jobs:
               }
               console.log(JSON.stringify({ ...stop, routes: [...routes.values()] }, null, 2));
             }
-            if (!stops.length) throw new Error('Pysakkeja ei loytynyt nimella. Tarvitaan sijaintiin perustuva jatkohaku.');
+            if (!stops.some(s => !s.gtfsId.startsWith('tampere:'))) {
+              console.log('Alueelta ei loytynyt muiden aineistojen pysakkeja. Tama lahde ei tassa haussa tarjoa vahvistettua kaukoliikenteen kattavuutta.');
+            }
           }
           main().catch(error => { console.error(error.message); process.exitCode = 1; });
           JS
