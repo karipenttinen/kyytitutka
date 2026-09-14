@@ -1,0 +1,22 @@
+name: Kyytitutka - hae saapumistiedot
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # joka 15. minuutti - sopii mukavasti ilmaiseen kuukausikiintiöön
+  workflow_dispatch:          # sallii myös "Run workflow" -napin manuaalista testausta varten
+
+jobs:
+  hae-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: node kyytitutka-backend.js
+        env:
+          DIGITRANSIT_API_KEY: ${{ secrets.DIGITRANSIT_API_KEY }}
+          OPENSKY_CLIENT_ID: ${{ secrets.OPENSKY_CLIENT_ID }}
+          OPENSKY_CLIENT_SECRET: ${{ secrets.OPENSKY_CLIENT_SECRET }}
