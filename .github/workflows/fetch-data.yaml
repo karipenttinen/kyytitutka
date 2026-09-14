@@ -28,6 +28,7 @@ jobs:
           DIGITRANSIT_API_KEY: ${{ secrets.DIGITRANSIT_API_KEY }}
           OPENSKY_CLIENT_ID: ${{ secrets.OPENSKY_CLIENT_ID }}
           OPENSKY_CLIENT_SECRET: ${{ secrets.OPENSKY_CLIENT_SECRET }}
+          FINAVIA_API_KEY: ${{ secrets.FINAVIA_API_KEY }}
 
       - name: Tallenna data.json takaisin repoon
         run: |
