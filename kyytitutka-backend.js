@@ -1,21 +1,26 @@
 // Kyytitutka - taustapalvelun runko
-// Hakee saapumistiedot neljästä lähteestä ja yhdistää ne yhdeksi feediksi,
-// samassa muodossa kuin demon SIGNALS-taulukko (type, time, title, detail, location, demand).
+// Hakee saapumistiedot aktiivisista lähteistä (junat, bussit, lennot kahdella
+// tavalla) ja yhdistää ne yhdeksi feediksi, samassa muodossa kuin demon
+// SIGNALS-taulukko (type, time, title, detail, location, demand). Tapahtumat
+// on toistaiseksi tietoisesti pois käytöstä - ks. perustelut fetchEvents().
 //
 // YMPÄRISTÖMUUTTUJAT:
 //   DIGITRANSIT_API_KEY   - Digitransitin API-portaalista (bussit)
-//   OPENSKY_CLIENT_ID     - OpenSky-tililtä (lennot/ADS-B)
+//   OPENSKY_CLIENT_ID     - OpenSky-tililtä (lennot, ADS-B, fyysinen havainto)
 //   OPENSKY_CLIENT_SECRET - OpenSky-tililtä
-// Juna- ja tapahtumadata eivät vaadi avainta.
+//   FINAVIA_API_KEY       - Finavian API-portaalista (lennot, aikataulutieto
+//                           etukäteen) - KOKEELLINEN, ei vielä vahvistettu
+//                           toimivaksi, ks. fetchFinaviaSchedule()
+// Junadata ei vaadi avainta.
 //
 // TÄRKEÄÄ: kaikki diagnostiikka kirjoitetaan console.error:iin (stderr), EI
 // console.log:iin - näin stdout sisältää PELKÄN JSON:in, kun ajetaan
 // `node kyytitutka-backend.js > data.json`. Älä lisää console.log-kutsuja
 // main()-funktion ulkopuolelle tuon yhden rivin lisäksi.
 //
-// HUOM: tätä ei ole voitu testata livenä, koska tässä ympäristössä ei ole
-// verkkoyhteyttä. Yksi kohta on merkitty TARKISTA-kommentilla - se pitää
-// varmistaa Digitransitin GraphiQL-selaimella ennen ensimmäistä ajoa.
+// Tilanne 14.9.2026: junat ja bussit vahvistettu toimiviksi oikealla datalla.
+// Lennot palauttaa 0 havaintoa aina kun mikään kone ei satu olemaan juuri
+// laskeutumassa sillä hetkellä kun Action ajetaan - tämä on odotettua, ei bugi.
 
 const TAMPERE_STATION = 'TPE'; // Digitrafficin asemakoodi Tampereelle (vahvistettu)
 const PIRKKALA_BBOX = { latMin: 61.40, latMax: 61.53, lonMin: 23.50, lonMax: 23.80 };
@@ -235,6 +240,78 @@ async function fetchFlights() {
     }));
 }
 
+// ---------- 3b. LENNOT - AIKATAULUTIETO (Finavia, vaatii FINAVIA_API_KEY) ----------
+// TÄMÄ ON ENSIMMÄINEN KOEYRITYS, EI VAHVISTETTU TOIMIVAKSI. En ole nähnyt Finavian
+// tarkkaa rajapintadokumentaatiota, joten sekä URL-polku että tunnistautumisotsikko
+// ovat parhaita arvauksia:
+//   - URL: apiportal.finavia.fi näyttää Azure API Management -pohjaiselta, joten
+//     kokeillaan tyypillistä rakennetta api.finavia.fi/flights/public/v0/flights/{asema}
+//   - Otsikko: Azure APIM käyttää tyypillisesti nimeä "Ocp-Apim-Subscription-Key"
+// Jos tämä epäonnistuu, HTTP-tila ja koko vastaus kirjataan lokiin sellaisenaan,
+// samaan tapaan kuin bussipysäkkien ja tapahtumien kohdalla aiemmin - se kertoo
+// suoraan mikä arvauksesta oli väärin.
+//
+// Tarkoituksella oma, erillinen funktio eikä osa OpenSky-hakua: nämä kaksi
+// täydentävät toisiaan (Finavia = aikataulu etukäteen, OpenSky = fyysinen
+// varmistus juuri ennen laskeutumista), eikä niitä ole vielä yhdistetty
+// keskenään - sama lento voi siis näkyä listassa kahteen kertaan lähestyessään
+// kenttää. Tämä voidaan siistiä myöhemmin kun nähdään miltä oikea data näyttää.
+async function fetchFinaviaSchedule() {
+  if (!process.env.FINAVIA_API_KEY) {
+    console.error('Finavia ohitettu: FINAVIA_API_KEY puuttuu.');
+    return [];
+  }
+
+  const url = 'https://api.finavia.fi/flights/public/v0/flights/TMP';
+  let res;
+  try {
+    res = await fetch(url, {
+      headers: { app_key: process.env.FINAVIA_API_KEY },
+      signal: AbortSignal.timeout(30000),
+    });
+  } catch (e) {
+    console.error('Finavia: verkkokutsu epäonnistui kokonaan: ' + e.message);
+    return [];
+  }
+
+  const bodyText = await res.text();
+  if (!res.ok) {
+    console.error(`Finavia: HTTP ${res.status}. Vastaus: ${bodyText.slice(0, 600)}`);
+    return [];
+  }
+
+  let json;
+  try {
+    json = JSON.parse(bodyText);
+  } catch {
+    console.error('Finavia: vastaus ei ollut JSON:ia. Alku: ' + bodyText.slice(0, 300));
+    return [];
+  }
+
+  const flights = Array.isArray(json) ? json : json.flights || json.data || json.results || [];
+  console.error(`Finavia: löytyi ${flights.length} lentoa. Ensimmäinen: ` + JSON.stringify(flights[0] || {}).slice(0, 500));
+
+  const now = Math.floor(Date.now() / 1000);
+  return flights
+    .map((f) => {
+      const flightNumber = f.flightNumber || f.flight_number || f.flightId || f.iataFlightNumber || f.callSign;
+      const origin = f.origin || f.departureAirport || f.depApName || f.from;
+      const timeRaw = f.estimatedTime || f.scheduleTime || f.scheduledTime || f.eta;
+      const time = timeRaw ? Math.floor(Date.parse(timeRaw) / 1000) : null;
+      if (!flightNumber || !Number.isFinite(time)) return null;
+      return {
+        type: 'lento',
+        time,
+        title: flightNumber,
+        detail: origin ? `Aikataulun mukaan saapuu, lähtöpaikka ${origin}` : 'Aikataulun mukaan saapuu',
+        location: 'Lentoasema, Pirkkala',
+        demand: 2,
+      };
+    })
+    .filter(Boolean)
+    .filter((f) => f.time > now - 300 && f.time < now + 86400 * 2);
+}
+
 // ---------- 4. TAPAHTUMAT ----------
 // TOISTAISEKSI POIS KÄYTÖSTÄ (tietoinen päätös, ei bugi). Kolme lähdettä
 // kokeiltu ja hylätty:
@@ -253,16 +330,24 @@ async function fetchEvents() {
 
 // ---------- KOKOA KAIKKI YHTEEN ----------
 async function main() {
-  const results = await Promise.allSettled([fetchTrains(), fetchBuses(), fetchFlights(), fetchEvents()]);
-  const [trains, buses, flights, events] = results.map((r) => (r.status === 'fulfilled' ? r.value : []));
-  const names = ['Junat', 'Bussit', 'Lennot', 'Tapahtumat'];
+  const results = await Promise.allSettled([
+    fetchTrains(),
+    fetchBuses(),
+    fetchFlights(),
+    fetchFinaviaSchedule(),
+    fetchEvents(),
+  ]);
+  const [trains, buses, flightsAdsb, flightsSchedule, events] = results.map((r) =>
+    r.status === 'fulfilled' ? r.value : []
+  );
+  const names = ['Junat', 'Bussit', 'Lennot (ADS-B)', 'Lennot (Finavia)', 'Tapahtumat'];
 
   results.forEach((r, i) => {
     if (r.status === 'rejected') console.error(`${names[i]} epäonnistui:`, r.reason.message);
     else console.error(`${names[i]}: ${r.value.length} havaintoa`);
   });
 
-  const combined = [...trains, ...buses, ...flights, ...events].sort((a, b) => a.time - b.time);
+  const combined = [...trains, ...buses, ...flightsAdsb, ...flightsSchedule, ...events].sort((a, b) => a.time - b.time);
   console.log(JSON.stringify(combined, null, 2));
   return combined;
 }
