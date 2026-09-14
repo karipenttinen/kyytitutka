@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789412291,
+    "time": 1789412248,
     "title": "S53",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 2",
@@ -17,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789412518,
+    "time": 1789412489,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789414157,
+    "time": 1789414122,
     "title": "PYO265",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 3",
