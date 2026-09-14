@@ -1,15 +1,15 @@
 [
   {
     "type": "bussi",
-    "time": 1789403493,
+    "time": 1789403520,
     "title": "90",
-    "detail": "Lähtöpaikka: Terälahden koulu",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "bussi",
-    "time": 1789403703,
+    "time": 1789403712,
     "title": "55",
     "detail": "Lähtöpaikka: Vesilahti",
     "location": "Linja-autoasema",
@@ -41,6 +41,14 @@
   },
   {
     "type": "juna",
+    "time": 1789404776,
+    "title": "S34",
+    "detail": "Saapuu",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
     "time": 1789404791,
     "title": "S89",
     "detail": "Saapuu",
@@ -49,15 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1789404798,
-    "title": "S34",
-    "detail": "Saapuu",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789404900,
+    "time": 1789404936,
     "title": "HDM428",
     "detail": "Saapuu",
     "location": "Rautatieasema · raide 4",
@@ -972,6 +972,22 @@
     "time": 1789489140,
     "title": "95",
     "detail": "Lähtöpaikka: Orivesi (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789489920,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789490040,
+    "title": "55",
+    "detail": "Lähtöpaikka: Vesilahti (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   }
