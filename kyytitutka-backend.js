@@ -25,6 +25,24 @@
 const TAMPERE_STATION = 'TPE'; // Digitrafficin asemakoodi Tampereelle (vahvistettu)
 const PIRKKALA_BBOX = { latMin: 61.40, latMax: 61.53, lonMin: 23.50, lonMax: 23.80 };
 
+// Asemalyhenteiden käännökset kaupunkien nimiksi, Digitrafficin isokirjaiminen
+// muoto (dokumentaatio antaa esimerkkeinä "HKL, TPE, PSL"). Lähde: yleisesti
+// käytetty liikennepaikkojen lyhennelista. Kattaa kaukoliikenteen kannalta
+// oleelliset, Tampereelta suoraan/vaihdotta liikennöitävät päätepisteet -
+// laajenna listaa jos lokissa näkyy koodi joka puuttuu täältä.
+const ASEMANIMET = {
+  HKI: 'Helsinki', TKU: 'Turku', PRI: 'Pori', SK: 'Seinäjoki', VS: 'Vaasa',
+  OL: 'Oulu', KOK: 'Kokkola', JNS: 'Joensuu', JY: 'Jyväskylä', KUO: 'Kuopio',
+  ROI: 'Rovaniemi', KLI: 'Kolari', PKO: 'Parkano', RI: 'Riihimäki', TL: 'Toijala',
+  KEM: 'Kemi', TOR: 'Tornio', MI: 'Mikkeli', LR: 'Lappeenranta', KV: 'Kouvola',
+  LH: 'Lahti', IMR: 'Imatra', PM: 'Pieksämäki', VAR: 'Varkaus', NRM: 'Nurmes',
+  LIS: 'Lieksa', SL: 'Savonlinna', TPE: 'Tampere',
+};
+
+function asemanNimi(koodi) {
+  return ASEMANIMET[koodi] || koodi; // tuntematon koodi näytetään sellaisenaan arvaamisen sijaan
+}
+
 // ---------- 1. JUNAT (Digitraffic, ei avainta) ----------
 async function fetchTrains() {
   const url = `https://rata.digitraffic.fi/api/v1/live-trains/station/${TAMPERE_STATION}` +
@@ -37,16 +55,18 @@ async function fetchTrains() {
 
   return trains
     .map((t) => {
-      const row = (t.timeTableRows || []).find(
-        (r) => r.stationShortCode === TAMPERE_STATION && r.type === 'ARRIVAL'
-      );
+      const rows = t.timeTableRows || [];
+      const row = rows.find((r) => r.stationShortCode === TAMPERE_STATION && r.type === 'ARRIVAL');
       if (!row) return null;
       const iso = row.liveEstimateTime || row.scheduledTime;
+      const originCode = rows[0]?.stationShortCode;
+      const destCode = rows[rows.length - 1]?.stationShortCode;
+      const reitti = originCode && destCode ? `${asemanNimi(originCode)}–${asemanNimi(destCode)}` : null;
       return {
         type: 'juna',
         time: Math.floor(Date.parse(iso) / 1000),
         title: `${t.trainType}${t.trainNumber}`,
-        detail: row.trainStopping === false ? 'Ei pysähdy' : 'Saapuu',
+        detail: (row.trainStopping === false ? 'Ei pysähdy' : 'Saapuu') + (reitti ? ` · ${reitti}` : ''),
         location: `Rautatieasema${row.commercialTrack ? ' · raide ' + row.commercialTrack : ''}`,
         demand: 2,
       };
@@ -259,34 +279,61 @@ async function fetchFlights() {
 // ei toimi GitHub Actionsista). Vastaus on XML, ei JSON - Node.js:ssä ei ole
 // XML-jäsennintä valmiina, joten alla käytetään yksinkertaisia regexejä.
 //
-// Yhden lennon rakenne <arr><body><flight>...</flight></body></arr> sisältä
-// VAHVISTETTU suoraan käyttäjän lokista:
-//   <h_apt>HEL</h_apt>          - kohdeasema (ilman parametria oletuksena Helsinki!)
+// Yhden lennon rakenne <arr tai dep><body><flight>...</flight></body></...> sisältä
+// VAHVISTETTU suoraan käyttäjän lokista (arr-osiosta; dep oletetaan samanmuotoiseksi):
+//   <h_apt>HEL</h_apt>          - kohdeasema (arr: minne saapuu / dep: mistä lähtee)
 //   <fltnr>AY964</fltnr>        - lennon numero
 //   <sdt>2026-09-14T06:15:00Z</sdt>  - aikataulun mukainen aika (ISO, UTC)
 //   <route_1>CPH</route_1> / <route_n_1>Copenhagen</route_n_1> / <route_n_fi_1>Kööpenhamina</route_n_fi_1>
-//                               - lähtöpaikka (koodi / englanniksi / suomeksi)
+//                               - arr: lähtöpaikka / dep: määränpää (koodi / englanniksi / suomeksi)
 //   <prt>Landed</prt> / <prt_f>Laskeutunut</prt_f>  - tila (englanniksi / suomeksi)
 //
-// TARKISTA: koska ilman parametria vastaus oli Helsinki, Tampereen valintaan
-// tarvitaan jokin kyselyparametri - "apt=TMP" on paras arvaus kenttänimestä
-// h_apt päätellen, ei vahvistettu. Koodi kirjaa lokiin kaikki löytyneet
-// h_apt-arvot, joten näemme heti osuiko arvaus kohdalleen.
-//
-// PÄIVITYS: parametrilla vastauksessa näkyi silti KAIKKI Finavian asemat
-// (468 lentoa) - "apt=TMP" ei siis ilmeisesti suodata mitään, rajapinta
-// palauttaa aina koko maan datan. Se ei haittaa, koska alla oleva oma
-// suodatus (airport === 'TMP') poimii oikeat rivit joka tapauksessa - ja
-// tämä on vahvistettu toimivaksi (2 oikeaa osumaa ensimmäisellä ajolla).
+// PÄIVITYS: "apt=TMP"-parametri ei ilmeisesti suodata mitään, rajapinta palauttaa
+// aina koko maan datan - ei haittaa, koska oma suodatus (airport === 'TMP') poimii
+// oikeat rivit joka tapauksessa, vahvistettu toimivaksi ensimmäisellä ajolla.
 //
 // Tarkoituksella oma, erillinen funktio eikä osa OpenSky-hakua: nämä kaksi
 // täydentävät toisiaan (Finavia = aikataulu etukäteen, OpenSky = fyysinen
-// varmistus juuri ennen laskeutumista), eikä niitä ole vielä yhdistetty
+// varmistus juuri ennen laskeutumista/nousua), eikä niitä ole vielä yhdistetty
 // keskenään - sama lento voi siis näkyä listassa kahteen kertaan lähestyessään
 // kenttää.
 function xmlTag(block, name) {
   const m = block.match(new RegExp(`<${name}>([^<]*)</${name}>`));
   return m ? m[1] : null;
+}
+
+function parseFlightSection(bodyText, sectionTag) {
+  const match = bodyText.match(new RegExp(`<${sectionTag}>([\\s\\S]*?)</${sectionTag}>`));
+  if (!match) return null;
+  const blocks = [...match[1].matchAll(/<flight>([\s\S]*?)<\/flight>/g)].map((m) => m[1]);
+  return blocks.map((block) => ({
+    airport: xmlTag(block, 'h_apt'),
+    flightNumber: xmlTag(block, 'fltnr'),
+    sdt: xmlTag(block, 'sdt'),
+    place: xmlTag(block, 'route_n_fi_1') || xmlTag(block, 'route_n_1') || xmlTag(block, 'route_1'),
+    status: xmlTag(block, 'prt_f') || xmlTag(block, 'prt'),
+  }));
+}
+
+function finaviaToSignal(f, isDeparture, now) {
+  const time = f.sdt ? Math.floor(Date.parse(f.sdt) / 1000) : null;
+  if (!f.flightNumber || !Number.isFinite(time)) return null;
+  if (time <= now - 300 || time >= now + 86400 * 2) return null;
+  const suunta = isDeparture
+    ? f.place
+      ? `Aikataulun mukaan lähtee, määränpää ${f.place}`
+      : 'Aikataulun mukaan lähtee'
+    : f.place
+      ? `Aikataulun mukaan saapuu, lähtöpaikka ${f.place}`
+      : 'Aikataulun mukaan saapuu';
+  return {
+    type: 'lento',
+    time,
+    title: f.flightNumber,
+    detail: suunta + (f.status ? ` · ${f.status}` : ''),
+    location: 'Lentoasema, Pirkkala',
+    demand: 2,
+  };
 }
 
 async function fetchFinaviaSchedule() {
@@ -313,45 +360,31 @@ async function fetchFinaviaSchedule() {
     return [];
   }
 
-  const arrMatch = bodyText.match(/<arr>([\s\S]*?)<\/arr>/);
-  if (!arrMatch) {
-    console.error('Finavia: <arr>-osiota ei löytynyt vastauksesta. Alku: ' + bodyText.slice(0, 300));
+  const arrRecords = parseFlightSection(bodyText, 'arr') || [];
+  const depRecords = parseFlightSection(bodyText, 'dep') || [];
+  if (!arrRecords.length && !depRecords.length) {
+    console.error('Finavia: <arr>- eikä <dep>-osiota löytynyt. Alku: ' + bodyText.slice(0, 300));
     return [];
   }
-  const flightBlocks = [...arrMatch[1].matchAll(/<flight>([\s\S]*?)<\/flight>/g)].map((m) => m[1]);
 
-  const parsed = flightBlocks.map((block) => ({
-    airport: xmlTag(block, 'h_apt'),
-    flightNumber: xmlTag(block, 'fltnr'),
-    sdt: xmlTag(block, 'sdt'),
-    origin: xmlTag(block, 'route_n_fi_1') || xmlTag(block, 'route_n_1') || xmlTag(block, 'route_1'),
-    status: xmlTag(block, 'prt_f') || xmlTag(block, 'prt'),
-  }));
-
-  const airportsFound = [...new Set(parsed.map((f) => f.airport))];
+  const arrAsemat = [...new Set(arrRecords.map((f) => f.airport))];
+  const depAsemat = [...new Set(depRecords.map((f) => f.airport))];
   console.error(
-    `Finavia: <arr>-osiosta löytyi ${parsed.length} lentoa. Asemat vastauksessa: ${airportsFound.join(', ') || '(ei yhtään)'}`
+    `Finavia: <arr> ${arrRecords.length} lentoa (asemat: ${arrAsemat.join(', ') || '-'}), ` +
+      `<dep> ${depRecords.length} lentoa (asemat: ${depAsemat.join(', ') || '-'})`
   );
 
   const now = Math.floor(Date.now() / 1000);
-  return parsed
+  const saapuvat = arrRecords
     .filter((f) => f.airport === 'TMP')
-    .map((f) => {
-      const time = f.sdt ? Math.floor(Date.parse(f.sdt) / 1000) : null;
-      if (!f.flightNumber || !Number.isFinite(time)) return null;
-      return {
-        type: 'lento',
-        time,
-        title: f.flightNumber,
-        detail:
-          (f.origin ? `Aikataulun mukaan saapuu, lähtöpaikka ${f.origin}` : 'Aikataulun mukaan saapuu') +
-          (f.status ? ` · ${f.status}` : ''),
-        location: 'Lentoasema, Pirkkala',
-        demand: 2,
-      };
-    })
-    .filter(Boolean)
-    .filter((f) => f.time > now - 300 && f.time < now + 86400 * 2);
+    .map((f) => finaviaToSignal(f, false, now))
+    .filter(Boolean);
+  const lahtevat = depRecords
+    .filter((f) => f.airport === 'TMP')
+    .map((f) => finaviaToSignal(f, true, now))
+    .filter(Boolean);
+
+  return [...saapuvat, ...lahtevat];
 }
 
 // ---------- 4. TAPAHTUMAT ----------
