@@ -1,7 +1,7 @@
 [
   {
     "type": "bussi",
-    "time": 1789407074,
+    "time": 1789407027,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -9,7 +9,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789407232,
+    "time": 1789407231,
     "title": "55",
     "detail": "Lähtöpaikka: Vesilahti",
     "location": "Linja-autoasema",
@@ -17,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789407660,
+    "time": 1789407621,
     "title": "90",
     "detail": "Lähtöpaikka: Terälahden koulu",
     "location": "Linja-autoasema",
