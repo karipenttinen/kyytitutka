@@ -260,6 +260,12 @@ async function fetchFlights() {
 // h_apt päätellen, ei vahvistettu. Koodi kirjaa lokiin kaikki löytyneet
 // h_apt-arvot, joten näemme heti osuiko arvaus kohdalleen.
 //
+// PÄIVITYS: parametrilla vastauksessa näkyi silti KAIKKI Finavian asemat
+// (468 lentoa) - "apt=TMP" ei siis ilmeisesti suodata mitään, rajapinta
+// palauttaa aina koko maan datan. Se ei haittaa, koska alla oleva oma
+// suodatus (airport === 'TMP') poimii oikeat rivit joka tapauksessa - ja
+// tämä on vahvistettu toimivaksi (2 oikeaa osumaa ensimmäisellä ajolla).
+//
 // Tarkoituksella oma, erillinen funktio eikä osa OpenSky-hakua: nämä kaksi
 // täydentävät toisiaan (Finavia = aikataulu etukäteen, OpenSky = fyysinen
 // varmistus juuri ennen laskeutumista), eikä niitä ole vielä yhdistetty
@@ -351,6 +357,47 @@ async function fetchEvents() {
   return [];
 }
 
+// ---------- ADS-B:N JA FINAVIAN YHDISTÄMINEN ----------
+// Sama lento voi näkyä molemmissa lähteissä: OpenSkyn "title" on ICAO-tyylinen
+// kutsumerkki (esim. "BTI357"), Finavian "fltnr" IATA-tyylinen (esim. "BT357") -
+// eri etuliite, sama numero-osa. Tunnistetaan sama lento numero-osan ja ajan
+// läheisyyden (alle 20 min) perusteella. Kun osuma löytyy, säilytetään
+// Finavian rivi (enemmän tietoa: lähtöpaikka, tila) ja pudotetaan ADS-B-kaksoiskappale,
+// merkiten että radar on vahvistanut sen. ADS-B-havainnot joille ei löydy paria
+// (esim. yksityis-/rahtilennot, joita ei ole julkisessa aikataulussa) säilytetään sellaisenaan.
+function extractDigits(str) {
+  const m = String(str || '').match(/(\d+)/);
+  return m ? m[1].replace(/^0+/, '') : null;
+}
+
+function mergeFlightSources(adsb, schedule) {
+  const usedAdsbIndices = new Set();
+  const result = [];
+
+  for (const s of schedule) {
+    const sDigits = extractDigits(s.title);
+    const matchIndex = adsb.findIndex(
+      (a, i) =>
+        !usedAdsbIndices.has(i) &&
+        sDigits &&
+        extractDigits(a.title) === sDigits &&
+        Math.abs(a.time - s.time) < 1200
+    );
+    if (matchIndex >= 0) {
+      usedAdsbIndices.add(matchIndex);
+      result.push({ ...s, detail: s.detail + ' · vahvistettu tutkalla juuri nyt' });
+    } else {
+      result.push(s);
+    }
+  }
+
+  adsb.forEach((a, i) => {
+    if (!usedAdsbIndices.has(i)) result.push(a);
+  });
+
+  return result;
+}
+
 // ---------- KOKOA KAIKKI YHTEEN ----------
 async function main() {
   const results = await Promise.allSettled([
@@ -370,7 +417,12 @@ async function main() {
     else console.error(`${names[i]}: ${r.value.length} havaintoa`);
   });
 
-  const combined = [...trains, ...buses, ...flightsAdsb, ...flightsSchedule, ...events].sort((a, b) => a.time - b.time);
+  const flights = mergeFlightSources(flightsAdsb, flightsSchedule);
+  console.error(
+    `Lennot yhdistetty: ${flightsAdsb.length} ADS-B + ${flightsSchedule.length} Finavia -> ${flights.length} riviä (kaksoiskappaleet poistettu).`
+  );
+
+  const combined = [...trains, ...buses, ...flights, ...events].sort((a, b) => a.time - b.time);
   console.log(JSON.stringify(combined, null, 2));
   return combined;
 }
