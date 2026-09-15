@@ -1,15 +1,15 @@
 [
   {
     "type": "bussi",
-    "time": 1789460336,
+    "time": 1789460280,
     "title": "90",
-    "detail": "Lähtöpaikka: Terälahden koulu",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "bussi",
-    "time": 1789461037,
+    "time": 1789461157,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
@@ -41,18 +41,18 @@
   },
   {
     "type": "juna",
-    "time": 1789462243,
-    "title": "IC94",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 4",
+    "time": 1789462157,
+    "title": "IC22",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1789462260,
-    "title": "IC22",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
+    "time": 1789462243,
+    "title": "IC94",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
@@ -73,7 +73,7 @@
   },
   {
     "type": "juna",
-    "time": 1789462866,
+    "time": 1789462934,
     "title": "S33",
     "detail": "Saapuu · Helsinki–VTI",
     "location": "Rautatieasema · raide 2",
@@ -137,9 +137,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789466490,
+    "time": 1789466437,
     "title": "60",
-    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -1148,6 +1148,14 @@
     "time": 1789545690,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789546680,
+    "title": "90",
+    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   }
