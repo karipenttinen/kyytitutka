@@ -1,15 +1,7 @@
 [
   {
     "type": "bussi",
-    "time": 1789460280,
-    "title": "90",
-    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789461157,
+    "time": 1789461235,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
@@ -17,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789461360,
+    "time": 1789461439,
     "title": "IC464",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789461637,
+    "time": 1789461557,
     "title": "HDM424",
     "detail": "Saapuu · KEU–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -41,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789462157,
+    "time": 1789462214,
     "title": "IC22",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -105,7 +97,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789464542,
+    "time": 1789464556,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -177,9 +169,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789468680,
+    "time": 1789468642,
     "title": "90",
-    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "detail": "Lähtöpaikka: Terälahden koulu",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -1156,6 +1148,14 @@
     "time": 1789546680,
     "title": "90",
     "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789547490,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   }
