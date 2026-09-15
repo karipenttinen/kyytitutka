@@ -507,8 +507,15 @@ async function fetchFinaviaSchedule() {
 // Tiedoston muoto, taulukko olioita:
 //   [{ "title": "Ilves-Tappara", "start": "2026-09-20T18:30:00+03:00",
 //      "end": "2026-09-20T21:00:00+03:00", "location": "Nokia Arena" }, ...]
-// "end" on valinnainen - jos annettu, tapahtumasta näytetään KAKSI riviä:
-// alkava (kysyntä kohti paikkaa) ja päättyvä (kysyntä pois paikasta).
+// "end" on valinnainen. Jos annettu, käytetään sellaisenaan. Jos EI annettu,
+// päättymisaika ARVIOIDAAN alkamisajasta + tyypillisestä kestosta (oletus
+// 2,5h, tai "estimatedDurationHours" jos annettu per tapahtuma) ja merkitään
+// selvästi "arvioiduksi" - kuljettajalle merkityksellisin hetki on juuri
+// tapahtuman PÄÄTTYMINEN (silloin syntyy iso, kertaluonteinen kysyntäpiikki
+// yleisön poistuessa), ei alkaminen, joten päättymisaika näytetään aina
+// jollain tarkkuudella sen sijaan että jätettäisiin kokonaan pois.
+const TAPAHTUMAN_OLETUSKESTO_TUNTIA = 2.5;
+
 function fetchEvents() {
   let raw;
   try {
@@ -536,7 +543,9 @@ function fetchEvents() {
   for (const ev of events) {
     if (!ev || !ev.title || !ev.start) continue;
     const startTime = Math.floor(Date.parse(ev.start) / 1000);
-    if (Number.isFinite(startTime) && startTime > now - 300 && startTime < tuoreusRaja) {
+    if (!Number.isFinite(startTime)) continue;
+
+    if (startTime > now - 300 && startTime < tuoreusRaja) {
       result.push({
         type: 'tapahtuma',
         time: startTime,
@@ -546,18 +555,26 @@ function fetchEvents() {
         demand: 2,
       });
     }
+
+    let endTime;
+    let arvioitu;
     if (ev.end) {
-      const endTime = Math.floor(Date.parse(ev.end) / 1000);
-      if (Number.isFinite(endTime) && endTime > now - 300 && endTime < tuoreusRaja) {
-        result.push({
-          type: 'tapahtuma',
-          time: endTime,
-          title: ev.title,
-          detail: 'Päättyy, yleisöä poistumassa',
-          location: ev.location || 'Tampere',
-          demand: 2,
-        });
-      }
+      endTime = Math.floor(Date.parse(ev.end) / 1000);
+      arvioitu = false;
+    } else {
+      const kesto = Number.isFinite(ev.estimatedDurationHours) ? ev.estimatedDurationHours : TAPAHTUMAN_OLETUSKESTO_TUNTIA;
+      endTime = startTime + Math.round(kesto * 3600);
+      arvioitu = true;
+    }
+    if (Number.isFinite(endTime) && endTime > now - 300 && endTime < tuoreusRaja) {
+      result.push({
+        type: 'tapahtuma',
+        time: endTime,
+        title: ev.title,
+        detail: arvioitu ? 'Arvioitu päättyvän, yleisöä poistumassa' : 'Päättyy, yleisöä poistumassa',
+        location: ev.location || 'Tampere',
+        demand: 2,
+      });
     }
   }
   console.error(`Tapahtumat: events.json:sta luettu ${events.length} tapahtumaa, ${result.length} osuu 2 vrk ikkunaan.`);
