@@ -8,8 +8,24 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1789477320,
+    "title": "OHAYT",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789477323,
+    "title": "FIH30",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "juna",
-    "time": 1789477405,
+    "time": 1789477331,
     "title": "IC27",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -33,7 +49,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789479149,
+    "time": 1789479106,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -41,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1789479293,
+    "time": 1789479327,
     "title": "S39",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -88,11 +104,11 @@
     "demand": 2
   },
   {
-    "type": "tapahtuma",
-    "time": 1789480800,
-    "title": "EuroVolley: Belgia-Tanska",
-    "detail": "Alkaa, päättyy arviolta klo 19.30",
-    "location": "Nokia Arena",
+    "type": "lento",
+    "time": 1789481160,
+    "title": "BT526",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (9 min etuajassa) · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -161,7 +177,7 @@
   },
   {
     "type": "juna",
-    "time": 1789483980,
+    "time": 1789483983,
     "title": "IC147",
     "detail": "Saapuu · Helsinki–Kuopio",
     "location": "Rautatieasema · raide 3",
@@ -173,6 +189,14 @@
     "title": "IC51",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789484700,
+    "title": "BT525",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malaga",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -258,8 +282,9 @@
   {
     "type": "tapahtuma",
     "time": 1789489800,
+    "timeLabel": "17.00–19.30",
     "title": "EuroVolley: Belgia-Tanska",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa (alkoi klo 17.00)",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
     "demand": 2
   },
@@ -320,14 +345,6 @@
     "demand": 1
   },
   {
-    "type": "tapahtuma",
-    "time": 1789491600,
-    "title": "EuroVolley: Hollanti-Suomi",
-    "detail": "Alkaa, päättyy arviolta klo 22.30",
-    "location": "Nokia Arena",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789493400,
     "title": "140",
@@ -346,8 +363,9 @@
   {
     "type": "tapahtuma",
     "time": 1789500600,
+    "timeLabel": "20.00–22.30",
     "title": "EuroVolley: Hollanti-Suomi",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa (alkoi klo 20.00)",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
     "demand": 2
   },
@@ -368,12 +386,28 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1789509000,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1789518900,
     "title": "V130",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1789525800,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -600,6 +634,22 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1789559400,
+    "title": "BT355",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789560000,
+    "title": "FTL323",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1789560420,
     "title": "95",
@@ -624,6 +674,14 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1789561800,
+    "title": "BT356",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1789562340,
     "title": "OB9",
@@ -632,34 +690,28 @@
     "demand": 1
   },
   {
-    "type": "tapahtuma",
-    "time": 1789567200,
-    "title": "EuroVolley: Tanska-Serbia",
-    "detail": "Alkaa, päättyy arviolta klo 19.30",
-    "location": "Nokia Arena",
-    "demand": 2
+    "type": "bussi",
+    "time": 1789563600,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
     "time": 1789576200,
+    "timeLabel": "17.00–19.30",
     "title": "EuroVolley: Tanska-Serbia",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa (alkoi klo 17.00)",
-    "location": "Nokia Arena",
-    "demand": 2
-  },
-  {
-    "type": "tapahtuma",
-    "time": 1789578000,
-    "title": "EuroVolley: Hollanti-Viro",
-    "detail": "Alkaa, päättyy arviolta klo 22.30",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
     "demand": 2
   },
   {
     "type": "tapahtuma",
     "time": 1789587000,
+    "timeLabel": "20.00–22.30",
     "title": "EuroVolley: Hollanti-Viro",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa (alkoi klo 20.00)",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
     "demand": 2
   }
