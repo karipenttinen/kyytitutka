@@ -1,39 +1,7 @@
 [
   {
-    "type": "lento",
-    "time": 1789481394,
-    "title": "BTI2MU",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
-    "time": 1789481400,
-    "title": "43",
-    "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789481520,
-    "title": "97A/95",
-    "detail": "Lähtöpaikka: Virrat P (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1789481520,
-    "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga · Arvioitu aika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1789482604,
+    "time": 1789482692,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -65,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789483860,
+    "time": 1789483811,
     "title": "IC26",
     "detail": "Saapuu · VTI–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -73,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1789483863,
+    "time": 1789483836,
     "title": "S146",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -99,7 +67,7 @@
     "type": "lento",
     "time": 1789484700,
     "title": "BT525",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malaga",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malaga · Portille",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -678,6 +646,22 @@
     "time": 1789566900,
     "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789567800,
+    "title": "43",
+    "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789567920,
+    "title": "97A/95",
+    "detail": "Lähtöpaikka: Virrat P (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
