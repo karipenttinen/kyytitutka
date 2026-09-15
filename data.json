@@ -1,16 +1,7 @@
 [
   {
-    "type": "tapahtuma",
-    "time": 1789489800,
-    "timeLabel": "17.00–19.30",
-    "title": "EuroVolley: Belgia-Tanska",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Nokia Arena",
-    "demand": 2
-  },
-  {
     "type": "juna",
-    "time": 1789490760,
+    "time": 1789490660,
     "title": "IC472",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -18,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789490820,
+    "time": 1789490809,
     "title": "IC927",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -26,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789490940,
+    "time": 1789490985,
     "title": "S88",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -42,15 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789491240,
-    "title": "S34",
-    "detail": "Saapuu · VTI–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789491300,
+    "time": 1789491190,
     "title": "HDM428",
     "detail": "Saapuu · KEU–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -71,6 +54,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789491390,
+    "title": "S34",
+    "detail": "Saapuu · VTI–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "juna",
@@ -138,7 +129,7 @@
   },
   {
     "type": "juna",
-    "time": 1789498526,
+    "time": 1789498466,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -671,6 +662,15 @@
     "time": 1789587000,
     "timeLabel": "20.00–22.30",
     "title": "EuroVolley: Hollanti-Viro",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Nokia Arena",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1789662600,
+    "timeLabel": "17.00–19.30",
+    "title": "EuroVolley: Serbia-Belgia",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
     "demand": 2
