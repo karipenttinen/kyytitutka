@@ -516,6 +516,12 @@ async function fetchFinaviaSchedule() {
 // jollain tarkkuudella sen sijaan että jätettäisiin kokonaan pois.
 const TAPAHTUMAN_OLETUSKESTO_TUNTIA = 2.5;
 
+function helsinginKello(unixSec) {
+  return new Intl.DateTimeFormat('fi-FI', {
+    timeZone: 'Europe/Helsinki', hour: '2-digit', minute: '2-digit', hour12: false,
+  }).format(new Date(unixSec * 1000));
+}
+
 function fetchEvents() {
   let raw;
   try {
@@ -545,17 +551,6 @@ function fetchEvents() {
     const startTime = Math.floor(Date.parse(ev.start) / 1000);
     if (!Number.isFinite(startTime)) continue;
 
-    if (startTime > now - 300 && startTime < tuoreusRaja) {
-      result.push({
-        type: 'tapahtuma',
-        time: startTime,
-        title: ev.title,
-        detail: 'Alkaa',
-        location: ev.location || 'Tampere',
-        demand: 2,
-      });
-    }
-
     let endTime;
     let arvioitu;
     if (ev.end) {
@@ -566,12 +561,28 @@ function fetchEvents() {
       endTime = startTime + Math.round(kesto * 3600);
       arvioitu = true;
     }
+    const paattymisteksti = Number.isFinite(endTime)
+      ? (arvioitu ? `päättyy arviolta klo ${helsinginKello(endTime)}` : `päättyy klo ${helsinginKello(endTime)}`)
+      : null;
+    const alkamisteksti = `alkoi klo ${helsinginKello(startTime)}`;
+
+    if (startTime > now - 300 && startTime < tuoreusRaja) {
+      result.push({
+        type: 'tapahtuma',
+        time: startTime,
+        title: ev.title,
+        detail: 'Alkaa' + (paattymisteksti ? `, ${paattymisteksti}` : ''),
+        location: ev.location || 'Tampere',
+        demand: 2,
+      });
+    }
+
     if (Number.isFinite(endTime) && endTime > now - 300 && endTime < tuoreusRaja) {
       result.push({
         type: 'tapahtuma',
         time: endTime,
         title: ev.title,
-        detail: arvioitu ? 'Arvioitu päättyvän, yleisöä poistumassa' : 'Päättyy, yleisöä poistumassa',
+        detail: (arvioitu ? 'Arvioitu päättyvän' : 'Päättyy') + `, yleisöä poistumassa (${alkamisteksti})`,
         location: ev.location || 'Tampere',
         demand: 2,
       });
