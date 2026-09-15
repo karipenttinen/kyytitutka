@@ -565,7 +565,11 @@ function fetchEvents() {
   }
 
   const now = Math.floor(Date.now() / 1000);
-  const tuoreusRaja = now + 86400 * 2; // sama 2 vrk -ikkuna kuin muillakin lähteillä
+  // 7 vrk, EI sama kuin muilla lähteillä: juna 3 päivän päästä ei kiinnosta ketään
+  // juuri nyt, mutta iso tapahtuma perjantaina kannattaa näkyä jo tiistaina
+  // ennakkosuunnittelua varten - tapahtumat ovat luonteeltaan eri kuin reaaliaikainen
+  // liikenne, joten pidempi ikkuna on tarkoituksella tässä.
+  const tuoreusRaja = now + 86400 * 7;
   const result = [];
   for (const ev of events) {
     if (!ev || !ev.title || !ev.start) continue;
