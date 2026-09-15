@@ -21,6 +21,18 @@
 // Tilanne 14.9.2026: junat ja bussit vahvistettu toimiviksi oikealla datalla.
 // Lennot palauttaa 0 havaintoa aina kun mikään kone ei satu olemaan juuri
 // laskeutumassa sillä hetkellä kun Action ajetaan - tämä on odotettua, ei bugi.
+//
+// HARKITTU JA HYLÄTTY (15.9.2026): Tays Päivystys Acutan ruuhkamittari
+// (pirha.fi/palvelut/kiireellinen-hoito-ja-paivystys/paivystys/acutan-ruuhkamittari).
+// Data on yllättävän rikasta (potilasmäärät osastoittain, ei vain liikennevalo),
+// mutta kaksi estettä: (1) pirha.fi estää automaattisen haun robots.txt:llä,
+// eikä erillistä/kolmannen osapuolen rajapintaa löytynyt taustalta, (2) vaikka
+// tekninen reitti löytyisikin, data muuttuu tunnin sisällä eikä sovi
+// events.json:n kaltaiseen kerran viikossa käsin päivitettävään malliin - se
+// vaatisi saman 15 min automaation kuin junat/bussit/lennot. Ei toteutettu.
+
+const fs = require('fs');
+const path = require('path');
 
 const TAMPERE_STATION = 'TPE'; // Digitrafficin asemakoodi Tampereelle (vahvistettu)
 const PIRKKALA_BBOX = { latMin: 61.40, latMax: 61.53, lonMin: 23.50, lonMax: 23.80 };
@@ -137,12 +149,25 @@ function onLahiliikennetta(originName) {
   return TAMPEREEN_LAHIKUNNAT.some((kunta) => n.includes(kunta));
 }
 
+// Nyssen (Tampereen paikallisliikenteen) tunnettuja liikennöitsijänimiä
+// GTFS-datassa. Suljetaan nämä aina pois riippumatta pysäkistä - varmuuden
+// vuoksi tiukempi suoja sen lisäksi että etsimme nimenomaan kaukoliikenteen
+// pysäkkejä. Täydennä listaa jos lokissa näkyy muitakin paikallisliikenteen
+// nimiä jotka pääsevät läpi.
+const TUNNETUT_PAIKALLISLIIKENTEEN_NIMET = ['nysse', 'tampereen kaupunki'];
+
+function onPaikallisliikennetta(agencyName) {
+  const n = String(agencyName || '').toLowerCase();
+  return TUNNETUT_PAIKALLISLIIKENTEEN_NIMET.some((nimi) => n.includes(nimi));
+}
+
 function busArrivalsFromRows(stopId, rows, now) {
   const result = [];
   const seen = new Set();
   for (const s of rows) {
     const trip = s.trip;
     if (!trip || s.realtimeState === 'CANCELED') continue;
+    if (onPaikallisliikennetta(trip.route?.agency?.name)) continue; // Nysse tms. paikallisliikenne, ei kaukoliikennettä
     const stops = trip.pattern?.stops || [];
     const index = stops.findIndex((p) => p.gtfsId === stopId);
     if (index <= 0) continue; // -1: pysäkkiä ei löydy pattern-listalta. 0: tämä on lähtöpaikka, ei saapuminen.
@@ -162,6 +187,7 @@ function busArrivalsFromRows(stopId, rows, now) {
       detail: `Lähtöpaikka: ${origin}${s.realtime ? '' : ' (aikatauluaika)'}`,
       location: 'Linja-autoasema',
       demand: 1,
+      _agency: trip.route?.agency?.name || '(tuntematon)',
     });
   }
   return result;
@@ -178,7 +204,7 @@ async function fetchStoptimesForStop(stopId, now) {
         serviceDay
         trip {
           gtfsId
-          route { shortName longName }
+          route { shortName longName agency { name gtfsId } }
           pattern { stops { gtfsId name } }
         }
       }
@@ -209,17 +235,22 @@ async function fetchBuses() {
   console.error(`Bussit: löytyi ${allStops.length} pysäkkiä 1 km säteellä keskustasta:`);
   allStops.forEach((s) => console.error(`  ${s.gtfsId} :: ${s.name}`));
 
-  const nimellaLoytyneet = allStops.filter((s) => /linja-?autoasema/i.test(s.name || ''));
+  const terminaaliNimella = allStops.filter((s) => /linja-?autoasema/i.test(s.name || ''));
+  const muutTunnetutKaukoliikenteenPysakit = allStops.filter((s) => /kuokkamaantie/i.test(s.name || ''));
+  const nimellaLoytyneet = [...terminaaliNimella, ...muutTunnetutKaukoliikenteenPysakit];
 
   // Yleinen korjaus MATKA:358759-tyyppisiin tapauksiin: pelkällä numerolla
   // nimetyt pysäkit (kuten Helsinki-Vantaan V130-yhteyden laituri "2") eivät
   // täsmää nimihakuun mitenkään, joten otetaan lisäksi mukaan pysäkit jotka
-  // ovat lähellä nimellä löytyneiden pysäkkien KESKIPISTETTÄ - riippumatta
-  // niiden omasta nimestä. 200m osoittautui liian avokätiseksi (nappasi mukaan
-  // "Sorin aukio" ja "Ratina", jotka ovat eri paikkoja) - tiukennettu 90m:iin,
-  // ja lisäksi suljettu nimellä pois tunnetut väärät osumat varmuuden vuoksi.
+  // ovat lähellä nimellä löytyneiden TERMINAALIN pysäkkien KESKIPISTETTÄ -
+  // riippumatta niiden omasta nimestä. Keskipiste lasketaan tarkoituksella
+  // vain terminaaliNimella-joukosta, ei Kuokkamaantiestä, koska se on n. 1,5 km
+  // päässä ja vääristäisi keskipisteen pois oikealta paikalta. 200m osoittautui
+  // liian avokätiseksi (nappasi mukaan "Sorin aukio" ja "Ratina", jotka ovat eri
+  // paikkoja) - tiukennettu 90m:iin, ja lisäksi suljettu nimellä pois tunnetut
+  // väärät osumat varmuuden vuoksi.
   const VARMASTI_MUU_PAIKKA = ['sorin aukio', 'ratina'];
-  const kelvolliset = nimellaLoytyneet.filter((s) => Number.isFinite(s.lat) && Number.isFinite(s.lon));
+  const kelvolliset = terminaaliNimella.filter((s) => Number.isFinite(s.lat) && Number.isFinite(s.lon));
   let candidates = nimellaLoytyneet;
   if (kelvolliset.length > 0) {
     const keskiLat = kelvolliset.reduce((sum, s) => sum + s.lat, 0) / kelvolliset.length;
@@ -258,7 +289,15 @@ async function fetchBuses() {
   );
 
   const batches = rowsPerStop.map(({ stop, rows }) => busArrivalsFromRows(stop.gtfsId, rows, now));
-  return batches.flat().sort((a, b) => a.time - b.time);
+  const kaikki = batches.flat().sort((a, b) => a.time - b.time);
+
+  // Diagnostiikka: listataan kaikki mukaan päässeet liikennöitsijänimet, jotta
+  // näemme onko Nysse-suodatus riittävä ja mikä agency-nimi esim. OnniBusilla
+  // on - se auttaa myöhemmin sen kaikkien hajanaisten pysäkkien löytämisessä.
+  const agencyt = [...new Set(kaikki.map((s) => s._agency))];
+  console.error('Bussit: mukaan päässeet liikennöitsijät: ' + (agencyt.join(', ') || '(ei yhtään)'));
+
+  return kaikki.map(({ _agency, ...rest }) => rest);
 }
 
 // ---------- 3. LENNOT (OpenSky ADS-B, vaatii OPENSKY_CLIENT_ID/SECRET) ----------
@@ -447,20 +486,82 @@ async function fetchFinaviaSchedule() {
   return [...saapuvat, ...lahtevat];
 }
 
-// ---------- 4. TAPAHTUMAT ----------
-// TOISTAISEKSI POIS KÄYTÖSTÄ (tietoinen päätös, ei bugi). Kolme lähdettä
-// kokeiltu ja hylätty:
+// ---------- 4. TAPAHTUMAT (käsin ylläpidetty events.json) ----------
+// Kolme API-pohjaista lähdettä kokeiltu ja hylätty aiemmin:
 //   - Tampereen LinkedEvents (linkedevents.tampere.fi) - rikki, ei vastaa
 //     edes tavallisessa selaimessa
 //   - VisitTampere.fi:n oma /api/v1/event - dokumentaatio vuodelta 2015,
 //     korvattu 2022 sivustouudistuksessa, palauttaa HTML:ää JSON:in sijaan
-//   - Visit Finland DataHub - toimiva ja ajantasainen, mutta vaatii oman
-//     rekisteröitymisen (developer.businessfinland.fi) ja on koko maan
-//     matkailutuotetietokanta, ei pelkkä tapahtumalista - päätettiin että
-//     tämä on liian raskas tähän tarpeeseen toistaiseksi
-// Jos tähän halutaan palata myöhemmin, DataHub on tunnistettu oikea seuraava askel.
-async function fetchEvents() {
-  return [];
+//   - Visit Finland DataHub - ilmainen, ja rekisteröityminen onnistui, mutta
+//     productAvailability-taulun startTime/endTime -kentät osoittautuivat
+//     tyhjiksi (null) käytännössä kaikilla tuotteilla kokeiltaessa oikealla
+//     avaimella (10 kohdennettua riviä, 0/10 kellonaikaa) - data on tasolla
+//     "tuote auki päivämääristä X-Y", ei "tapahtuma alkaa kello 19", eikä siis
+//     sovi kaukoliikenteen kaltaiseen täsmälliseen ajankohtaan
+//
+// Sen sijaan tapahtumat luetaan tästä samassa kansiossa olevasta events.json-
+// tiedostosta, joka päivitetään käsin (keskustelussa, aina kun tarpeen) -
+// tapahtumat ovat luonteeltaan tiedossa hyvissä ajoin, joten tämä riittää
+// hyvin eikä vaadi reaaliaikaista APIa.
+//
+// Tiedoston muoto, taulukko olioita:
+//   [{ "title": "Ilves-Tappara", "start": "2026-09-20T18:30:00+03:00",
+//      "end": "2026-09-20T21:00:00+03:00", "location": "Nokia Arena" }, ...]
+// "end" on valinnainen - jos annettu, tapahtumasta näytetään KAKSI riviä:
+// alkava (kysyntä kohti paikkaa) ja päättyvä (kysyntä pois paikasta).
+function fetchEvents() {
+  let raw;
+  try {
+    raw = fs.readFileSync(path.join(__dirname, 'events.json'), 'utf8');
+  } catch (e) {
+    console.error('Tapahtumat: events.json puuttuu tai ei voitu lukea - ohitetaan. (' + e.message + ')');
+    return [];
+  }
+
+  let events;
+  try {
+    events = JSON.parse(raw);
+  } catch (e) {
+    console.error('Tapahtumat: events.json ei ole kelvollista JSONia - ohitetaan. (' + e.message + ')');
+    return [];
+  }
+  if (!Array.isArray(events)) {
+    console.error('Tapahtumat: events.json ei ole taulukko - ohitetaan.');
+    return [];
+  }
+
+  const now = Math.floor(Date.now() / 1000);
+  const tuoreusRaja = now + 86400 * 2; // sama 2 vrk -ikkuna kuin muillakin lähteillä
+  const result = [];
+  for (const ev of events) {
+    if (!ev || !ev.title || !ev.start) continue;
+    const startTime = Math.floor(Date.parse(ev.start) / 1000);
+    if (Number.isFinite(startTime) && startTime > now - 300 && startTime < tuoreusRaja) {
+      result.push({
+        type: 'tapahtuma',
+        time: startTime,
+        title: ev.title,
+        detail: 'Alkaa',
+        location: ev.location || 'Tampere',
+        demand: 2,
+      });
+    }
+    if (ev.end) {
+      const endTime = Math.floor(Date.parse(ev.end) / 1000);
+      if (Number.isFinite(endTime) && endTime > now - 300 && endTime < tuoreusRaja) {
+        result.push({
+          type: 'tapahtuma',
+          time: endTime,
+          title: ev.title,
+          detail: 'Päättyy, yleisöä poistumassa',
+          location: ev.location || 'Tampere',
+          demand: 2,
+        });
+      }
+    }
+  }
+  console.error(`Tapahtumat: events.json:sta luettu ${events.length} tapahtumaa, ${result.length} osuu 2 vrk ikkunaan.`);
+  return result;
 }
 
 // ---------- ADS-B:N JA FINAVIAN YHDISTÄMINEN ----------
