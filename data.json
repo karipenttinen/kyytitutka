@@ -17,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789502292,
+    "time": 1789502202,
     "title": "PYO933",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 2",
@@ -677,11 +677,56 @@
   },
   {
     "type": "tapahtuma",
+    "time": 1789754400,
+    "timeLabel": "pe 18.30–pe 21.00",
+    "title": "Tumppi Varonen & Problems, Pelle Miljoona, Kärtsy Hatakka",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Tavara asema",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1789758000,
+    "timeLabel": "pe 19.30–pe 22.00",
+    "title": "Koira",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Tampere-talo",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1789767000,
+    "timeLabel": "pe 22.00–la 00.30",
+    "title": "Ranskalaista romantiikkaa",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Tampere-talo",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1789839000,
+    "timeLabel": "la 18.00–la 20.30",
+    "title": "Lost Society & HOKKA + Support: St. Aurora",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Tavara asema",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
     "time": 1789843500,
     "timeLabel": "la 19.15–la 21.45",
     "title": "Elämäni Biisi -illat",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere Factory Halli, Mediapolis",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1789925400,
+    "timeLabel": "su 18.00–su 20.30",
+    "title": "Faunien iltapäivä: Muodonmuutoksia",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Tampere-talo",
     "demand": 2
   },
   {
