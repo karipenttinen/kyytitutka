@@ -1,23 +1,7 @@
 [
   {
     "type": "bussi",
-    "time": 1789443000,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789443481,
-    "title": "60",
-    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789443979,
+    "time": 1789443991,
     "title": "90",
     "detail": "Lähtöpaikka: Terälahden koulu",
     "location": "Linja-autoasema",
@@ -41,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789444377,
+    "time": 1789444409,
     "title": "IC40",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -65,7 +49,7 @@
   },
   {
     "type": "juna",
-    "time": 1789444606,
+    "time": 1789444674,
     "title": "IC35",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -73,7 +57,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789444622,
+    "time": 1789444681,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
@@ -81,15 +65,15 @@
   },
   {
     "type": "bussi",
-    "time": 1789446060,
+    "time": 1789446056,
     "title": "60",
-    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "bussi",
-    "time": 1789446395,
+    "time": 1789446478,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -101,14 +85,6 @@
     "title": "MV10403",
     "detail": "Saapuu · ILR–Seinäjoki",
     "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789447240,
-    "title": "HDM420",
-    "detail": "Saapuu · Jyväskylä–Tampere",
-    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
@@ -164,6 +140,14 @@
     "time": 1789447789,
     "title": "S140",
     "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789448231,
+    "title": "HDM420",
+    "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
     "demand": 2
   },
@@ -688,14 +672,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1789473600,
-    "title": "FTL323",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789473720,
     "title": "60",
@@ -896,14 +872,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1789481700,
-    "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789482600,
     "title": "140",
@@ -934,14 +902,6 @@
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1789484700,
-    "title": "BT525",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malaga",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -1120,14 +1080,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1789509000,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789518900,
     "title": "V130",
@@ -1136,16 +1088,24 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1789525800,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
+    "type": "bussi",
+    "time": 1789528290,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "bussi",
-    "time": 1789528290,
+    "time": 1789529400,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789529910,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
