@@ -581,11 +581,19 @@ function fetchEvents() {
 // ---------- ADS-B:N JA FINAVIAN YHDISTÄMINEN ----------
 // Sama lento voi näkyä molemmissa lähteissä: OpenSkyn "title" on ICAO-tyylinen
 // kutsumerkki (esim. "BTI357"), Finavian "fltnr" IATA-tyylinen (esim. "BT357") -
-// eri etuliite, sama numero-osa. Tunnistetaan sama lento numero-osan ja ajan
-// läheisyyden (alle 20 min) perusteella. Kun osuma löytyy, säilytetään
-// Finavian rivi (enemmän tietoa: lähtöpaikka, tila) ja pudotetaan ADS-B-kaksoiskappale,
-// merkiten että radar on vahvistanut sen. ADS-B-havainnot joille ei löydy paria
-// (esim. yksityis-/rahtilennot, joita ei ole julkisessa aikataulussa) säilytetään sellaisenaan.
+// eri etuliite, sama numero-osa. Vaihe 1: tunnistetaan sama lento numero-osan ja
+// ajan läheisyyden (alle 20 min) perusteella - tämä on luotettavin tapa ja
+// toimii esim. "BTI357" ↔ "BT357" -tapauksissa.
+//
+// Vaihe 2 (varasuodatin): jotkut kutsutunnukset eivät sisällä lainkaan samaa
+// numeroa kuin lentonumero (havaittu esim. "BTI2MU" vastasi oikeasti BT526:ta,
+// ei mitään numerollista yhteyttä kutsutunnuksessa). OpenSkyn ADS-B-data ei
+// sisällä määränpäätietoa, joten tarkempaa ristiintarkistusta ei voi tehdä -
+// ainoa jäljellä oleva signaali on ajallinen läheisyys (alle 10 min). Tämä
+// yhdistetään VAIN jos ikkunassa on täsmälleen yksi vielä täsmäämätön
+// aikataulurivi - jos ehdokkaita on useampia, ei voida olla varmoja kumpi on
+// oikea, joten jätetään kaikki erillisiksi riveiksi sen sijaan että arvattaisiin
+// väärin (väärä yhdistäminen piilottaisi oikean lennon kokonaan näkyvistä).
 function extractDigits(str) {
   const m = String(str || '').match(/(\d+)/);
   return m ? m[1].replace(/^0+/, '') : null;
@@ -593,9 +601,11 @@ function extractDigits(str) {
 
 function mergeFlightSources(adsb, schedule) {
   const usedAdsbIndices = new Set();
+  const usedScheduleIndices = new Set();
   const result = [];
 
-  for (const s of schedule) {
+  // Vaihe 1: tarkka numero+aika-täsmäys
+  schedule.forEach((s, si) => {
     const sDigits = extractDigits(s.title);
     const matchIndex = adsb.findIndex(
       (a, i) =>
@@ -606,14 +616,31 @@ function mergeFlightSources(adsb, schedule) {
     );
     if (matchIndex >= 0) {
       usedAdsbIndices.add(matchIndex);
+      usedScheduleIndices.add(si);
       result.push({ ...s, detail: s.detail + ' · vahvistettu tutkalla juuri nyt' });
-    } else {
-      result.push(s);
     }
-  }
+  });
 
-  adsb.forEach((a, i) => {
-    if (!usedAdsbIndices.has(i)) result.push(a);
+  // Vaihe 2: varasuodatin pelkällä ajalla (alle 10 min), vain jos yksiselitteinen
+  adsb.forEach((a, ai) => {
+    if (usedAdsbIndices.has(ai)) return;
+    const ehdokkaat = schedule
+      .map((s, si) => ({ s, si }))
+      .filter(({ si }) => !usedScheduleIndices.has(si))
+      .filter(({ s }) => Math.abs(a.time - s.time) < 600);
+    if (ehdokkaat.length === 1) {
+      const { s, si } = ehdokkaat[0];
+      usedAdsbIndices.add(ai);
+      usedScheduleIndices.add(si);
+      result.push({ ...s, detail: s.detail + ' · vahvistettu tutkalla juuri nyt (aikaperusteinen täsmäys)' });
+    }
+  });
+
+  schedule.forEach((s, si) => {
+    if (!usedScheduleIndices.has(si)) result.push(s);
+  });
+  adsb.forEach((a, ai) => {
+    if (!usedAdsbIndices.has(ai)) result.push(a);
   });
 
   return result;
