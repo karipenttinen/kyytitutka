@@ -1,38 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789477200,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1789477320,
-    "title": "OHAYT",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1789477323,
-    "title": "FIH30",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789477331,
-    "title": "IC27",
-    "detail": "Saapuu · Helsinki–Rovaniemi",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
     "time": 1789478400,
     "title": "OB91",
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
@@ -49,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789479106,
+    "time": 1789479242,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -57,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789479327,
+    "time": 1789479261,
     "title": "S39",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -105,9 +73,9 @@
   },
   {
     "type": "lento",
-    "time": 1789481160,
+    "time": 1789481220,
     "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (9 min etuajassa) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (8 min etuajassa) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -153,7 +121,7 @@
   },
   {
     "type": "juna",
-    "time": 1789483620,
+    "time": 1789483623,
     "title": "IC923",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -326,6 +294,14 @@
     "title": "S34",
     "detail": "Saapuu · VTI–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789491300,
+    "title": "HDM428",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
