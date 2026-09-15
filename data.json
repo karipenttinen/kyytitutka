@@ -1,39 +1,7 @@
 [
   {
     "type": "bussi",
-    "time": 1789449000,
-    "title": "43U",
-    "detail": "Lähtöpaikka: Koivulinna P (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789449000,
-    "title": "43",
-    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1789449821,
-    "title": "S30",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1789449890,
-    "title": "60",
-    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789450129,
+    "time": 1789450100,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -41,7 +9,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789450553,
+    "time": 1789450614,
     "title": "55",
     "detail": "Lähtöpaikka: Narva",
     "location": "Linja-autoasema",
@@ -49,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789450920,
+    "time": 1789450860,
     "title": "IC905",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -57,7 +25,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789451107,
+    "time": 1789451193,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
@@ -113,7 +81,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789451969,
+    "time": 1789452069,
     "title": "90",
     "detail": "Lähtöpaikka: Terälahden koulu",
     "location": "Linja-autoasema",
@@ -129,7 +97,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789452592,
+    "time": 1789452812,
     "title": "42",
     "detail": "Lähtöpaikka: Kuhmoinen MH",
     "location": "Linja-autoasema",
@@ -201,7 +169,7 @@
   },
   {
     "type": "juna",
-    "time": 1789455480,
+    "time": 1789455482,
     "title": "IC23",
     "detail": "Saapuu · Helsinki–VTI",
     "location": "Rautatieasema · raide 2",
@@ -225,9 +193,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789455690,
+    "time": 1789455667,
     "title": "60",
-    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -281,7 +249,7 @@
   },
   {
     "type": "juna",
-    "time": 1789458420,
+    "time": 1789458422,
     "title": "IC909",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -397,6 +365,14 @@
     "title": "IC94",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789462260,
+    "title": "IC22",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -1146,6 +1122,30 @@
   {
     "type": "bussi",
     "time": 1789534890,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789535400,
+    "title": "43U",
+    "detail": "Lähtöpaikka: Koivulinna P (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789535400,
+    "title": "43",
+    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789536120,
     "title": "60",
     "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
