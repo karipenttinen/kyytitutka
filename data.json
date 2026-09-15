@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1789469564,
+    "time": 1789469700,
     "title": "IC474",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789470046,
+    "time": 1789470081,
     "title": "IC25",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -17,17 +17,17 @@
   },
   {
     "type": "bussi",
-    "time": 1789470300,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
+    "time": 1789470155,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "bussi",
-    "time": 1789470329,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "time": 1789470300,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
