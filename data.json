@@ -1,21 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1789469130,
-    "title": "T03",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789469140,
-    "title": "IC38",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1789469564,
     "title": "IC474",
@@ -41,17 +25,17 @@
   },
   {
     "type": "bussi",
-    "time": 1789470420,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
+    "time": 1789470329,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "bussi",
-    "time": 1789470523,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "time": 1789470420,
+    "title": "95",
+    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -333,6 +317,14 @@
     "title": "IC923",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789483740,
+    "title": "S146",
+    "detail": "Saapuu · Pieksämäki–Helsinki",
+    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
