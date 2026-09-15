@@ -1,29 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1789456577,
-    "title": "OHTTP",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1789457400,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789457535,
-    "title": "60",
-    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "bussi",
     "time": 1789458000,
     "title": "V130",
@@ -49,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789458540,
+    "time": 1789458467,
     "title": "IC142",
     "detail": "Saapuu · Kuopio–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -57,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789458629,
+    "time": 1789458500,
     "title": "IC36",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -65,7 +41,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789458665,
+    "time": 1789458690,
     "title": "55",
     "detail": "Lähtöpaikka: Narva",
     "location": "Linja-autoasema",
@@ -89,7 +65,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789459168,
+    "time": 1789459205,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -105,7 +81,7 @@
   },
   {
     "type": "juna",
-    "time": 1789459706,
+    "time": 1789459635,
     "title": "MV10404",
     "detail": "Saapuu · Seinäjoki–ILR",
     "location": "Rautatieasema · raide 2",
@@ -113,7 +89,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789460189,
+    "time": 1789460237,
     "title": "90",
     "detail": "Lähtöpaikka: Terälahden koulu",
     "location": "Linja-autoasema",
@@ -177,7 +153,7 @@
   },
   {
     "type": "juna",
-    "time": 1789462680,
+    "time": 1789462691,
     "title": "S33",
     "detail": "Saapuu · Helsinki–VTI",
     "location": "Rautatieasema · raide 2",
@@ -185,9 +161,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789462890,
+    "time": 1789462814,
     "title": "60",
-    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -209,9 +185,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789464480,
+    "time": 1789464397,
     "title": "90",
-    "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "detail": "Lähtöpaikka: Terälahden koulu",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -1156,6 +1132,38 @@
     "time": 1789542540,
     "title": "90",
     "detail": "Lähtöpaikka: Terälahden koulu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789543800,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789543890,
+    "title": "60",
+    "detail": "Lähtöpaikka: Valkeakosken linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789544400,
+    "title": "V130",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789544400,
+    "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
+    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   }
