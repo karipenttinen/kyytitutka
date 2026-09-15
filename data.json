@@ -1,22 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789474020,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1789474313,
-    "title": "OHDAM",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
     "time": 1789475400,
     "title": "43",
     "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
@@ -25,7 +9,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789475555,
+    "time": 1789475475,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -57,18 +41,18 @@
   },
   {
     "type": "juna",
-    "time": 1789476566,
-    "title": "IC24",
-    "detail": "Saapuu · VTI–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1789476643,
     "title": "IC86",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789476655,
+    "title": "IC24",
+    "detail": "Saapuu · VTI–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -89,7 +73,7 @@
   },
   {
     "type": "juna",
-    "time": 1789477293,
+    "time": 1789477335,
     "title": "IC27",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -121,7 +105,7 @@
   },
   {
     "type": "juna",
-    "time": 1789479542,
+    "time": 1789479465,
     "title": "S39",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -161,7 +145,7 @@
   },
   {
     "type": "juna",
-    "time": 1789480680,
+    "time": 1789480683,
     "title": "IC47",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -171,7 +155,7 @@
     "type": "tapahtuma",
     "time": 1789480800,
     "title": "EuroVolley: Belgia-Tanska",
-    "detail": "Alkaa",
+    "detail": "Alkaa, päättyy arviolta klo 19.30",
     "location": "Nokia Arena",
     "demand": 2
   },
@@ -355,7 +339,7 @@
     "type": "tapahtuma",
     "time": 1789489800,
     "title": "EuroVolley: Belgia-Tanska",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa (alkoi klo 17.00)",
     "location": "Nokia Arena",
     "demand": 2
   },
@@ -379,7 +363,7 @@
     "type": "tapahtuma",
     "time": 1789491600,
     "title": "EuroVolley: Hollanti-Suomi",
-    "detail": "Alkaa",
+    "detail": "Alkaa, päättyy arviolta klo 22.30",
     "location": "Nokia Arena",
     "demand": 2
   },
@@ -403,7 +387,7 @@
     "type": "tapahtuma",
     "time": 1789500600,
     "title": "EuroVolley: Hollanti-Suomi",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa (alkoi klo 20.00)",
     "location": "Nokia Arena",
     "demand": 2
   },
@@ -699,7 +683,7 @@
     "type": "tapahtuma",
     "time": 1789567200,
     "title": "EuroVolley: Tanska-Serbia",
-    "detail": "Alkaa",
+    "detail": "Alkaa, päättyy arviolta klo 19.30",
     "location": "Nokia Arena",
     "demand": 2
   },
@@ -707,7 +691,7 @@
     "type": "tapahtuma",
     "time": 1789576200,
     "title": "EuroVolley: Tanska-Serbia",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa (alkoi klo 17.00)",
     "location": "Nokia Arena",
     "demand": 2
   },
@@ -715,7 +699,7 @@
     "type": "tapahtuma",
     "time": 1789578000,
     "title": "EuroVolley: Hollanti-Viro",
-    "detail": "Alkaa",
+    "detail": "Alkaa, päättyy arviolta klo 22.30",
     "location": "Nokia Arena",
     "demand": 2
   },
@@ -723,7 +707,7 @@
     "type": "tapahtuma",
     "time": 1789587000,
     "title": "EuroVolley: Hollanti-Viro",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa (alkoi klo 20.00)",
     "location": "Nokia Arena",
     "demand": 2
   }
