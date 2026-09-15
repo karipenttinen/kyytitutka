@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789478400,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789478880,
     "title": "95",
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
@@ -17,15 +9,15 @@
   },
   {
     "type": "bussi",
-    "time": 1789479242,
+    "time": 1789479000,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "juna",
-    "time": 1789479261,
+    "time": 1789479542,
     "title": "S39",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -73,9 +65,9 @@
   },
   {
     "type": "lento",
-    "time": 1789481220,
+    "time": 1789481160,
     "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (8 min etuajassa) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (9 min etuajassa) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -670,6 +662,22 @@
     "time": 1789563600,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789564800,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789565280,
+    "title": "95",
+    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
