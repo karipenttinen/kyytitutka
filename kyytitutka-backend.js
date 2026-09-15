@@ -599,7 +599,7 @@ function fetchEvents() {
       });
     }
   }
-  console.error(`Tapahtumat: events.json:sta luettu ${events.length} tapahtumaa, ${result.length} osuu 2 vrk ikkunaan.`);
+  console.error(`Tapahtumat: events.json:sta luettu ${events.length} tapahtumaa, ${result.length} osuu ${((tuoreusRaja - now) / 86400).toFixed(1)} vrk ikkunaan.`);
   return result;
 }
 
