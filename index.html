@@ -50,6 +50,7 @@
   .hero-num { font-family: 'JetBrains Mono', monospace; font-size: 23px; font-weight: 700; color: #FFF454; letter-spacing: -0.5px; min-width: 48px; flex-shrink: 0; }
   .hero-num.mid { font-size: 17px; min-width: 64px; }
   .hero-num.clock { font-size: 19px; min-width: 64px; }
+  .hero-num.clock.small { font-size: 15px; min-width: 74px; }
   .hero-num .unit { font-size: 10px; font-weight: 700; opacity: 0.7; margin-left: 2px; }
   .hero-info { flex: 1; min-width: 0; }
   .hero-icon-row { display: flex; align-items: center; gap: 7px; }
@@ -77,6 +78,7 @@
   .row.soon { background: rgba(255,244,84,0.055); border-left-color: #FFF454; }
   .row-time { min-width: 68px; font-size: 20px; padding-top: 1px; color: #FFF454; font-weight: 600; }
   .row-time.range { font-size: 14px; min-width: 76px; line-height: 1.25; padding-top: 4px; }
+  .row-time.withday { font-size: 15px; min-width: 76px; }
   .row.soon .row-icon { color: #FFF454; }
   .row-icon { padding-top: 3px; font-size: 16px; color: #C0C0C6; }
   .row-body { flex: 1; min-width: 0; }
@@ -186,6 +188,23 @@ function fmtTime(unixSec) {
   return String(d.getHours()).padStart(2, '0') + '.' + String(d.getMinutes()).padStart(2, '0');
 }
 
+function isSameDay(unixSec, ref) {
+  const a = new Date(unixSec * 1000);
+  const b = new Date(ref * 1000);
+  return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+}
+
+// Sama kellonaika eri päivänä (esim. huomenna) voi näyttää siltä kuin se olisi
+// jo mennyt ohi tänään, jos näytetään vain "HH.MM" ilman päivää - lisätään
+// viikonpäivälyhenne eteen aina kun kyseessä ei ole tämä päivä.
+function fmtTimeWithDay(unixSec) {
+  const now = Math.floor(Date.now() / 1000);
+  const aika = fmtTime(unixSec);
+  if (isSameDay(unixSec, now)) return aika;
+  const paiva = new Intl.DateTimeFormat('fi-FI', { weekday: 'short' }).format(new Date(unixSec * 1000));
+  return `${paiva} ${aika}`;
+}
+
 function heroTimeHtml(item) {
   if (item.delta <= 0) return `<div class="hero-num">NYT</div>`;
   const minutes = Math.round(item.delta / 60);
@@ -197,7 +216,7 @@ function heroTimeHtml(item) {
     const m = String(minutes % 60).padStart(2, '0');
     return `<div class="hero-num mid">${h}h ${m}<span class="unit">min</span></div>`;
   }
-  return `<div class="hero-num clock mono">${fmtTime(item.time)}</div>`;
+  return `<div class="hero-num clock small mono">${fmtTimeWithDay(item.time)}</div>`;
 }
 
 function render() {
@@ -258,7 +277,7 @@ function render() {
           .map(
             (s) => `
           <div class="row ${s.delta <= 300 ? 'soon' : ''}">
-            <div class="row-time mono${s.timeLabel ? ' range' : ''}">${esc(s.timeLabel || fmtTime(s.time))}</div>
+            <div class="row-time mono${s.timeLabel ? ' range' : (fmtTimeWithDay(s.time).includes(' ') ? ' withday' : '')}">${esc(s.timeLabel || fmtTimeWithDay(s.time))}</div>
             <div class="row-icon">${TYPE_META[s.type]?.icon || '•'}</div>
             <div class="row-body">
               <div class="row-title">${esc(s.title)}</div>

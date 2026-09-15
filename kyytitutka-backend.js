@@ -498,6 +498,12 @@ async function fetchFinaviaSchedule() {
 //     avaimella (10 kohdennettua riviä, 0/10 kellonaikaa) - data on tasolla
 //     "tuote auki päivämääristä X-Y", ei "tapahtuma alkaa kello 19", eikä siis
 //     sovi kaukoliikenteen kaltaiseen täsmälliseen ajankohtaan
+//   - api.visittampere.com:n oma "VisitTampere API" (Swagger, GET
+//     /api/v1/eventztoday/event/all/) - tämä olisi rakenteeltaan sopinut,
+//     mutta se on itse merkitty "Deprecated" ja poistui käytöstä 1.7.2026
+//     (siis jo ennen tätä hetkeä). Saman datan voisi saada jatkossa vain
+//     maksullisena Townbaselta (contactus@townbase.com) - sama tilanne kuin
+//     FlightAwaren ja DataHubin kanssa: olemassa, mutta ei ilmainen.
 //
 // Sen sijaan tapahtumat luetaan tästä samassa kansiossa olevasta events.json-
 // tiedostosta, joka päivitetään käsin (keskustelussa, aina kun tarpeen) -
@@ -520,6 +526,21 @@ function helsinginKello(unixSec) {
   return new Intl.DateTimeFormat('fi-FI', {
     timeZone: 'Europe/Helsinki', hour: '2-digit', minute: '2-digit', hour12: false,
   }).format(new Date(unixSec * 1000));
+}
+
+// Jos tapahtuman päivä (Suomen aikaa) ei ole tämä päivä, näytetään pelkän
+// kellonajan sijaan myös viikonpäivä eteen - muuten esim. huomisen "19.30"
+// voi näyttää siltä kuin se olisi jo mennyt ohi tänä iltana.
+function helsinginKelloPaivalla(unixSec, now) {
+  const paivaFmt = { timeZone: 'Europe/Helsinki', year: 'numeric', month: 'numeric', day: 'numeric' };
+  const tanaan = new Intl.DateTimeFormat('fi-FI', paivaFmt).format(new Date(now * 1000));
+  const tuo = new Intl.DateTimeFormat('fi-FI', paivaFmt).format(new Date(unixSec * 1000));
+  const kello = helsinginKello(unixSec);
+  if (tanaan === tuo) return kello;
+  const viikonpaiva = new Intl.DateTimeFormat('fi-FI', { timeZone: 'Europe/Helsinki', weekday: 'short' }).format(
+    new Date(unixSec * 1000)
+  );
+  return `${viikonpaiva} ${kello}`;
 }
 
 function fetchEvents() {
@@ -566,7 +587,7 @@ function fetchEvents() {
       result.push({
         type: 'tapahtuma',
         time: endTime,
-        timeLabel: `${helsinginKello(startTime)}–${helsinginKello(endTime)}`,
+        timeLabel: `${helsinginKelloPaivalla(startTime, now)}–${helsinginKelloPaivalla(endTime, now)}`,
         title: ev.title,
         detail: (arvioitu ? 'Arvioitu päättyvän' : 'Päättyy') + ', yleisöä poistumassa',
         location: ev.location || 'Tampere',
