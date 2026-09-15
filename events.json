@@ -32,5 +32,17 @@
   { "title": "Ilves-KalPa", "start": "2026-10-31T17:00:00+03:00", "location": "Nokia Arena" },
 
   { "title": "Lauri Haav – No Haav No Love", "start": "2026-11-06T18:00:00+02:00", "location": "Nokia Arena" },
-  { "title": "Lauri Haav – No Haav No Love (2)", "start": "2026-11-07T18:00:00+02:00", "location": "Nokia Arena" }
+  { "title": "Lauri Haav – No Haav No Love (2)", "start": "2026-11-07T18:00:00+02:00", "location": "Nokia Arena" },
+
+  { "title": "Tumppi Varonen & Problems, Pelle Miljoona, Kärtsy Hatakka", "start": "2026-09-18T18:30:00+03:00", "location": "Tavara asema" },
+  { "title": "Lost Society & HOKKA + Support: St. Aurora", "start": "2026-09-19T18:00:00+03:00", "location": "Tavara asema" },
+  { "title": "Lemonator, Sugarrush", "start": "2026-09-25T18:00:00+03:00", "location": "Tavara asema" },
+  { "title": "Timo Rautiainen & Trio Niskalaukaus", "start": "2026-09-26T19:00:00+03:00", "location": "Tavara asema" },
+
+  { "title": "Ranskalaista romantiikkaa", "start": "2026-09-18T22:00:00+03:00", "location": "Tampere-talo" },
+  { "title": "Koira", "start": "2026-09-18T19:30:00+03:00", "location": "Tampere-talo" },
+  { "title": "Faunien iltapäivä: Muodonmuutoksia", "start": "2026-09-20T18:00:00+03:00", "location": "Tampere-talo" },
+  { "title": "Irina: Akustinen ilta", "start": "2026-09-23T22:30:00+03:00", "location": "Tampere-talo" },
+  { "title": "Dolly Style (SE)", "start": "2026-09-25T21:00:00+03:00", "location": "Tampere-talo" },
+  { "title": "Tulilintu", "start": "2026-09-25T22:00:00+03:00", "location": "Tampere-talo" }
 ]
