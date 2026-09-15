@@ -76,6 +76,7 @@
   .row { display: flex; align-items: flex-start; gap: 12px; padding: 13px 16px 13px 14px; border-bottom: 1px solid #1C1C20; border-left: 3px solid transparent; }
   .row.soon { background: rgba(255,244,84,0.055); border-left-color: #FFF454; }
   .row-time { min-width: 68px; font-size: 20px; padding-top: 1px; color: #FFF454; font-weight: 600; }
+  .row-time.range { font-size: 14px; min-width: 76px; line-height: 1.25; padding-top: 4px; }
   .row.soon .row-icon { color: #FFF454; }
   .row-icon { padding-top: 3px; font-size: 16px; color: #C0C0C6; }
   .row-body { flex: 1; min-width: 0; }
@@ -257,7 +258,7 @@ function render() {
           .map(
             (s) => `
           <div class="row ${s.delta <= 300 ? 'soon' : ''}">
-            <div class="row-time mono">${fmtTime(s.time)}</div>
+            <div class="row-time mono${s.timeLabel ? ' range' : ''}">${esc(s.timeLabel || fmtTime(s.time))}</div>
             <div class="row-icon">${TYPE_META[s.type]?.icon || '•'}</div>
             <div class="row-body">
               <div class="row-title">${esc(s.title)}</div>

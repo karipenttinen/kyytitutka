@@ -561,28 +561,14 @@ function fetchEvents() {
       endTime = startTime + Math.round(kesto * 3600);
       arvioitu = true;
     }
-    const paattymisteksti = Number.isFinite(endTime)
-      ? (arvioitu ? `päättyy arviolta klo ${helsinginKello(endTime)}` : `päättyy klo ${helsinginKello(endTime)}`)
-      : null;
-    const alkamisteksti = `alkoi klo ${helsinginKello(startTime)}`;
-
-    if (startTime > now - 300 && startTime < tuoreusRaja) {
-      result.push({
-        type: 'tapahtuma',
-        time: startTime,
-        title: ev.title,
-        detail: 'Alkaa' + (paattymisteksti ? `, ${paattymisteksti}` : ''),
-        location: ev.location || 'Tampere',
-        demand: 2,
-      });
-    }
 
     if (Number.isFinite(endTime) && endTime > now - 300 && endTime < tuoreusRaja) {
       result.push({
         type: 'tapahtuma',
         time: endTime,
+        timeLabel: `${helsinginKello(startTime)}–${helsinginKello(endTime)}`,
         title: ev.title,
-        detail: (arvioitu ? 'Arvioitu päättyvän' : 'Päättyy') + `, yleisöä poistumassa (${alkamisteksti})`,
+        detail: (arvioitu ? 'Arvioitu päättyvän' : 'Päättyy') + ', yleisöä poistumassa',
         location: ev.location || 'Tampere',
         demand: 2,
       });
