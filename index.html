@@ -83,10 +83,36 @@
   .row-loc { display: flex; align-items: center; gap: 4px; color: #B5B5BB; font-size: 15px; margin-top: 5px; }
 
   .empty { padding: 32px 16px; color: #C0C0C6; font-size: 15px; text-align: center; }
+
+  .gate { position: fixed; inset: 0; background: #09090B; z-index: 10; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .gate-box { max-width: 320px; width: 100%; text-align: center; }
+  .gate-logo { width: 110px; height: 110px; margin-bottom: 16px; }
+  .gate-title { font-family: 'Archivo', sans-serif; font-weight: 900; font-size: 22px; letter-spacing: 0.5px; }
+  .gate-wordmark { width: 210px; margin: 14px 0 28px; }
+  .gate-input {
+    width: 100%; padding: 13px 16px; border-radius: 999px; border: 1px solid #29292E; background: #141416;
+    color: #F2F2ED; font-size: 15px; text-align: center; margin-bottom: 12px;
+  }
+  .gate-input:focus { outline: none; border-color: #FFF454; }
+  .gate-btn {
+    width: 100%; padding: 13px 16px; border-radius: 999px; border: none; background: #FFF454;
+    color: #0A0A0B; font-weight: 800; font-size: 15px;
+  }
+  .gate-error { color: #FF6B6B; font-size: 13px; margin-top: 12px; min-height: 16px; }
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="gate" id="gate">
+  <div class="gate-box">
+    <img src="logo.png" alt="" class="gate-logo">
+    <div class="gate-title">KYYTITUTKA</div>
+    <img src="logo-wordmark.png" alt="Kunnon Taksi" class="gate-wordmark">
+    <input type="password" id="gatePw" class="gate-input" placeholder="Salasana" autocomplete="off">
+    <button class="gate-btn" id="gateBtn">Kirjaudu</button>
+    <div class="gate-error" id="gateError"></div>
+  </div>
+</div>
+<div class="wrap" id="app" style="display:none">
   <div class="glow"></div>
   <img src="logo.png" alt="" class="watermark">
   <div class="header">
@@ -265,9 +291,36 @@ async function loadData() {
   render();
 }
 
-loadData();
-setInterval(loadData, 120000);
-setInterval(render, 1000);
+function startApp() {
+  document.getElementById('gate').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  loadData();
+  setInterval(loadData, 120000);
+  setInterval(render, 1000);
+}
+
+// Yksinkertainen yhteinen salasana estämään satunnaiset kävijät - ei oikeaa
+// tietoturvaa (näkyy lähdekoodissa, data.json haettavissa suoraan omalla
+// osoitteellaan siitä huolimatta). Vaihda salasana tästä tarvittaessa.
+const KYYTITUTKA_SALASANA = 'kunnontaksi';
+
+function tarkistaSalasana() {
+  const syote = document.getElementById('gatePw').value;
+  if (syote === KYYTITUTKA_SALASANA) {
+    localStorage.setItem('kyytitutka_kirjautunut', 'kylla');
+    startApp();
+  } else {
+    document.getElementById('gateError').textContent = 'Väärä salasana';
+  }
+}
+document.getElementById('gateBtn').addEventListener('click', tarkistaSalasana);
+document.getElementById('gatePw').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') tarkistaSalasana();
+});
+
+if (localStorage.getItem('kyytitutka_kirjautunut') === 'kylla') {
+  startApp();
+}
 </script>
 </body>
 </html>
