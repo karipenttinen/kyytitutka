@@ -1,13 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1789484580,
-    "title": "BT525",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malaga · Lähtenyt",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789485000,
     "title": "95",
@@ -226,7 +218,7 @@
   },
   {
     "type": "juna",
-    "time": 1789498426,
+    "time": 1789498564,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -662,6 +654,14 @@
     "time": 1789569600,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789571400,
+    "title": "95",
+    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
