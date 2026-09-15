@@ -1,17 +1,9 @@
 [
   {
-    "type": "juna",
-    "time": 1789484180,
-    "title": "IC51",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "lento",
-    "time": 1789484700,
+    "time": 1789484580,
     "title": "BT525",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malaga · Suljettu · vahvistettu tutkalla juuri nyt (aikaperusteinen täsmäys)",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malaga · Lähtenyt",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -130,7 +122,7 @@
   },
   {
     "type": "juna",
-    "time": 1789491180,
+    "time": 1789491183,
     "title": "S89",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -280,6 +272,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789502280,
+    "title": "PYO933",
+    "detail": "Saapuu · TUS–Tampere",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "lento",
@@ -541,7 +541,7 @@
     "type": "lento",
     "time": 1789560000,
     "title": "FTL323",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malmö · Peruttu",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
