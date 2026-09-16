@@ -1,37 +1,5 @@
 [
   {
-    "type": "bussi",
-    "time": 1789581000,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1789581134,
-    "title": "IC56",
-    "detail": "Saapuu · KML–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789581138,
-    "title": "IC149",
-    "detail": "Saapuu · Helsinki–Jyväskylä",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789581344,
-    "title": "IC148",
-    "detail": "Saapuu · Pieksämäki–Tampere",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1789584360,
     "title": "IC931",
@@ -41,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789584705,
+    "time": 1789584680,
     "title": "IC28",
     "detail": "Saapuu · KML–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -57,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789585118,
+    "time": 1789585159,
     "title": "S53",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -247,6 +215,30 @@
     "detail": "Lähtöpaikka: Virrat P (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789620540,
+    "title": "IC42",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789620540,
+    "title": "S140",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789621080,
+    "title": "IC21",
+    "detail": "Saapuu · Helsinki–VTI",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
