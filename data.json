@@ -1,19 +1,19 @@
 [
   {
+    "type": "juna",
+    "time": 1789586789,
+    "title": "PYO265",
+    "detail": "Saapuu · Helsinki–KJÄ",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
     "type": "tapahtuma",
     "time": 1789587000,
     "timeLabel": "20.00–22.30",
     "title": "EuroVolley: Hollanti-Viro",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789587060,
-    "title": "PYO265",
-    "detail": "Saapuu · Helsinki–KJÄ",
-    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
