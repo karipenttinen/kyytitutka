@@ -719,5 +719,14 @@
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
     "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1790200800,
+    "timeLabel": "ke 22.30–to 01.00",
+    "title": "Irina: Akustinen ilta",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Tampere-talo",
+    "demand": 2
   }
 ]
