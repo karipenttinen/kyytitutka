@@ -1,13 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1789558620,
-    "title": "BT355",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (13 min etuajassa) · Arvioitu aika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789558800,
     "title": "OB37",
@@ -16,8 +8,16 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1789558800,
+    "title": "BT355",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (10 min etuajassa) · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "juna",
-    "time": 1789559231,
+    "time": 1789559301,
     "title": "IC917",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789559551,
+    "time": 1789559561,
     "title": "IC144",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -41,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1789559817,
+    "time": 1789559784,
     "title": "IC48",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -57,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1789560409,
+    "time": 1789560412,
     "title": "IC37",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -89,7 +89,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789561982,
+    "time": 1789562083,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -358,6 +358,14 @@
     "title": "EuroVolley: Tanska-Serbia",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789577340,
+    "title": "ABF8",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Ålesund",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -654,6 +662,14 @@
     "time": 1789643220,
     "title": "95",
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789645200,
+    "title": "OB37",
+    "detail": "Lähtöpaikka: Kotkan linja-autoasema PÄÄTEPYSÄKKI (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
