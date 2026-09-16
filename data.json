@@ -1,33 +1,17 @@
 [
   {
-    "type": "lento",
-    "time": 1789560730,
-    "title": "FIH30",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
+    "type": "bussi",
+    "time": 1789561800,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "bussi",
     "time": 1789561800,
     "title": "43",
     "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1789561800,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Lähdössä",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1789562036,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -41,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789562615,
+    "time": 1789562548,
     "title": "HDM426",
     "detail": "Saapuu · KEU–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -57,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1789562932,
+    "time": 1789562725,
     "title": "IC24",
     "detail": "Saapuu · VTI–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -89,7 +73,7 @@
   },
   {
     "type": "juna",
-    "time": 1789563872,
+    "time": 1789564034,
     "title": "IC27",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -113,7 +97,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789565287,
+    "time": 1789565346,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -161,7 +145,7 @@
   },
   {
     "type": "juna",
-    "time": 1789567080,
+    "time": 1789567092,
     "title": "IC47",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -217,7 +201,7 @@
   },
   {
     "type": "juna",
-    "time": 1789570140,
+    "time": 1789570189,
     "title": "S146",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -672,6 +656,30 @@
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789648200,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789648200,
+    "title": "43",
+    "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1789648200,
+    "title": "BT356",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "tapahtuma",
