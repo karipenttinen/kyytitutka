@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1789534602,
-    "title": "IC21",
-    "detail": "Saapuu · Helsinki–VTI",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789535400,
     "title": "43",
@@ -25,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789536523,
+    "time": 1789536535,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -81,7 +73,7 @@
   },
   {
     "type": "juna",
-    "time": 1789538284,
+    "time": 1789538321,
     "title": "IC41",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -129,7 +121,7 @@
   },
   {
     "type": "juna",
-    "time": 1789541580,
+    "time": 1789541581,
     "title": "IC165",
     "detail": "Saapuu · Helsinki–Pori",
     "location": "Rautatieasema · raide 3",
@@ -261,6 +253,14 @@
     "title": "IC94",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789548660,
+    "title": "IC22",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
