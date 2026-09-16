@@ -1,5 +1,13 @@
 [
   {
+    "type": "lento",
+    "time": 1789595040,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (6 min etuajassa) · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "juna",
     "time": 1789599300,
     "title": "PYO273",
@@ -22,6 +30,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1789612200,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "juna",
@@ -392,6 +408,22 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1789645800,
+    "title": "BT355",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789646400,
+    "title": "FTL323",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1789646820,
     "title": "95",
@@ -414,6 +446,14 @@
     "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1789648200,
+    "title": "BT356",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -554,7 +594,7 @@
   {
     "type": "tapahtuma",
     "time": 1789662600,
-    "timeLabel": "to 17.00–to 19.30",
+    "timeLabel": "17.00–19.30",
     "title": "EuroVolley: Serbia-Belgia",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
@@ -595,7 +635,7 @@
   {
     "type": "tapahtuma",
     "time": 1789673400,
-    "timeLabel": "to 20.00–to 22.30",
+    "timeLabel": "20.00–22.30",
     "title": "EuroVolley: Suomi-Viro",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
