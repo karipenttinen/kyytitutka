@@ -1,7 +1,7 @@
 [
   {
     "type": "bussi",
-    "time": 1789579658,
+    "time": 1789579663,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789581306,
+    "time": 1789581344,
     "title": "IC148",
     "detail": "Saapuu · Pieksämäki–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -106,7 +106,7 @@
   },
   {
     "type": "juna",
-    "time": 1789588680,
+    "time": 1789588735,
     "title": "PYO933",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 2",
