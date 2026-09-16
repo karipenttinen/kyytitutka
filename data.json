@@ -1,16 +1,7 @@
 [
   {
-    "type": "tapahtuma",
-    "time": 1789576200,
-    "timeLabel": "17.00–19.30",
-    "title": "EuroVolley: Tanska-Serbia",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Nokia Arena",
-    "demand": 2
-  },
-  {
     "type": "juna",
-    "time": 1789577160,
+    "time": 1789576984,
     "title": "IC472",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -18,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789577221,
+    "time": 1789577147,
     "title": "IC927",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -26,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789577340,
+    "time": 1789577226,
     "title": "S88",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -82,7 +73,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789579601,
+    "time": 1789579616,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -98,18 +89,18 @@
   },
   {
     "type": "juna",
-    "time": 1789581048,
-    "title": "IC148",
-    "detail": "Saapuu · Pieksämäki–Tampere",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1789581060,
     "title": "IC56",
     "detail": "Saapuu · KML–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789581133,
+    "title": "IC148",
+    "detail": "Saapuu · Pieksämäki–Tampere",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
