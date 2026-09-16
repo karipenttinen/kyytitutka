@@ -1,35 +1,11 @@
 [
   {
-    "type": "juna",
-    "time": 1789559816,
-    "title": "IC48",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "lento",
-    "time": 1789560000,
-    "title": "FTL323",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malmö · Peruttu",
+    "time": 1789560730,
+    "title": "FIH30",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789560343,
-    "title": "IC37",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1789560420,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "bussi",
@@ -43,13 +19,13 @@
     "type": "lento",
     "time": 1789561800,
     "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Portille",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Lähdössä",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
     "type": "bussi",
-    "time": 1789562129,
+    "time": 1789562036,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -81,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1789563027,
+    "time": 1789562932,
     "title": "IC24",
     "detail": "Saapuu · VTI–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -104,20 +80,20 @@
     "demand": 2
   },
   {
-    "type": "juna",
-    "time": 1789563492,
-    "title": "IC27",
-    "detail": "Saapuu · Helsinki–Rovaniemi",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789563600,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789563872,
+    "title": "IC27",
+    "detail": "Saapuu · Helsinki–Rovaniemi",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -137,9 +113,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789565400,
+    "time": 1789565287,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -161,7 +137,7 @@
   },
   {
     "type": "juna",
-    "time": 1789566780,
+    "time": 1789566802,
     "title": "IC151",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -309,6 +285,22 @@
     "title": "IC177",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789574040,
+    "title": "IC54",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789574280,
+    "title": "IC49",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
@@ -664,6 +656,22 @@
     "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789646400,
+    "title": "FTL323",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1789646820,
+    "title": "95",
+    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
