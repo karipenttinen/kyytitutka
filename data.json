@@ -1,13 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1789575780,
-    "title": "ABF8",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Ålesund (26 min etuajassa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "tapahtuma",
     "time": 1789576200,
     "timeLabel": "17.00–19.30",
@@ -82,7 +74,7 @@
   },
   {
     "type": "juna",
-    "time": 1789577881,
+    "time": 1789577928,
     "title": "IC29",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
