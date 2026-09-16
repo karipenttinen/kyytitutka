@@ -1,25 +1,9 @@
 [
   {
-    "type": "bussi",
-    "time": 1789556700,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789556820,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "lento",
-    "time": 1789558680,
+    "time": 1789558620,
     "title": "BT355",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (12 min etuajassa) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (13 min etuajassa) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -41,6 +25,14 @@
   },
   {
     "type": "juna",
+    "time": 1789559551,
+    "title": "IC144",
+    "detail": "Saapuu · Pieksämäki–Helsinki",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
     "time": 1789559596,
     "title": "IC145",
     "detail": "Saapuu · Helsinki–Pieksämäki",
@@ -49,15 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1789559610,
-    "title": "IC144",
-    "detail": "Saapuu · Pieksämäki–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789559640,
+    "time": 1789559817,
     "title": "IC48",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -73,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1789560301,
+    "time": 1789560409,
     "title": "IC37",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -137,7 +121,7 @@
   },
   {
     "type": "juna",
-    "time": 1789563000,
+    "time": 1789563048,
     "title": "IC86",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -161,7 +145,7 @@
   },
   {
     "type": "juna",
-    "time": 1789563480,
+    "time": 1789563492,
     "title": "IC27",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
