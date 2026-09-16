@@ -57,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1789556291,
+    "time": 1789556402,
     "title": "IC25",
     "detail": "Saapuu · Helsinki–KML",
     "location": "Rautatieasema · raide 2",
@@ -89,7 +89,7 @@
   },
   {
     "type": "juna",
-    "time": 1789559220,
+    "time": 1789559231,
     "title": "IC917",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -113,7 +113,7 @@
   },
   {
     "type": "juna",
-    "time": 1789559580,
+    "time": 1789559596,
     "title": "IC145",
     "detail": "Saapuu · Helsinki–Pieksämäki",
     "location": "Rautatieasema · raide 3",
@@ -654,6 +654,14 @@
     "time": 1789637400,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789639620,
+    "title": "95",
+    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
