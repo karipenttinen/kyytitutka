@@ -1,18 +1,18 @@
 [
   {
+    "type": "juna",
+    "time": 1789525734,
+    "title": "PYO274",
+    "detail": "Saapuu · KJÄ–Helsinki",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
     "type": "lento",
     "time": 1789525800,
     "title": "BT358",
     "detail": "Aikataulun mukaan lähtee, määränpää Riika · Portille",
     "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789525830,
-    "title": "PYO274",
-    "detail": "Saapuu · KJÄ–Helsinki",
-    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -73,9 +73,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789533000,
+    "time": 1789532856,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
