@@ -17,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789573982,
+    "time": 1789574026,
     "title": "IC177",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789574040,
+    "time": 1789574095,
     "title": "IC54",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789574281,
+    "time": 1789574343,
     "title": "IC49",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -65,9 +65,9 @@
   },
   {
     "type": "lento",
-    "time": 1789575840,
+    "time": 1789575780,
     "title": "ABF8",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Ålesund (25 min etuajassa)",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Ålesund (26 min etuajassa)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -114,10 +114,18 @@
   },
   {
     "type": "juna",
-    "time": 1789577643,
+    "time": 1789577640,
     "title": "S34",
     "detail": "Saapuu · VTI–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789577700,
+    "title": "HDM428",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
@@ -135,14 +143,6 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1789577707,
-    "title": "HDM428",
-    "detail": "Saapuu · KEU–Tampere",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
   },
   {
     "type": "juna",
