@@ -1,15 +1,7 @@
 [
   {
-    "type": "lento",
-    "time": 1789531774,
-    "title": "T02",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
-    "time": 1789533069,
+    "time": 1789533048,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -17,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789533637,
+    "time": 1789533546,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -73,7 +65,7 @@
   },
   {
     "type": "juna",
-    "time": 1789536240,
+    "time": 1789536168,
     "title": "S30",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -105,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1789537740,
+    "time": 1789537788,
     "title": "IC150",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -137,7 +129,7 @@
   },
   {
     "type": "juna",
-    "time": 1789538280,
+    "time": 1789538281,
     "title": "IC41",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
