@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789666175,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789667400,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
@@ -17,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789667460,
+    "time": 1789667419,
     "title": "IC56",
     "detail": "Saapuu · KML–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789667590,
+    "time": 1789667621,
     "title": "IC148",
     "detail": "Saapuu · Pieksämäki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -869,6 +861,14 @@
     "time": 1789750500,
     "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789752600,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
