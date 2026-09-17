@@ -1,9 +1,9 @@
 [
   {
     "type": "lento",
-    "time": 1789682460,
+    "time": 1789682760,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (myöhässä 11 min) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (myöhässä 16 min) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -25,9 +25,9 @@
   },
   {
     "type": "lento",
-    "time": 1789690260,
+    "time": 1789690080,
     "title": "KLJ6265",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik (myöhässä 47 min)",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik (myöhässä 44 min)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -920,6 +920,14 @@
     "title": "Ranskalaista romantiikkaa",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789768200,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
