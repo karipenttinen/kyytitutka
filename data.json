@@ -1,21 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1789644358,
-    "title": "N31",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1789644960,
-    "title": "BT355",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (14 min etuajassa) · Arvioitu aika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789645200,
     "title": "OB37",
@@ -24,8 +8,16 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1789645200,
+    "title": "BT355",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (10 min etuajassa) · Arvioitu aika · vahvistettu tutkalla juuri nyt (aikaperusteinen täsmäys)",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "juna",
-    "time": 1789645620,
+    "time": 1789645589,
     "title": "IC917",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789645913,
+    "time": 1789645872,
     "title": "IC144",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -105,7 +97,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789648214,
+    "time": 1789648288,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -806,6 +798,14 @@
     "time": 1789730100,
     "title": "Aitoo - Sahalahti - Tampere",
     "detail": "Lähtöpaikka: Aitoon koulutuskeskus (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789730940,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
