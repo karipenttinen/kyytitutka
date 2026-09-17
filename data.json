@@ -1,23 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1789635301,
-    "title": "S143",
-    "detail": "Saapuu · Helsinki–Pieksämäki",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1789635311,
-    "title": "OHCMO",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789636137,
+    "time": 1789636196,
     "title": "S33",
     "detail": "Saapuu · Helsinki–VTI",
     "location": "Rautatieasema · raide 2",
@@ -41,7 +25,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789637265,
+    "time": 1789637443,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -373,6 +357,14 @@
     "title": "IC50",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789653180,
+    "title": "IC151",
+    "detail": "Saapuu · Helsinki–Jyväskylä",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
