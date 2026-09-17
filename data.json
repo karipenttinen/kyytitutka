@@ -200,6 +200,14 @@
     "demand": 2
   },
   {
+    "type": "lento",
+    "time": 1789624800,
+    "title": "ABF8",
+    "detail": "Aikataulun mukaan lähtee, määränpää Hannover",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1789626600,
     "title": "140",
