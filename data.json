@@ -1,21 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1789636196,
-    "title": "S33",
-    "detail": "Saapuu · Helsinki–VTI",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1789636800,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "bussi",
     "time": 1789637100,
     "title": "OB91",
@@ -25,7 +9,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789637443,
+    "time": 1789637318,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -33,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789638660,
+    "time": 1789638358,
     "title": "S46",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 3",
@@ -169,7 +153,7 @@
   },
   {
     "type": "juna",
-    "time": 1789645860,
+    "time": 1789645913,
     "title": "IC144",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -382,6 +366,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789653480,
+    "title": "IC47",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -782,6 +774,22 @@
     "time": 1789721400,
     "title": "OB3",
     "detail": "Lähtöpaikka: Uusi terminaali (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789723200,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789723200,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
