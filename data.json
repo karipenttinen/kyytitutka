@@ -1,21 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1789678298,
-    "title": "IC187",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1789678500,
-    "title": "ABF8",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Hannover (5 min etuajassa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "lento",
     "time": 1789681800,
     "title": "BT357",
@@ -32,19 +16,19 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1789687440,
-    "title": "KLJ6265",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1789689000,
     "title": "PYO266",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789690440,
+    "title": "KLJ6265",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik (myöhässä 50 min)",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -277,6 +261,14 @@
     "title": "IC466",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789711080,
+    "title": "IC41",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
@@ -866,7 +858,7 @@
   {
     "type": "tapahtuma",
     "time": 1789754400,
-    "timeLabel": "pe 18.30–pe 21.00",
+    "timeLabel": "18.30–21.00",
     "title": "Tumppi Varonen & Problems, Pelle Miljoona, Kärtsy Hatakka",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tavara asema",
@@ -883,7 +875,7 @@
   {
     "type": "tapahtuma",
     "time": 1789758000,
-    "timeLabel": "pe 19.30–pe 22.00",
+    "timeLabel": "19.30–22.00",
     "title": "Koira",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
@@ -924,7 +916,7 @@
   {
     "type": "tapahtuma",
     "time": 1789767000,
-    "timeLabel": "pe 22.00–la 00.30",
+    "timeLabel": "22.00–la 00.30",
     "title": "Ranskalaista romantiikkaa",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
