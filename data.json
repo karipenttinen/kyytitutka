@@ -1,33 +1,17 @@
 [
   {
-    "type": "bussi",
-    "time": 1789643100,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789643220,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789643700,
-    "title": "Länsilinjat / (Kylpylä) - Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen Spa (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
+    "type": "lento",
+    "time": 1789644358,
+    "title": "N31",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "lento",
-    "time": 1789645140,
+    "time": 1789644960,
     "title": "BT355",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (11 min etuajassa) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (14 min etuajassa) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -81,7 +65,7 @@
   },
   {
     "type": "juna",
-    "time": 1789646497,
+    "time": 1789646503,
     "title": "IC37",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -153,7 +137,7 @@
   },
   {
     "type": "juna",
-    "time": 1789649400,
+    "time": 1789649453,
     "title": "IC86",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -798,6 +782,30 @@
     "time": 1789729620,
     "title": "95",
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789729800,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Jyväskylä Matkakeskus 1 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789730100,
+    "title": "Länsilinjat / (Kylpylä) - Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen Spa (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789730100,
+    "title": "Aitoo - Sahalahti - Tampere",
+    "detail": "Lähtöpaikka: Aitoon koulutuskeskus (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
