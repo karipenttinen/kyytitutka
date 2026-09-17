@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1789689000,
+    "time": 1789689054,
     "title": "PYO266",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -9,9 +9,9 @@
   },
   {
     "type": "lento",
-    "time": 1789690080,
+    "time": 1789690320,
     "title": "KLJ6265",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik (myöhässä 44 min)",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik (myöhässä 48 min)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
