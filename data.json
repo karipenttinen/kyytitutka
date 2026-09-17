@@ -1,9 +1,9 @@
 [
   {
     "type": "lento",
-    "time": 1789681800,
+    "time": 1789682400,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (myöhässä 10 min) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -25,9 +25,9 @@
   },
   {
     "type": "lento",
-    "time": 1789690440,
+    "time": 1789690140,
     "title": "KLJ6265",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik (myöhässä 50 min)",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik (myöhässä 45 min)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
