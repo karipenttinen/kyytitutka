@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789670900,
+    "time": 1789670969,
     "title": "IC28",
     "detail": "Saapuu · KML–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -102,6 +102,14 @@
     "title": "PYO273",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789687440,
+    "title": "KLJ6265",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
