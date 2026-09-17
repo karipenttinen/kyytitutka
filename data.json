@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1789685715,
-    "title": "PYO273",
-    "detail": "Saapuu · Helsinki–Rovaniemi",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1789689000,
     "title": "PYO266",
     "detail": "Saapuu · Rovaniemi–Helsinki",
@@ -17,9 +9,9 @@
   },
   {
     "type": "lento",
-    "time": 1789690200,
+    "time": 1789690080,
     "title": "KLJ6265",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik (myöhässä 46 min)",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik (myöhässä 44 min)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -278,6 +270,14 @@
     "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789713540,
+    "title": "IC476",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
   },
   {
     "type": "lento",
@@ -921,6 +921,22 @@
     "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1789772100,
+    "title": "V130",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789772100,
+    "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
+    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
