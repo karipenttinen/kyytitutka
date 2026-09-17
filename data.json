@@ -1,16 +1,15 @@
 [
   {
-    "type": "tapahtuma",
-    "time": 1789662600,
-    "timeLabel": "17.00–19.30",
-    "title": "EuroVolley: Serbia-Belgia",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Nokia Arena",
+    "type": "lento",
+    "time": 1789663294,
+    "title": "FNF441",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1789663560,
+    "time": 1789663503,
     "title": "IC472",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -18,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789663620,
+    "time": 1789663555,
     "title": "IC927",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -26,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789663740,
+    "time": 1789663737,
     "title": "S88",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -114,18 +113,18 @@
   },
   {
     "type": "juna",
-    "time": 1789667527,
-    "title": "IC148",
-    "detail": "Saapuu · Pieksämäki–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1789667580,
     "title": "IC149",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789667622,
+    "title": "IC148",
+    "detail": "Saapuu · Pieksämäki–Tampere",
+    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
@@ -854,6 +853,22 @@
     "time": 1789748400,
     "title": "OB3",
     "detail": "Lähtöpaikka: Uusi terminaali (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789749000,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789749600,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
