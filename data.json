@@ -1,30 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1789631571,
-    "title": "IC93",
-    "detail": "Saapuu · Helsinki–Jyväskylä",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1789631788,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1789631971,
-    "title": "IC43",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1789634160,
     "title": "IC464",
     "detail": "Saapuu · Pori–Tampere",
@@ -48,14 +24,6 @@
     "demand": 1
   },
   {
-    "type": "juna",
-    "time": 1789634865,
-    "title": "IC22",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789635000,
     "title": "Länsilinjat / Ikaalinen - Tampere",
@@ -65,7 +33,15 @@
   },
   {
     "type": "juna",
-    "time": 1789635095,
+    "time": 1789635060,
+    "title": "IC22",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789635121,
     "title": "IC94",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -81,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1789635486,
+    "time": 1789635771,
     "title": "S33",
     "detail": "Saapuu · Helsinki–VTI",
     "location": "Rautatieasema · raide 2",
@@ -349,6 +325,22 @@
     "title": "IC468",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789649400,
+    "title": "IC86",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789649460,
+    "title": "IC24",
+    "detail": "Saapuu · VTI–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -768,6 +760,22 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789718400,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1789718400,
+    "title": "BT7702",
+    "detail": "Aikataulun mukaan lähtee, määränpää Torino",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "tapahtuma",
