@@ -678,5 +678,14 @@
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
     "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1790368200,
+    "timeLabel": "pe 21.00–pe 23.30",
+    "title": "Dolly Style (SE)",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Tampere-talo",
+    "demand": 2
   }
 ]
