@@ -1,22 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789743300,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1789743564,
-    "title": "IC51",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
     "time": 1789743900,
     "title": "V130",
     "detail": "Lähtöpaikka: Parolannummi P (aikatauluaika)",
@@ -49,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789744985,
+    "time": 1789745049,
     "title": "S59",
     "detail": "Saapuu · Helsinki–Kokkola",
     "location": "Rautatieasema · raide 2",
@@ -89,7 +73,7 @@
   },
   {
     "type": "juna",
-    "time": 1789746840,
+    "time": 1789746802,
     "title": "IC54",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -105,7 +89,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789747094,
+    "time": 1789747196,
     "title": "141T",
     "detail": "Lähtöpaikka: Huittinen, ABC",
     "location": "Linja-autoasema",
@@ -161,7 +145,7 @@
   },
   {
     "type": "juna",
-    "time": 1789750380,
+    "time": 1789750387,
     "title": "S89",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -352,6 +336,14 @@
     "detail": "Lähtöpaikka: 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789761000,
+    "title": "S152",
+    "detail": "Saapuu · Kuopio–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -713,6 +705,14 @@
     "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1789829700,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
