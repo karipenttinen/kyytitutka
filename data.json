@@ -1,22 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789753500,
-    "title": "OB36",
-    "detail": "Lähtöpaikka: Tulo (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1789753681,
-    "title": "S56",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
     "time": 1789753800,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
@@ -25,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789753984,
+    "time": 1789753928,
     "title": "IC149",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -33,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789754158,
+    "time": 1789754127,
     "title": "S148",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -288,6 +272,14 @@
     "title": "IC462",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789793340,
+    "title": "IC42",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -666,6 +658,14 @@
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tavara asema",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1789840200,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
