@@ -9,18 +9,18 @@
   },
   {
     "type": "juna",
-    "time": 1789761057,
-    "title": "S152",
-    "detail": "Saapuu · Kuopio–Tampere",
-    "location": "Rautatieasema · raide 4",
+    "time": 1789761055,
+    "title": "S58",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1789761300,
-    "title": "S58",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 5",
+    "time": 1789761145,
+    "title": "S152",
+    "detail": "Saapuu · Kuopio–Tampere",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
@@ -57,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1789762380,
+    "time": 1789762346,
     "title": "PYO269",
     "detail": "Saapuu · Helsinki–Kolari",
     "location": "Rautatieasema · raide 1",
