@@ -1,30 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789715220,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1789715340,
-    "title": "BT9811",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (11 min etuajassa) · Arvioitu aika · vahvistettu tutkalla juuri nyt",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1789716000,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789716240,
     "title": "OB9",
     "detail": "Lähtöpaikka: 5 (aikatauluaika)",
@@ -65,18 +41,10 @@
   },
   {
     "type": "juna",
-    "time": 1789717757,
+    "time": 1789717833,
     "title": "IC36",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789717915,
-    "title": "IC142",
-    "detail": "Saapuu · Kuopio–Helsinki",
-    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
@@ -88,8 +56,16 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1789718044,
+    "title": "IC142",
+    "detail": "Saapuu · Kuopio–Helsinki",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
     "type": "bussi",
-    "time": 1789718270,
+    "time": 1789718279,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -107,7 +83,7 @@
     "type": "lento",
     "time": 1789718400,
     "title": "BT7702",
-    "detail": "Aikataulun mukaan lähtee, määränpää Torino",
+    "detail": "Aikataulun mukaan lähtee, määränpää Torino · Portille",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -136,14 +112,6 @@
     "demand": 1
   },
   {
-    "type": "juna",
-    "time": 1789721400,
-    "title": "IC94",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789721400,
     "title": "Länsilinjat / Ikaalinen - Tampere",
@@ -169,6 +137,14 @@
   },
   {
     "type": "juna",
+    "time": 1789721534,
+    "title": "IC94",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
     "time": 1789721580,
     "title": "IC143",
     "detail": "Saapuu · Helsinki–Pieksämäki",
@@ -177,7 +153,7 @@
   },
   {
     "type": "juna",
-    "time": 1789721880,
+    "time": 1789721886,
     "title": "S33",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -839,6 +815,14 @@
     "time": 1789799400,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789802100,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
