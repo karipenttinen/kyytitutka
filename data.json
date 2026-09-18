@@ -1,17 +1,9 @@
 [
   {
-    "type": "juna",
-    "time": 1789689009,
-    "title": "PYO266",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "lento",
-    "time": 1789690200,
+    "time": 1789690260,
     "title": "KLJ6265",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik (myöhässä 46 min)",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik (myöhässä 47 min)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -285,6 +277,14 @@
     "title": "FTL324",
     "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
     "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789714260,
+    "title": "IC20",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
