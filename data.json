@@ -1,26 +1,18 @@
 [
   {
-    "type": "bussi",
-    "time": 1789760640,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1789761055,
-    "title": "S58",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 5",
+    "time": 1789761105,
+    "title": "S152",
+    "detail": "Saapuu · Kuopio–Tampere",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1789761145,
-    "title": "S152",
-    "detail": "Saapuu · Kuopio–Tampere",
-    "location": "Rautatieasema · raide 4",
+    "time": 1789761274,
+    "title": "S58",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
@@ -41,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789761535,
+    "time": 1789761490,
     "title": "PYO933",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 2",
@@ -641,6 +633,14 @@
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere Factory Halli, Mediapolis",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1789847040,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
