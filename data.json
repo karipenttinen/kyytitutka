@@ -1,16 +1,8 @@
 [
   {
-    "type": "juna",
-    "time": 1789764694,
-    "title": "IC187",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "tapahtuma",
     "time": 1789767000,
-    "timeLabel": "22.00–la 00.30",
+    "timeLabel": "pe 22.00–00.30",
     "title": "Ranskalaista romantiikkaa",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
@@ -18,9 +10,9 @@
   },
   {
     "type": "lento",
-    "time": 1789768200,
+    "time": 1789767900,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (5 min etuajassa) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -271,6 +263,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789804020,
+    "title": "IC909",
+    "detail": "Saapuu · TUS–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -579,7 +579,7 @@
   {
     "type": "tapahtuma",
     "time": 1789839000,
-    "timeLabel": "la 18.00–la 20.30",
+    "timeLabel": "18.00–20.30",
     "title": "Lost Society & HOKKA + Support: St. Aurora",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tavara asema",
@@ -604,7 +604,7 @@
   {
     "type": "tapahtuma",
     "time": 1789843500,
-    "timeLabel": "la 19.15–la 21.45",
+    "timeLabel": "19.15–21.45",
     "title": "Elämäni Biisi -illat",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere Factory Halli, Mediapolis",
