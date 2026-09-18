@@ -1,22 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789726020,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789726500,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789727100,
     "title": "43",
     "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
@@ -57,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1789728660,
+    "time": 1789728589,
     "title": "IC38",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -73,7 +57,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789729087,
+    "time": 1789729137,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -81,7 +65,7 @@
   },
   {
     "type": "juna",
-    "time": 1789729385,
+    "time": 1789729495,
     "title": "IC25",
     "detail": "Saapuu · Helsinki–KJÄ",
     "location": "Rautatieasema · raide 2",
@@ -149,6 +133,14 @@
     "title": "IC917",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789732200,
+    "title": "BT355",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika · Myöhässä",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -256,6 +248,14 @@
     "demand": 2
   },
   {
+    "type": "lento",
+    "time": 1789735500,
+    "title": "BT356",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika (myöhässä 15 min) · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "juna",
     "time": 1789735620,
     "title": "IC919",
@@ -302,6 +302,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1789736400,
+    "title": "ABF8",
+    "detail": "Aikataulun mukaan lähtee, määränpää Tukholma Bromma",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -446,6 +454,14 @@
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1789744200,
+    "title": "AXE8118",
+    "detail": "Aikataulun mukaan lähtee, määränpää Hyeres-Le Palyvest",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -635,6 +651,14 @@
     "demand": 2
   },
   {
+    "type": "lento",
+    "time": 1789768200,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1789772100,
     "title": "V130",
@@ -657,6 +681,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1789785000,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -791,6 +823,22 @@
     "time": 1789811400,
     "title": "OB9",
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789812840,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789812900,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
