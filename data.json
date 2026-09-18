@@ -1,22 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789748400,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: Uusi terminaali (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789749000,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789749600,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
@@ -25,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789749960,
+    "time": 1789749902,
     "title": "IC472",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -33,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789750020,
+    "time": 1789750024,
     "title": "IC927",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -41,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789750160,
+    "time": 1789750213,
     "title": "S88",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -56,14 +40,6 @@
     "demand": 2
   },
   {
-    "type": "juna",
-    "time": 1789750440,
-    "title": "IC34",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789750440,
     "title": "OB9",
@@ -73,10 +49,10 @@
   },
   {
     "type": "juna",
-    "time": 1789750500,
-    "title": "HDM428",
-    "detail": "Saapuu · KEU–Tampere",
-    "location": "Rautatieasema · raide 4",
+    "time": 1789750487,
+    "title": "IC34",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -105,6 +81,14 @@
   },
   {
     "type": "juna",
+    "time": 1789750553,
+    "title": "HDM428",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
     "time": 1789750680,
     "title": "IC29",
     "detail": "Saapuu · Helsinki–Oulu",
@@ -113,7 +97,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789752487,
+    "time": 1789752510,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -137,18 +121,18 @@
   },
   {
     "type": "juna",
-    "time": 1789753849,
-    "title": "S148",
-    "detail": "Saapuu · Pieksämäki–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1789753860,
     "title": "S56",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789753918,
+    "title": "S148",
+    "detail": "Saapuu · Pieksämäki–Helsinki",
+    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
