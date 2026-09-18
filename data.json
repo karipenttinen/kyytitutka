@@ -1,22 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789737300,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789737600,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789738080,
     "title": "95",
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
@@ -24,16 +8,8 @@
     "demand": 1
   },
   {
-    "type": "juna",
-    "time": 1789738421,
-    "title": "S39",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
-    "time": 1789738467,
+    "time": 1789738512,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -41,18 +17,26 @@
   },
   {
     "type": "juna",
-    "time": 1789739460,
-    "title": "IC50",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
+    "time": 1789738551,
+    "title": "S39",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1789739483,
+    "time": 1789739424,
     "title": "IC180",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789739460,
+    "title": "IC50",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -743,6 +727,14 @@
     "time": 1789822800,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789824000,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
