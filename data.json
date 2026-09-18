@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789698900,
+    "time": 1789698801,
     "title": "PYO274",
     "detail": "Saapuu · KJÄ–Helsinki",
     "location": "Rautatieasema · raide 3",
@@ -81,9 +81,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789705800,
+    "time": 1789705541,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
