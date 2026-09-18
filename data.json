@@ -1,18 +1,9 @@
 [
   {
-    "type": "tapahtuma",
-    "time": 1789767000,
-    "timeLabel": "pe 22.00–00.30",
-    "title": "Ranskalaista romantiikkaa",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Tampere-talo",
-    "demand": 2
-  },
-  {
     "type": "lento",
-    "time": 1789767840,
+    "time": 1789767780,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (6 min etuajassa) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (7 min etuajassa) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -684,6 +675,24 @@
     "time": 1790368200,
     "timeLabel": "pe 21.00–pe 23.30",
     "title": "Dolly Style (SE)",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Tampere-talo",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1790371800,
+    "timeLabel": "pe 22.00–la 00.30",
+    "title": "Kätfish & Kirkkovene",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Bar Ihku Tampere",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1790371800,
+    "timeLabel": "pe 22.00–la 00.30",
+    "title": "Tulilintu",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
     "demand": 2
