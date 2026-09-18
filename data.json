@@ -1,35 +1,19 @@
 [
   {
-    "type": "juna",
-    "time": 1789714553,
-    "title": "IC23",
-    "detail": "Saapuu · Helsinki–Rovaniemi",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1789714800,
-    "title": "43",
-    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1789715100,
-    "title": "BT9811",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (15 min etuajassa) · Arvioitu aika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789715220,
     "title": "95",
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1789715340,
+    "title": "BT9811",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (11 min etuajassa) · Arvioitu aika · vahvistettu tutkalla juuri nyt",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -73,14 +57,6 @@
   },
   {
     "type": "juna",
-    "time": 1789717510,
-    "title": "IC36",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1789717620,
     "title": "IC909",
     "detail": "Saapuu · TUS–Tampere",
@@ -89,7 +65,15 @@
   },
   {
     "type": "juna",
-    "time": 1789717962,
+    "time": 1789717757,
+    "title": "IC36",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789717915,
     "title": "IC142",
     "detail": "Saapuu · Kuopio–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -137,7 +121,7 @@
   },
   {
     "type": "juna",
-    "time": 1789720800,
+    "time": 1789720835,
     "title": "HDM424",
     "detail": "Saapuu · KEU–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -405,6 +389,14 @@
     "title": "BT355",
     "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
     "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789732260,
+    "title": "IC144",
+    "detail": "Saapuu · Pieksämäki–Helsinki",
+    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
