@@ -1,13 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1789690260,
-    "title": "KLJ6265",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Reykjavik (myöhässä 47 min)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789691700,
     "title": "V130",
