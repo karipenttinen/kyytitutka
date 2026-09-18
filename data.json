@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1789775400,
-    "title": "PYO266",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789778100,
     "title": "V130",
@@ -237,6 +229,14 @@
     "title": "IC142",
     "detail": "Saapuu · Kuopio–Helsinki",
     "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789804260,
+    "title": "S36",
+    "detail": "Saapuu · Kokkola–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
