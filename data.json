@@ -1,21 +1,5 @@
 [
   {
-    "type": "bussi",
-    "time": 1789824000,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789824623,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1789825860,
     "title": "IC50",
@@ -25,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789826106,
+    "time": 1789826075,
     "title": "IC27",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -33,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789826719,
+    "time": 1789826718,
     "title": "IC47",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -80,14 +64,6 @@
     "demand": 2
   },
   {
-    "type": "juna",
-    "time": 1789829220,
-    "title": "IC923",
-    "detail": "Saapuu · Turku–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "lento",
     "time": 1789829220,
     "title": "BT526",
@@ -112,6 +88,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1789829666,
+    "title": "IC923",
+    "detail": "Saapuu · Turku–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1789829700,
     "title": "OB91",
@@ -129,7 +113,7 @@
   },
   {
     "type": "juna",
-    "time": 1789830725,
+    "time": 1789830951,
     "title": "IC147",
     "detail": "Saapuu · Helsinki–Kuopio",
     "location": "Rautatieasema · raide 3",
@@ -534,6 +518,22 @@
     "time": 1789910400,
     "title": "OB91",
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789911000,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789911240,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
