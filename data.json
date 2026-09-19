@@ -1,22 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1789789800,
-    "title": "IC164",
-    "detail": "Saapuu · HVA–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789789988,
-    "title": "S35",
-    "detail": "Saapuu · Helsinki–Rovaniemi",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1789792835,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
@@ -129,9 +113,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789799400,
+    "time": 1789799136,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -224,6 +208,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1789804680,
+    "title": "IC43",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1789806300,
     "title": "141",
@@ -238,6 +230,14 @@
     "detail": "Lähtöpaikka: 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789806960,
+    "title": "IC464",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
   },
   {
     "type": "bussi",
