@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1789825860,
+    "time": 1789825845,
     "title": "IC50",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -113,7 +113,7 @@
   },
   {
     "type": "juna",
-    "time": 1789830951,
+    "time": 1789831008,
     "title": "IC147",
     "detail": "Saapuu · Helsinki–Kuopio",
     "location": "Rautatieasema · raide 3",
@@ -534,6 +534,14 @@
     "time": 1789911240,
     "title": "OB9",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789911600,
+    "title": "OB37",
+    "detail": "Lähtöpaikka: Kotkan linja-autoasema PÄÄTEPYSÄKKI (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
