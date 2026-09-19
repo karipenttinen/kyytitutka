@@ -10,7 +10,7 @@
   },
   {
     "type": "juna",
-    "time": 1789843812,
+    "time": 1789843696,
     "title": "S28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -45,7 +45,7 @@
     "time": 1789847460,
     "title": "IC635",
     "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 1",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
@@ -655,6 +655,15 @@
     "title": "Tappara-SaiPa",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1790447400,
+    "timeLabel": "la 19.00–la 21.30",
+    "title": "Timo Rautiainen & Trio Niskalaukaus",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Tavara asema",
     "demand": 2
   }
 ]
