@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1789792835,
+    "time": 1789792741,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -17,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789793349,
+    "time": 1789793340,
     "title": "IC42",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789793394,
+    "time": 1789793360,
     "title": "S140",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
