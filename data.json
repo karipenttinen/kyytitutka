@@ -1,14 +1,5 @@
 [
   {
-    "type": "tapahtuma",
-    "time": 1789839000,
-    "timeLabel": "18.00–20.30",
-    "title": "Lost Society & HOKKA + Support: St. Aurora",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Tavara asema",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789840200,
     "title": "OB3",
@@ -26,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789840329,
+    "time": 1789840376,
     "title": "IC148",
     "detail": "Saapuu · Pieksämäki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -34,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789840380,
+    "time": 1789840433,
     "title": "IC149",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -115,7 +106,7 @@
   },
   {
     "type": "juna",
-    "time": 1789847880,
+    "time": 1789847914,
     "title": "PYO933",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 2",
@@ -574,6 +565,14 @@
     "time": 1789924200,
     "title": "OB9",
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789925400,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
