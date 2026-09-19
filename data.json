@@ -1,13 +1,5 @@
 [
   {
-    "type": "bussi",
-    "time": 1789838278,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "tapahtuma",
     "time": 1789839000,
     "timeLabel": "18.00–20.30",
@@ -34,7 +26,7 @@
   },
   {
     "type": "juna",
-    "time": 1789840298,
+    "time": 1789840329,
     "title": "IC148",
     "detail": "Saapuu · Pieksämäki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -574,6 +566,14 @@
     "time": 1789923300,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789924200,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
