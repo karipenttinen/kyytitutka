@@ -1,17 +1,9 @@
 [
   {
-    "type": "bussi",
-    "time": 1789831800,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "lento",
     "time": 1789832100,
     "title": "BT525",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malaga · Lähdössä",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malaga · Suljettu",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -49,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1789832885,
+    "time": 1789832915,
     "title": "IC54",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -105,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1789836851,
+    "time": 1789836840,
     "title": "IC34",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -558,6 +550,14 @@
     "time": 1789917000,
     "title": "OB9",
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789918200,
+    "title": "141T",
+    "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
