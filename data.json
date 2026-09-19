@@ -1,9 +1,9 @@
 [
   {
     "type": "lento",
-    "time": 1789853820,
+    "time": 1789854060,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (13 min etuajassa) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (9 min etuajassa) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789858689,
+    "time": 1789858640,
     "title": "PYO273",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 1",
