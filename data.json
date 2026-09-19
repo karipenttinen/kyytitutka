@@ -9,15 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789814718,
-    "title": "IC38",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789814754,
+    "time": 1789814710,
     "title": "S158",
     "detail": "Saapuu · Kuopio–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -25,7 +17,15 @@
   },
   {
     "type": "juna",
-    "time": 1789815351,
+    "time": 1789814936,
+    "title": "IC38",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789815349,
     "title": "S171",
     "detail": "Saapuu · Helsinki–Kuopio",
     "location": "Rautatieasema · raide 3",
@@ -57,7 +57,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789817292,
+    "time": 1789817383,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -100,7 +100,7 @@
     "time": 1789818420,
     "title": "IC917",
     "detail": "Saapuu · Turku–Tampere",
-    "location": "Rautatieasema · raide 3",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -264,19 +264,19 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1789829100,
-    "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1789829220,
     "title": "IC923",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789829220,
+    "title": "BT526",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -526,6 +526,14 @@
     "time": 1789898700,
     "title": "OB9",
     "detail": "Lähtöpaikka: 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789900440,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
