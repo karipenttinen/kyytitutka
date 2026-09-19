@@ -2,16 +2,16 @@
   {
     "type": "bussi",
     "time": 1789806300,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "bussi",
-    "time": 1789806736,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "time": 1789806300,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -24,20 +24,20 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1789807149,
+    "title": "HDM424",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1789807200,
     "title": "OB91",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1789807235,
-    "title": "HDM424",
-    "detail": "Saapuu · KEU–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -48,20 +48,20 @@
     "demand": 1
   },
   {
-    "type": "juna",
-    "time": 1789807764,
-    "title": "IC22",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789807800,
     "title": "OB3",
     "detail": "Lähtöpaikka: Uusi terminaali (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789807860,
+    "title": "IC22",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "juna",
@@ -97,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1789810164,
+    "time": 1789810001,
     "title": "MV10373",
     "detail": "Saapuu · ILR–Tampere",
     "location": "Rautatieasema · raide 1",
@@ -574,6 +574,14 @@
     "time": 1789890900,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789892700,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
