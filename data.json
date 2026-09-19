@@ -1,10 +1,18 @@
 [
   {
     "type": "juna",
-    "time": 1789785076,
+    "time": 1789784914,
     "title": "PYO274",
     "detail": "Saapuu · KJÄ–Helsinki",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1789785000,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Lähdössä",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -17,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1789789980,
+    "time": 1789789988,
     "title": "S35",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -25,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789792800,
+    "time": 1789792835,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -440,6 +448,14 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1789829100,
+    "title": "BT526",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1789829700,
     "title": "OB91",
@@ -454,6 +470,14 @@
     "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1789832100,
+    "title": "BT525",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malaga",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -568,6 +592,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1789854600,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
