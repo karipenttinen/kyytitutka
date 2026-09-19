@@ -49,7 +49,7 @@
   },
   {
     "type": "juna",
-    "time": 1789804246,
+    "time": 1789804301,
     "title": "S36",
     "detail": "Saapuu · Kokkola–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -73,7 +73,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789806089,
+    "time": 1789806222,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -129,18 +129,18 @@
   },
   {
     "type": "juna",
-    "time": 1789807853,
-    "title": "IC94",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1789807860,
     "title": "IC22",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789807911,
+    "title": "IC94",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
@@ -169,7 +169,7 @@
   },
   {
     "type": "juna",
-    "time": 1789810088,
+    "time": 1789810048,
     "title": "MV10373",
     "detail": "Saapuu · ILR–Tampere",
     "location": "Rautatieasema · raide 1",
