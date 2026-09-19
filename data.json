@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1789823910,
-    "title": "IC175",
-    "detail": "Saapuu · Helsinki–Pori",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789824000,
     "title": "OB91",
@@ -17,7 +9,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789824648,
+    "time": 1789824623,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -41,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789826499,
+    "time": 1789826719,
     "title": "IC47",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -97,7 +89,7 @@
   },
   {
     "type": "lento",
-    "time": 1789829280,
+    "time": 1789829220,
     "title": "BT526",
     "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
@@ -120,14 +112,6 @@
     "demand": 2
   },
   {
-    "type": "juna",
-    "time": 1789829580,
-    "title": "IC147",
-    "detail": "Saapuu · Helsinki–Kuopio",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789829700,
     "title": "OB91",
@@ -141,6 +125,14 @@
     "title": "IC51",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789830725,
+    "title": "IC147",
+    "detail": "Saapuu · Helsinki–Kuopio",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -311,6 +303,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789840260,
+    "title": "S56",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -526,6 +526,14 @@
     "time": 1789909200,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789910400,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
