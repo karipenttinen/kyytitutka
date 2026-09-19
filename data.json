@@ -1,13 +1,5 @@
 [
   {
-    "type": "bussi",
-    "time": 1789842000,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "tapahtuma",
     "time": 1789843500,
     "timeLabel": "19.15–21.45",
@@ -18,7 +10,7 @@
   },
   {
     "type": "juna",
-    "time": 1789843863,
+    "time": 1789843812,
     "title": "S28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
