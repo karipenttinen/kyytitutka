@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1789810539,
-    "title": "S33",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789810800,
     "title": "V130",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789811036,
+    "time": 1789811302,
     "title": "IC46",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -41,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789812345,
+    "time": 1789812380,
     "title": "IC45",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -333,6 +325,14 @@
     "title": "BT526",
     "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga",
     "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789829220,
+    "title": "IC923",
+    "detail": "Saapuu · Turku–Tampere",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
