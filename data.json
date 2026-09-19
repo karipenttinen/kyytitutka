@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789847040,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789847700,
     "title": "V130",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789847914,
+    "time": 1789847804,
     "title": "PYO933",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 2",
@@ -33,15 +25,15 @@
   },
   {
     "type": "juna",
-    "time": 1789848780,
-    "title": "PYO269",
-    "detail": "Saapuu · Helsinki–Kolari",
-    "location": "Rautatieasema · raide 1",
+    "time": 1789849618,
+    "title": "PYO265",
+    "detail": "Saapuu · Helsinki–KJÄ",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1789849299,
+    "time": 1789849942,
     "title": "IC635",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -49,10 +41,10 @@
   },
   {
     "type": "juna",
-    "time": 1789849512,
-    "title": "PYO265",
-    "detail": "Saapuu · Helsinki–KJÄ",
-    "location": "Rautatieasema · raide 3",
+    "time": 1789850546,
+    "title": "PYO269",
+    "detail": "Saapuu · Helsinki–Kolari",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -581,6 +573,14 @@
     "time": 1789930200,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789933440,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
