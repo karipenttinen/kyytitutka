@@ -1,13 +1,5 @@
 [
   {
-    "type": "bussi",
-    "time": 1789778100,
-    "title": "V130",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "lento",
     "time": 1789785000,
     "title": "BT358",
@@ -622,6 +614,14 @@
     "time": 1789858500,
     "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789864500,
+    "title": "V130",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
