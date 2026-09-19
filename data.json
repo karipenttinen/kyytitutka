@@ -1,23 +1,7 @@
 [
   {
-    "type": "bussi",
-    "time": 1789799400,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1789800642,
-    "title": "IC20",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789801089,
+    "time": 1789801053,
     "title": "IC23",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -81,7 +65,7 @@
   },
   {
     "type": "juna",
-    "time": 1789804260,
+    "time": 1789804243,
     "title": "S36",
     "detail": "Saapuu · Kokkola–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -128,20 +112,20 @@
     "demand": 2
   },
   {
-    "type": "juna",
-    "time": 1789807200,
-    "title": "HDM424",
-    "detail": "Saapuu · KEU–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789807200,
     "title": "OB91",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789807235,
+    "title": "HDM424",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -358,6 +342,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789818420,
+    "title": "IC917",
+    "detail": "Saapuu · Turku–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -608,6 +600,14 @@
     "detail": "Aikataulun mukaan lähtee, määränpää Riika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1789886640,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
