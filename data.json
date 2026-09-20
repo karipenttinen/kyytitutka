@@ -1,29 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1789915560,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Lähtenyt",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789915947,
-    "title": "IC147",
-    "detail": "Saapuu · Helsinki–Kuopio",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789916300,
-    "title": "IC51",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789917000,
     "title": "OB9",
@@ -33,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789917310,
+    "time": 1789917469,
     "title": "IC923",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -49,7 +25,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789918169,
+    "time": 1789918190,
     "title": "141T",
     "detail": "Lähtöpaikka: Huittinen, ABC",
     "location": "Linja-autoasema",
@@ -81,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1789919221,
+    "time": 1789919332,
     "title": "S54",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -153,7 +129,7 @@
   },
   {
     "type": "juna",
-    "time": 1789922820,
+    "time": 1789922840,
     "title": "IC927",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -169,7 +145,7 @@
   },
   {
     "type": "juna",
-    "time": 1789923180,
+    "time": 1789923204,
     "title": "IC89",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -302,6 +278,22 @@
     "title": "IC183",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789930680,
+    "title": "IC53",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789932660,
+    "title": "PYO265",
+    "detail": "Saapuu · Helsinki–KJÄ",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
