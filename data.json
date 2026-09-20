@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1789948200,
-    "title": "PYO266",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789950900,
     "title": "V130",
@@ -17,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789952758,
+    "time": 1789952645,
     "title": "MV10407",
     "detail": "Saapuu · ILR–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -253,6 +245,14 @@
     "title": "IC466",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789970280,
+    "title": "IC41",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
