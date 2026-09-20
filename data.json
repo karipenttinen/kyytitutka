@@ -19,13 +19,13 @@
     "type": "lento",
     "time": 1789915500,
     "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Viimeinen kutsu",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Suljettu",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1789915798,
+    "time": 1789915747,
     "title": "IC146",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789915860,
+    "time": 1789915821,
     "title": "IC26",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -65,7 +65,7 @@
   },
   {
     "type": "juna",
-    "time": 1789917063,
+    "time": 1789917384,
     "title": "IC923",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -81,7 +81,7 @@
   },
   {
     "type": "bussi",
-    "time": 1789918051,
+    "time": 1789918077,
     "title": "141T",
     "detail": "Lähtöpaikka: Huittinen, ABC",
     "location": "Linja-autoasema",
@@ -113,18 +113,18 @@
   },
   {
     "type": "juna",
-    "time": 1789919604,
-    "title": "IC177",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 3",
+    "time": 1789919540,
+    "title": "S54",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1789919640,
-    "title": "S54",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
+    "time": 1789919604,
+    "title": "IC177",
+    "detail": "Saapuu · Helsinki–Tampere",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -789,6 +789,14 @@
     "time": 1790000100,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790001000,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
