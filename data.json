@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789898700,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1789900440,
     "title": "OB9",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
@@ -17,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789901087,
+    "time": 1789901137,
     "title": "S158",
     "detail": "Saapuu · Kuopio–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -113,7 +105,7 @@
   },
   {
     "type": "juna",
-    "time": 1789905480,
+    "time": 1789905490,
     "title": "IC37",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -733,6 +725,14 @@
     "time": 1789985220,
     "title": "95",
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789985700,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
