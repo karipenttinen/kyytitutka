@@ -1,23 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1789925350,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "tapahtuma",
-    "time": 1789925400,
-    "timeLabel": "18.00–20.30",
-    "title": "Faunien iltapäivä: Muodonmuutoksia",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Tampere-talo",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
     "time": 1789926300,
     "title": "OB36",
     "detail": "Lähtöpaikka: Tulo (aikatauluaika)",
@@ -34,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1789926658,
+    "time": 1789926615,
     "title": "IC148",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -773,6 +756,14 @@
     "time": 1790009700,
     "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790011800,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
