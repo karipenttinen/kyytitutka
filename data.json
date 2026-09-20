@@ -1,15 +1,7 @@
 [
   {
     "type": "bussi",
-    "time": 1789924200,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789925366,
+    "time": 1789925350,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -145,20 +137,20 @@
     "demand": 2
   },
   {
-    "type": "juna",
-    "time": 1789934280,
-    "title": "PYO933",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789934400,
     "title": "OB91",
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789934459,
+    "title": "PYO933",
+    "detail": "Saapuu · TUS–Tampere",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "juna",
