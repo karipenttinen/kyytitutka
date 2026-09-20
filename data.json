@@ -49,6 +49,14 @@
   },
   {
     "type": "juna",
+    "time": 1789953853,
+    "title": "MV10407",
+    "detail": "Saapuu · ILR–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
     "time": 1789956899,
     "title": "MV10405",
     "detail": "Saapuu · ILR–Tampere",
@@ -261,14 +269,6 @@
     "title": "IC44",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789969980,
-    "title": "IC155",
-    "detail": "Saapuu · Helsinki–Pieksämäki",
-    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
