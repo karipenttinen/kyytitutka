@@ -1,42 +1,18 @@
 [
   {
-    "type": "bussi",
-    "time": 1789919100,
-    "title": "Länsilinjat / Kankaanpää - Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Kankaanpää 3 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789919100,
-    "title": "OB37",
-    "detail": "Lähtöpaikka: Lahti, Matkakeskus laituri 3 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1789919100,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1789919604,
-    "title": "IC177",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 3",
+    "time": 1789919501,
+    "title": "S54",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1789919627,
-    "title": "S54",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
+    "time": 1789919630,
+    "title": "IC177",
+    "detail": "Saapuu · Helsinki–Tampere",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -789,6 +765,22 @@
     "time": 1790004300,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790005500,
+    "title": "OB37",
+    "detail": "Lähtöpaikka: Lahti, Matkakeskus laituri 3 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790005500,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
