@@ -3,13 +3,13 @@
     "type": "lento",
     "time": 1789871400,
     "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Portille",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1789871700,
+    "time": 1789871573,
     "title": "PYO274",
     "detail": "Saapuu · KJÄ–Helsinki",
     "location": "Rautatieasema · raide 3",
