@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789883596,
+    "time": 1789883595,
     "title": "IC155",
     "detail": "Saapuu · Helsinki–Pieksämäki",
     "location": "Rautatieasema · raide 3",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1789887060,
+    "time": 1789886958,
     "title": "S20",
     "detail": "Saapuu · Kokkola–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -629,6 +629,22 @@
     "time": 1789968600,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789969680,
+    "title": "97A/95",
+    "detail": "Lähtöpaikka: Virrat P (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1789969800,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
