@@ -1,18 +1,10 @@
 [
   {
     "type": "juna",
-    "time": 1789871338,
+    "time": 1789871291,
     "title": "PYO274",
     "detail": "Saapuu · KJÄ–Helsinki",
     "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1789871400,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Suljettu",
-    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
