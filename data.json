@@ -9,23 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789930238,
-    "title": "IC931",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789930537,
-    "title": "IC183",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789930541,
+    "time": 1789930421,
     "title": "S28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -33,7 +17,15 @@
   },
   {
     "type": "juna",
-    "time": 1789930992,
+    "time": 1789930613,
+    "title": "IC183",
+    "detail": "Saapuu · Helsinki–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789931025,
     "title": "IC53",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -245,6 +237,14 @@
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789965900,
+    "title": "IC462",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
