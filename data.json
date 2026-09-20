@@ -593,6 +593,14 @@
     "demand": 1
   },
   {
+    "type": "bussi",
+    "time": 1789965000,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "tapahtuma",
     "time": 1790100000,
     "timeLabel": "ti 18.30–ti 21.00",
