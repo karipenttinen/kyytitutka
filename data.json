@@ -1,21 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1789984260,
-    "title": "S46",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1789984393,
-    "title": "IC45",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789985220,
     "title": "95",
@@ -193,9 +177,9 @@
   },
   {
     "type": "bussi",
-    "time": 1789993800,
+    "time": 1789993698,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -398,6 +382,22 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790001900,
+    "title": "IC470",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790002020,
+    "title": "IC923",
+    "detail": "Saapuu · Turku–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
   },
   {
     "type": "bussi",
