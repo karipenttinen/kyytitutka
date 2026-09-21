@@ -1,5 +1,13 @@
 [
   {
+    "type": "lento",
+    "time": 1790015345,
+    "title": "OHCOG",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "juna",
     "time": 1790016360,
     "title": "IC931",
@@ -25,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790017080,
+    "time": 1790017150,
     "title": "S53",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
