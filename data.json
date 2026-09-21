@@ -17,6 +17,14 @@
   },
   {
     "type": "juna",
+    "time": 1789962523,
+    "title": "PYO276",
+    "detail": "Saapuu · Kolari–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
     "time": 1789962600,
     "title": "IC460",
     "detail": "Saapuu · Pori–Tampere",
@@ -33,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1789962658,
+    "time": 1789962697,
     "title": "IC80",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -62,14 +70,6 @@
     "detail": "Lähtöpaikka: Pälkäne (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1789963704,
-    "title": "PYO276",
-    "detail": "Saapuu · Kolari–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
   },
   {
     "type": "bussi",
