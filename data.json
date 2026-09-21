@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1790002831,
-    "title": "IC51",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790003400,
     "title": "95",
@@ -49,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1790005728,
+    "time": 1790005904,
     "title": "IC54",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -105,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1790009220,
+    "time": 1790009227,
     "title": "IC927",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -278,6 +270,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790020680,
+    "title": "PYO933",
+    "detail": "Saapuu · TUS–Tampere",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "lento",
@@ -734,6 +734,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790089500,
+    "title": "BT525",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malaga",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "tapahtuma",
