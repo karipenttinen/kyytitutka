@@ -1,10 +1,10 @@
 [
   {
-    "type": "juna",
-    "time": 1790023941,
-    "title": "IC187",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 5",
+    "type": "lento",
+    "time": 1790024848,
+    "title": "OHCWO",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -278,6 +278,14 @@
     "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790059140,
+    "title": "IC476",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -730,7 +738,7 @@
   {
     "type": "tapahtuma",
     "time": 1790100000,
-    "timeLabel": "ti 18.30–ti 21.00",
+    "timeLabel": "18.30–21.00",
     "title": "Tappara-Kärpät",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
