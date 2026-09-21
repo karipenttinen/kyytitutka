@@ -1,15 +1,7 @@
 [
   {
-    "type": "bussi",
-    "time": 1789950900,
-    "title": "V130",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1789953600,
+    "time": 1789953287,
     "title": "MV10407",
     "detail": "Saapuu · ILR–Tampere",
     "location": "Rautatieasema · raide 3",
