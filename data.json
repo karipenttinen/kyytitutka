@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1789979807,
+    "time": 1789979826,
     "title": "IC464",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789980031,
+    "time": 1789979945,
     "title": "HDM424",
     "detail": "Saapuu · KEU–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -49,7 +49,7 @@
   },
   {
     "type": "juna",
-    "time": 1789980761,
+    "time": 1789980757,
     "title": "IC94",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -65,7 +65,7 @@
   },
   {
     "type": "juna",
-    "time": 1789981159,
+    "time": 1789981157,
     "title": "S33",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
