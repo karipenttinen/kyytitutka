@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1789965634,
+    "time": 1789965600,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -40,14 +40,6 @@
     "demand": 2
   },
   {
-    "type": "juna",
-    "time": 1789966198,
-    "title": "IC140",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1789966200,
     "title": "Länsilinjat / Ikaalinen - Tampere",
@@ -57,7 +49,15 @@
   },
   {
     "type": "juna",
-    "time": 1789966797,
+    "time": 1789966253,
+    "title": "IC140",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1789966872,
     "title": "IC21",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -105,7 +105,7 @@
   },
   {
     "type": "juna",
-    "time": 1789969740,
+    "time": 1789969798,
     "title": "IC150",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -145,7 +145,7 @@
   },
   {
     "type": "juna",
-    "time": 1789970280,
+    "time": 1789970299,
     "title": "IC41",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
