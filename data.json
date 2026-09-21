@@ -1,7 +1,7 @@
 [
   {
     "type": "lento",
-    "time": 1790015345,
+    "time": 1790016445,
     "title": "OHCOG",
     "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
     "location": "Lentoasema, Pirkkala",
@@ -9,15 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790016360,
-    "title": "IC931",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790016773,
+    "time": 1790016727,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790016780,
+    "time": 1790016843,
     "title": "IC183",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790017150,
+    "time": 1790017184,
     "title": "S53",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -262,6 +254,14 @@
     "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790054640,
+    "title": "S30",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
