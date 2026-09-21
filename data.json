@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1789953121,
-    "title": "MV10407",
-    "detail": "Saapuu · ILR–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1789956899,
     "title": "MV10405",
     "detail": "Saapuu · ILR–Tampere",
@@ -262,6 +254,14 @@
     "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1789972740,
+    "title": "IC476",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
   },
   {
     "type": "bussi",
