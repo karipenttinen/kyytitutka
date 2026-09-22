@@ -1,5 +1,13 @@
 [
   {
+    "type": "juna",
+    "time": 1790044171,
+    "title": "PYO274",
+    "detail": "Saapuu · KJÄ–Helsinki",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
     "type": "lento",
     "time": 1790044200,
     "title": "BT358",
@@ -8,18 +16,10 @@
     "demand": 2
   },
   {
-    "type": "juna",
-    "time": 1790044265,
-    "title": "PYO274",
-    "detail": "Saapuu · KJÄ–Helsinki",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "bussi",
-    "time": 1790047800,
+    "time": 1790047468,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -81,7 +81,7 @@
   },
   {
     "type": "juna",
-    "time": 1790052000,
+    "time": 1790052031,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
