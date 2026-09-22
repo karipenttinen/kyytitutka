@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790066436,
+    "time": 1790066334,
     "title": "HDM424",
     "detail": "Saapuu · KEU–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -24,14 +24,6 @@
     "demand": 1
   },
   {
-    "type": "juna",
-    "time": 1790066965,
-    "title": "IC22",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790067000,
     "title": "Länsilinjat / Ikaalinen - Tampere",
@@ -41,7 +33,15 @@
   },
   {
     "type": "juna",
-    "time": 1790067117,
+    "time": 1790067060,
+    "title": "IC22",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790067105,
     "title": "IC94",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -57,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1790067861,
+    "time": 1790068034,
     "title": "S33",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
