@@ -1,47 +1,7 @@
 [
   {
-    "type": "bussi",
-    "time": 1790088000,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1790088385,
-    "title": "IC923",
-    "detail": "Saapuu · Turku–Tampere",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790088567,
-    "title": "S146",
-    "detail": "Saapuu · Pieksämäki–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790088610,
-    "title": "IC26",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790088784,
-    "title": "IC147",
-    "detail": "Saapuu · Helsinki–Kuopio",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790089135,
+    "time": 1790089077,
     "title": "IC51",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -56,8 +16,16 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1790090400,
+    "title": "BT525",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malaga (myöhässä 15 min) · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "juna",
-    "time": 1790090641,
+    "time": 1790090640,
     "title": "S59",
     "detail": "Saapuu · Helsinki–Kokkola",
     "location": "Rautatieasema · raide 2",
@@ -89,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1790091957,
+    "time": 1790092173,
     "title": "IC54",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -105,7 +73,7 @@
   },
   {
     "type": "juna",
-    "time": 1790092682,
+    "time": 1790092694,
     "title": "IC49",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -217,9 +185,9 @@
   },
   {
     "type": "bussi",
-    "time": 1790098200,
+    "time": 1790098113,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -281,6 +249,38 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1790103180,
+    "title": "IC183",
+    "detail": "Saapuu · Helsinki–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790103224,
+    "title": "IC28",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790103480,
+    "title": "S53",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790105460,
+    "title": "PYO265",
+    "detail": "Saapuu · Helsinki–KJÄ",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790106900,
     "title": "V130",
@@ -297,12 +297,28 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1790113800,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790123700,
     "title": "V130",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790130600,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -585,6 +601,22 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1790164200,
+    "title": "BT355",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1790164800,
+    "title": "FTL323",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790165220,
     "title": "95",
@@ -615,6 +647,14 @@
     "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790166600,
+    "title": "BT356",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
