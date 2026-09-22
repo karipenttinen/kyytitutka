@@ -1,42 +1,10 @@
 [
   {
-    "type": "bussi",
-    "time": 1790083680,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790083889,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1790084341,
-    "title": "S39",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1790085060,
     "title": "IC50",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790085288,
-    "title": "IC151",
-    "detail": "Saapuu · Helsinki–Jyväskylä",
-    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -57,7 +25,15 @@
   },
   {
     "type": "juna",
-    "time": 1790085821,
+    "time": 1790085473,
+    "title": "IC151",
+    "detail": "Saapuu · Helsinki–Jyväskylä",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790086000,
     "title": "IC47",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -89,15 +65,15 @@
   },
   {
     "type": "lento",
-    "time": 1790087160,
+    "time": 1790087280,
     "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (myöhässä 11 min) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (myöhässä 13 min) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
     "type": "bussi",
-    "time": 1790087390,
+    "time": 1790087386,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -326,6 +302,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790096280,
+    "title": "IC29",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -773,6 +757,14 @@
     "time": 1790170080,
     "title": "95",
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790170200,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
