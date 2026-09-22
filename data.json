@@ -1,15 +1,7 @@
 [
   {
-    "type": "bussi",
-    "time": 1790055073,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1790055720,
+    "time": 1790055500,
     "title": "IC905",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -24,6 +16,14 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1790056153,
+    "title": "S44",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790056200,
     "title": "Länsilinjat / Ikaalinen - Tampere",
@@ -33,18 +33,10 @@
   },
   {
     "type": "juna",
-    "time": 1790056226,
+    "time": 1790056283,
     "title": "IC150",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790056260,
-    "title": "S44",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -60,7 +52,7 @@
     "time": 1790056500,
     "title": "IC466",
     "detail": "Saapuu · Pori–Tampere",
-    "location": "Rautatieasema · raide 3",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -73,7 +65,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790058490,
+    "time": 1790058522,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -749,6 +741,14 @@
     "time": 1790140200,
     "title": "43",
     "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790141400,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
