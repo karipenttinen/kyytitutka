@@ -1,15 +1,7 @@
 [
   {
-    "type": "lento",
-    "time": 1790045100,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika (myöhässä 15 min) · Suljettu",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
-    "time": 1790047488,
+    "time": 1790047493,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
