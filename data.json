@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1790068066,
-    "title": "S33",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790068800,
     "title": "OB3",
@@ -25,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790069417,
+    "time": 1790069430,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790070660,
+    "time": 1790070627,
     "title": "S46",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -366,6 +358,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790085480,
+    "title": "IC47",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
