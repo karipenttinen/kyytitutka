@@ -1,9 +1,9 @@
 [
   {
     "type": "bussi",
-    "time": 1790058523,
+    "time": 1790058600,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -17,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790059140,
+    "time": 1790059104,
     "title": "IC476",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790059860,
+    "time": 1790059742,
     "title": "IC20",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -49,7 +49,7 @@
   },
   {
     "type": "juna",
-    "time": 1790060280,
+    "time": 1790060328,
     "title": "IC23",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -136,20 +136,20 @@
     "demand": 2
   },
   {
+    "type": "bussi",
+    "time": 1790063753,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "juna",
     "time": 1790063880,
     "title": "IC43",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1790064000,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "juna",
@@ -749,6 +749,22 @@
     "time": 1790142600,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790145000,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790145000,
+    "title": "43",
+    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
