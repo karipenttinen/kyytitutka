@@ -1,7 +1,7 @@
 [
   {
     "type": "lento",
-    "time": 1790104097,
+    "time": 1790105015,
     "title": "OHCOG",
     "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
     "location": "Lentoasema, Pirkkala",
@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790105361,
+    "time": 1790105055,
     "title": "PYO265",
     "detail": "Saapuu · Helsinki–KJÄ",
     "location": "Rautatieasema · raide 3",
