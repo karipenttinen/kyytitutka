@@ -1,25 +1,9 @@
 [
   {
     "type": "lento",
-    "time": 1790110316,
-    "title": "OHCMO",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790110597,
-    "title": "IC187",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790113800,
+    "time": 1790113380,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (7 min etuajassa) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -269,6 +253,14 @@
     "title": "IC466",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790143080,
+    "title": "IC41",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
@@ -754,7 +746,7 @@
   {
     "type": "tapahtuma",
     "time": 1790200800,
-    "timeLabel": "ke 22.30–to 01.00",
+    "timeLabel": "22.30–to 01.00",
     "title": "Irina: Akustinen ilta",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
