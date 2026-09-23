@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790177100,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1790178300,
     "title": "OB37",
     "detail": "Lähtöpaikka: Lahti, Matkakeskus laituri 3 (aikatauluaika)",
@@ -25,18 +17,18 @@
   },
   {
     "type": "juna",
-    "time": 1790178794,
-    "title": "IC177",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1790178840,
     "title": "IC54",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790178929,
+    "title": "IC177",
+    "detail": "Saapuu · Helsinki–Tampere",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -201,9 +193,9 @@
   },
   {
     "type": "lento",
-    "time": 1790188440,
+    "time": 1790188500,
     "title": "KRP641",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Madrid (myöhässä 20 min)",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Madrid (myöhässä 21 min)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -225,7 +217,7 @@
   },
   {
     "type": "juna",
-    "time": 1790189622,
+    "time": 1790189815,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -765,6 +757,22 @@
     "time": 1790263500,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790264700,
+    "title": "OB37",
+    "detail": "Lähtöpaikka: Lahti, Matkakeskus laituri 3 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790264700,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
