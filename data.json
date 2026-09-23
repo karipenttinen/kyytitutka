@@ -1,13 +1,5 @@
 [
   {
-    "type": "bussi",
-    "time": 1790123700,
-    "title": "V130",
-    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "lento",
     "time": 1790130600,
     "title": "BT358",
@@ -751,6 +743,14 @@
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1790210100,
+    "title": "V130",
+    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
