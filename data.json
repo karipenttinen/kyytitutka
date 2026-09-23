@@ -1,5 +1,13 @@
 [
   {
+    "type": "lento",
+    "time": 1790152048,
+    "title": "OHEPB",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "juna",
     "time": 1790152560,
     "title": "IC464",
@@ -9,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790152836,
+    "time": 1790152736,
     "title": "HDM424",
     "detail": "Saapuu · KEU–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -49,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1790153790,
+    "time": 1790153759,
     "title": "IC94",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -57,7 +65,7 @@
   },
   {
     "type": "juna",
-    "time": 1790154027,
+    "time": 1790154054,
     "title": "S33",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -97,7 +105,7 @@
   },
   {
     "type": "juna",
-    "time": 1790157212,
+    "time": 1790157375,
     "title": "IC45",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
