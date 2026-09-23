@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1790130558,
+    "time": 1790130488,
     "title": "PYO274",
     "detail": "Saapuu · KJÄ–Helsinki",
     "location": "Rautatieasema · raide 3",
@@ -11,15 +11,15 @@
     "type": "lento",
     "time": 1790130600,
     "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Portille",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Viimeinen kutsu",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
     "type": "bussi",
-    "time": 1790134200,
+    "time": 1790133972,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -89,7 +89,7 @@
   },
   {
     "type": "juna",
-    "time": 1790138400,
+    "time": 1790138436,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
