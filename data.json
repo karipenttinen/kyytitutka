@@ -1,15 +1,7 @@
 [
   {
-    "type": "bussi",
-    "time": 1790140200,
-    "title": "43",
-    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1790141040,
+    "time": 1790141229,
     "title": "S30",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -17,7 +9,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790141236,
+    "time": 1790141350,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -105,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1790145615,
+    "time": 1790145683,
     "title": "S44",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -749,6 +741,14 @@
     "time": 1790225400,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790226600,
+    "title": "43",
+    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
