@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1790191603,
-    "title": "PYO265",
-    "detail": "Saapuu · Helsinki–KJÄ",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790193300,
     "title": "V130",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790194380,
+    "time": 1790194349,
     "title": "PYO269",
     "detail": "Saapuu · Helsinki–Kolari",
     "location": "Rautatieasema · raide 1",
@@ -41,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790197545,
+    "time": 1790197579,
     "title": "IC187",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -286,6 +278,14 @@
     "title": "S44",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790229180,
+    "title": "IC155",
+    "detail": "Saapuu · Helsinki–Pieksämäki",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
