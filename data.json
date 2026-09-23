@@ -1,27 +1,11 @@
 [
   {
-    "type": "bussi",
-    "time": 1790161500,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790161620,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790162100,
-    "title": "Länsilinjat / (Kylpylä) - Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen Spa (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
+    "type": "lento",
+    "time": 1790162762,
+    "title": "FIH30",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -37,14 +21,6 @@
     "title": "IC917",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790164200,
-    "title": "BT355",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -72,16 +48,8 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1790164800,
-    "title": "FTL323",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
-    "time": 1790165115,
+    "time": 1790165146,
     "title": "IC37",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -110,14 +78,6 @@
     "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790166600,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -153,7 +113,7 @@
   },
   {
     "type": "juna",
-    "time": 1790167800,
+    "time": 1790167854,
     "title": "IC86",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -177,7 +137,7 @@
   },
   {
     "type": "juna",
-    "time": 1790168280,
+    "time": 1790168281,
     "title": "IC27",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -472,14 +432,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1790200200,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "tapahtuma",
     "time": 1790200800,
     "timeLabel": "22.30–to 01.00",
@@ -495,14 +447,6 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790217000,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -765,6 +709,14 @@
     "time": 1790248020,
     "title": "95",
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790248500,
+    "title": "Länsilinjat / (Kylpylä) - Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen Spa (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
