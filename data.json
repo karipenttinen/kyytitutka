@@ -8,20 +8,20 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1790200200,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "tapahtuma",
     "time": 1790200800,
     "timeLabel": "ke 22.30–01.00",
     "title": "Irina: Akustinen ilta",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1790201580,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (myöhässä 23 min) · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
