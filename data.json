@@ -1,29 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1790168145,
-    "title": "BTI3MD",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1790168400,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1790168558,
-    "title": "IC27",
-    "detail": "Saapuu · Helsinki–Rovaniemi",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790169300,
     "title": "Länsilinjat / Ikaalinen - Tampere",
@@ -49,7 +25,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790170315,
+    "time": 1790170298,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -57,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790170575,
+    "time": 1790170506,
     "title": "S39",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -153,7 +129,7 @@
   },
   {
     "type": "juna",
-    "time": 1790174820,
+    "time": 1790174821,
     "title": "IC923",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -177,7 +153,7 @@
   },
   {
     "type": "juna",
-    "time": 1790175180,
+    "time": 1790175183,
     "title": "IC147",
     "detail": "Saapuu · Helsinki–Kuopio",
     "location": "Rautatieasema · raide 3",
@@ -320,6 +296,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1790182500,
+    "title": "HDM428",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790182500,
     "title": "Länsilinjat / Ikaalinen - Tampere",
@@ -366,6 +350,14 @@
     "detail": "Lähtöpaikka: Kyröskoski (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790187240,
+    "title": "KRP641",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Madrid",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -757,6 +749,14 @@
     "time": 1790253540,
     "title": "OB9",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790254800,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
