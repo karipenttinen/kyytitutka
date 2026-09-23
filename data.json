@@ -1,31 +1,7 @@
 [
   {
-    "type": "lento",
-    "time": 1790188980,
-    "title": "KRP641",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Madrid (myöhässä 29 min)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
-    "time": 1790189179,
-    "title": "IC931",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790189765,
-    "title": "IC183",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790189851,
+    "time": 1790189751,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -33,7 +9,15 @@
   },
   {
     "type": "juna",
-    "time": 1790190008,
+    "time": 1790189901,
+    "title": "IC183",
+    "detail": "Saapuu · Helsinki–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790190041,
     "title": "S53",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -271,6 +255,14 @@
     "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790227440,
+    "title": "S30",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
