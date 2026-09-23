@@ -1,9 +1,9 @@
 [
   {
     "type": "lento",
-    "time": 1790188680,
+    "time": 1790188980,
     "title": "KRP641",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Madrid (myöhässä 24 min)",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Madrid (myöhässä 29 min)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -17,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790189609,
+    "time": 1790189765,
     "title": "IC183",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790189882,
+    "time": 1790189851,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790189938,
+    "time": 1790190008,
     "title": "S53",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -417,6 +417,14 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1790244000,
+    "title": "FTL323",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790244420,
     "title": "95",
@@ -501,14 +509,6 @@
     "time": 1790250600,
     "title": "BT355",
     "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790251200,
-    "title": "FTL323",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
