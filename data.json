@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1790197705,
+    "time": 1790197619,
     "title": "IC187",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -18,7 +18,7 @@
   {
     "type": "tapahtuma",
     "time": 1790200800,
-    "timeLabel": "22.30–to 01.00",
+    "timeLabel": "ke 22.30–01.00",
     "title": "Irina: Akustinen ilta",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
