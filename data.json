@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1790222040,
-    "title": "IC40",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1790224800,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
@@ -40,14 +32,6 @@
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1790225400,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1790225880,
     "title": "IC21",
@@ -73,7 +57,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790227772,
+    "time": 1790227789,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -269,6 +253,14 @@
     "title": "IC36",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790236380,
+    "title": "IC93",
+    "detail": "Saapuu · Helsinki–Jyväskylä",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
