@@ -1,21 +1,5 @@
 [
   {
-    "type": "bussi",
-    "time": 1790235600,
-    "title": "V130",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790235600,
-    "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
-    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1790236025,
     "title": "IC909",
@@ -48,20 +32,20 @@
     "demand": 2
   },
   {
+    "type": "bussi",
+    "time": 1790236759,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "juna",
     "time": 1790236880,
     "title": "IC43",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1790237220,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "juna",
