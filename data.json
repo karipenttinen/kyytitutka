@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1790290376,
-    "title": "PYO273",
-    "detail": "Saapuu · Helsinki–Rovaniemi",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1790293800,
     "title": "PYO266",
     "detail": "Saapuu · Rovaniemi–Helsinki",
@@ -22,6 +14,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790303400,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "juna",
@@ -264,6 +264,14 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1790318340,
+    "title": "IC476",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790319600,
     "title": "43",
@@ -488,6 +496,14 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1790337000,
+    "title": "BT355",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790338020,
     "title": "95",
@@ -534,6 +550,14 @@
     "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790339400,
+    "title": "BT356",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -875,6 +899,30 @@
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
     "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1790373000,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1790376900,
+    "title": "V130",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790376900,
+    "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
+    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
