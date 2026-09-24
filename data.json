@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790233200,
-    "title": "43",
-    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1790233620,
     "title": "95",
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
@@ -49,7 +41,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790236622,
+    "time": 1790236688,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -726,6 +718,30 @@
     "detail": "Saapuu · Helsinki–Pori",
     "location": "Rautatieasema · raide 3",
     "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790319480,
+    "title": "IC23",
+    "detail": "Saapuu · Helsinki–Rovaniemi",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1790319600,
+    "title": "43",
+    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790320020,
+    "title": "95",
+    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
