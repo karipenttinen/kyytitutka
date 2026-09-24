@@ -1,31 +1,7 @@
 [
   {
-    "type": "bussi",
-    "time": 1790256480,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790256580,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1790257125,
-    "title": "S39",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790257931,
+    "time": 1790257975,
     "title": "IC50",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -81,15 +57,15 @@
   },
   {
     "type": "juna",
-    "time": 1790260147,
+    "time": 1790260256,
     "title": "IC151",
     "detail": "Saapuu · Helsinki–Jyväskylä",
-    "location": "Rautatieasema · raide 3",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
     "type": "bussi",
-    "time": 1790260281,
+    "time": 1790260425,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -121,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1790261399,
+    "time": 1790261459,
     "title": "S146",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -161,7 +137,7 @@
   },
   {
     "type": "juna",
-    "time": 1790263260,
+    "time": 1790263310,
     "title": "S59",
     "detail": "Saapuu · Helsinki–Kokkola",
     "location": "Rautatieasema · raide 2",
@@ -310,6 +286,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790269080,
+    "title": "IC29",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -796,6 +780,14 @@
     "time": 1790342880,
     "title": "95",
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790343000,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
