@@ -24,14 +24,6 @@
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1790221800,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1790221980,
     "title": "IC35",
@@ -49,15 +41,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790222100,
-    "title": "43",
-    "detail": "Lähtöpaikka: Pälkäne (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790224189,
+    "time": 1790224306,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -137,9 +121,9 @@
   },
   {
     "type": "bussi",
-    "time": 1790227800,
+    "time": 1790227678,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -748,6 +732,14 @@
     "time": 1790308200,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790308500,
+    "title": "43",
+    "detail": "Lähtöpaikka: Pälkäne (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
