@@ -1,24 +1,8 @@
 [
   {
     "type": "lento",
-    "time": 1790277771,
+    "time": 1790278655,
     "title": "OHCOG",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790277875,
-    "title": "OHCMO",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790277876,
-    "title": "OHCWO",
     "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
@@ -49,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790281382,
+    "time": 1790281430,
     "title": "PYO265",
     "detail": "Saapuu · Helsinki–KJÄ",
     "location": "Rautatieasema · raide 3",
@@ -959,6 +943,15 @@
     "title": "Tappara-KooKoo",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1790883000,
+    "timeLabel": "to 20.00–to 22.30",
+    "title": "Music x Media 2026",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Tampere-talo",
     "demand": 2
   }
 ]
