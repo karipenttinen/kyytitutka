@@ -1,15 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1790242994,
-    "title": "S46",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790243589,
+    "time": 1790243727,
     "title": "IC45",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -89,7 +81,7 @@
   },
   {
     "type": "juna",
-    "time": 1790247486,
+    "time": 1790247677,
     "title": "IC25",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -194,14 +186,6 @@
   {
     "type": "bussi",
     "time": 1790253000,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790253000,
     "title": "43",
     "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
     "location": "Linja-autoasema",
@@ -214,6 +198,14 @@
     "detail": "Aikataulun mukaan lähtee, määränpää Riika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1790253034,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "bussi",
@@ -398,6 +390,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790261100,
+    "title": "IC470",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -748,6 +748,14 @@
     "time": 1790328600,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790329800,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
