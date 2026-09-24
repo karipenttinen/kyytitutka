@@ -1,17 +1,9 @@
 [
   {
     "type": "lento",
-    "time": 1790283351,
+    "time": 1790284247,
     "title": "OHCWO",
     "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790286600,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -38,14 +30,6 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790303400,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "juna",
@@ -512,14 +496,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1790337000,
-    "title": "BT355",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790338020,
     "title": "95",
@@ -566,14 +542,6 @@
     "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790339400,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -810,7 +778,7 @@
   {
     "type": "tapahtuma",
     "time": 1790357400,
-    "timeLabel": "pe 18.00–pe 20.30",
+    "timeLabel": "18.00–20.30",
     "title": "Lemonator, Sugarrush",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tavara asema",
@@ -843,7 +811,7 @@
   {
     "type": "tapahtuma",
     "time": 1790359200,
-    "timeLabel": "pe 18.30–pe 21.00",
+    "timeLabel": "18.30–21.00",
     "title": "Ilves-KooKoo",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
@@ -892,7 +860,7 @@
   {
     "type": "tapahtuma",
     "time": 1790368200,
-    "timeLabel": "pe 21.00–pe 23.30",
+    "timeLabel": "21.00–23.30",
     "title": "Dolly Style (SE)",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
@@ -901,7 +869,7 @@
   {
     "type": "tapahtuma",
     "time": 1790371800,
-    "timeLabel": "pe 22.00–la 00.30",
+    "timeLabel": "22.00–la 00.30",
     "title": "Kätfish & Kirkkovene",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Bar Ihku Tampere",
@@ -910,7 +878,7 @@
   {
     "type": "tapahtuma",
     "time": 1790371800,
-    "timeLabel": "pe 22.00–la 00.30",
+    "timeLabel": "22.00–la 00.30",
     "title": "Tulilintu",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
