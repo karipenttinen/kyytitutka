@@ -1,9 +1,9 @@
 [
   {
     "type": "bussi",
-    "time": 1790231332,
+    "time": 1790231400,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -73,9 +73,9 @@
   },
   {
     "type": "bussi",
-    "time": 1790236800,
+    "time": 1790236622,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -710,6 +710,22 @@
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1790317800,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790317800,
+    "title": "43",
+    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
