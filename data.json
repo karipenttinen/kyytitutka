@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1790361981,
+    "time": 1790361924,
     "title": "IC931",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790362406,
+    "time": 1790362541,
     "title": "IC183",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790362813,
+    "time": 1790362747,
     "title": "S53",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
