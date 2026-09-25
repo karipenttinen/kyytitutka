@@ -1,27 +1,9 @@
 [
   {
-    "type": "tapahtuma",
-    "time": 1790371800,
-    "timeLabel": "pe 22.00–00.30",
-    "title": "Kätfish & Kirkkovene",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Bar Ihku Tampere",
-    "demand": 2
-  },
-  {
-    "type": "tapahtuma",
-    "time": 1790371800,
-    "timeLabel": "pe 22.00–00.30",
-    "title": "Tulilintu",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Tampere-talo",
-    "demand": 2
-  },
-  {
     "type": "lento",
-    "time": 1790373000,
+    "time": 1790374920,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (myöhässä 32 min) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
