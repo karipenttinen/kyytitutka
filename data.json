@@ -1,38 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790326200,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790326200,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: Uusi terminaali (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1790326489,
-    "title": "S33",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790326751,
-    "title": "IC94",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
     "time": 1790328000,
     "title": "OB91",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
@@ -49,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790328769,
+    "time": 1790328657,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -129,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1790333220,
+    "time": 1790333238,
     "title": "S915",
     "detail": "Saapuu · Turku–Kuopio",
     "location": "Rautatieasema · raide 5",
@@ -145,7 +113,7 @@
   },
   {
     "type": "juna",
-    "time": 1790333580,
+    "time": 1790333600,
     "title": "IC171",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -384,6 +352,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1790341080,
+    "title": "IC27",
+    "detail": "Saapuu · Helsinki–Rovaniemi",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790341200,
     "title": "OB3",
@@ -422,6 +398,14 @@
     "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790343540,
+    "title": "S39",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "lento",
