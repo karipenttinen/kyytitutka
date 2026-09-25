@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790331900,
-    "title": "43",
-    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1790332800,
     "title": "V130",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790333100,
+    "time": 1790333066,
     "title": "S178",
     "detail": "Saapuu · Pori–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790333238,
+    "time": 1790333205,
     "title": "S915",
     "detail": "Saapuu · Turku–Kuopio",
     "location": "Rautatieasema · raide 5",
@@ -41,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790333460,
+    "time": 1790333499,
     "title": "IC38",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -65,7 +57,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790334135,
+    "time": 1790334165,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -145,14 +137,6 @@
   },
   {
     "type": "juna",
-    "time": 1790337113,
-    "title": "IC144",
-    "detail": "Saapuu · Pieksämäki–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1790337205,
     "title": "S145",
     "detail": "Saapuu · Helsinki–Pieksämäki",
@@ -165,6 +149,14 @@
     "title": "IC48",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790337242,
+    "title": "IC144",
+    "detail": "Saapuu · Pieksämäki–Helsinki",
+    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
@@ -857,6 +849,14 @@
     "time": 1790417700,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790419200,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
