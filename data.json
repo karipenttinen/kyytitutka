@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1790308200,
-    "title": "IC460",
-    "detail": "Saapuu · HVA–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790308200,
     "title": "Länsilinjat / Ikaalinen - Tampere",
@@ -17,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790308385,
+    "time": 1790308357,
     "title": "IC35",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -25,18 +17,10 @@
   },
   {
     "type": "juna",
-    "time": 1790308405,
+    "time": 1790308402,
     "title": "IC40",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790308421,
-    "title": "IC80",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
@@ -49,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790309108,
+    "time": 1790309135,
     "title": "PYO276",
     "detail": "Saapuu · Kolari–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -57,7 +41,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790310322,
+    "time": 1790310341,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -209,9 +193,9 @@
   },
   {
     "type": "bussi",
-    "time": 1790317800,
+    "time": 1790317698,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -245,6 +229,14 @@
     "title": "S165",
     "detail": "Saapuu · Helsinki–Pori",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790319480,
+    "title": "IC23",
+    "detail": "Saapuu · Helsinki–Rovaniemi",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
@@ -302,6 +294,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790322420,
+    "title": "IC909",
+    "detail": "Saapuu · TUS–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
   },
   {
     "type": "bussi",
