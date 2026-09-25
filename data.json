@@ -1,18 +1,10 @@
 [
   {
     "type": "lento",
-    "time": 1790364600,
+    "time": 1790365062,
     "title": "KRP642",
-    "detail": "Aikataulun mukaan lähtee, määränpää Madrid",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
     "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790364660,
-    "title": "PYO265",
-    "detail": "Saapuu · Helsinki–KJÄ",
-    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790365615,
+    "time": 1790365722,
     "title": "S58",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 2",
@@ -272,6 +264,14 @@
     "title": "S44",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790401980,
+    "title": "IC155",
+    "detail": "Saapuu · Helsinki–Pieksämäki",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
