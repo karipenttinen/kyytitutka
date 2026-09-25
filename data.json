@@ -1,7 +1,15 @@
 [
   {
+    "type": "lento",
+    "time": 1790303400,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "juna",
-    "time": 1790303692,
+    "time": 1790303517,
     "title": "PYO274",
     "detail": "Saapuu · KJÄ–Helsinki",
     "location": "Rautatieasema · raide 3",
@@ -73,9 +81,9 @@
   },
   {
     "type": "bussi",
-    "time": 1790310600,
+    "time": 1790310322,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -480,6 +488,14 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1790337000,
+    "title": "BT355",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790338020,
     "title": "95",
@@ -526,6 +542,14 @@
     "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790339400,
+    "title": "BT356",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -866,6 +890,14 @@
     "title": "Tulilintu",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1790373000,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
