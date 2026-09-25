@@ -1,23 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790357294,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "tapahtuma",
-    "time": 1790357400,
-    "timeLabel": "18.00–20.30",
-    "title": "Lemonator, Sugarrush",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Tavara asema",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
     "time": 1790358300,
     "title": "OB36",
     "detail": "Lähtöpaikka: Tulo (aikatauluaika)",
@@ -34,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790358660,
+    "time": 1790358654,
     "title": "S56",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -42,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790358806,
+    "time": 1790358851,
     "title": "IC149",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -50,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790358965,
+    "time": 1790359066,
     "title": "S148",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
