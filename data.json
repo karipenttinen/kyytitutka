@@ -1,7 +1,7 @@
 [
   {
     "type": "bussi",
-    "time": 1790306674,
+    "time": 1790306675,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790308253,
+    "time": 1790308297,
     "title": "IC80",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -57,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1790309504,
+    "time": 1790309086,
     "title": "PYO276",
     "detail": "Saapuu · Kolari–Helsinki",
     "location": "Rautatieasema · raide 1",
