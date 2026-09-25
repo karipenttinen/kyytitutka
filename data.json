@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1790325360,
+    "time": 1790325328,
     "title": "IC464",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790325636,
+    "time": 1790325537,
     "title": "HDM424",
     "detail": "Saapuu · KEU–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -57,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1790326693,
+    "time": 1790326680,
     "title": "S33",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -65,7 +65,7 @@
   },
   {
     "type": "juna",
-    "time": 1790326817,
+    "time": 1790326765,
     "title": "IC94",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -793,6 +793,22 @@
     "time": 1790408400,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790411100,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790411100,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
