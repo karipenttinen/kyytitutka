@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1790369615,
-    "title": "IC187",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "tapahtuma",
     "time": 1790371800,
     "timeLabel": "22.00–la 00.30",
@@ -280,6 +272,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790408820,
+    "title": "IC909",
+    "detail": "Saapuu · TUS–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
   },
   {
     "type": "bussi",
