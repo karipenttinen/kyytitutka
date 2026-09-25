@@ -1,14 +1,5 @@
 [
   {
-    "type": "tapahtuma",
-    "time": 1790368200,
-    "timeLabel": "21.00–23.30",
-    "title": "Dolly Style (SE)",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Tampere-talo",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1790369615,
     "title": "IC187",
