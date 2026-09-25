@@ -72,20 +72,20 @@
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1790333795,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1790333892,
     "title": "IC25",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1790333897,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "bussi",
@@ -145,7 +145,7 @@
   },
   {
     "type": "juna",
-    "time": 1790336820,
+    "time": 1790336832,
     "title": "IC917",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -161,7 +161,7 @@
   },
   {
     "type": "juna",
-    "time": 1790337180,
+    "time": 1790337205,
     "title": "S145",
     "detail": "Saapuu · Helsinki–Pieksämäki",
     "location": "Rautatieasema · raide 3",
