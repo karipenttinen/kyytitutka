@@ -1,29 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1790329433,
-    "title": "S46",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1790329800,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1790330000,
-    "title": "IC45",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790330820,
     "title": "95",
@@ -176,14 +152,6 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1790337000,
-    "title": "BT355",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1790337113,
     "title": "IC144",
@@ -250,26 +218,18 @@
   {
     "type": "bussi",
     "time": 1790339400,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790339400,
     "title": "43",
     "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1790339400,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
+    "type": "bussi",
+    "time": 1790339567,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "bussi",
@@ -384,11 +344,19 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1790343900,
-    "title": "ABF2",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Tukholma Bromma",
-    "location": "Lentoasema, Pirkkala",
+    "type": "juna",
+    "time": 1790343840,
+    "title": "IC180",
+    "detail": "Saapuu · Pieksämäki–Helsinki",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790344260,
+    "title": "IC50",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -406,14 +374,6 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790344920,
-    "title": "LUC6J",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Zagreb",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -693,14 +653,6 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1790373000,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790376900,
     "title": "V130",
@@ -723,14 +675,6 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790389800,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -857,6 +801,14 @@
     "time": 1790415600,
     "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790416200,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
