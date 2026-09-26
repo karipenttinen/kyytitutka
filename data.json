@@ -1,21 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1790437953,
-    "title": "IC177",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790438293,
-    "title": "IC49",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790438700,
     "title": "OB9",
@@ -27,7 +11,7 @@
     "type": "lento",
     "time": 1790438700,
     "title": "BT525",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malaga (myöhässä 30 min) · Lähdössä",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malaga (myöhässä 30 min) · Suljettu",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -38,6 +22,14 @@
     "title": "Tappara-SaiPa",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790441130,
+    "title": "IC34",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -62,14 +54,6 @@
     "title": "S89",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790441640,
-    "title": "IC34",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -130,7 +114,7 @@
   },
   {
     "type": "juna",
-    "time": 1790445180,
+    "time": 1790445185,
     "title": "IC149",
     "detail": "Saapuu · Helsinki–JÄS",
     "location": "Rautatieasema · raide 3",
@@ -287,6 +271,22 @@
     "title": "PYO274",
     "detail": "Saapuu · KJÄ–Helsinki",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790482380,
+    "title": "PYO276",
+    "detail": "Saapuu · Kolari–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790485080,
+    "title": "S21",
+    "detail": "Saapuu · Helsinki–Rovaniemi",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
@@ -559,6 +559,14 @@
     "time": 1790523900,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790525100,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
