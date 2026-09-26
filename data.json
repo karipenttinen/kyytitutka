@@ -1,47 +1,7 @@
 [
   {
-    "type": "bussi",
-    "time": 1790437500,
-    "title": "OB36",
-    "detail": "Lähtöpaikka: Tulo (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790437500,
-    "title": "V130",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790437500,
-    "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
-    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790437500,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1790437808,
-    "title": "IC54",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790437993,
+    "time": 1790437953,
     "title": "IC177",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -67,7 +27,7 @@
     "type": "lento",
     "time": 1790438700,
     "title": "BT525",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malaga (myöhässä 30 min) · Arvioitu aika",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malaga (myöhässä 30 min) · Lähdössä",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -106,7 +66,7 @@
   },
   {
     "type": "juna",
-    "time": 1790441603,
+    "time": 1790441640,
     "title": "IC34",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -319,6 +279,14 @@
     "title": "BT358",
     "detail": "Aikataulun mukaan lähtee, määränpää Riika",
     "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790476500,
+    "title": "PYO274",
+    "detail": "Saapuu · KJÄ–Helsinki",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -569,6 +537,30 @@
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1790523900,
+    "title": "Länsilinjat / Kankaanpää - Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Kankaanpää 3 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790523900,
+    "title": "OB37",
+    "detail": "Lähtöpaikka: Lahti, Matkakeskus laituri 3 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790523900,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
