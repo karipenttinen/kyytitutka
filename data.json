@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1790431093,
-    "title": "IC47",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790431800,
     "title": "V130",
@@ -57,18 +49,18 @@
   },
   {
     "type": "juna",
-    "time": 1790434193,
-    "title": "IC146",
-    "detail": "Saapuu · Pieksämäki–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1790434260,
     "title": "S26",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790434295,
+    "title": "IC146",
+    "detail": "Saapuu · Pieksämäki–Helsinki",
+    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
@@ -153,7 +145,7 @@
   },
   {
     "type": "juna",
-    "time": 1790437980,
+    "time": 1790437993,
     "title": "IC177",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -311,6 +303,14 @@
     "title": "Timo Rautiainen & Trio Niskalaukaus",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tavara asema",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790448660,
+    "title": "S28",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -544,6 +544,14 @@
     "detail": "Lähtöpaikka: Kotkan linja-autoasema PÄÄTEPYSÄKKI (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790517900,
+    "title": "BT355",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "tapahtuma",
