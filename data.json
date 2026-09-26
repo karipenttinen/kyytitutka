@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790433900,
+    "time": 1790433901,
     "title": "IC470",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -17,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790434033,
+    "time": 1790434074,
     "title": "IC923",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790434160,
+    "time": 1790434260,
     "title": "S26",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790434250,
+    "time": 1790434351,
     "title": "IC146",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -73,9 +73,9 @@
   },
   {
     "type": "lento",
-    "time": 1790435820,
+    "time": 1790435880,
     "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (myöhässä 32 min) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (myöhässä 33 min) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -86,6 +86,14 @@
     "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790437201,
+    "title": "IC54",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -125,14 +133,6 @@
     "title": "IC177",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790438000,
-    "title": "IC54",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -226,9 +226,9 @@
   },
   {
     "type": "bussi",
-    "time": 1790442900,
+    "time": 1790442719,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
