@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790420700,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Jyväskylä Matkakeskus 1 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1790421900,
     "title": "OB91",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
@@ -17,7 +9,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790422153,
+    "time": 1790422181,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -113,7 +105,7 @@
   },
   {
     "type": "juna",
-    "time": 1790427000,
+    "time": 1790427043,
     "title": "S86",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -137,7 +129,7 @@
   },
   {
     "type": "juna",
-    "time": 1790427480,
+    "time": 1790427483,
     "title": "IC27",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -224,14 +216,6 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1790433900,
-    "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1790434020,
     "title": "IC923",
@@ -288,20 +272,20 @@
     "demand": 2
   },
   {
+    "type": "lento",
+    "time": 1790435880,
+    "title": "BT526",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (myöhässä 33 min) · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790436600,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790436900,
-    "title": "BT525",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malaga",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -341,6 +325,14 @@
     "title": "IC177",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1790438100,
+    "title": "BT525",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malaga (myöhässä 20 min) · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
