@@ -1,24 +1,7 @@
 [
   {
-    "type": "tapahtuma",
-    "time": 1790447400,
-    "timeLabel": "19.00–21.30",
-    "title": "Timo Rautiainen & Trio Niskalaukaus",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Tavara asema",
-    "demand": 2
-  },
-  {
     "type": "juna",
-    "time": 1790448224,
-    "title": "S28",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790448780,
+    "time": 1790448851,
     "title": "S183",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -81,14 +64,6 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1790459400,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1790463300,
     "title": "PYO273",
@@ -127,14 +102,6 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790476200,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "juna",
@@ -238,6 +205,14 @@
     "title": "IC36",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790495580,
+    "title": "IC93",
+    "detail": "Saapuu · Helsinki–Jyväskylä",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -401,14 +376,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1790517900,
-    "title": "BT355",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790518200,
     "title": "V130",
@@ -447,14 +414,6 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790520300,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
