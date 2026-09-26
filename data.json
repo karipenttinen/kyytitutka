@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1790430609,
-    "title": "IC50",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1790431093,
     "title": "IC47",
     "detail": "Saapuu · Helsinki–Vaasa",
@@ -97,7 +89,7 @@
   },
   {
     "type": "juna",
-    "time": 1790434697,
+    "time": 1790434712,
     "title": "IC51",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -113,9 +105,9 @@
   },
   {
     "type": "lento",
-    "time": 1790435880,
+    "time": 1790435820,
     "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (myöhässä 33 min) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (myöhässä 32 min) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -294,6 +286,14 @@
     "title": "S56",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790445180,
+    "title": "IC149",
+    "detail": "Saapuu · Helsinki–JÄS",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -534,6 +534,14 @@
     "time": 1790516040,
     "title": "OB9",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790516400,
+    "title": "OB37",
+    "detail": "Lähtöpaikka: Kotkan linja-autoasema PÄÄTEPYSÄKKI (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
