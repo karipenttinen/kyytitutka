@@ -1,21 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1790436180,
-    "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (myöhässä 38 min) · Arvioitu aika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1790436600,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "bussi",
     "time": 1790437500,
     "title": "OB36",
@@ -49,26 +33,18 @@
   },
   {
     "type": "juna",
-    "time": 1790437993,
-    "title": "IC177",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790438014,
+    "time": 1790437808,
     "title": "IC54",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1790438100,
-    "title": "BT525",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malaga (myöhässä 20 min) · Arvioitu aika",
-    "location": "Lentoasema, Pirkkala",
+    "type": "juna",
+    "time": 1790437993,
+    "title": "IC177",
+    "detail": "Saapuu · Helsinki–Tampere",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -86,6 +62,14 @@
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790438700,
+    "title": "BT525",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malaga (myöhässä 30 min) · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "tapahtuma",
@@ -122,7 +106,7 @@
   },
   {
     "type": "juna",
-    "time": 1790441640,
+    "time": 1790441603,
     "title": "IC34",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -566,6 +550,14 @@
     "time": 1790521800,
     "title": "OB9",
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790523000,
+    "title": "141T",
+    "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
