@@ -1,13 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1790389320,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika (8 min etuajassa) · Lähtenyt",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790399340,
     "title": "OB9",
@@ -464,6 +456,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790476200,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "tapahtuma",
