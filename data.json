@@ -41,9 +41,9 @@
   },
   {
     "type": "bussi",
-    "time": 1790411100,
+    "time": 1790410855,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
