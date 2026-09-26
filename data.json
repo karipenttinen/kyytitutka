@@ -9,7 +9,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790429342,
+    "time": 1790429422,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -113,7 +113,7 @@
   },
   {
     "type": "juna",
-    "time": 1790434680,
+    "time": 1790434697,
     "title": "IC51",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -129,9 +129,9 @@
   },
   {
     "type": "lento",
-    "time": 1790435820,
+    "time": 1790435940,
     "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (myöhässä 32 min) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga (myöhässä 34 min) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -526,6 +526,14 @@
     "time": 1790514000,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790515200,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
