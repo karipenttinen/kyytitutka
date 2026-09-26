@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790399340,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1790403900,
     "title": "OB9",
     "detail": "Lähtöpaikka: 5 (aikatauluaika)",
