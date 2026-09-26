@@ -1,29 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1790419864,
-    "title": "ESVAR",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790419971,
-    "title": "S171",
-    "detail": "Saapuu · Helsinki–Kuopio",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790420313,
-    "title": "IC25",
-    "detail": "Saapuu · Helsinki–Rovaniemi",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790420700,
     "title": "OB9",
@@ -41,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790422138,
+    "time": 1790422153,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -121,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1790426580,
+    "time": 1790426616,
     "title": "HDM426",
     "detail": "Saapuu · KEU–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -153,7 +129,7 @@
   },
   {
     "type": "juna",
-    "time": 1790427180,
+    "time": 1790427183,
     "title": "IC175",
     "detail": "Saapuu · Helsinki–Pori",
     "location": "Rautatieasema · raide 3",
@@ -304,6 +280,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1790435040,
+    "title": "MUS1956",
+    "detail": "Saapuu · NOA–Toijala",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790436600,
     "title": "141",
@@ -350,6 +334,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790437980,
+    "title": "IC177",
+    "detail": "Saapuu · Helsinki–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
   },
   {
     "type": "bussi",
