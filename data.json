@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790412600,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: Uusi terminaali (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1790414400,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
