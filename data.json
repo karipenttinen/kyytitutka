@@ -1,15 +1,7 @@
 [
   {
-    "type": "bussi",
-    "time": 1790501158,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1790502120,
+    "time": 1790502006,
     "title": "S913",
     "detail": "Saapuu · Turku–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -17,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790502334,
+    "time": 1790502262,
     "title": "IC46",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 3",
@@ -749,6 +741,14 @@
     "time": 1790587500,
     "title": "OB91",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790587800,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
