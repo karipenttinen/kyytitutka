@@ -1,23 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1790502006,
-    "title": "S913",
-    "detail": "Saapuu · Turku–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790502262,
-    "title": "IC46",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790502781,
+    "time": 1790502842,
     "title": "S45",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -304,6 +288,22 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1790516640,
+    "title": "IC180",
+    "detail": "Saapuu · Pieksämäki–Helsinki",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790517060,
+    "title": "IC50",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
     "type": "lento",
     "time": 1790517900,
     "title": "BT355",
@@ -352,20 +352,20 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1790520300,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790521800,
     "title": "OB9",
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790521800,
+    "title": "BT356",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika (myöhässä 25 min) · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
