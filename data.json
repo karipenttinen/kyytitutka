@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1790552839,
-    "title": "PYO266",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790555700,
     "title": "V130",
@@ -278,6 +270,14 @@
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790578260,
+    "title": "IC20",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
