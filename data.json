@@ -1,13 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1790496545,
-    "title": "OHWAU",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790497500,
     "title": "OB91",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790499060,
+    "time": 1790498984,
     "title": "IC22",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790499159,
+    "time": 1790499102,
     "title": "IC94",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
