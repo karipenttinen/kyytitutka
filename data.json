@@ -8,20 +8,20 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1790534974,
+    "title": "S28",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790535000,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1790535060,
-    "title": "S28",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
   },
   {
     "type": "juna",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790535480,
+    "time": 1790535518,
     "title": "IC53",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
