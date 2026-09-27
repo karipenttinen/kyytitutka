@@ -1,21 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1790499192,
-    "title": "FIH30",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790499461,
-    "title": "IC33",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790500800,
     "title": "OB91",
@@ -33,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790501239,
+    "time": 1790501173,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -97,7 +81,7 @@
   },
   {
     "type": "juna",
-    "time": 1790506380,
+    "time": 1790506381,
     "title": "S171",
     "detail": "Saapuu · Helsinki–Kuopio",
     "location": "Rautatieasema · raide 3",
@@ -326,6 +310,14 @@
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790516340,
+    "title": "S39",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
