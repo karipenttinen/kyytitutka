@@ -409,6 +409,14 @@
     "demand": 1
   },
   {
+    "type": "bussi",
+    "time": 1790555700,
+    "title": "V130",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "tapahtuma",
     "time": 1790704800,
     "timeLabel": "ti 18.30–ti 21.00",
