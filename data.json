@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790503500,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1790505240,
     "title": "OB9",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
@@ -17,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790505823,
+    "time": 1790505867,
     "title": "S158",
     "detail": "Saapuu · Kuopio–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790506260,
+    "time": 1790506156,
     "title": "IC38",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -49,7 +41,7 @@
   },
   {
     "type": "lento",
-    "time": 1790507640,
+    "time": 1790507520,
     "title": "AAN121",
     "detail": "Aikataulun mukaan saapuu, lähtöpaikka Roskilde",
     "location": "Lentoasema, Pirkkala",
@@ -757,6 +749,22 @@
     "time": 1790590020,
     "title": "95",
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790590500,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790591100,
+    "title": "43",
+    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
