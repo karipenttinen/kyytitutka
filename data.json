@@ -1,15 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1790534760,
-    "title": "IC931",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790534974,
+    "time": 1790534933,
     "title": "S28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790535180,
+    "time": 1790535216,
     "title": "IC183",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -100,7 +92,7 @@
     "time": 1790542380,
     "title": "IC187",
     "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 5",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
@@ -254,6 +246,14 @@
     "detail": "Lähtöpaikka: Virrat P (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790570940,
+    "title": "IC42",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
