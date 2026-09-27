@@ -1,35 +1,11 @@
 [
   {
-    "type": "juna",
-    "time": 1790520754,
-    "title": "IC147",
-    "detail": "Saapuu · Helsinki–Kuopio",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790521126,
-    "title": "IC51",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790521800,
     "title": "OB9",
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790521800,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika (myöhässä 25 min) · Suljettu",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "juna",
@@ -41,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790522853,
+    "time": 1790522901,
     "title": "141T",
     "detail": "Lähtöpaikka: Huittinen, ABC",
     "location": "Linja-autoasema",
@@ -82,7 +58,7 @@
   },
   {
     "type": "juna",
-    "time": 1790524328,
+    "time": 1790524275,
     "title": "S54",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -98,7 +74,7 @@
   },
   {
     "type": "juna",
-    "time": 1790524784,
+    "time": 1790524841,
     "title": "IC49",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -305,12 +281,28 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1790537460,
+    "title": "PYO265",
+    "detail": "Saapuu · Helsinki–KJÄ",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790538240,
     "title": "OB9",
     "detail": "Lähtöpaikka: 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790538600,
+    "title": "S152",
+    "detail": "Saapuu · Kuopio–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
   },
   {
     "type": "bussi",
