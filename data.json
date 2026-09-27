@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790531100,
-    "title": "OB36",
-    "detail": "Lähtöpaikka: Tulo (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1790531400,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
@@ -17,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790531460,
+    "time": 1790531456,
     "title": "IC56",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790531580,
+    "time": 1790531560,
     "title": "IC149",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790531797,
+    "time": 1790531759,
     "title": "IC148",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -764,6 +756,14 @@
     "time": 1790616600,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790617800,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
