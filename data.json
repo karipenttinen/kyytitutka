@@ -457,6 +457,14 @@
     "demand": 1
   },
   {
+    "type": "bussi",
+    "time": 1790572200,
+    "title": "43",
+    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "tapahtuma",
     "time": 1790704800,
     "timeLabel": "ti 18.30–ti 21.00",
