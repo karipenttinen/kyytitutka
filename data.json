@@ -1,23 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790522944,
-    "title": "141T",
-    "detail": "Lähtöpaikka: Huittinen, ABC",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "tapahtuma",
-    "time": 1790523000,
-    "timeLabel": "16.00–18.30",
-    "title": "Ilves-TPS",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Nokia Arena",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
     "time": 1790523900,
     "title": "Länsilinjat / Kankaanpää - Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Kankaanpää 3 (aikatauluaika)",
@@ -42,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790523990,
+    "time": 1790524110,
     "title": "S54",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -58,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1790524928,
+    "time": 1790525009,
     "title": "IC49",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
