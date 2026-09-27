@@ -417,6 +417,14 @@
     "demand": 1
   },
   {
+    "type": "bussi",
+    "time": 1790567400,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "tapahtuma",
     "time": 1790704800,
     "timeLabel": "ti 18.30–ti 21.00",
