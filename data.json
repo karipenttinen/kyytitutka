@@ -1,13 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1790476200,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Suljettu",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790491440,
     "title": "OB9",
