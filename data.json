@@ -64,6 +64,14 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1790507640,
+    "title": "AAN121",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Roskilde",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790508540,
     "title": "OB9",
