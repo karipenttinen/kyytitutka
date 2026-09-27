@@ -1,19 +1,19 @@
 [
   {
-    "type": "juna",
-    "time": 1790537125,
-    "title": "PYO265",
-    "detail": "Saapuu · Helsinki–KJÄ",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790538240,
     "title": "OB9",
     "detail": "Lähtöpaikka: 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790538544,
+    "title": "S32",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "juna",
@@ -29,14 +29,6 @@
     "title": "IC185",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790538900,
-    "title": "S32",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -270,6 +262,14 @@
     "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790574120,
+    "title": "IC905",
+    "detail": "Saapuu · Turku–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
   },
   {
     "type": "bussi",
