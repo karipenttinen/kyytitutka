@@ -3,7 +3,7 @@
     "type": "lento",
     "time": 1790562600,
     "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Lähdössä",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Suljettu",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -49,7 +49,7 @@
   },
   {
     "type": "juna",
-    "time": 1790567580,
+    "time": 1790567586,
     "title": "IC35",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -89,7 +89,7 @@
   },
   {
     "type": "juna",
-    "time": 1790570400,
+    "time": 1790570436,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
