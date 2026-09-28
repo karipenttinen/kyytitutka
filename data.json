@@ -17,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790625540,
+    "time": 1790625457,
     "title": "PYO933",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 2",
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790626349,
+    "time": 1790626333,
     "title": "PYO269",
     "detail": "Saapuu · Helsinki–Kolari",
     "location": "Rautatieasema · raide 1",
@@ -36,14 +36,14 @@
     "time": 1790628780,
     "title": "IC187",
     "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 5",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
     "type": "lento",
     "time": 1790632200,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika · Myöhässä",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -751,6 +751,22 @@
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1790711700,
+    "title": "V130",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790711700,
+    "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
+    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
