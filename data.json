@@ -1,39 +1,15 @@
 [
   {
     "type": "lento",
-    "time": 1790616548,
-    "title": "OHCOG",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790616588,
-    "title": "OHCWO",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790616599,
+    "time": 1790617573,
     "title": "OHCMO",
     "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1790616600,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1790617726,
+    "time": 1790617596,
     "title": "S56",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -49,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790617969,
+    "time": 1790617965,
     "title": "IC148",
     "detail": "Saapuu · Pieksämäki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -57,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790617980,
+    "time": 1790617974,
     "title": "IC149",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -97,7 +73,7 @@
   },
   {
     "type": "juna",
-    "time": 1790622995,
+    "time": 1790622921,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
