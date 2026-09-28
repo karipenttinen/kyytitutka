@@ -1,13 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1790562600,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Suljettu",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1790562900,
     "title": "PYO274",
@@ -26,14 +18,6 @@
   {
     "type": "juna",
     "time": 1790567400,
-    "title": "IC80",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790567400,
     "title": "IC460",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -46,6 +30,14 @@
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790567458,
+    "title": "IC80",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
   },
   {
     "type": "juna",
