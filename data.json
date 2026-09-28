@@ -33,14 +33,6 @@
   },
   {
     "type": "juna",
-    "time": 1790567495,
-    "title": "PYO276",
-    "detail": "Saapuu · Kolari–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1790567586,
     "title": "IC35",
     "detail": "Saapuu · Helsinki–Rovaniemi",
@@ -62,6 +54,14 @@
     "detail": "Lähtöpaikka: Pälkäne (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790567800,
+    "title": "PYO276",
+    "detail": "Saapuu · Kolari–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
