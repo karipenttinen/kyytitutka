@@ -1,26 +1,18 @@
 [
   {
-    "type": "bussi",
-    "time": 1790587800,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1790588831,
-    "title": "S46",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 3",
+    "type": "lento",
+    "time": 1790589335,
+    "title": "FNF435",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
-    "type": "juna",
-    "time": 1790589183,
-    "title": "IC45",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 2",
+    "type": "lento",
+    "time": 1790589336,
+    "title": "FIH30",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -88,20 +80,20 @@
     "demand": 1
   },
   {
-    "type": "juna",
-    "time": 1790593080,
-    "title": "IC25",
-    "detail": "Saapuu · Helsinki–Rovaniemi",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790593500,
     "title": "OB9",
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790593573,
+    "title": "IC25",
+    "detail": "Saapuu · Helsinki–Rovaniemi",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -185,9 +177,9 @@
   },
   {
     "type": "bussi",
-    "time": 1790598600,
+    "time": 1790598515,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -382,6 +374,22 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790606700,
+    "title": "IC470",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790606820,
+    "title": "IC923",
+    "detail": "Saapuu · Turku–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
   },
   {
     "type": "bussi",
