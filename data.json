@@ -1,39 +1,23 @@
 [
   {
     "type": "lento",
-    "time": 1790620378,
-    "title": "OHCWO",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790620379,
+    "time": 1790621766,
     "title": "OHCMO",
     "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
-    "type": "juna",
-    "time": 1790621160,
-    "title": "IC931",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 3",
+    "type": "lento",
+    "time": 1790621787,
+    "title": "OHCOG",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1790621580,
-    "title": "IC183",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790621880,
+    "time": 1790621822,
     "title": "S53",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -41,10 +25,10 @@
   },
   {
     "type": "juna",
-    "time": 1790623026,
+    "time": 1790622955,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
@@ -272,12 +256,28 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1790659440,
+    "title": "S30",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790659800,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790660520,
+    "title": "IC905",
+    "detail": "Saapuu · Turku–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
   },
   {
     "type": "bussi",
