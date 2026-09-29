@@ -1,13 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1790710847,
-    "title": "OHCWO",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790711700,
     "title": "V130",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790711933,
+    "time": 1790711768,
     "title": "PYO933",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 2",
