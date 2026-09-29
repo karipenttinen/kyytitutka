@@ -1,7 +1,7 @@
 [
   {
     "type": "lento",
-    "time": 1790717287,
+    "time": 1790718149,
     "title": "OHCWO",
     "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
     "location": "Lentoasema, Pirkkala",
@@ -9,9 +9,9 @@
   },
   {
     "type": "lento",
-    "time": 1790718180,
+    "time": 1790718360,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (7 min etuajassa) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika · Arvioitu aika · vahvistettu tutkalla juuri nyt (aikaperusteinen täsmäys)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
