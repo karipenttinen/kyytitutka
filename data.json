@@ -1,7 +1,7 @@
 [
   {
     "type": "bussi",
-    "time": 1790656118,
+    "time": 1790656096,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790656840,
+    "time": 1790656757,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -57,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1790657954,
+    "time": 1790658183,
     "title": "IC21",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -73,7 +73,7 @@
   },
   {
     "type": "juna",
-    "time": 1790659440,
+    "time": 1790659437,
     "title": "S30",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -105,7 +105,7 @@
   },
   {
     "type": "juna",
-    "time": 1790660940,
+    "time": 1790660997,
     "title": "IC150",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
