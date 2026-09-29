@@ -1,13 +1,5 @@
 [
   {
-    "type": "bussi",
-    "time": 1790642100,
-    "title": "V130",
-    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "lento",
     "time": 1790649000,
     "title": "BT358",
