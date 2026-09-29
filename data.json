@@ -1,9 +1,9 @@
 [
   {
     "type": "bussi",
-    "time": 1790652361,
+    "time": 1790652600,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -97,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1790657340,
+    "time": 1790657383,
     "title": "S140",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
