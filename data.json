@@ -1,31 +1,15 @@
 [
   {
     "type": "lento",
-    "time": 1790708370,
-    "title": "OHCMO",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790708370,
-    "title": "OHCOG",
+    "time": 1790709537,
+    "title": "OHCWO",
     "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1790708432,
-    "title": "S53",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790710197,
+    "time": 1790709607,
     "title": "PYO265",
     "detail": "Saapuu · Helsinki–KJÄ",
     "location": "Rautatieasema · raide 3",
@@ -57,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1790715180,
+    "time": 1790715185,
     "title": "IC187",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -294,6 +278,14 @@
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790747460,
+    "title": "S44",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
