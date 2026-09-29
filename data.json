@@ -1,13 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1790718896,
-    "title": "OHCWO",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1790722500,
     "title": "PYO273",
