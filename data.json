@@ -1,45 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1790657277,
-    "title": "IC42",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1790657280,
-    "title": "97A/95",
-    "detail": "Lähtöpaikka: Virrat P (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1790657341,
-    "title": "S140",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1790657400,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1790658246,
-    "title": "IC21",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790658600,
     "title": "43",
@@ -57,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790659744,
+    "time": 1790659791,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -288,6 +248,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1790671200,
+    "title": "HDM424",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790671500,
     "title": "OB37",
@@ -296,12 +264,28 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1790671800,
+    "title": "IC94",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790671800,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790671860,
+    "title": "IC22",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -749,6 +733,22 @@
     "time": 1790742600,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790743680,
+    "title": "97A/95",
+    "detail": "Lähtöpaikka: Virrat P (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790743800,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
