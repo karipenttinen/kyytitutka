@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1790786760,
+    "time": 1790786612,
     "title": "IC472",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790786820,
+    "time": 1790786910,
     "title": "IC927",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -17,23 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790787117,
-    "title": "IC34",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790787180,
-    "title": "S89",
-    "detail": "Saapuu · Helsinki–Jyväskylä",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790787213,
+    "time": 1790787208,
     "title": "S88",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -41,10 +25,10 @@
   },
   {
     "type": "juna",
-    "time": 1790787300,
-    "title": "HDM428",
-    "detail": "Saapuu · KEU–Tampere",
-    "location": "Rautatieasema · raide 4",
+    "time": 1790787272,
+    "title": "S89",
+    "detail": "Saapuu · Helsinki–Jyväskylä",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -73,6 +57,14 @@
   },
   {
     "type": "juna",
+    "time": 1790787303,
+    "title": "IC34",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
     "time": 1790787480,
     "title": "IC29",
     "detail": "Saapuu · Helsinki–Oulu",
@@ -80,8 +72,16 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1790787621,
+    "title": "HDM428",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
     "type": "bussi",
-    "time": 1790789191,
+    "time": 1790789201,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -113,7 +113,7 @@
   },
   {
     "type": "juna",
-    "time": 1790791082,
+    "time": 1790791132,
     "title": "IC148",
     "detail": "Saapuu · Pieksämäki–Tampere",
     "location": "Rautatieasema · raide 5",
