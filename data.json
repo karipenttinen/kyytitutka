@@ -1,35 +1,10 @@
 [
   {
-    "type": "bussi",
-    "time": 1790790600,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790791200,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Kyröskoski (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "tapahtuma",
-    "time": 1790791200,
-    "timeLabel": "18.30–21.00",
-    "title": "Tappara-KooKoo",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Nokia Arena",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790791438,
-    "title": "IC148",
-    "detail": "Saapuu · Pieksämäki–Tampere",
-    "location": "Rautatieasema · raide 5",
+    "type": "lento",
+    "time": 1790791877,
+    "title": "OHCMO",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -42,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790794417,
+    "time": 1790794386,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -50,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790794600,
+    "time": 1790794725,
     "title": "IC183",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -58,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790794745,
+    "time": 1790794959,
     "title": "S53",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -113,14 +88,6 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1790805000,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1790808900,
     "title": "PYO273",
@@ -143,14 +110,6 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790821800,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "juna",
@@ -271,6 +230,14 @@
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790830680,
+    "title": "IC21",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -505,14 +472,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1790856000,
-    "title": "FTL323",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790856420,
     "title": "95",
@@ -745,6 +704,14 @@
     "demand": 1
   },
   {
+    "type": "bussi",
+    "time": 1790877600,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Kyröskoski (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "tapahtuma",
     "time": 1790883000,
     "timeLabel": "to 20.00–to 22.30",
@@ -767,6 +734,15 @@
     "time": 1791045000,
     "timeLabel": "la 17.00–la 19.30",
     "title": "Ilves-Kiekko-Espoo",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Nokia Arena",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1791396000,
+    "timeLabel": "ke 18.30–ke 21.00",
+    "title": "Tappara-Storhamar (CHL)",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
     "demand": 2
