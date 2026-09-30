@@ -1,18 +1,10 @@
 [
   {
     "type": "lento",
-    "time": 1790801119,
-    "title": "OHCOG",
+    "time": 1790802565,
+    "title": "OHCMO",
     "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
     "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790801586,
-    "title": "IC187",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
@@ -286,6 +278,14 @@
     "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790836740,
+    "title": "IC476",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -722,7 +722,7 @@
   {
     "type": "tapahtuma",
     "time": 1790883000,
-    "timeLabel": "to 20.00–to 22.30",
+    "timeLabel": "20.00–22.30",
     "title": "Music x Media 2026",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Tampere-talo",
