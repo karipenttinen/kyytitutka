@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1790843760,
+    "time": 1790843715,
     "title": "IC464",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790844036,
+    "time": 1790843952,
     "title": "HDM424",
     "detail": "Saapuu · KEU–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790844660,
+    "time": 1790844629,
     "title": "IC22",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -49,7 +49,7 @@
   },
   {
     "type": "juna",
-    "time": 1790844819,
+    "time": 1790844844,
     "title": "IC94",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -57,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1790845658,
+    "time": 1790845660,
     "title": "S33",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -81,7 +81,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790846807,
+    "time": 1790846839,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -92,7 +92,7 @@
     "time": 1790848260,
     "title": "S46",
     "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -200,14 +200,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1790854080,
-    "title": "NJE211D",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Farnborough AB",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790854800,
     "title": "OB37",
@@ -253,14 +245,6 @@
     "title": "IC37",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790856000,
-    "title": "FTL323",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
-    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -561,28 +545,12 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1790891400,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790901300,
     "title": "V130",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790908200,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
