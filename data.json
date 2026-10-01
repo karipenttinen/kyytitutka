@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790868300,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1790869500,
     "title": "OB37",
     "detail": "Lähtöpaikka: Lahti, Matkakeskus laituri 3 (aikatauluaika)",
@@ -20,14 +12,6 @@
     "time": 1790869500,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790870006,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -48,8 +32,16 @@
     "demand": 2
   },
   {
+    "type": "bussi",
+    "time": 1790870154,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "juna",
-    "time": 1790870340,
+    "time": 1790870375,
     "title": "IC49",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -145,7 +137,7 @@
   },
   {
     "type": "juna",
-    "time": 1790873880,
+    "time": 1790874484,
     "title": "IC29",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -821,6 +813,14 @@
     "time": 1790953800,
     "title": "OB9",
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790954700,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
