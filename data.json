@@ -1,7 +1,15 @@
 [
   {
+    "type": "lento",
+    "time": 1790872870,
+    "title": "OHCWO",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "juna",
-    "time": 1790873160,
+    "time": 1790873012,
     "title": "IC472",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -9,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790873243,
+    "time": 1790873156,
     "title": "IC927",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -33,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1790873640,
+    "time": 1790873582,
     "title": "IC34",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -73,7 +81,7 @@
   },
   {
     "type": "juna",
-    "time": 1790874745,
+    "time": 1790874810,
     "title": "IC29",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -137,7 +145,7 @@
   },
   {
     "type": "juna",
-    "time": 1790880660,
+    "time": 1790880755,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -805,6 +813,30 @@
     "time": 1790956800,
     "title": "141T",
     "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790958000,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: Uusi terminaali (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790958600,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790959200,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
