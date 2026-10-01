@@ -1,9 +1,9 @@
 [
   {
     "type": "bussi",
-    "time": 1790825222,
+    "time": 1790825400,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -17,15 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790826787,
-    "title": "IC35",
-    "detail": "Saapuu · Helsinki–Rovaniemi",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790826840,
+    "time": 1790826625,
     "title": "IC40",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -33,10 +25,10 @@
   },
   {
     "type": "juna",
-    "time": 1790826876,
-    "title": "IC80",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 5",
+    "time": 1790826787,
+    "title": "IC35",
+    "detail": "Saapuu · Helsinki–Rovaniemi",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
@@ -49,7 +41,15 @@
   },
   {
     "type": "juna",
-    "time": 1790827626,
+    "time": 1790827000,
+    "title": "IC80",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790827575,
     "title": "IC460",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -57,7 +57,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790828868,
+    "time": 1790828882,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -97,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1790830140,
+    "time": 1790830183,
     "title": "S140",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -113,7 +113,7 @@
   },
   {
     "type": "juna",
-    "time": 1790830680,
+    "time": 1790830687,
     "title": "IC21",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -735,6 +735,14 @@
     "detail": "Aikataulun mukaan lähtee, määränpää Riika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1790911800,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
