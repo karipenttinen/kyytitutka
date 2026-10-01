@@ -1,33 +1,17 @@
 [
   {
-    "type": "juna",
-    "time": 1790834188,
-    "title": "IC466",
-    "detail": "Saapuu · Pori–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790834314,
-    "title": "IC41",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
-    "time": 1790836169,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
+    "time": 1790836200,
+    "title": "43",
+    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "bussi",
-    "time": 1790836200,
-    "title": "43",
-    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
+    "time": 1790836491,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -49,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1790837460,
+    "time": 1790837459,
     "title": "IC20",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -73,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1790838073,
+    "time": 1790838118,
     "title": "IC23",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -145,7 +129,7 @@
   },
   {
     "type": "juna",
-    "time": 1790841180,
+    "time": 1790841192,
     "title": "IC93",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -320,6 +304,22 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1790851860,
+    "title": "IC38",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790852280,
+    "title": "IC25",
+    "detail": "Saapuu · Helsinki–Rovaniemi",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790852400,
     "title": "141",
@@ -350,6 +350,14 @@
     "detail": "Lähtöpaikka: Ikaalinen Spa (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790854080,
+    "title": "NJE211D",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Farnborough AB",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
