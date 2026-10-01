@@ -1,45 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1790875751,
-    "title": "OHCOG",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1790875800,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790875803,
-    "title": "OHCMO",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790875805,
-    "title": "OHCWO",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790876860,
-    "title": "S56",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790877000,
     "title": "OB3",
@@ -49,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790877185,
+    "time": 1790877230,
     "title": "IC149",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -57,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790877253,
+    "time": 1790877255,
     "title": "IC148",
     "detail": "Saapuu · Pieksämäki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -81,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1790880778,
+    "time": 1790880777,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -295,6 +255,14 @@
     "detail": "Lähtöpaikka: Virrat P (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790916540,
+    "title": "IC42",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -869,6 +837,14 @@
     "time": 1790962200,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790963100,
+    "title": "OB36",
+    "detail": "Lähtöpaikka: Tulo (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
