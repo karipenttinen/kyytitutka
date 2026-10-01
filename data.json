@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1790845590,
-    "title": "S33",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790846400,
     "title": "OB3",
@@ -25,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790846856,
+    "time": 1790846957,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -144,14 +136,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1790854080,
-    "title": "NJE211D",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Farnborough AB",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790854800,
     "title": "OB37",
@@ -197,14 +181,6 @@
     "title": "IC37",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790856000,
-    "title": "FTL323",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
-    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -376,6 +352,14 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1790863080,
+    "title": "IC47",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790863800,
     "title": "43",
@@ -545,28 +529,12 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1790891400,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790901300,
     "title": "V130",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790908200,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
