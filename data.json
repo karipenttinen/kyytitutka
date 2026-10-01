@@ -9,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790822100,
+    "time": 1790821865,
     "title": "PYO274",
     "detail": "Saapuu · KJÄ–Helsinki",
     "location": "Rautatieasema · raide 3",
@@ -17,9 +17,9 @@
   },
   {
     "type": "bussi",
-    "time": 1790825400,
+    "time": 1790825114,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -73,9 +73,9 @@
   },
   {
     "type": "bussi",
-    "time": 1790829000,
+    "time": 1790828868,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
