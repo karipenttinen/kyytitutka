@@ -1,15 +1,15 @@
 [
   {
     "type": "bussi",
-    "time": 1790829157,
+    "time": 1790829000,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "juna",
-    "time": 1790829642,
+    "time": 1790829554,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -57,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1790830790,
+    "time": 1790830890,
     "title": "IC21",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -73,7 +73,7 @@
   },
   {
     "type": "juna",
-    "time": 1790832240,
+    "time": 1790832016,
     "title": "S30",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -81,7 +81,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790832462,
+    "time": 1790832488,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -145,7 +145,7 @@
   },
   {
     "type": "juna",
-    "time": 1790834280,
+    "time": 1790834287,
     "title": "IC41",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -265,7 +265,7 @@
   },
   {
     "type": "juna",
-    "time": 1790840940,
+    "time": 1790840941,
     "title": "IC142",
     "detail": "Saapuu · Kuopio–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -733,6 +733,14 @@
     "time": 1790913300,
     "title": "43",
     "detail": "Lähtöpaikka: Pälkäne (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790915400,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
