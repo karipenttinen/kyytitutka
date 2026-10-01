@@ -1,22 +1,5 @@
 [
   {
-    "type": "tapahtuma",
-    "time": 1790883000,
-    "timeLabel": "20.00–22.30",
-    "title": "Music x Media 2026",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Tampere-talo",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1790883168,
-    "title": "OHCOG",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790884500,
     "title": "V130",
@@ -34,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790884718,
+    "time": 1790884673,
     "title": "PYO933",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 2",
@@ -870,6 +853,14 @@
     "time": 1790967000,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790970240,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
