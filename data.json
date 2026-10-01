@@ -1,25 +1,9 @@
 [
   {
     "type": "bussi",
-    "time": 1790846400,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790846700,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790846957,
+    "time": 1790847000,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -96,20 +80,20 @@
     "demand": 2
   },
   {
+    "type": "bussi",
+    "time": 1790852094,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "juna",
-    "time": 1790852280,
+    "time": 1790852296,
     "title": "IC25",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1790852400,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "bussi",
@@ -136,6 +120,14 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1790854080,
+    "title": "NJE211D",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Farnborough AB",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790854800,
     "title": "OB37",
@@ -153,7 +145,7 @@
   },
   {
     "type": "juna",
-    "time": 1790855460,
+    "time": 1790855521,
     "title": "IC144",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -181,6 +173,14 @@
     "title": "IC37",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1790856000,
+    "title": "FTL323",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -310,6 +310,14 @@
     "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790861400,
+    "title": "NJE634E",
+    "detail": "Aikataulun mukaan lähtee, määränpää Tukholma Bromma",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "juna",
@@ -529,12 +537,28 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1790891400,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790901300,
     "title": "V130",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790908200,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -717,6 +741,30 @@
     "time": 1790931000,
     "title": "OB3",
     "detail": "Lähtöpaikka: Uusi terminaali (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790932800,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790932800,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1790933400,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
