@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1790951287,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1790952000,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
@@ -17,15 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1790952300,
-    "title": "IC470",
-    "detail": "Saapuu · Pori–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790952423,
+    "time": 1790952325,
     "title": "IC923",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -33,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1790952606,
+    "time": 1790952544,
     "title": "IC146",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -41,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1790952660,
+    "time": 1790952629,
     "title": "IC26",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -112,6 +96,14 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1790955891,
+    "title": "IC54",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1790955900,
     "title": "OB37",
@@ -128,6 +120,14 @@
     "demand": 1
   },
   {
+    "type": "bussi",
+    "time": 1790956303,
+    "title": "141T",
+    "detail": "Lähtöpaikka: Huittinen, ABC",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "juna",
     "time": 1790956380,
     "title": "IC177",
@@ -137,27 +137,11 @@
   },
   {
     "type": "juna",
-    "time": 1790956440,
-    "title": "IC54",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1790956680,
     "title": "IC49",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1790956800,
-    "title": "141T",
-    "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "bussi",
@@ -334,6 +318,14 @@
     "title": "Tappara-Jokerit",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790966760,
+    "title": "IC931",
+    "detail": "Saapuu · TUS–Tampere",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -685,6 +677,14 @@
     "time": 1791037200,
     "title": "Länsilinjat / (Kylpylä) - Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen Spa (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791038400,
+    "title": "OB37",
+    "detail": "Lähtöpaikka: Matkakeskus 4 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
