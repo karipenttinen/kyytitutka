@@ -1,17 +1,9 @@
 [
   {
-    "type": "juna",
-    "time": 1790974807,
-    "title": "PYO269",
-    "detail": "Saapuu · Helsinki–Kolari",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "lento",
     "time": 1790977800,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -262,6 +254,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791013620,
+    "title": "IC909",
+    "detail": "Saapuu · TUS–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -554,7 +554,7 @@
   {
     "type": "tapahtuma",
     "time": 1791045000,
-    "timeLabel": "la 17.00–la 19.30",
+    "timeLabel": "17.00–19.30",
     "title": "Ilves-Kiekko-Espoo",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
