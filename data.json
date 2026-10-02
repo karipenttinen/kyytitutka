@@ -81,9 +81,9 @@
   },
   {
     "type": "bussi",
-    "time": 1790915400,
+    "time": 1790915145,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
