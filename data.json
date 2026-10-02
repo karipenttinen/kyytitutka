@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1790931388,
-    "title": "S33",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790932800,
     "title": "OB91",
@@ -25,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1790933372,
+    "time": 1790933423,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -105,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1790938020,
+    "time": 1790938021,
     "title": "S915",
     "detail": "Saapuu · Turku–Kuopio",
     "location": "Rautatieasema · raide 5",
@@ -121,7 +113,7 @@
   },
   {
     "type": "juna",
-    "time": 1790938380,
+    "time": 1790938383,
     "title": "IC171",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -211,7 +203,7 @@
     "type": "lento",
     "time": 1790941800,
     "title": "BT355",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika · Myöhässä",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -406,6 +398,14 @@
     "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1790948340,
+    "title": "S39",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
