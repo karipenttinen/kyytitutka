@@ -1,21 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1790908200,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Lähtenyt",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1790908575,
-    "title": "PYO274",
-    "detail": "Saapuu · KJÄ–Helsinki",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790911470,
     "title": "141",
@@ -73,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1790914380,
+    "time": 1790914244,
     "title": "PYO276",
     "detail": "Saapuu · Kolari–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -261,6 +245,14 @@
     "title": "IC20",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790923980,
+    "title": "S165",
+    "detail": "Saapuu · Helsinki–Pori",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -887,6 +879,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1790994600,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "tapahtuma",
