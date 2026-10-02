@@ -1,35 +1,11 @@
 [
   {
-    "type": "bussi",
-    "time": 1790939220,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790939400,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Jyväskylä Matkakeskus 1 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790939700,
-    "title": "Länsilinjat / (Kylpylä) - Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen Spa (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1790939700,
-    "title": "Aitoo - Sahalahti - Tampere",
-    "detail": "Lähtöpaikka: Aitoon koulutuskeskus (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
+    "type": "lento",
+    "time": 1790940471,
+    "title": "W31",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -64,14 +40,6 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1790941800,
-    "title": "BT355",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika · Myöhässä",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1790941926,
     "title": "IC144",
@@ -97,7 +65,7 @@
   },
   {
     "type": "juna",
-    "time": 1790942283,
+    "time": 1790942346,
     "title": "IC37",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -144,14 +112,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1790944200,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790944499,
     "title": "140",
@@ -193,18 +153,18 @@
   },
   {
     "type": "juna",
-    "time": 1790945400,
-    "title": "IC86",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1790945460,
     "title": "IC24",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1790945466,
+    "title": "IC86",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
@@ -217,7 +177,7 @@
   },
   {
     "type": "juna",
-    "time": 1790945880,
+    "time": 1790945883,
     "title": "IC27",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -585,14 +545,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1790977800,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1790981700,
     "title": "V130",
@@ -615,14 +567,6 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1790994600,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -789,6 +733,14 @@
     "time": 1791025500,
     "title": "OB9",
     "detail": "Lähtöpaikka: Jyväskylä Matkakeskus 1 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791026700,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
