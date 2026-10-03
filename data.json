@@ -1,23 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1791002340,
-    "title": "HDM420",
-    "detail": "Saapuu · Jyväskylä–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791002700,
-    "title": "IC462",
-    "detail": "Saapuu · Pori–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791002940,
+    "time": 1791002786,
     "title": "IC42",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -25,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1791003006,
+    "time": 1791002956,
     "title": "IC140",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
@@ -33,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1791003805,
+    "time": 1791003772,
     "title": "S21",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -49,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1791004936,
+    "time": 1791005009,
     "title": "S30",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -185,7 +169,7 @@
   },
   {
     "type": "juna",
-    "time": 1791013740,
+    "time": 1791013746,
     "title": "IC142",
     "detail": "Saapuu · Kuopio–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -240,6 +224,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791016800,
+    "title": "HDM424",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791016800,
     "title": "OB91",
@@ -254,6 +246,14 @@
     "detail": "Lähtöpaikka: Matkakeskus 4 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791017400,
+    "title": "S94",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
   },
   {
     "type": "bussi",
