@@ -1,23 +1,7 @@
 [
   {
-    "type": "bussi",
-    "time": 1791004140,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1791004640,
-    "title": "S30",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791006120,
+    "time": 1791006055,
     "title": "IC905",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -25,18 +9,18 @@
   },
   {
     "type": "juna",
-    "time": 1791006606,
-    "title": "IC150",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 5",
+    "time": 1791006516,
+    "title": "S44",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1791006660,
-    "title": "S44",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
+    "time": 1791006654,
+    "title": "IC150",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
@@ -89,7 +73,7 @@
   },
   {
     "type": "juna",
-    "time": 1791010680,
+    "time": 1791010681,
     "title": "IC23",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -137,7 +121,7 @@
   },
   {
     "type": "juna",
-    "time": 1791013620,
+    "time": 1791013621,
     "title": "IC909",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -294,6 +278,14 @@
     "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791021060,
+    "title": "IC46",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
