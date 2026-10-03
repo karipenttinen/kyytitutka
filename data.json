@@ -1,31 +1,7 @@
 [
   {
-    "type": "bussi",
-    "time": 1791008700,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1791008873,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1791010234,
-    "title": "IC20",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791010681,
+    "time": 1791010713,
     "title": "IC23",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -73,6 +49,14 @@
   },
   {
     "type": "juna",
+    "time": 1791013492,
+    "title": "S36",
+    "detail": "Saapuu · Kokkola–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
     "time": 1791013621,
     "title": "IC909",
     "detail": "Saapuu · TUS–Tampere",
@@ -89,14 +73,6 @@
   },
   {
     "type": "juna",
-    "time": 1791013860,
-    "title": "S36",
-    "detail": "Saapuu · Kokkola–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791013981,
     "title": "S93",
     "detail": "Saapuu · Helsinki–Jyväskylä",
@@ -105,7 +81,7 @@
   },
   {
     "type": "juna",
-    "time": 1791014280,
+    "time": 1791014281,
     "title": "IC43",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -368,6 +344,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791028260,
+    "title": "IC144",
+    "detail": "Saapuu · Pieksämäki–Helsinki",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791029700,
     "title": "Länsilinjat / Ikaalinen - Tampere",
@@ -607,6 +591,14 @@
     "detail": "Aikataulun mukaan lähtee, määränpää Riika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1791096240,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
