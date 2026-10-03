@@ -20,7 +20,7 @@
     "time": 1790994900,
     "title": "PYO274",
     "detail": "Saapuu · KJÄ–Helsinki",
-    "location": "Rautatieasema · raide 3",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -613,6 +613,14 @@
     "time": 1791068100,
     "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791074100,
+    "title": "V130",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
