@@ -1,13 +1,5 @@
 [
   {
-    "type": "bussi",
-    "time": 1791223200,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Kyröskoski (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1791225977,
     "title": "IC931",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1791226635,
+    "time": 1791226875,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1791226904,
+    "time": 1791227634,
     "title": "S53",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -748,6 +740,14 @@
     "time": 1791309000,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791309600,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Kyröskoski (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
