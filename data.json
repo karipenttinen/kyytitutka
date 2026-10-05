@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1791221241,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1791222600,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1791222834,
+    "time": 1791222897,
     "title": "IC148",
     "detail": "Saapuu · Pieksämäki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1791222942,
+    "time": 1791222927,
     "title": "IC149",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -104,19 +96,19 @@
     "demand": 1
   },
   {
-    "type": "juna",
-    "time": 1791230280,
-    "title": "PYO933",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 2",
+    "type": "lento",
+    "time": 1791230160,
+    "title": "IFA1390",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Lyon (myöhässä 35 min)",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1791230400,
-    "title": "IFA1390",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Lyon (myöhässä 39 min)",
-    "location": "Lentoasema, Pirkkala",
+    "type": "juna",
+    "time": 1791230310,
+    "title": "PYO933",
+    "detail": "Saapuu · TUS–Tampere",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
@@ -748,6 +740,14 @@
     "time": 1791305700,
     "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791307800,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
