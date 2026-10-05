@@ -8,14 +8,6 @@
     "demand": 1
   },
   {
-    "type": "juna",
-    "time": 1791172200,
-    "title": "IC460",
-    "detail": "Saapuu · Pori–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791172200,
     "title": "Länsilinjat / Ikaalinen - Tampere",
@@ -33,10 +25,18 @@
   },
   {
     "type": "juna",
-    "time": 1791172440,
+    "time": 1791172292,
     "title": "IC40",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791172490,
+    "title": "IC35",
+    "detail": "Saapuu · Helsinki–Rovaniemi",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
@@ -49,18 +49,18 @@
   },
   {
     "type": "juna",
-    "time": 1791172595,
-    "title": "IC35",
-    "detail": "Saapuu · Helsinki–Rovaniemi",
-    "location": "Rautatieasema · raide 2",
+    "time": 1791173228,
+    "title": "PYO276",
+    "detail": "Saapuu · Kolari–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1791173050,
-    "title": "PYO276",
-    "detail": "Saapuu · Kolari–Helsinki",
-    "location": "Rautatieasema · raide 1",
+    "time": 1791174023,
+    "title": "IC460",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -105,7 +105,7 @@
   },
   {
     "type": "juna",
-    "time": 1791175740,
+    "time": 1791175788,
     "title": "IC140",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -121,7 +121,7 @@
   },
   {
     "type": "juna",
-    "time": 1791176280,
+    "time": 1791176287,
     "title": "IC21",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -750,6 +750,14 @@
     "detail": "Aikataulun mukaan lähtee, määränpää Riika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1791257400,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
