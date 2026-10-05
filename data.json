@@ -16,6 +16,14 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1791252558,
+    "title": "MV10420",
+    "detail": "Saapuu · Jyväskylä–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
     "type": "lento",
     "time": 1791253800,
     "title": "BT358",
@@ -29,14 +37,6 @@
     "title": "PYO274",
     "detail": "Saapuu · KJÄ–Helsinki",
     "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791254191,
-    "title": "MV10420",
-    "detail": "Saapuu · Jyväskylä–Tampere",
-    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
