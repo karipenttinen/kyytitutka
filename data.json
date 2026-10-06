@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1791319969,
-    "title": "IC187",
-    "detail": "Saapuu · Helsinki–Tampere",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
     "type": "lento",
     "time": 1791323400,
     "title": "BT357",
@@ -285,6 +277,14 @@
     "title": "IC165",
     "detail": "Saapuu · Helsinki–Pori",
     "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791356280,
+    "title": "IC23",
+    "detail": "Saapuu · Helsinki–Tampere",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -714,7 +714,7 @@
   {
     "type": "tapahtuma",
     "time": 1791396000,
-    "timeLabel": "ke 18.30–ke 21.00",
+    "timeLabel": "18.30–21.00",
     "title": "Tappara-Storhamar (CHL)",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
