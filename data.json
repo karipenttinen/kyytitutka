@@ -25,17 +25,17 @@
   },
   {
     "type": "bussi",
-    "time": 1791268100,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
+    "time": 1791268200,
+    "title": "43",
+    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "bussi",
-    "time": 1791268200,
-    "title": "43",
-    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
+    "time": 1791268209,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -89,7 +89,7 @@
   },
   {
     "type": "juna",
-    "time": 1791270459,
+    "time": 1791270616,
     "title": "IC23",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
