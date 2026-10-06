@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1791277731,
-    "title": "S33",
-    "detail": "Saapuu · Helsinki–Parkano",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791278400,
     "title": "OB3",
@@ -25,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791278842,
+    "time": 1791278827,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1791280260,
+    "time": 1791280032,
     "title": "IC46",
     "detail": "Saapuu · Parkano–Helsinki",
     "location": "Rautatieasema · raide 2",
@@ -41,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1791280559,
+    "time": 1791280779,
     "title": "IC45",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -414,6 +406,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791297900,
+    "title": "IC470",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
   },
   {
     "type": "lento",
