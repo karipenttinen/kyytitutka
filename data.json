@@ -1,9 +1,9 @@
 [
   {
     "type": "lento",
-    "time": 1791324540,
+    "time": 1791324420,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (myöhässä 19 min) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (myöhässä 17 min) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -735,6 +735,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1791409800,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "tapahtuma",
