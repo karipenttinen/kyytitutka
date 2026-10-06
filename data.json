@@ -1,15 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1791280234,
-    "title": "IC46",
-    "detail": "Saapuu · Parkano–Helsinki",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791280932,
+    "time": 1791281119,
     "title": "IC45",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -73,7 +65,7 @@
   },
   {
     "type": "juna",
-    "time": 1791284352,
+    "time": 1791284430,
     "title": "IC25",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -113,7 +105,7 @@
   },
   {
     "type": "juna",
-    "time": 1791287220,
+    "time": 1791287229,
     "title": "IC917",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -178,16 +170,16 @@
   {
     "type": "bussi",
     "time": 1791289800,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "title": "43",
+    "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "bussi",
-    "time": 1791289800,
-    "title": "43",
-    "detail": "Lähtöpaikka: Sammon Kulma L (aikatauluaika)",
+    "time": 1791289867,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -392,6 +384,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791298020,
+    "title": "IC923",
+    "detail": "Saapuu · Turku–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
     "type": "lento",
     "time": 1791299100,
     "title": "BT525",
@@ -406,6 +406,14 @@
     "detail": "Lähtöpaikka: 6 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1791299400,
+    "title": "ABF2",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Düsseldorf",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
