@@ -1,18 +1,18 @@
 [
   {
-    "type": "lento",
-    "time": 1791318585,
-    "title": "OHCOG",
-    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
-    "time": 1791320002,
+    "time": 1791319969,
     "title": "IC187",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1791323400,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -22,6 +22,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1791340200,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -454,6 +462,14 @@
     "detail": "Lähtöpaikka: Kotkan linja-autoasema PÄÄTEPYSÄKKI (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1791374400,
+    "title": "FTL323",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
