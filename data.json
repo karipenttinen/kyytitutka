@@ -1,47 +1,7 @@
 [
   {
-    "type": "bussi",
-    "time": 1791384000,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1791384216,
-    "title": "IC470",
-    "detail": "Saapuu · Pori–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791384562,
-    "title": "IC26",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791384765,
-    "title": "S146",
-    "detail": "Saapuu · Pieksämäki–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791384847,
-    "title": "IC923",
-    "detail": "Saapuu · Turku–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791385380,
+    "time": 1791385687,
     "title": "IC147",
     "detail": "Saapuu · Helsinki–Kuopio",
     "location": "Rautatieasema · raide 3",
@@ -49,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1791385696,
+    "time": 1791385784,
     "title": "IC51",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -73,18 +33,10 @@
   },
   {
     "type": "juna",
-    "time": 1791386995,
+    "time": 1791387102,
     "title": "S59",
     "detail": "Saapuu · Helsinki–Kokkola",
     "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791387827,
-    "title": "S54",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -105,6 +57,14 @@
   },
   {
     "type": "juna",
+    "time": 1791388176,
+    "title": "S54",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
     "time": 1791388452,
     "title": "IC177",
     "detail": "Saapuu · Helsinki–Tampere",
@@ -121,7 +81,7 @@
   },
   {
     "type": "juna",
-    "time": 1791388776,
+    "time": 1791389044,
     "title": "IC49",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -225,9 +185,9 @@
   },
   {
     "type": "bussi",
-    "time": 1791394200,
+    "time": 1791394063,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -278,6 +238,38 @@
     "title": "Tappara-Storhamar (CHL)",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791398760,
+    "title": "IC931",
+    "detail": "Saapuu · TUS–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791399180,
+    "title": "IC183",
+    "detail": "Saapuu · Helsinki–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791399266,
+    "title": "IC28",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791399480,
+    "title": "S53",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
