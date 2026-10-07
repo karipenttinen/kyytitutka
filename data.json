@@ -1,9 +1,9 @@
 [
   {
     "type": "bussi",
-    "time": 1791343822,
+    "time": 1791343800,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1791345053,
+    "time": 1791345147,
     "title": "IC80",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -57,7 +57,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791347493,
+    "time": 1791347525,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -97,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1791348540,
+    "time": 1791348588,
     "title": "S140",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -113,7 +113,7 @@
   },
   {
     "type": "juna",
-    "time": 1791349080,
+    "time": 1791349144,
     "title": "IC21",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -440,14 +440,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1791374400,
-    "title": "FTL323",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791374820,
     "title": "95",
@@ -713,14 +705,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1791409800,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791419700,
     "title": "V130",
@@ -729,12 +713,12 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1791426600,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
+    "type": "bussi",
+    "time": 1791430200,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
