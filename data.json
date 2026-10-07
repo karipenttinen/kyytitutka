@@ -1,7 +1,7 @@
 [
   {
     "type": "bussi",
-    "time": 1791343581,
+    "time": 1791343822,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1791345236,
+    "time": 1791345197,
     "title": "IC35",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
