@@ -1,21 +1,5 @@
 [
   {
-    "type": "bussi",
-    "time": 1791359862,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1791360361,
-    "title": "IC43",
-    "detail": "Saapuu · Helsinki–Parkano",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1791362160,
     "title": "IC464",
@@ -65,7 +49,7 @@
   },
   {
     "type": "juna",
-    "time": 1791363952,
+    "time": 1791364375,
     "title": "S33",
     "detail": "Saapuu · Helsinki–Parkano",
     "location": "Rautatieasema · raide 2",
@@ -105,7 +89,7 @@
   },
   {
     "type": "juna",
-    "time": 1791366780,
+    "time": 1791366795,
     "title": "IC45",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 1",
@@ -344,12 +328,28 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791377880,
+    "title": "IC27",
+    "detail": "Saapuu · Helsinki–Rovaniemi",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791378000,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1791378000,
+    "title": "IFA1386",
+    "detail": "Aikataulun mukaan lähtee, määränpää Iraklion",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -741,6 +741,14 @@
     "time": 1791445200,
     "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791446400,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
