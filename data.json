@@ -1,15 +1,7 @@
 [
   {
-    "type": "lento",
-    "time": 1791340200,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Suljettu",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
-    "time": 1791343479,
+    "time": 1791343581,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -41,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1791345197,
+    "time": 1791345236,
     "title": "IC35",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -735,6 +727,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1791426600,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "tapahtuma",
