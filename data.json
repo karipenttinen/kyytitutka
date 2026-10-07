@@ -1,15 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1791398775,
-    "title": "IC931",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791399203,
+    "time": 1791399295,
     "title": "IC183",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -17,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1791399721,
+    "time": 1791399790,
     "title": "S53",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -25,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1791400374,
+    "time": 1791400310,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1791402326,
+    "time": 1791402312,
     "title": "PYO265",
     "detail": "Saapuu · Helsinki–KJÄ",
     "location": "Rautatieasema · raide 3",
@@ -65,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1791403980,
+    "time": 1791405438,
     "title": "PYO269",
     "detail": "Saapuu · Helsinki–Kolari",
     "location": "Rautatieasema · raide 1",
@@ -246,6 +238,14 @@
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791435480,
+    "title": "IC21",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
