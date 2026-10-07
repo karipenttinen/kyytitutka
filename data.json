@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1791402425,
+    "time": 1791402361,
     "title": "PYO265",
     "detail": "Saapuu · Helsinki–KJÄ",
     "location": "Rautatieasema · raide 3",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1791406015,
+    "time": 1791406301,
     "title": "PYO269",
     "detail": "Saapuu · Helsinki–Kolari",
     "location": "Rautatieasema · raide 1",
@@ -41,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1791406391,
+    "time": 1791406537,
     "title": "IC187",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
