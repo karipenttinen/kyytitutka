@@ -1,9 +1,9 @@
 [
   {
     "type": "lento",
-    "time": 1791496200,
+    "time": 1791496680,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (myöhässä 8 min) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -826,7 +826,7 @@
   {
     "type": "tapahtuma",
     "time": 1791568800,
-    "timeLabel": "pe 18.30–pe 21.00",
+    "timeLabel": "18.30–21.00",
     "title": "Ilves-Lukko",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
