@@ -1,9 +1,9 @@
 [
   {
     "type": "bussi",
-    "time": 1791430015,
+    "time": 1791430200,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -78,14 +78,6 @@
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1791439200,
-    "title": "UNI171",
-    "detail": "Aikataulun mukaan lähtee, määränpää Siegen",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -286,14 +278,6 @@
     "detail": "Lähtöpaikka: Kotkan linja-autoasema PÄÄTEPYSÄKKI (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1791460800,
-    "title": "FTL323",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -552,14 +536,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1791496200,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791506100,
     "title": "V130",
@@ -568,12 +544,12 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1791513000,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
+    "type": "bussi",
+    "time": 1791516600,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
