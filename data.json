@@ -88,6 +88,14 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1791439200,
+    "title": "UNI171",
+    "detail": "Aikataulun mukaan lähtee, määränpää Siegen",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791441000,
     "title": "140",
