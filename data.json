@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1791436010,
-    "title": "IC21",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791436200,
     "title": "43",
@@ -17,7 +9,7 @@
   },
   {
     "type": "juna",
-    "time": 1791437018,
+    "time": 1791436906,
     "title": "S30",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -25,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791437353,
+    "time": 1791437603,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1791438262,
+    "time": 1791438373,
     "title": "IC905",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -57,6 +49,14 @@
   },
   {
     "type": "juna",
+    "time": 1791438657,
+    "title": "IC150",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
     "time": 1791438660,
     "title": "S44",
     "detail": "Saapuu · Vaasa–Helsinki",
@@ -65,15 +65,7 @@
   },
   {
     "type": "juna",
-    "time": 1791438669,
-    "title": "IC150",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791438858,
+    "time": 1791438786,
     "title": "IC155",
     "detail": "Saapuu · Helsinki–Pieksämäki",
     "location": "Rautatieasema · raide 3",
@@ -294,6 +286,14 @@
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791449460,
+    "title": "IC22",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -732,6 +732,14 @@
     "time": 1791521400,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791522600,
+    "title": "43",
+    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
