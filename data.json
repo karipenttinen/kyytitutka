@@ -1,23 +1,7 @@
 [
   {
-    "type": "lento",
-    "time": 1791439200,
-    "title": "UNI171",
-    "detail": "Aikataulun mukaan lähtee, määränpää Siegen",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791439293,
-    "title": "IC41",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
-    "time": 1791440829,
+    "time": 1791440869,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -49,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1791442260,
+    "time": 1791442259,
     "title": "IC20",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -73,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1791443144,
+    "time": 1791443182,
     "title": "IC23",
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
@@ -325,6 +309,14 @@
     "title": "IC38",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791457080,
+    "title": "IC25",
+    "detail": "Saapuu · Helsinki–Rovaniemi",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
