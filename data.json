@@ -1,22 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1791430200,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1791431400,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1791431700,
     "title": "43",
     "detail": "Lähtöpaikka: Pälkäne (aikatauluaika)",
@@ -25,7 +9,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791433738,
+    "time": 1791433676,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -80,10 +64,18 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1791439200,
+    "title": "UNI171",
+    "detail": "Aikataulun mukaan lähtee, määränpää Siegen",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
-    "time": 1791441000,
+    "time": 1791440820,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -278,6 +270,14 @@
     "detail": "Lähtöpaikka: Kotkan linja-autoasema PÄÄTEPYSÄKKI (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1791460800,
+    "title": "FTL323",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -536,6 +536,14 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1791496200,
+    "title": "BT357",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791506100,
     "title": "V130",
@@ -544,10 +552,34 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1791513000,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791516600,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791517800,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791518100,
+    "title": "43",
+    "detail": "Lähtöpaikka: Pälkäne (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
