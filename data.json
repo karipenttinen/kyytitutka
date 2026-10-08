@@ -1,14 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1791433751,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1791434880,
     "title": "97A/95",
     "detail": "Lähtöpaikka: Virrat P (aikatauluaika)",
@@ -572,6 +564,14 @@
     "time": 1791518100,
     "title": "43",
     "detail": "Lähtöpaikka: Pälkäne (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791520200,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
