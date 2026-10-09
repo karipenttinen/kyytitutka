@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791559817,
-    "title": "S59",
-    "detail": "Saapuu · Helsinki–Kokkola",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791561240,
     "title": "IC54",
     "detail": "Saapuu · Vaasa–Helsinki",
@@ -29,14 +21,6 @@
     "title": "IC177",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791564360,
-    "title": "IC472",
-    "detail": "Saapuu · Pori–Tampere",
-    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
@@ -86,14 +70,6 @@
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791566919,
-    "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "bussi",
@@ -217,6 +193,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791575700,
+    "title": "S58",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791575700,
     "title": "V130",
@@ -231,6 +215,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791575880,
+    "title": "PYO933",
+    "detail": "Saapuu · TUS–Tampere",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
