@@ -1,29 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1791553233,
-    "title": "S39",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791553771,
-    "title": "IC180",
-    "detail": "Saapuu · Pieksämäki–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791553860,
-    "title": "IC50",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791554100,
     "title": "V130",
@@ -40,14 +16,6 @@
     "demand": 1
   },
   {
-    "type": "juna",
-    "time": 1791554174,
-    "title": "IC151",
-    "detail": "Saapuu · Helsinki–Jyväskylä",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
     "type": "lento",
     "time": 1791554520,
     "title": "BTI9803",
@@ -57,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1791554772,
+    "time": 1791554900,
     "title": "IC47",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -88,14 +56,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1791555600,
-    "title": "BT9803",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791556010,
     "title": "140",
@@ -120,6 +80,14 @@
     "demand": 2
   },
   {
+    "type": "lento",
+    "time": 1791557100,
+    "title": "BT9803",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (myöhässä 25 min) · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "juna",
     "time": 1791557220,
     "title": "IC923",
@@ -137,18 +105,18 @@
   },
   {
     "type": "juna",
-    "time": 1791557554,
-    "title": "IC146",
-    "detail": "Saapuu · Pieksämäki–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791557587,
     "title": "IC147",
     "detail": "Saapuu · Helsinki–Kuopio",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791557700,
+    "title": "IC146",
+    "detail": "Saapuu · Pieksämäki–Helsinki",
+    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
@@ -168,20 +136,20 @@
     "demand": 2
   },
   {
-    "type": "juna",
-    "time": 1791558007,
-    "title": "IC51",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791558300,
     "title": "V130",
     "detail": "Lähtöpaikka: Parolannummi P (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791558383,
+    "title": "IC51",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -201,7 +169,7 @@
   },
   {
     "type": "juna",
-    "time": 1791559260,
+    "time": 1791559352,
     "title": "S59",
     "detail": "Saapuu · Helsinki–Kokkola",
     "location": "Rautatieasema · raide 2",
@@ -267,7 +235,7 @@
     "type": "lento",
     "time": 1791561600,
     "title": "BT9804",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Peruttu",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -344,6 +312,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791564900,
+    "title": "HDM428",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791564900,
     "title": "Länsilinjat / Ikaalinen - Tampere",
@@ -368,6 +344,14 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1791565080,
+    "title": "IC29",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791567000,
     "title": "140",
@@ -384,12 +368,28 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1791568200,
+    "title": "S148",
+    "detail": "Saapuu · Pieksämäki–Helsinki",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791568200,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791568260,
+    "title": "S56",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
