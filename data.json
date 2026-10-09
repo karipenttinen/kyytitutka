@@ -3,13 +3,13 @@
     "type": "lento",
     "time": 1791513000,
     "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Suljettu",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1791513220,
+    "time": 1791513300,
     "title": "PYO274",
     "detail": "Saapuu · KJÄ–Helsinki",
     "location": "Rautatieasema · raide 3",
@@ -17,9 +17,9 @@
   },
   {
     "type": "bussi",
-    "time": 1791516600,
+    "time": 1791516303,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -89,7 +89,7 @@
   },
   {
     "type": "juna",
-    "time": 1791520800,
+    "time": 1791520838,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
