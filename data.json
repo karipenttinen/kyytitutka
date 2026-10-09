@@ -64,14 +64,6 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1791561600,
-    "title": "BT9804",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Peruttu",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1791561900,
     "title": "IC49",
@@ -86,14 +78,6 @@
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791562236,
-    "title": "141T",
-    "detail": "Lähtöpaikka: Huittinen, ABC",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "bussi",
@@ -701,6 +685,14 @@
     "time": 1791647100,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791648300,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
