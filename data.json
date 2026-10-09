@@ -1,13 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1791557100,
-    "title": "BT9803",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (myöhässä 25 min) · Arvioitu aika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1791557145,
     "title": "IC470",
@@ -32,14 +24,6 @@
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1791557700,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1791557711,
     "title": "IC147",
@@ -54,22 +38,6 @@
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
     "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1791558000,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika (myöhässä 150 min) · Portille",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791558300,
-    "title": "V130",
-    "detail": "Lähtöpaikka: Parolannummi P (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "bussi",
@@ -93,6 +61,14 @@
     "title": "IC51",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1791558900,
+    "title": "BT356",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika (myöhässä 165 min) · Suljettu",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
@@ -145,7 +121,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791561703,
+    "time": 1791561872,
     "title": "141T",
     "detail": "Lähtöpaikka: Huittinen, ABC",
     "location": "Linja-autoasema",
@@ -281,9 +257,9 @@
   },
   {
     "type": "bussi",
-    "time": 1791567000,
+    "time": 1791566937,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -719,6 +695,14 @@
     "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1791644100,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
