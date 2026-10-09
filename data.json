@@ -633,6 +633,14 @@
     "demand": 1
   },
   {
+    "type": "bussi",
+    "time": 1791656400,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "tapahtuma",
     "time": 1792173600,
     "timeLabel": "pe 18.30–pe 21.00",
