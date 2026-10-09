@@ -40,44 +40,12 @@
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1791558600,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1791558600,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1791558683,
     "title": "IC51",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
     "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1791558900,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika (myöhässä 165 min) · Suljettu",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791559500,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "juna",
@@ -120,14 +88,6 @@
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1791561872,
-    "title": "141T",
-    "detail": "Lähtöpaikka: Huittinen, ABC",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1791561900,
     "title": "IC49",
@@ -142,6 +102,14 @@
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 3",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1791562067,
+    "title": "141T",
+    "detail": "Lähtöpaikka: Huittinen, ABC",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "bussi",
@@ -701,6 +669,14 @@
     "time": 1791644100,
     "title": "OB91",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791646200,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
