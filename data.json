@@ -1,38 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791571860,
-    "title": "IC28",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791575400,
-    "title": "S152",
-    "detail": "Saapuu · Kuopio–Tampere",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791575700,
-    "title": "S58",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791575880,
-    "title": "PYO933",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791576780,
     "title": "PYO269",
     "detail": "Saapuu · Helsinki–Kolari",
@@ -216,6 +184,30 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791611580,
+    "title": "IC155",
+    "detail": "Saapuu · Helsinki–Pieksämäki",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791611700,
+    "title": "IC466",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791611880,
+    "title": "S41",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791613500,
     "title": "OB9",
@@ -230,6 +222,14 @@
     "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791615060,
+    "title": "IC20",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -562,7 +562,7 @@
   {
     "type": "tapahtuma",
     "time": 1791649800,
-    "timeLabel": "la 17.00–la 19.30",
+    "timeLabel": "17.00–19.30",
     "title": "Tappara-TPS",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
