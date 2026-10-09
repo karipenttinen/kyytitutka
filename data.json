@@ -81,22 +81,6 @@
   },
   {
     "type": "bussi",
-    "time": 1791562800,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: Uusi terminaali (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1791563400,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1791564000,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
@@ -193,7 +177,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791566937,
+    "time": 1791566966,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
