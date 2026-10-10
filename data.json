@@ -17,22 +17,6 @@
   },
   {
     "type": "bussi",
-    "time": 1791627240,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1791627300,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1791628800,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
@@ -296,14 +280,6 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1791643500,
-    "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1791643620,
     "title": "IC923",
@@ -326,14 +302,6 @@
     "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1791646500,
-    "title": "BT525",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malaga",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -441,14 +409,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1791669000,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791672900,
     "title": "V130",
@@ -471,14 +431,6 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1791685800,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
