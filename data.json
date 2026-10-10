@@ -1,46 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791618420,
-    "title": "IC909",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791618540,
-    "title": "IC142",
-    "detail": "Saapuu · Kuopio–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791618660,
-    "title": "S36",
-    "detail": "Saapuu · Kokkola–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791618780,
-    "title": "S93",
-    "detail": "Saapuu · Helsinki–Jyväskylä",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791619080,
-    "title": "IC43",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791621360,
     "title": "IC464",
     "detail": "Saapuu · Pori–Tampere",
@@ -56,28 +16,12 @@
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1791621900,
-    "title": "OB37",
-    "detail": "Lähtöpaikka: Matkakeskus 4 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1791622200,
     "title": "S94",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 4",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791622200,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: Uusi terminaali (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "juna",
@@ -288,12 +232,52 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791633480,
+    "title": "IC37",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791634500,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791636180,
+    "title": "HDM426",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791636300,
+    "title": "IC468",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791636600,
+    "title": "S86",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791636660,
+    "title": "IC24",
+    "detail": "Saapuu · KJÄ–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
