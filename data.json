@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791640680,
-    "title": "IC47",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791643500,
     "title": "IC470",
     "detail": "Saapuu · Pori–Tampere",
@@ -48,14 +40,6 @@
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1791644100,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1791644280,
     "title": "IC51",
@@ -65,7 +49,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791646022,
+    "time": 1791646165,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen, ABC",
     "location": "Linja-autoasema",
@@ -262,6 +246,14 @@
     "title": "S28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791658380,
+    "title": "S183",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
@@ -551,6 +543,14 @@
     "detail": "Aikataulun mukaan lähtee, määränpää Riika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1791731400,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
