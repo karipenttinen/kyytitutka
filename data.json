@@ -24,15 +24,6 @@
     "demand": 2
   },
   {
-    "type": "tapahtuma",
-    "time": 1791649800,
-    "timeLabel": "17.00–19.30",
-    "title": "Tappara-TPS",
-    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
-    "location": "Nokia Arena",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1791650760,
     "title": "IC186",
@@ -545,10 +536,43 @@
     "demand": 1
   },
   {
+    "type": "bussi",
+    "time": 1791736200,
+    "title": "V130",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791736200,
+    "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
+    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791736800,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "tapahtuma",
     "time": 1792173600,
     "timeLabel": "pe 18.30–pe 21.00",
     "title": "Tappara-Lukko",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Nokia Arena",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1792254600,
+    "timeLabel": "la 17.00–la 19.30",
+    "title": "Ilves-Jokerit",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
     "demand": 2
