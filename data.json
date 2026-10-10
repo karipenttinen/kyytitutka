@@ -49,9 +49,9 @@
   },
   {
     "type": "bussi",
-    "time": 1791646165,
+    "time": 1791646200,
     "title": "141",
-    "detail": "Lähtöpaikka: Huittinen, ABC",
+    "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -59,7 +59,7 @@
     "type": "lento",
     "time": 1791646500,
     "title": "BT525",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malaga · Portille",
+    "detail": "Aikataulun mukaan lähtee, määränpää Malaga · Lähdössä",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
