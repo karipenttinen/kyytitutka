@@ -41,7 +41,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791632102,
+    "time": 1791631653,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -248,19 +248,19 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1791643560,
-    "title": "BT526",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga · Arvioitu aika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1791643620,
     "title": "IC923",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "lento",
+    "time": 1791643620,
+    "title": "BT526",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Malaga · Arvioitu aika",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
