@@ -16,14 +16,6 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1791605400,
-    "title": "BT9804",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika (myöhässä 160 min) · Arvioitu aika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1791607200,
     "title": "HDM420",
