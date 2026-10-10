@@ -40,27 +40,11 @@
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1791620700,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1791620700,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1791621360,
     "title": "IC464",
     "detail": "Saapuu · Pori–Tampere",
-    "location": "Rautatieasema · raide 4",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -70,14 +54,6 @@
     "detail": "Saapuu · KEU–Tampere",
     "location": "Rautatieasema · raide 5",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791621600,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "bussi",
@@ -108,7 +84,7 @@
     "time": 1791622260,
     "title": "IC22",
     "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
+    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
