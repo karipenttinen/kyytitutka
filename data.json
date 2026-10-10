@@ -24,14 +24,6 @@
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1791656400,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1791658260,
     "title": "S28",
@@ -591,6 +583,15 @@
     "title": "Ilves-Jokerit",
     "detail": "Arvioitu päättyvän, yleisöä poistumassa",
     "location": "Nokia Arena",
+    "demand": 2
+  },
+  {
+    "type": "tapahtuma",
+    "time": 1792261800,
+    "timeLabel": "la 19.00–la 21.30",
+    "title": "Hector & Power Band",
+    "detail": "Arvioitu päättyvän, yleisöä poistumassa",
+    "location": "Tampere-talo",
     "demand": 2
   }
 ]
