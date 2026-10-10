@@ -1,22 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791607200,
-    "title": "HDM420",
-    "detail": "Saapuu · Jyväskylä–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791607500,
-    "title": "IC462",
-    "detail": "Saapuu · Pori–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791607740,
     "title": "IC42",
     "detail": "Saapuu · Vaasa–Helsinki",
@@ -105,7 +89,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791613540,
+    "time": 1791613550,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -232,6 +216,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791621600,
+    "title": "HDM424",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791621600,
     "title": "OB91",
@@ -246,6 +238,14 @@
     "detail": "Lähtöpaikka: Matkakeskus 4 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791622200,
+    "title": "S94",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
   },
   {
     "type": "bussi",
