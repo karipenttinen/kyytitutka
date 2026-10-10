@@ -24,14 +24,6 @@
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1791648300,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "tapahtuma",
     "time": 1791649800,
     "timeLabel": "17.00–19.30",
@@ -541,6 +533,14 @@
     "time": 1791734700,
     "title": "OB91",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791735600,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: Uusi terminaali (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
