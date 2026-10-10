@@ -8,14 +8,6 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1791667320,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (28 min etuajassa) · Arvioitu aika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1791672900,
     "title": "PYO273",
