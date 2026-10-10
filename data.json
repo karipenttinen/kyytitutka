@@ -1,35 +1,11 @@
 [
   {
     "type": "juna",
-    "time": 1791658260,
-    "title": "S28",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791658380,
-    "title": "S183",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791660660,
     "title": "PYO265",
     "detail": "Saapuu · Helsinki–KJÄ",
     "location": "Rautatieasema · raide 3",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791661440,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "bussi",
@@ -229,6 +205,22 @@
     "title": "IC142",
     "detail": "Saapuu · Kuopio–Helsinki",
     "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791705060,
+    "title": "IC36",
+    "detail": "Saapuu · Oulu–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791705180,
+    "title": "IC93",
+    "detail": "Saapuu · Helsinki–Jyväskylä",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
@@ -572,6 +564,14 @@
     "time": 1791744600,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791747840,
+    "title": "OB9",
+    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
