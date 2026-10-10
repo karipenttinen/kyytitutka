@@ -617,6 +617,14 @@
     "demand": 1
   },
   {
+    "type": "lento",
+    "time": 1791685800,
+    "title": "BT358",
+    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
     "type": "tapahtuma",
     "time": 1792173600,
     "timeLabel": "pe 18.30–pe 21.00",
