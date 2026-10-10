@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791604200,
-    "title": "IC164",
-    "detail": "Saapuu · Pori–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791604380,
     "title": "S35",
     "detail": "Saapuu · Helsinki–Rovaniemi",
@@ -221,6 +213,14 @@
     "title": "S93",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791619080,
+    "title": "IC43",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
