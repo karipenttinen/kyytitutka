@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791599700,
-    "title": "PYO274",
-    "detail": "Saapuu · KJÄ–Helsinki",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791604200,
     "title": "IC164",
     "detail": "Saapuu · Pori–Helsinki",
@@ -145,9 +137,9 @@
   },
   {
     "type": "bussi",
-    "time": 1791613800,
+    "time": 1791613540,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -229,6 +221,14 @@
     "title": "S36",
     "detail": "Saapuu · Kokkola–Helsinki",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791618780,
+    "title": "S93",
+    "detail": "Saapuu · Helsinki–Jyväskylä",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
