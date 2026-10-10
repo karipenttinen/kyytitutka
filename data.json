@@ -1,22 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791662280,
-    "title": "PYO933",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791663180,
-    "title": "PYO269",
-    "detail": "Saapuu · Helsinki–Kolari",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791665580,
     "title": "IC187",
     "detail": "Saapuu · Helsinki–Tampere",
@@ -25,9 +9,9 @@
   },
   {
     "type": "lento",
-    "time": 1791667500,
+    "time": 1791667320,
     "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (25 min etuajassa) · Arvioitu aika",
+    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika (28 min etuajassa) · Arvioitu aika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
@@ -222,6 +206,22 @@
     "detail": "Lähtöpaikka: 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791707760,
+    "title": "IC464",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791708600,
+    "title": "IC94",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
   },
   {
     "type": "bussi",
