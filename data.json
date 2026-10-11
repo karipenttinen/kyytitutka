@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791729900,
-    "title": "IC470",
-    "detail": "Saapuu · Pori–Tampere",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791730020,
     "title": "IC923",
     "detail": "Saapuu · Turku–Tampere",
@@ -54,14 +46,6 @@
     "detail": "Saapuu · Helsinki–Kokkola",
     "location": "Rautatieasema · raide 2",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791732600,
-    "title": "141T",
-    "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "bussi",
@@ -268,6 +252,14 @@
     "time": 1791741180,
     "title": "IC149",
     "detail": "Saapuu · Helsinki–Jyväskylä",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791744360,
+    "title": "IC931",
+    "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 3",
     "demand": 2
   },
@@ -756,6 +748,22 @@
     "time": 1791818700,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791819900,
+    "title": "OB37",
+    "detail": "Lähtöpaikka: Lahti, Matkakeskus laituri 3 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791819900,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
