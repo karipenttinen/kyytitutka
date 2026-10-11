@@ -1,13 +1,5 @@
 [
   {
-    "type": "bussi",
-    "time": 1791759000,
-    "title": "V130",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1791759300,
     "title": "PYO273",
