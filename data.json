@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791759300,
-    "title": "PYO273",
-    "detail": "Saapuu · Helsinki–Rovaniemi",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791762600,
     "title": "PYO266",
     "detail": "Saapuu · Rovaniemi–Helsinki",
@@ -22,14 +14,6 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1791772200,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "juna",
@@ -256,6 +240,14 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1791787140,
+    "title": "IC476",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791787440,
     "title": "OB9",
@@ -448,22 +440,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1791805800,
-    "title": "BT355",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "lento",
-    "time": 1791806400,
-    "title": "FTL323",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791806820,
     "title": "95",
@@ -486,14 +462,6 @@
     "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1791808200,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -710,14 +678,6 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1791841800,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "tapahtuma",
