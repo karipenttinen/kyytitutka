@@ -44,16 +44,8 @@
     "time": 1791730680,
     "title": "IC51",
     "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791731400,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "juna",
@@ -65,9 +57,9 @@
   },
   {
     "type": "bussi",
-    "time": 1791732449,
+    "time": 1791732600,
     "title": "141T",
-    "detail": "Lähtöpaikka: Huittinen, ABC",
+    "detail": "Lähtöpaikka: Huittinen, ABC (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -748,6 +740,22 @@
     "time": 1791816000,
     "title": "OB3",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791817800,
+    "title": "95",
+    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791818700,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
