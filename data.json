@@ -48,14 +48,6 @@
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1791707100,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
     "time": 1791707760,
     "title": "IC464",
@@ -113,7 +105,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791710479,
+    "time": 1791710683,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
