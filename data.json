@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791747060,
-    "title": "PYO265",
-    "detail": "Saapuu · Helsinki–KJÄ",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791748200,
     "title": "S152",
     "detail": "Saapuu · Kuopio–Tampere",
@@ -246,6 +238,14 @@
     "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791783720,
+    "title": "IC905",
+    "detail": "Saapuu · Turku–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
   },
   {
     "type": "bussi",
