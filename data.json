@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791715380,
-    "title": "S158",
-    "detail": "Saapuu · Kuopio–Helsinki",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791715860,
     "title": "IC38",
     "detail": "Saapuu · Oulu–Helsinki",
@@ -30,30 +22,6 @@
     "detail": "Saapuu · Helsinki–Rovaniemi",
     "location": "Rautatieasema · raide 2",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791718140,
-    "title": "OB9",
-    "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1791718212,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1791718500,
-    "title": "OB36",
-    "detail": "Lähtöpaikka: Tulo (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "bussi",
@@ -261,6 +229,14 @@
     "title": "IC151",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791727080,
+    "title": "IC47",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
@@ -756,6 +732,14 @@
     "time": 1791803700,
     "title": "Länsilinjat / (Kylpylä) - Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen Spa (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791805200,
+    "title": "OB37",
+    "detail": "Lähtöpaikka: Kotkan linja-autoasema PÄÄTEPYSÄKKI (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
