@@ -1,14 +1,6 @@
 [
   {
     "type": "juna",
-    "time": 1791691980,
-    "title": "PYO276",
-    "detail": "Saapuu · Kolari–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791694680,
     "title": "IC21",
     "detail": "Saapuu · Helsinki–Rovaniemi",
@@ -205,6 +197,14 @@
     "title": "S913",
     "detail": "Saapuu · Turku–Oulu",
     "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791712260,
+    "title": "IC46",
+    "detail": "Saapuu · Vaasa–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
