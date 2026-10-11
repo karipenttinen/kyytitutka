@@ -1,43 +1,11 @@
 [
   {
     "type": "juna",
-    "time": 1791741000,
-    "title": "IC148",
-    "detail": "Saapuu · Pieksämäki–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791741060,
-    "title": "IC56",
-    "detail": "Saapuu · Oulu–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791741180,
-    "title": "IC149",
-    "detail": "Saapuu · Helsinki–Jyväskylä",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791744360,
     "title": "IC931",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 3",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791744600,
-    "title": "OB3",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "juna",
@@ -232,12 +200,36 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791778380,
+    "title": "PYO276",
+    "detail": "Saapuu · Kolari–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791779400,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791780000,
+    "title": "HDM420",
+    "detail": "Saapuu · Jyväskylä–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791780300,
+    "title": "IC462",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
   },
   {
     "type": "bussi",
