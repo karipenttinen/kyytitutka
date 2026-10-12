@@ -1,23 +1,15 @@
 [
   {
-    "type": "juna",
-    "time": 1791822001,
-    "title": "IC49",
-    "detail": "Saapuu · Helsinki–Vaasa",
-    "location": "Rautatieasema · raide 2",
+    "type": "lento",
+    "time": 1791823485,
+    "title": "T11",
+    "detail": "Matalalla ilmassa kentän lähellä (ADS-B; ei virallista saapumisaikaa)",
+    "location": "Lentoasema, Pirkkala",
     "demand": 2
   },
   {
     "type": "juna",
-    "time": 1791823560,
-    "title": "IC472",
-    "detail": "Saapuu · Pori–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791823629,
+    "time": 1791823548,
     "title": "IC927",
     "detail": "Saapuu · Turku–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -25,15 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1791823958,
-    "title": "IC34",
-    "detail": "Saapuu · Rovaniemi–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791823975,
+    "time": 1791823990,
     "title": "S88",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -41,7 +25,15 @@
   },
   {
     "type": "juna",
-    "time": 1791823980,
+    "time": 1791823997,
+    "title": "HDM428",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791824025,
     "title": "S89",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -49,10 +41,10 @@
   },
   {
     "type": "juna",
-    "time": 1791824100,
-    "title": "HDM428",
-    "detail": "Saapuu · KEU–Tampere",
-    "location": "Rautatieasema · raide 4",
+    "time": 1791824093,
+    "title": "IC34",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
@@ -113,7 +105,7 @@
   },
   {
     "type": "juna",
-    "time": 1791827463,
+    "time": 1791827720,
     "title": "IC148",
     "detail": "Saapuu · Pieksämäki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -121,7 +113,7 @@
   },
   {
     "type": "juna",
-    "time": 1791827595,
+    "time": 1791827759,
     "title": "IC149",
     "detail": "Saapuu · Helsinki–Jyväskylä",
     "location": "Rautatieasema · raide 3",
@@ -161,7 +153,7 @@
   },
   {
     "type": "juna",
-    "time": 1791832037,
+    "time": 1791832075,
     "title": "IC28",
     "detail": "Saapuu · Rovaniemi–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -232,6 +224,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791849000,
+    "title": "PYO266",
+    "detail": "Saapuu · Rovaniemi–Helsinki",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791851700,
     "title": "V130",
@@ -245,6 +245,14 @@
     "title": "BT358",
     "detail": "Aikataulun mukaan lähtee, määränpää Riika",
     "location": "Lentoasema, Pirkkala",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791858900,
+    "title": "PYO274",
+    "detail": "Saapuu · KJÄ–Helsinki",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
