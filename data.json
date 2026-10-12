@@ -1,15 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1791836851,
-    "title": "PYO269",
-    "detail": "Saapuu · Helsinki–Kolari",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791838394,
+    "time": 1791838445,
     "title": "IC187",
     "detail": "Saapuu · Helsinki–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -253,6 +245,14 @@
     "title": "IC466",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791871080,
+    "title": "IC41",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
