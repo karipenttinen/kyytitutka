@@ -1,13 +1,5 @@
 [
   {
-    "type": "lento",
-    "time": 1791772200,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika · Lähtenyt · vahvistettu tutkalla juuri nyt (aikaperusteinen täsmäys)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1791772500,
     "title": "PYO274",
