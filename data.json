@@ -1,13 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1791925866,
-    "title": "IC187",
-    "detail": "Saapuu · HL–Tampere",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
     "type": "lento",
     "time": 1791928200,
     "title": "BT357",
@@ -317,6 +309,14 @@
     "title": "IC909",
     "detail": "Saapuu · TUS–Tampere",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791964140,
+    "title": "IC142",
+    "detail": "Saapuu · Kuopio–HL",
+    "location": "Rautatieasema · raide 5",
     "demand": 2
   },
   {
