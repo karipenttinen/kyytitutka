@@ -1,53 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1791866571,
-    "title": "HDM420",
-    "detail": "Saapuu · Jyväskylä–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791866700,
-    "title": "IC462",
-    "detail": "Saapuu · Pori–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791866770,
-    "title": "IC42",
-    "detail": "Saapuu · Vaasa–Helsinki",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791866880,
-    "title": "97A/95",
-    "detail": "Lähtöpaikka: Virrat P (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "juna",
-    "time": 1791866998,
-    "title": "S140",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791867000,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "bussi",
     "time": 1791868200,
     "title": "43",
@@ -57,23 +9,23 @@
   },
   {
     "type": "juna",
-    "time": 1791868643,
-    "title": "IC21",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791868880,
+    "time": 1791868951,
     "title": "S30",
     "detail": "Saapuu · Oulu–Helsinki",
     "location": "Rautatieasema · raide 1",
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791869076,
+    "title": "IC21",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
     "type": "bussi",
-    "time": 1791869406,
+    "time": 1791869321,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -121,7 +73,7 @@
   },
   {
     "type": "juna",
-    "time": 1791870835,
+    "time": 1791870801,
     "title": "IC155",
     "detail": "Saapuu · Helsinki–Pieksämäki",
     "location": "Rautatieasema · raide 3",
@@ -137,7 +89,7 @@
   },
   {
     "type": "juna",
-    "time": 1791871297,
+    "time": 1791871493,
     "title": "IC41",
     "detail": "Saapuu · Helsinki–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -272,6 +224,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791878280,
+    "title": "IC43",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791878400,
     "title": "141",
@@ -280,12 +240,36 @@
     "demand": 1
   },
   {
+    "type": "juna",
+    "time": 1791880560,
+    "title": "IC464",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791880800,
+    "title": "HDM424",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791881100,
     "title": "OB37",
     "detail": "Lähtöpaikka: Matkakeskus 4 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791881400,
+    "title": "IC94",
+    "detail": "Saapuu · Jyväskylä–Helsinki",
+    "location": "Rautatieasema · raide 4",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -708,6 +692,22 @@
     "time": 1791952200,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791953280,
+    "title": "97A/95",
+    "detail": "Lähtöpaikka: Virrat P (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791953400,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
