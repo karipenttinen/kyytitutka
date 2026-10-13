@@ -1,15 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1791917174,
-    "title": "IC931",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791917594,
+    "time": 1791917744,
     "title": "S183",
     "detail": "Saapuu · HL–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -286,6 +278,14 @@
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791960660,
+    "title": "IC20",
+    "detail": "Saapuu · Oulu–HL",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
