@@ -1,7 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1791863400,
+    "time": 1791863374,
     "title": "IC460",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -17,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1791863459,
+    "time": 1791863428,
     "title": "IC80",
     "detail": "Saapuu · Jyväskylä–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -25,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1791863584,
+    "time": 1791863505,
     "title": "S35",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -33,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1791863640,
+    "time": 1791863566,
     "title": "IC40",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -41,7 +41,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791864286,
+    "time": 1791864458,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -49,7 +49,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791865583,
+    "time": 1791865582,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -57,7 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1791866590,
+    "time": 1791866489,
     "title": "HDM420",
     "detail": "Saapuu · Jyväskylä–Tampere",
     "location": "Rautatieasema · raide 5",
@@ -104,20 +104,20 @@
     "demand": 1
   },
   {
-    "type": "juna",
-    "time": 1791867480,
-    "title": "IC21",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791868200,
     "title": "43",
     "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791868294,
+    "title": "IC21",
+    "detail": "Saapuu · Helsinki–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "juna",
@@ -201,9 +201,9 @@
   },
   {
     "type": "bussi",
-    "time": 1791873000,
+    "time": 1791872834,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -710,6 +710,14 @@
     "detail": "Aikataulun mukaan lähtee, määränpää Riika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1791948600,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
