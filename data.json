@@ -1,15 +1,7 @@
 [
   {
     "type": "juna",
-    "time": 1791917744,
-    "title": "S183",
-    "detail": "Saapuu · HL–Tampere",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791920400,
+    "time": 1791920191,
     "title": "MV10357",
     "detail": "Saapuu · HL–Tampere",
     "location": "Rautatieasema · raide 4",
@@ -285,6 +277,14 @@
     "title": "IC20",
     "detail": "Saapuu · Oulu–HL",
     "location": "Rautatieasema · raide 1",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791960780,
+    "title": "S165",
+    "detail": "Saapuu · HL–Pori",
+    "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
