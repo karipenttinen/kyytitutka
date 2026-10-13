@@ -1,21 +1,5 @@
 [
   {
-    "type": "juna",
-    "time": 1791882214,
-    "title": "IC94",
-    "detail": "Saapuu · Jyväskylä–Helsinki",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791882571,
-    "title": "IC33",
-    "detail": "Saapuu · Helsinki–Oulu",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791883200,
     "title": "OB3",
@@ -33,7 +17,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791884513,
+    "time": 1791884533,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema",
     "location": "Linja-autoasema",
@@ -41,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1791884825,
+    "time": 1791884795,
     "title": "S46",
     "detail": "Saapuu · Vaasa–Helsinki",
     "location": "Rautatieasema · raide 1",
@@ -113,7 +97,7 @@
   },
   {
     "type": "juna",
-    "time": 1791889080,
+    "time": 1791889188,
     "title": "IC25",
     "detail": "Saapuu · Helsinki–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -169,7 +153,7 @@
   },
   {
     "type": "juna",
-    "time": 1791892260,
+    "time": 1791892319,
     "title": "IC144",
     "detail": "Saapuu · Pieksämäki–Helsinki",
     "location": "Rautatieasema · raide 5",
@@ -344,6 +328,14 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791899580,
+    "title": "IC151",
+    "detail": "Saapuu · Helsinki–Jyväskylä",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791899700,
     "title": "V130",
@@ -358,6 +350,14 @@
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791899880,
+    "title": "IC47",
+    "detail": "Saapuu · Helsinki–Vaasa",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -708,6 +708,14 @@
     "time": 1791967800,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1791969600,
+    "title": "OB3",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
