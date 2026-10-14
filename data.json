@@ -1,17 +1,9 @@
 [
   {
-    "type": "juna",
-    "time": 1791957493,
-    "title": "IC41",
-    "detail": "Saapuu · HL–Vaasa",
-    "location": "Rautatieasema · raide 2",
-    "demand": 2
-  },
-  {
     "type": "bussi",
-    "time": 1791959240,
+    "time": 1791959400,
     "title": "140",
-    "detail": "Lähtöpaikka: Rauma, linja-autoasema",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
@@ -33,7 +25,7 @@
   },
   {
     "type": "juna",
-    "time": 1791960660,
+    "time": 1791960635,
     "title": "IC20",
     "detail": "Saapuu · Oulu–HL",
     "location": "Rautatieasema · raide 1",
@@ -41,7 +33,7 @@
   },
   {
     "type": "juna",
-    "time": 1791960780,
+    "time": 1791960786,
     "title": "S165",
     "detail": "Saapuu · HL–Pori",
     "location": "Rautatieasema · raide 3",
@@ -49,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1791961080,
+    "time": 1791961130,
     "title": "IC23",
     "detail": "Saapuu · HL–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -136,20 +128,20 @@
     "demand": 2
   },
   {
+    "type": "bussi",
+    "time": 1791964581,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
     "type": "juna",
     "time": 1791964680,
     "title": "IC43",
     "detail": "Saapuu · HL–Vaasa",
     "location": "Rautatieasema · raide 2",
     "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791964800,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
   },
   {
     "type": "juna",
@@ -320,12 +312,28 @@
     "demand": 2
   },
   {
+    "type": "juna",
+    "time": 1791975480,
+    "title": "IC25",
+    "detail": "Saapuu · HL–Oulu",
+    "location": "Rautatieasema · raide 2",
+    "demand": 2
+  },
+  {
     "type": "bussi",
     "time": 1791975600,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "lento",
+    "time": 1791975600,
+    "title": "ABF4",
+    "detail": "Aikataulun mukaan lähtee, määränpää Bodö",
+    "location": "Lentoasema, Pirkkala",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -716,6 +724,14 @@
     "time": 1792043400,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1792045800,
+    "title": "140",
+    "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
