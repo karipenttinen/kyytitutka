@@ -1,79 +1,23 @@
 [
   {
     "type": "bussi",
-    "time": 1791962400,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1791963000,
-    "title": "OB91",
-    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1791963600,
-    "title": "V130",
-    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1791963600,
-    "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
-    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "time": 1791964800,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
   {
     "type": "juna",
-    "time": 1791964075,
-    "title": "IC909",
-    "detail": "Saapuu · TUS–Tampere",
-    "location": "Rautatieasema · raide 3",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791964236,
-    "title": "IC142",
-    "detail": "Saapuu · Kuopio–HL",
-    "location": "Rautatieasema · raide 5",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791964260,
-    "title": "IC36",
-    "detail": "Saapuu · Oulu–HL",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791964422,
+    "time": 1791965003,
     "title": "IC93",
     "detail": "Saapuu · HL–Jyväskylä",
     "location": "Rautatieasema · raide 3",
     "demand": 2
   },
   {
-    "type": "bussi",
-    "time": 1791964601,
-    "title": "141",
-    "detail": "Lähtöpaikka: Huittinen linja-autoasema",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
     "type": "juna",
-    "time": 1791964680,
+    "time": 1791965114,
     "title": "IC43",
     "detail": "Saapuu · HL–Vaasa",
     "location": "Rautatieasema · raide 2",
@@ -113,15 +57,7 @@
   },
   {
     "type": "juna",
-    "time": 1791967850,
-    "title": "IC94",
-    "detail": "Saapuu · Jyväskylä–HL",
-    "location": "Rautatieasema · raide 4",
-    "demand": 2
-  },
-  {
-    "type": "juna",
-    "time": 1791967860,
+    "time": 1791967833,
     "title": "IC22",
     "detail": "Saapuu · Oulu–HL",
     "location": "Rautatieasema · raide 1",
@@ -133,6 +69,14 @@
     "title": "IC143",
     "detail": "Saapuu · HL–Pieksämäki",
     "location": "Rautatieasema · raide 3",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791968046,
+    "title": "IC94",
+    "detail": "Saapuu · Jyväskylä–HL",
+    "location": "Rautatieasema · raide 4",
     "demand": 2
   },
   {
@@ -200,14 +144,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1791972960,
-    "title": "ABF4",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Helsinki",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791973500,
     "title": "43",
@@ -264,14 +200,6 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1791975600,
-    "title": "ABF4",
-    "detail": "Aikataulun mukaan lähtee, määränpää Bodö",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791975900,
     "title": "OB9",
@@ -312,14 +240,6 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1791978600,
-    "title": "BT355",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "juna",
     "time": 1791978660,
     "title": "S144",
@@ -344,11 +264,11 @@
     "demand": 2
   },
   {
-    "type": "lento",
-    "time": 1791979200,
-    "title": "FTL323",
-    "detail": "Aikataulun mukaan lähtee, määränpää Malmö",
-    "location": "Lentoasema, Pirkkala",
+    "type": "juna",
+    "time": 1791979080,
+    "title": "IC37",
+    "detail": "Saapuu · HL–Oulu",
+    "location": "Rautatieasema · raide 2",
     "demand": 2
   },
   {
@@ -376,20 +296,28 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1791981000,
-    "title": "BT356",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1791981540,
     "title": "OB9",
     "detail": "Lähtöpaikka: Turun Linja-autoasema, laituri 5 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791981780,
+    "title": "HDM426",
+    "detail": "Saapuu · KEU–Tampere",
+    "location": "Rautatieasema · raide 5",
+    "demand": 2
+  },
+  {
+    "type": "juna",
+    "time": 1791981900,
+    "title": "IC468",
+    "detail": "Saapuu · Pori–Tampere",
+    "location": "Rautatieasema · raide 3",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -600,28 +528,12 @@
     "demand": 1
   },
   {
-    "type": "lento",
-    "time": 1792014600,
-    "title": "BT357",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
     "type": "bussi",
     "time": 1792024500,
     "title": "V130",
     "detail": "Lähtöpaikka: 14 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1792031400,
-    "title": "BT358",
-    "detail": "Aikataulun mukaan lähtee, määränpää Riika",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
   },
   {
     "type": "bussi",
@@ -732,6 +644,38 @@
     "time": 1792048800,
     "title": "Länsilinjat / Ikaalinen - Tampere",
     "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1792049400,
+    "title": "OB91",
+    "detail": "Lähtöpaikka: 5 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1792050000,
+    "title": "V130",
+    "detail": "Lähtöpaikka: 29 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1792050000,
+    "title": "Helsinki-Vantaa - Vaihto: Vantaankoski - Tampere",
+    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1792051200,
+    "title": "141",
+    "detail": "Lähtöpaikka: Huittinen linja-autoasema (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
