@@ -1,38 +1,6 @@
 [
   {
     "type": "bussi",
-    "time": 1791972420,
-    "title": "95",
-    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
-    "time": 1791972900,
-    "title": "Länsilinjat / Ikaalinen - Tampere",
-    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "lento",
-    "time": 1791972960,
-    "title": "ABF4",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Helsinki",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1791973500,
-    "title": "43",
-    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "bussi",
     "time": 1791974400,
     "title": "V130",
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
@@ -49,7 +17,7 @@
   },
   {
     "type": "juna",
-    "time": 1791974700,
+    "time": 1791975056,
     "title": "S474",
     "detail": "Saapuu · Pori–Tampere",
     "location": "Rautatieasema · raide 3",
@@ -65,7 +33,7 @@
   },
   {
     "type": "bussi",
-    "time": 1791975406,
+    "time": 1791975441,
     "title": "141",
     "detail": "Lähtöpaikka: Huittinen linja-autoasema",
     "location": "Linja-autoasema",
@@ -73,7 +41,7 @@
   },
   {
     "type": "juna",
-    "time": 1791975480,
+    "time": 1791975501,
     "title": "IC25",
     "detail": "Saapuu · HL–Oulu",
     "location": "Rautatieasema · raide 2",
@@ -249,14 +217,6 @@
   },
   {
     "type": "juna",
-    "time": 1791982609,
-    "title": "IC24",
-    "detail": "Saapuu · Oulu–HL",
-    "location": "Rautatieasema · raide 1",
-    "demand": 2
-  },
-  {
-    "type": "juna",
     "time": 1791982680,
     "title": "IC27",
     "detail": "Saapuu · HL–Oulu",
@@ -270,6 +230,14 @@
     "detail": "Lähtöpaikka: 29 (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
+  },
+  {
+    "type": "juna",
+    "time": 1791982867,
+    "title": "IC24",
+    "detail": "Saapuu · Oulu–HL",
+    "location": "Rautatieasema · raide 1",
+    "demand": 2
   },
   {
     "type": "bussi",
@@ -724,6 +692,30 @@
     "time": 1792056600,
     "title": "140",
     "detail": "Lähtöpaikka: Rauma, linja-autoasema (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1792058820,
+    "title": "95",
+    "detail": "Lähtöpaikka: 6 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1792059300,
+    "title": "Länsilinjat / Ikaalinen - Tampere",
+    "detail": "Lähtöpaikka: Ikaalinen / Välikatu (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
+  },
+  {
+    "type": "bussi",
+    "time": 1792059900,
+    "title": "43",
+    "detail": "Lähtöpaikka: Kyynärö L (aikatauluaika)",
     "location": "Linja-autoasema",
     "demand": 1
   },
