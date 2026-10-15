@@ -1,22 +1,6 @@
 [
   {
     "type": "lento",
-    "time": 1792018080,
-    "title": "ABF4",
-    "detail": "Aikataulun mukaan saapuu, lähtöpaikka Bodö (141 min etuajassa)",
-    "location": "Lentoasema, Pirkkala",
-    "demand": 2
-  },
-  {
-    "type": "bussi",
-    "time": 1792024500,
-    "title": "V130",
-    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
-    "location": "Linja-autoasema",
-    "demand": 1
-  },
-  {
-    "type": "lento",
     "time": 1792031400,
     "title": "BT358",
     "detail": "Aikataulun mukaan lähtee, määränpää Riika",
@@ -702,6 +686,14 @@
     "detail": "Aikataulun mukaan saapuu, lähtöpaikka Riika",
     "location": "Lentoasema, Pirkkala",
     "demand": 2
+  },
+  {
+    "type": "bussi",
+    "time": 1792110900,
+    "title": "V130",
+    "detail": "Lähtöpaikka: 14 (aikatauluaika)",
+    "location": "Linja-autoasema",
+    "demand": 1
   },
   {
     "type": "tapahtuma",
